@@ -1,0 +1,23 @@
+DOCVELIO — CLOUDFLARE WORKER DEPLOYMENT
+
+This preserves the existing Cloudflare Worker URL.
+
+PREVIEW (no search indexing):
+  1. Open this folder in PowerShell.
+  2. Run: npx wrangler deploy
+  3. Open: https://curly-bonus-a447.garageaone-offical.workers.dev/
+
+LIVE DOMAIN + ADSENSE PREPARATION:
+  1. Buy and connect docvelio.com in Cloudflare (Worker > Settings > Domains & Routes > Custom Domain).
+  2. Fill genuine operator/email data and activate indexing:
+     py scripts\prepare_launch.py --email you@yourdomain.com --operator "Your name or business" --jurisdiction "Your country" --launch
+  3. Test the contact mailbox and all nine tools, and review Privacy/Terms/Cookies for accuracy.
+  4. Deploy again: npx wrangler deploy
+  5. Submit https://docvelio.com/sitemap.xml to Google Search Console.
+  6. In AdSense obtain YOUR publisher ID. Add it with:
+     py scripts\prepare_launch.py --publisher pub-1234567890123456
+     (replace that EXAMPLE with YOUR real value)
+  7. Deploy again. Configure a Google-certified consent management platform before serving relevant ads in EEA/UK/Switzerland.
+
+IMPORTANT: No application or approval is automatic. Do not launch while placeholders remain.
+See README.md and ADSENSE_LAUNCH_CHECKLIST.md for detailed guidance.

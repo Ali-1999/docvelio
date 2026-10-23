@@ -1,0 +1,11 @@
+
+.dv-language-label{display:inline-flex;align-items:center;gap:.35rem;white-space:nowrap;font-size:.84rem;color:#36516b}
+.dv-language-label select{max-width:132px;background:#fff;border:1px solid #d9e2ee;border-radius:9px;padding:.48rem .52rem;font:inherit;color:#25354f;cursor:pointer}
+.dv-language-label select:focus-visible{outline:3px solid #8ab4fc;outline-offset:2px}
+html[dir="rtl"] body{direction:rtl;text-align:right;font-family:Tahoma,"Noto Naskh Arabic","Segoe UI",Arial,sans-serif}
+html[dir="rtl"] .hero-copy,html[dir="rtl"] .prose,html[dir="rtl"] .nav,html[dir="rtl"] .tool-card{text-align:right}
+html[dir="rtl"] .nav,html[dir="rtl"] .hero-grid,html[dir="rtl"] .editor-layout{direction:rtl}
+html[dir="rtl"] input[type="number"],html[dir="rtl"] #ranges,html[dir="rtl"] .pdf-paper,html[dir="rtl"] .pdf-preview-bar{direction:ltr}
+html[dir="rtl"] .word-content{direction:rtl;text-align:right}
+html[dir="rtl"] .word-paper{direction:ltr}
+@media(max-width:760px){.dv-language-label select{max-width:115px}.nav-actions{gap:.3rem}.nav-start{display:none}}

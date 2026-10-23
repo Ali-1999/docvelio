@@ -1,0 +1,16 @@
+{
+  "name": "Docvelio \u2014 PDF & Word Tools",
+  "short_name": "Docvelio",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#2463eb",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

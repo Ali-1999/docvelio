@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+# Preview only. Run scripts/prepare_launch.py after connecting docvelio.com.

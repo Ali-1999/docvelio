@@ -1,0 +1,3 @@
+# Docvelio ads.txt
+# Add your exact Google AdSense authorised-seller line after receiving a publisher ID.
+# Do not publish a sample or invented pub ID.
