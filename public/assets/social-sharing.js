@@ -65,36 +65,85 @@ const providers=[
  {id:'x',name:'X',href:'https://twitter.com/intent/tweet?text='+xTitle+'&url='+xUrl},
  {id:'telegram',name:'Telegram',href:'https://t.me/share/url?url='+xUrl+'&text='+xTitle}
 ];
-function element(tag,cls,text){const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node;}
-function addIcon(parent,id,cls){const holder=element('span',cls);holder.innerHTML=icons[id];parent.append(holder);return holder;}
-const panel=element('section','dv-sharing');panel.setAttribute('aria-label',s[0]);
-const header=element('div','dv-share-header');
-const emblem=element('span','dv-share-emblem');emblem.innerHTML=icons.share;header.append(emblem);
-const intro=element('div','dv-share-intro');
-intro.append(element('p','dv-share-eyebrow','DOCVELIO'),element('h2','dv-share-title',s[0]),element('p','dv-share-subtitle',l[1]));
-header.append(intro);panel.append(header);
-const urlRow=element('div','dv-share-url-row');const urlField=element('input','dv-share-url-input');urlField.type='text';urlField.readOnly=true;urlField.value=url;urlField.setAttribute('aria-label','Page URL');urlField.addEventListener('focus',()=>urlField.select());urlRow.append(urlField);
-const copyButton=element('button','dv-share-copy');copyButton.type='button';addIcon(copyButton,'copy','dv-share-btn-icon');const copyLabel=element('span','',s[1]);copyButton.append(copyLabel);urlRow.append(copyButton);panel.append(urlRow);
-const split=element('div','dv-share-divider');split.append(element('span','',l[0]));panel.append(split);
-const grid=element('div','dv-share-grid');
+
+function element(tag,cls,text){
+ const node=document.createElement(tag);
+ if(cls)node.className=cls;
+ if(text!==undefined)node.textContent=text;
+ return node;
+}
+function addIcon(parent,id){
+ const glyph=element('span','dv-share-icon');
+ glyph.innerHTML=icons[id];
+ parent.append(glyph);
+}
+const toolPath=/\/tools\/[^/]+\/?$/.test(new URL(url).pathname);
+const panel=element('div','dv-sharing dv-sharing--compact');
+panel.setAttribute('role','group');
+panel.setAttribute('aria-label',s[0]);
+panel.append(element('span','dv-share-label',s[0]));
+const buttons=element('div','dv-share-buttons');
+panel.append(buttons);
 for(const item of providers){
- const a=element('a','dv-share-tile dv-share-'+item.id);a.href=item.href;a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-label',l[2]+' '+item.name);
- addIcon(a,item.id,'dv-share-platform-icon');a.append(element('span','dv-share-provider-name',item.name));grid.append(a);
+ const a=element('a','dv-share-button dv-share-'+item.id);
+ a.href=item.href;
+ a.target='_blank';a.rel='noopener noreferrer';
+ a.setAttribute('aria-label',l[2]+' '+item.name);
+ a.title=l[2]+' '+item.name;
+ addIcon(a,item.id);
+ buttons.append(a);
 }
-panel.append(grid);
+const copy=element('button','dv-share-button dv-share-copy');
+copy.type='button';copy.setAttribute('aria-label',s[1]);copy.title=s[1];
+addIcon(copy,'copy');
+buttons.append(copy);
 if(nativeAvailable){
- const native=element('button','dv-share-native');native.type='button';addIcon(native,'share','dv-share-btn-icon');native.append(element('span','',s[3]));panel.append(native);
- native.addEventListener('click',async()=>{try{await navigator.share({title,text:s[4],url});}catch(e){if(e.name!=='AbortError')console.warn('Native share was not available',e);}});
+ const native=element('button','dv-share-button dv-share-native');
+ native.type='button';native.setAttribute('aria-label',s[3]);native.title=s[3];
+ addIcon(native,'share');buttons.append(native);
+ native.addEventListener('click',async()=>{
+  try{await navigator.share({title,text:s[4],url});}
+  catch(error){if(error.name!=='AbortError')console.warn('Sharing unavailable',error);}
+ });
 }
-const feedback=element('p','dv-share-feedback');feedback.setAttribute('role','status');feedback.setAttribute('aria-live','polite');panel.append(feedback);
-const bottom=footer.querySelector('.foot-bottom');if(bottom)bottom.before(panel);else footer.append(panel);
-copyButton.addEventListener('click',async()=>{
- let success=false;
- try{if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);success=true;}}catch(_){}
- if(!success){urlField.select();try{success=document.execCommand('copy');}catch(_){}
+const feedback=element('span','dv-share-feedback');
+feedback.setAttribute('role','status');
+feedback.setAttribute('aria-live','polite');
+panel.append(feedback);
+copy.addEventListener('click',async()=>{
+ let ok=false;
+ try{if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);ok=true;}}catch(_){}
+ if(!ok){
+  const input=element('textarea');
+  input.value=url;input.style.position='fixed';input.style.opacity='0';
+  document.body.append(input);input.select();
+  try{ok=document.execCommand('copy');}catch(_){}
+  input.remove();
  }
- if(success){copyButton.classList.add('dv-is-copied');copyLabel.textContent=s[2];copyButton.querySelector('.dv-share-btn-icon').innerHTML=icons.check;feedback.textContent=l[3];}
- else{feedback.textContent=l[4];urlField.focus();}
- if(success){setTimeout(()=>{copyButton.classList.remove('dv-is-copied');copyLabel.textContent=s[1];copyButton.querySelector('.dv-share-btn-icon').innerHTML=icons.copy;feedback.textContent='';},2200);}
+ if(ok){
+  copy.classList.add('dv-is-copied');
+  copy.querySelector('.dv-share-icon').innerHTML=icons.check;
+  feedback.textContent=l[3];
+  setTimeout(()=>{
+   copy.classList.remove('dv-is-copied');
+   copy.querySelector('.dv-share-icon').innerHTML=icons.copy;
+   feedback.textContent='';
+  },2200);
+ }else{
+  feedback.textContent=l[4];
+ }
 });
+if(toolPath){
+ // Share buttons appear directly beneath the tool introduction on every existing
+ // and build-generated localized tool page, not in an oversized footer panel.
+ const intro=document.querySelector('main .lead');
+ const heading=document.querySelector('main h1');
+ if(intro)intro.after(panel);
+ else if(heading)heading.after(panel);
+ else document.querySelector('main')?.prepend(panel);
+}else{
+ const bottom=footer?.querySelector('.foot-bottom');
+ if(bottom)bottom.before(panel);
+ else if(footer)footer.append(panel);
+}
 })();
