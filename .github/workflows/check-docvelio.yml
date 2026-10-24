@@ -26,6 +26,8 @@ jobs:
           node --check scripts/page-content.cjs
           node --check scripts/seo-audit-fixes.cjs
           node --check scripts/test-docvelio.cjs
+      - name: Verify committed sitemap before build
+        run: python3 scripts/verify-sitemap.py --source-only
       - name: Generate the website
         run: |
           node scripts/extend-toolkit.cjs
@@ -33,6 +35,8 @@ jobs:
           node scripts/site-shell.cjs
           node scripts/page-content.cjs
           node scripts/seo-audit-fixes.cjs
+      - name: Ensure sitemap in Git matches generated output
+        run: git diff --exit-code -- public/sitemap.xml public/sitemap.txt
       - name: Check localized tools and indexing metadata
         run: |
           node scripts/test-docvelio.cjs

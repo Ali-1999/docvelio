@@ -51,31 +51,55 @@ for(const file of files){
  });
  fs.writeFileSync(file,html);
 }
+/* Google Search Central: include only self-canonical, indexable HTML URLs.
+ * Omit lastmod without trustworthy per-URL modification history, and do not
+ * invent priority or changefreq (Google ignores both).
+ */
 const groups=new Map(),urls=new Set();
+const canonicalFor=(html,relative)=>{
+ const tags=html.match(/<link\b[^>]*>/gi)||[];
+ const canonical=tags.filter(tag=>/\brel\s*=\s*["']canonical["']/i.test(tag));
+ if(canonical.length!==1)throw Error('Expected exactly one canonical link: '+relative);
+ const href=canonical[0].match(/\bhref\s*=\s*["']([^"']+)["']/i)?.[1];
+ if(!href)throw Error('Canonical has no URL: '+relative);
+ if(/<meta\b[^>]*\bname\s*=\s*["']robots["'][^>]*\bcontent\s*=\s*["'][^"']*noindex/i.test(html)||
+    /<meta\b[^>]*\bcontent\s*=\s*["'][^"']*noindex[^"']*["'][^>]*\bname\s*=\s*["']robots["']/i.test(html))
+    throw Error('Noindex page cannot be listed in sitemap: '+relative);
+ return href.replace(/&amp;/g,'&');
+};
 for(const file of files){
  const rel=path.relative(root,file).replaceAll('\\','/'),segments=rel.split('/');
  const lang=languages.includes(segments[0])&&segments[0]!=='en'?segments.shift():'en';
  const route=segments.slice(0,-1).join('/');
+ const url=host+'/'+rel.replace(/index\.html$/,'');
+ const html=fs.readFileSync(file,'utf8');
+ if(canonicalFor(html,rel)!==url)throw Error('Sitemap URL not self-canonical: '+rel+' -> '+canonicalFor(html,rel));
  if(!groups.has(route))groups.set(route,new Map());
- groups.get(route).set(lang,host+'/'+rel.replace(/index\.html$/,''));
+ if(groups.get(route).has(lang))throw Error('Duplicate route/locale: '+route+' '+lang);
+ groups.get(route).set(lang,url);
 }
-const escapeXml=s=>String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
-let xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
+const escapeXml=value=>String(value).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');
+let xml='<?xml version="1.0" encoding="UTF-8"?>\n'+
+ '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
 for(const [route,variants] of [...groups].sort((a,b)=>a[0].localeCompare(b[0]))){
- if(variants.size!==10)throw Error('Missing locale in '+route);
+ if(variants.size!==languages.length)throw Error('Incomplete hreflang set: '+route);
  for(const lang of languages){
   const url=variants.get(lang);
-  if(!url||urls.has(url))throw Error('Missing or duplicated sitemap URL '+url);
+  if(!url||urls.has(url))throw Error('Missing or duplicated URL '+url);
   urls.add(url);
-  xml+='  <url><loc>'+escapeXml(url)+'</loc>';
-  for(const locale of languages)xml+='<xhtml:link rel="alternate" hreflang="'+locale+'" href="'+escapeXml(variants.get(locale))+'"/>';
-  xml+='<xhtml:link rel="alternate" hreflang="x-default" href="'+escapeXml(variants.get('en'))+'"/></url>\n';
+  xml+='  <url>\n    <loc>'+escapeXml(url)+'</loc>\n';
+  for(const language of languages){
+   xml+='    <xhtml:link rel="alternate" hreflang="'+language+'" href="'+escapeXml(variants.get(language))+'"/>\n';
+  }
+  xml+='    <xhtml:link rel="alternate" hreflang="x-default" href="'+escapeXml(variants.get('en'))+'"/>\n';
+  xml+='  </url>\n';
  }
 }
 xml+='</urlset>\n';
-if(urls.size!==320)throw Error('Unexpected sitemap URL count '+urls.size);
-fs.writeFileSync(path.join(root,'sitemap.xml'),xml);
-fs.writeFileSync(path.join(root,'sitemap.txt'),[...urls].sort().join('\n')+'\n');
+if(urls.size!==files.length||urls.size>50000)throw Error('Sitemap exceeds allowed URLs or is missing pages');
+if(Buffer.byteLength(xml,'utf8')>50*1024*1024)throw Error('Sitemap exceeds Google 50 MiB uncompressed size limit');
+fs.writeFileSync(path.join(root,'sitemap.xml'),xml,{encoding:'utf8'});
+fs.writeFileSync(path.join(root,'sitemap.txt'),[...urls].sort().join('\n')+'\n',{encoding:'utf8'});
 fs.writeFileSync(path.join(root,'robots.txt'),'User-agent: *\nAllow: /\n\nSitemap: https://docvelio.com/sitemap.xml\n');
 const headers=fs.readFileSync(path.join(root,'_headers'),'utf8');
 if(/X-Robots-Tag:\s*noindex/i.test(headers))throw Error('Page indexing is blocked');
