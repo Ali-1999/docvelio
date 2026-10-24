@@ -31,7 +31,7 @@ function walk(dir){
  }
 }
 walk(root);files.sort();
-if(files.length!==320)throw Error('Expected 320 index pages; got '+files.length);
+if(files.length!==430)throw Error('Expected 430 localized pages including blogs; got '+files.length);
 for(const file of files){
  const rel=path.relative(root,file).replaceAll('\\','/');
  let html=fs.readFileSync(file,'utf8');
