@@ -421,6 +421,1546 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/accessibility/"/>
   </url>
   <url>
+    <loc>https://docvelio.com/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/blog/compress-pdf-file-size/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/blog/compress-pdf-file-size/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/blog/compress-pdf-file-size/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/blog/compress-pdf-file-size/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/blog/compress-pdf-file-size/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/blog/compress-pdf-file-size/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/blog/compress-pdf-file-size/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/blog/compress-pdf-file-size/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/blog/compress-pdf-file-size/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/blog/compress-pdf-file-size/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/compress-pdf-file-size/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/compress-pdf-file-size/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/blog/convert-images-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/blog/convert-images-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/blog/convert-images-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/blog/convert-images-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/blog/convert-images-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/blog/convert-images-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/blog/convert-images-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/blog/convert-images-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/blog/convert-images-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/blog/convert-images-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-images-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-images-to-pdf/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/blog/convert-pdf-to-jpg-png/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/blog/convert-pdf-to-jpg-png/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/blog/convert-pdf-to-jpg-png/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/blog/convert-pdf-to-jpg-png/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/blog/convert-pdf-to-jpg-png/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/blog/convert-pdf-to-jpg-png/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/blog/convert-pdf-to-jpg-png/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/blog/convert-pdf-to-jpg-png/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/blog/convert-pdf-to-jpg-png/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/blog/convert-pdf-to-jpg-png/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/convert-pdf-to-jpg-png/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/convert-pdf-to-jpg-png/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/blog/extract-text-scanned-pdf-ocr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/blog/extract-text-scanned-pdf-ocr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/blog/extract-text-scanned-pdf-ocr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/blog/extract-text-scanned-pdf-ocr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/blog/extract-text-scanned-pdf-ocr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/blog/extract-text-scanned-pdf-ocr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/blog/extract-text-scanned-pdf-ocr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/blog/extract-text-scanned-pdf-ocr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/blog/extract-text-scanned-pdf-ocr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/blog/extract-text-scanned-pdf-ocr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/extract-text-scanned-pdf-ocr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/extract-text-scanned-pdf-ocr/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/blog/fill-pdf-forms-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/blog/fill-pdf-forms-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/blog/fill-pdf-forms-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/blog/fill-pdf-forms-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/blog/fill-pdf-forms-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/blog/fill-pdf-forms-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/blog/fill-pdf-forms-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/blog/fill-pdf-forms-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/blog/fill-pdf-forms-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/blog/fill-pdf-forms-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/fill-pdf-forms-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/fill-pdf-forms-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/blog/how-to-edit-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/blog/how-to-edit-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/blog/how-to-edit-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/blog/how-to-edit-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/blog/how-to-edit-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/blog/how-to-edit-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/blog/how-to-edit-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/blog/how-to-edit-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/blog/how-to-edit-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/blog/how-to-edit-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-edit-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-edit-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/blog/how-to-merge-pdf-files/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/blog/how-to-merge-pdf-files/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/blog/how-to-merge-pdf-files/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/blog/how-to-merge-pdf-files/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/blog/how-to-merge-pdf-files/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/blog/how-to-merge-pdf-files/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/blog/how-to-merge-pdf-files/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/blog/how-to-merge-pdf-files/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/blog/how-to-merge-pdf-files/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/blog/how-to-merge-pdf-files/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-merge-pdf-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-merge-pdf-files/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/blog/how-to-sign-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/blog/how-to-sign-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/blog/how-to-sign-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/blog/how-to-sign-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/blog/how-to-sign-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/blog/how-to-sign-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/blog/how-to-sign-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/blog/how-to-sign-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/blog/how-to-sign-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/blog/how-to-sign-pdf-online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/how-to-sign-pdf-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/how-to-sign-pdf-online/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/blog/organize-rotate-delete-pdf-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/blog/organize-rotate-delete-pdf-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/blog/organize-rotate-delete-pdf-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/blog/organize-rotate-delete-pdf-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/blog/organize-rotate-delete-pdf-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/blog/organize-rotate-delete-pdf-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/blog/organize-rotate-delete-pdf-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/blog/organize-rotate-delete-pdf-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/blog/organize-rotate-delete-pdf-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/blog/organize-rotate-delete-pdf-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/organize-rotate-delete-pdf-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/organize-rotate-delete-pdf-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/blog/split-pdf-extract-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/blog/split-pdf-extract-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/blog/split-pdf-extract-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/blog/split-pdf-extract-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/blog/split-pdf-extract-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/blog/split-pdf-extract-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/blog/split-pdf-extract-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/blog/split-pdf-extract-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/blog/split-pdf-extract-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/blog/split-pdf-extract-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/blog/split-pdf-extract-pages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/blog/split-pdf-extract-pages/"/>
+  </url>
+  <url>
     <loc>https://docvelio.com/contact/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/contact/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/contact/"/>
