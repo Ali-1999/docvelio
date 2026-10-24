@@ -65,3 +65,9 @@
 }
 @media(prefers-reduced-motion:reduce){.dv-cookie-button{transition:none}}
 @media print{.dv-cookie-banner,.dv-cookie-settings,.dv-cookie-settings-holder{display:none!important}}
+
+.dv-policy-update{padding:20px 0 35px}
+.dv-policy-update .prose{border:1px solid #dce9f6;border-radius:13px;background:#f2f9ff;padding:20px 22px}
+.dv-policy-update h2{font-size:1.1rem;color:#16436c;margin:0 0 9px}
+.dv-policy-update p{font-size:.91rem;line-height:1.76;color:#47647f;margin:0}
+@media(max-width:600px){.dv-policy-update .prose{padding:16px}}
