@@ -35,7 +35,7 @@ for(const lang of langs){
 const storage=new Map(),domEvents=new Map(),windowEvents=new Map();
 const body=[];
 class FakeElement{
- constructor(tag='div'){this.tagName=tag;this.children=[];this.style={};this.hidden=false;this.attrs={};this.listeners=new Map();
+ constructor(tag='div'){this.tagName=tag;this.className='';this.children=[];this.style={};this.hidden=false;this.attrs={};this.listeners=new Map();
  this.classList={add:x=>{this.className+=(this.className?' ':'')+x},remove:x=>{this.className=this.className.split(' ').filter(y=>y!==x).join(' ')},toggle:(x,value)=>{
  let a=this.className.split(' ').filter(Boolean);if(value&&!a.includes(x))a.push(x);
  if(!value)a=a.filter(y=>y!==x);this.className=a.join(' ');
