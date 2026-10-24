@@ -161,3 +161,35 @@ const editPage=fs.readFileSync(path.join(root,'tools/edit-pdf/index.html'),'utf8
 assert(editPage.indexOf('class="dv-editorial-zone"')<editPage.indexOf('class="container seo-help"'),
  'Edit PDF guidance should precede its additional help article');
 console.log('PASS: 180 in-flow tool guidance cards and 40 other aligned page sections.');
+
+
+/* October 2026 SEOptimer remediation regression checks. */
+const homepage=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const pageTitle=homepage.match(/<title>(.*?)<\/title>/i)?.[1]||'';
+assert.equal(pageTitle,'Free PDF Editing Tools and Online Word Editor | Docvelio');
+const metaTag=(homepage.match(/<meta\b[^>]*name="description"[^>]*>/i)||[])[0]||'';
+const homeDesc=metaTag.match(/content="([^"]+)"/)?.[1]||'';
+assert(homeDesc.length>=120&&homeDesc.length<=160,'Homepage description length is not meaningful: '+homeDesc.length);
+assert(homepage.includes('<h1>Free PDF tools.'),'Homepage H1 does not describe tool offering');
+assert(homepage.includes('class="section dv-home-seo"'),'Missing people-first homepage guidance');
+assert(homepage.includes('/assets/seo-content.css'),'Missing homepage SEO styling');
+const pagesForAlt=[];
+function collectHtml(folder){
+ for(const item of fs.readdirSync(folder,{withFileTypes:true})){
+  const full=path.join(folder,item.name);
+  if(item.isDirectory())collectHtml(full);
+  else if(item.name==='index.html')pagesForAlt.push(full);
+ }
+}
+collectHtml(root);
+for(const file of pagesForAlt){
+ const content=fs.readFileSync(file,'utf8');
+ const tags=content.match(/<img\b[^>]*>/gi)||[];
+ for(const tag of tags)assert(/\balt="[^"]*"/i.test(tag),'Image is missing alt: '+file);
+}
+assert(fs.existsSync(path.join(root,'llms.txt')),'Missing optional llms.txt');
+assert(fs.existsSync(path.join(root,'sitemap.txt')),'Missing TXT sitemap fallback');
+const generatedSitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
+assert((generatedSitemap.match(/<url>/g)||[]).length===320,'Missing sitemap routes');
+assert(!/X-Robots-Tag:\s*noindex/i.test(fs.readFileSync(path.join(root,'_headers'),'utf8')),'X-Robots-Tag blocks indexing');
+console.log('PASS: SEOptimer remediation, title, description, image alt attributes and sitemap count.');
