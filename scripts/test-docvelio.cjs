@@ -225,7 +225,7 @@ for(const lang of languages){
   assert(text.includes('class="dv-blog-article"'),'Blog article missing: '+relative);
   assert(text.includes('class="dv-blog-related"'),'Blog related reading missing: '+relative);
   assert(text.includes('src="/assets/social-sharing.js"'),'Blog social share missing: '+relative);
-  assert(text.includes('class="dv-site-header"'),'Blog has no shared header: '+relative);
+  assert(text.includes('data-dv-unified="1"'),'Blog has no shared header: '+relative);
   assert(text.includes('href="'+(prefix?'/'+prefix:'/')+'blog/"'),'Blog navigation missing: '+relative);
   if(!lang){
    const visible=text.match(/<article class="dv-blog-article">([\s\S]*?)<\/article>/)?.[1]||'';
