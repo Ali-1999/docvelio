@@ -6,6 +6,8 @@ const fs=require('node:fs'),path=require('node:path');
 const root=path.join(__dirname,'..','public');
 const css='<link rel="stylesheet" href="/assets/design-system.css">';
 const js='<script defer src="/assets/design-system.js"></script>';
+const privacyCss='<link rel="stylesheet" href="/assets/cookie-consent.css">';
+const privacyJs='<script defer src="/assets/cookie-consent.js"></script>';
 let count=0;
 function walk(dir){
  for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
@@ -16,6 +18,8 @@ function walk(dir){
   if(!html.includes('</head>')||!html.includes('</body>'))throw Error('Incomplete HTML page: '+file);
   if(!html.includes('href="/assets/design-system.css"'))html=html.replace('</head>',css+'</head>');
   if(!html.includes('src="/assets/design-system.js"'))html=html.replace('</body>',js+'</body>');
+  if(!html.includes('href="/assets/cookie-consent.css"'))html=html.replace('</head>',privacyCss+'</head>');
+  if(!html.includes('src="/assets/cookie-consent.js"'))html=html.replace('</body>',privacyJs+'</body>');
   fs.writeFileSync(file,html);
   count++;
  }
