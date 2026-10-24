@@ -1,0 +1,14 @@
+.dv-brand-icon{display:block;width:32px;height:32px;object-fit:contain}
+.brandmark{background:transparent!important;box-shadow:none!important;overflow:visible!important}
+.dv-hero-logo{display:block;width:min(250px,75%);height:auto;max-height:90px;object-fit:contain;object-position:left center;margin:0 0 16px}
+.dv-footer-brand-icon{width:27px;height:27px;margin-inline-end:7px;vertical-align:middle}
+.dv-sharing{margin-top:28px;padding:20px;border:1px solid #cadcf4;border-radius:18px;background:linear-gradient(115deg,#eef6ff,#f7fffe);color:#102e51;max-width:100%;box-shadow:0 9px 24px rgba(25,66,130,.06)}
+.dv-sharing h2{font-size:1.1rem;color:#12335b;margin:0 0 12px;font-weight:760}
+.dv-share-buttons{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.dv-share-button{appearance:none;display:inline-flex;justify-content:center;align-items:center;text-align:center;min-height:43px;border:1px solid #bfd4ec!important;border-radius:10px;padding:9px 13px!important;background:#fff!important;color:#154b80!important;text-decoration:none!important;font:700 .88rem/1.2 system-ui,-apple-system,sans-serif;cursor:pointer;margin:0!important}
+.dv-share-button:hover{background:#dfefff!important;border-color:#95c5ef!important}
+.dv-share-button:focus-visible{outline:3px solid #ffb13c;outline-offset:3px}
+.dv-share-button:first-child{background:#1263d6!important;color:#fff!important;border-color:#1263d6!important}
+@media(max-width:580px){.dv-sharing{padding:14px}.dv-share-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.dv-share-button{min-width:0;white-space:normal}.dv-hero-logo{width:min(205px,72%)}}
+@media(prefers-reduced-motion:reduce){.dv-share-button{transition:none!important}}
+html[dir="rtl"] .dv-hero-logo{object-position:right center}
