@@ -22,13 +22,14 @@ for(const [lang,d] of Object.entries(localized))if(d.posts.length!==10||d.ui.len
 const html=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 const prefix=l=>l==='en'?'/':'/'+l+'/';
 const link=(l,slug)=>prefix(l)+'blog/'+slug+'/';
+const routeUrl=(l,slug)=>slug==='blog'?prefix(l)+'blog/':link(l,slug);
 function hreflang(slug){
- return LANGS.map(l=>'<link rel="alternate" hreflang="'+l+'" href="'+baseUrl+link(l,slug)+'">').join('')+
- '<link rel="alternate" hreflang="x-default" href="'+baseUrl+link('en',slug)+'">';
+ return LANGS.map(l=>'<link rel="alternate" hreflang="'+l+'" href="'+baseUrl+routeUrl(l,slug)+'">').join('')+
+ '<link rel="alternate" hreflang="x-default" href="'+baseUrl+routeUrl('en',slug)+'">';
 }
 function richJson(o){return JSON.stringify(o).replace(/</g,'\\u003c').replace(/>/g,'\\u003e').replace(/&/g,'\\u0026');}
 function head(lang,slug,title,desc,isIndex=false){
- const u=baseUrl+link(lang,slug),bread=[{'@type':'ListItem',position:1,name:'Docvelio',item:baseUrl+prefix(lang)},{'@type':'ListItem',position:2,name:words[lang][0],item:baseUrl+prefix(lang)+'blog/'}];
+ const u=baseUrl+routeUrl(lang,slug),bread=[{'@type':'ListItem',position:1,name:'Docvelio',item:baseUrl+prefix(lang)},{'@type':'ListItem',position:2,name:words[lang][0],item:baseUrl+prefix(lang)+'blog/'}];
  if(!isIndex)bread.push({'@type':'ListItem',position:3,name:title,item:u});
  const graph=[{'@type':'BreadcrumbList',itemListElement:bread}];
  if(isIndex)graph.push({'@type':'CollectionPage',name:title,url:u,inLanguage:lang,description:desc});
@@ -92,7 +93,7 @@ function blogPage(lang,item,idx){
  (lang==='en'?bodyEnglish(item,idx):bodyLocalized(lang,item,idx))+
  '<p class="dv-blog-final-note"><strong>'+html(w[18])+'</strong>: '+html(w[16])+'.</p>'+
  related(lang,item,idx)+'</article></div></section></main>';
- return head(lang,'blog/'+item.slug,title,desc)+main+footer(lang);
+ return head(lang,item.slug,title,desc)+main+footer(lang);
 }
 function blogIndex(lang){
  const w=words[lang],title=w[1],desc=w[2],items=posts.map((a,i)=>{
