@@ -21,6 +21,10 @@ jobs:
           node --check public/assets/improvements.js
           node --check public/assets/social-sharing.js
           node --check scripts/extend-toolkit.cjs
+          node --check scripts/blog-data-en.cjs
+          node --check scripts/blog-data-locales-a.cjs
+          node --check scripts/blog-data-locales-b.cjs
+          node --check scripts/build-blogs.cjs
           node --check scripts/build-docvelio.cjs
           node --check scripts/site-shell.cjs
           node --check scripts/page-content.cjs
@@ -31,6 +35,7 @@ jobs:
       - name: Generate the website
         run: |
           node scripts/extend-toolkit.cjs
+          node scripts/build-blogs.cjs
           node scripts/build-docvelio.cjs
           node scripts/site-shell.cjs
           node scripts/page-content.cjs

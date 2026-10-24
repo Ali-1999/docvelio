@@ -80,7 +80,7 @@ function listPages(folder){
  }
 }
 listPages(root);
-assert(htmlPages.length===321,'Expected 320 index pages plus the custom 404 page, got '+htmlPages.length);
+assert(htmlPages.length===431,'Expected 430 index pages plus custom 404, got '+htmlPages.length);
 const headerTemplates=new Map(),titles=new Set(),pageTitles=new Map();
 let tips=0,headCount=0;
 for(const file of htmlPages){
@@ -101,7 +101,7 @@ for(const file of htmlPages){
  if(!headerTemplates.has(locale))headerTemplates.set(locale,norm);
  assert.equal(norm,headerTemplates.get(locale),'Header differs in language '+locale+': '+rel);
  assert(html.includes('href="/assets/shared-header.css"'),'Shared CSS missing: '+rel);
- assert(html.includes('data-dv-editorial="1"'),'Missing relevant page content: '+rel);
+ assert(html.includes('data-dv-editorial="1"') || route==='blog' || route.startsWith('blog/'),'Missing relevant page content: '+rel);
  const heading=(html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/gi)||[]);
  assert(heading.length===1,'Missing or duplicated page heading: '+rel);
  const title=html.match(/<title>([\s\S]*?)<\/title>/i)?.[1];
@@ -119,8 +119,8 @@ for(const file of htmlPages){
 }
 assert.equal(headerTemplates.size,10,'All ten language headers are not present');
 assert.equal(tips,180,'Expected tool-specific guidance on all 180 tool pages');
-assert.equal(headCount,320);
-console.log('PASS: identical header per locale, 320 meaningful pages, 180 tool guidance sections and metadata');
+assert.equal(headCount,430);
+console.log('PASS: identical header per locale, 430 meaningful pages, 180 tool guidance sections and metadata');
 
 
 /* Layout regression: the tool guide must be contained and follow the workspace,
@@ -190,6 +190,49 @@ for(const file of pagesForAlt){
 assert(fs.existsSync(path.join(root,'llms.txt')),'Missing optional llms.txt');
 assert(fs.existsSync(path.join(root,'sitemap.txt')),'Missing TXT sitemap fallback');
 const generatedSitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
-assert((generatedSitemap.match(/<url>/g)||[]).length===320,'Missing sitemap routes');
+assert((generatedSitemap.match(/<url>/g)||[]).length===430,'Missing sitemap routes');
 assert(!/X-Robots-Tag:\s*noindex/i.test(fs.readFileSync(path.join(root,'_headers'),'utf8')),'X-Robots-Tag blocks indexing');
 console.log('PASS: SEOptimer remediation, title, description, image alt attributes and sitemap count.');
+
+/* New blog cluster: ten distinct topic pages with localized content,
+ * discoverable site-wide navigation and all reciprocal hreflang links.
+ */
+const postSlugs=[
+ 'how-to-edit-pdf-online','how-to-merge-pdf-files',
+ 'split-pdf-extract-pages','compress-pdf-file-size',
+ 'convert-pdf-to-jpg-png','convert-images-to-pdf',
+ 'how-to-sign-pdf-online','fill-pdf-forms-online',
+ 'extract-text-scanned-pdf-ocr','organize-rotate-delete-pdf-pages'
+];
+const articleTitles=new Set();
+for(const lang of languages){
+ const prefix=lang?lang+'/':'',indexPath=path.join(root,prefix+'blog/index.html');
+ assert(fs.existsSync(indexPath),'Missing localized blog listing '+lang);
+ const index=fs.readFileSync(indexPath,'utf8');
+ assert(index.includes('class="dv-blog-grid"'),'Blog index cards missing '+lang);
+ assert(index.includes('hreflang="x-default"'),'Missing blog index language links '+lang);
+ const guideIndex=fs.readFileSync(path.join(root,prefix+'guides/index.html'),'utf8');
+ const home=fs.readFileSync(path.join(root,prefix+'index.html'),'utf8');
+ assert(home.includes('class="dv-blog-discovery"'),'Blog homepage links missing '+lang);
+ assert(guideIndex.includes('class="dv-blog-discovery"'),'Blog guide-index links missing '+lang);
+ for(const slug of postSlugs){
+  const relative=prefix+'blog/'+slug+'/';
+  const text=fs.readFileSync(path.join(root,relative,'index.html'),'utf8');
+  const title=text.match(/<title>(.*?)<\/title>/i)?.[1];
+  assert(title && Array.from(title).length>=(lang==='zh'?12:lang==='ar'||lang==='hi'?17:26),'Blog title too short: '+relative);
+  if(!lang)articleTitles.add(title);
+  assert(text.includes('href="https://docvelio.com/'+relative+'"'),'Missing canonical URL: '+relative);
+  assert(text.includes('class="dv-blog-article"'),'Blog article missing: '+relative);
+  assert(text.includes('class="dv-blog-related"'),'Blog related reading missing: '+relative);
+  assert(text.includes('src="/assets/social-sharing.js"'),'Blog social share missing: '+relative);
+  assert(text.includes('data-dv-unified="1"'),'Blog has no shared header: '+relative);
+  assert(text.includes('href="'+(prefix?'/'+prefix:'/')+'blog/"'),'Blog navigation missing: '+relative);
+  if(!lang){
+   const visible=text.match(/<article class="dv-blog-article">([\s\S]*?)<\/article>/)?.[1]||'';
+   assert(visible.replace(/<[^>]*>/g,' ').trim().split(/\s+/).length>=280,'English article is too thin: '+relative);
+  }
+ }
+}
+assert.equal(articleTitles.size,10,'Expected 10 distinct English blog titles');
+assert((generatedSitemap.match(/<url>/g)||[]).length===430,'Blog sitemap coverage missing');
+console.log('PASS: 100 localized topic pages, 10 blog indexes, 10 different English topics and multilingual discovery links.');

@@ -1,0 +1,52 @@
+/* Docvelio editorial PDF guides: lightweight, accessible, responsive */
+.dv-blog-container{max-width:840px}
+.dv-blog-hero,.dv-blog-index-hero{padding:48px 0 42px;background:linear-gradient(135deg,#f0f7ff 0%,#f8fcff 60%,#effbf9 100%);border-bottom:1px solid #dfebf6}
+.dv-blog-kicker,.dv-blog-card-category{font-size:.76rem;font-weight:800;letter-spacing:.095em;text-transform:uppercase;color:#1679b6}
+.dv-blog-crumb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.82rem;margin-bottom:24px;color:#7186a4}
+.dv-blog-crumb a{color:#3467a1;text-decoration:none}.dv-blog-crumb a:hover{text-decoration:underline}
+.dv-blog-hero h1,.dv-blog-index-hero h1{font-size:clamp(2rem,4.2vw,3.2rem);line-height:1.14;letter-spacing:-.038em;max-width:850px;margin:11px 0 17px;color:#142d4d}
+.dv-blog-description{font-size:clamp(1.03rem,1.75vw,1.2rem);line-height:1.72;color:#506b86;max-width:780px;margin:0 0 18px}
+.dv-blog-byline{font-size:.86rem;color:#71839a;margin:7px 0 21px}.dv-blog-byline a{color:#1b61bd}
+.dv-blog-cta{display:inline-flex;gap:13px;align-items:center;padding:12px 18px;min-height:46px;border-radius:11px;background:linear-gradient(135deg,#1764d5,#0094ba);box-shadow:0 12px 24px rgba(20,96,170,.16);color:white!important;text-decoration:none;font-size:.94rem;font-weight:780}
+.dv-blog-cta:hover{filter:brightness(1.07);text-decoration:none;transform:translateY(-1px)}
+.dv-blog-body{padding:35px 0 72px;background:white}
+.dv-blog-article{font-size:1rem;line-height:1.83;color:#344960}
+.dv-blog-article h2{font-size:clamp(1.3rem,2.25vw,1.65rem);line-height:1.3;color:#193658;letter-spacing:-.025em;margin:0 0 11px}
+.dv-blog-article h3{color:#244365;line-height:1.4;font-size:1.08rem;margin:22px 0 6px}
+.dv-blog-article p{margin:0 0 18px;max-width:82ch}
+.dv-blog-section{margin:0 0 30px}
+.dv-blog-steps{background:#f3f8ff;border:1px solid #d9e7fa;border-radius:16px;padding:26px 30px;margin:30px 0}
+.dv-blog-steps ol{padding-inline-start:24px;margin:0}.dv-blog-steps li{margin:10px 0;padding-inline-start:5px}
+.dv-blog-steps li::marker{font-weight:800;color:#1766c7}
+.dv-blog-faq{margin:35px 0 25px;padding-top:24px;border-top:1px solid #e1e9f3}
+.dv-blog-final-note{border-inline-start:4px solid #009cad;background:#eefaf9;border-radius:0 10px 10px 0;padding:13px 17px;margin:22px 0!important;font-size:.93rem}
+.dv-blog-related{border-top:1px solid #e5edf6;margin-top:34px;padding-top:27px}
+.dv-blog-related h2{font-size:1.19rem;margin:0 0 14px}
+.dv-blog-tool-links{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:28px}
+.dv-blog-tool-link{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;min-height:40px;border-radius:10px;border:1px solid #cfe0f6;background:#eff6ff;text-decoration:none;font-size:.88rem;font-weight:720;color:#155aa5}
+.dv-blog-related-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.dv-blog-related-card{display:flex;flex-direction:column;gap:10px;padding:19px;border:1px solid #dce7f4;border-radius:14px;background:#f8fbff;text-decoration:none;color:#173a5b;min-width:0}
+.dv-blog-related-card strong{font-size:1.03rem;line-height:1.4}.dv-blog-related-card>span:last-child{color:#1274c7;margin-inline-start:auto}
+.dv-blog-index-hero .container{max-width:900px}
+.dv-blog-list{padding:40px 0 70px;background:#fff}
+.dv-blog-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.dv-blog-card{padding:25px;border:1px solid #dae7f4;border-radius:17px;background:#f9fcff;display:flex;flex-direction:column;gap:12px;min-width:0;box-shadow:0 7px 20px rgba(16,68,114,.03)}
+.dv-blog-card h2{font-size:1.26rem;line-height:1.35;margin:0;color:#153a63}.dv-blog-card h2 a{text-decoration:none;color:inherit}
+.dv-blog-card h2 a:hover{text-decoration:underline}
+.dv-blog-card p{font-size:.92rem;color:#62738b;margin:0;line-height:1.63;flex:1}
+.dv-blog-read{display:inline-flex;align-items:center;font-size:.91rem;font-weight:750;text-decoration:none;color:#156ac5}
+.dv-blog-discovery{padding:45px 0;background:linear-gradient(125deg,#ebf4ff,#f7fbff)}
+.dv-blog-discovery-top{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:23px}
+.dv-blog-discovery-top h2{font-size:clamp(1.4rem,2.7vw,1.9rem);margin:7px 0;color:#183a62}
+.dv-blog-discovery-top p{margin:0;color:#607892;font-size:.96rem}
+.dv-blog-discovery-top>a{white-space:nowrap;text-decoration:none;font-size:.89rem;font-weight:760;color:#1564c6}
+.dv-blog-discovery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.dv-blog-discovery-item{display:flex;flex-direction:column;min-height:127px;gap:9px;padding:17px;border-radius:13px;background:white;border:1px solid #dbe6f4;text-decoration:none;min-width:0}
+.dv-blog-discovery-item span:first-child{font-size:.72rem;letter-spacing:.1em;color:#2885ad;font-weight:750}
+.dv-blog-discovery-item strong{font-size:.92rem;line-height:1.44;color:#244968;flex:1}
+.dv-blog-discovery-item span:last-child{margin-inline-start:auto;color:#1880c4}
+.dv-blog-card:hover,.dv-blog-related-card:hover,.dv-blog-discovery-item:hover{border-color:#a7c8ef;box-shadow:0 14px 26px rgba(24,83,145,.09)}
+.dv-blog-article a:focus-visible,.dv-blog-card a:focus-visible,.dv-blog-discovery a:focus-visible{outline:3px solid #efb342;outline-offset:3px}
+@media(max-width:790px){.dv-blog-grid{gap:13px}.dv-blog-discovery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:590px){.dv-blog-hero,.dv-blog-index-hero{padding:32px 0}.dv-blog-body{padding:24px 0 43px}.dv-blog-grid,.dv-blog-discovery-grid,.dv-blog-related-grid{grid-template-columns:1fr}.dv-blog-discovery-top{flex-direction:column;align-items:stretch}.dv-blog-steps{padding:20px 18px}.dv-blog-card{padding:20px}.dv-blog-article{font-size:.96rem}.dv-blog-hero h1{font-size:clamp(1.75rem,8vw,2.4rem)}}
+@media(prefers-reduced-motion:reduce){.dv-blog-cta{transition:none}}

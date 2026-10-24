@@ -6,6 +6,7 @@
 const fs=require('node:fs'),path=require('node:path');
 const root=path.join(__dirname,'..','public');
 const languages=['en','es','fr','de','pt','ar','hi','id','tr','zh'];
+const blogLabels={en:'Blog',es:'Blog',fr:'Blog',de:'Blog',pt:'Blog',ar:'المدونة',hi:'ब्लॉग',id:'Blog',tr:'Blog',zh:'博客'};
 const languageNames={en:'English',es:'Español',fr:'Français',de:'Deutsch',pt:'Português',ar:'العربية',hi:'हिन्दी',id:'Bahasa Indonesia',tr:'Türkçe',zh:'简体中文'};
 const nav={
  en:['Main navigation','All tools','Edit PDF','Word editor','Guides','Start editing','Language','Toggle navigation'],
@@ -29,7 +30,8 @@ function header(locale,route){
  '<a href="'+base+'#tools">'+escapeHtml(t[1])+'</a>'+
  '<a href="'+base+'tools/edit-pdf/">'+escapeHtml(t[2])+'</a>'+
  '<a class="word-link" href="'+base+'tools/word-editor/">'+escapeHtml(t[3])+'</a>'+
- '<a href="'+base+'guides/">'+escapeHtml(t[4])+'</a></div>'+
+ '<a href="'+base+'guides/">'+escapeHtml(t[4])+'</a>'+
+ '<a href="'+base+'blog/">'+escapeHtml(blogLabels[locale])+'</a></div>'+
  '<div class="nav-actions">'+
  '<label class="dv-language-label" for="language-select"><span aria-hidden="true">🌐</span><span class="sr-only">'+escapeHtml(t[6])+'</span>'+
  '<select id="language-select" aria-label="'+escapeHtml(t[6])+'" data-page="'+escapeHtml(route)+'">'+options+'</select></label>'+
