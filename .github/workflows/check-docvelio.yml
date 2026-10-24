@@ -28,6 +28,8 @@ jobs:
           node --check scripts/build-docvelio.cjs
           node --check scripts/site-shell.cjs
           node --check scripts/page-content.cjs
+          node --check public/assets/design-system.js
+          node --check scripts/apply-design.cjs
           node --check scripts/seo-audit-fixes.cjs
           node --check scripts/test-docvelio.cjs
       - name: Verify committed sitemap before build
@@ -39,6 +41,7 @@ jobs:
           node scripts/build-docvelio.cjs
           node scripts/site-shell.cjs
           node scripts/page-content.cjs
+          node scripts/apply-design.cjs
           node scripts/seo-audit-fixes.cjs
       - name: Ensure sitemap in Git matches generated output
         run: git diff --exit-code -- public/sitemap.xml public/sitemap.txt
