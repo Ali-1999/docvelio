@@ -68,3 +68,55 @@ for(const locale of languages){
  }
 }
 console.log('PASS: compact social icons available on 180 tool pages across 10 languages.');
+
+
+/* Enforce one consistent server-rendered header and meaningful content on all routes. */
+const htmlPages=[];
+function listPages(folder){
+ for(const f of fs.readdirSync(folder,{withFileTypes:true})){
+  const absolute=path.join(folder,f.name);
+  if(f.isDirectory())listPages(absolute);
+  else if(f.name.endsWith('.html'))htmlPages.push(absolute);
+ }
+}
+listPages(root);
+assert(htmlPages.length===320,'Expected 320 HTML pages including generated localized tools, got '+htmlPages.length);
+const headerTemplates=new Map(),titles=new Set(),pageTitles=new Map();
+let tips=0,headCount=0;
+for(const file of htmlPages){
+ const rel=path.relative(root,file).replaceAll('\\','/');
+ const parts=rel.split('/');
+ const locale=['es','fr','de','pt','ar','hi','id','tr','zh'].includes(parts[0])?parts.shift():'en';
+ const route=parts.slice(0,-1).join('/');
+ const html=fs.readFileSync(file,'utf8');
+ assert(html.includes('<main'),'No main content: '+rel);
+ const nav=(html.match(/<header\b[^>]*>[\s\S]*?<\/header>/gi)||[]);
+ assert(nav.length===1,'Expected exactly one header: '+rel);
+ assert(nav[0].includes('data-dv-unified="1"'),'Missing shared header: '+rel);
+ assert(nav[0].includes('aria-controls="dv-primary-nav"'),'Mobile navigation not accessible: '+rel);
+ assert(nav[0].includes('id="language-select"'),'Language switcher missing: '+rel);
+ assert(nav[0].includes('data-page="'+route+'"'),'Language switcher wrong route: '+rel);
+ const norm=nav[0].replace(/data-page="[^"]*"/,'data-page=""');
+ if(!headerTemplates.has(locale))headerTemplates.set(locale,norm);
+ assert.equal(norm,headerTemplates.get(locale),'Header differs in language '+locale+': '+rel);
+ assert(html.includes('href="/assets/shared-header.css"'),'Shared CSS missing: '+rel);
+ assert(html.includes('data-dv-editorial="1"'),'Missing relevant page content: '+rel);
+ const heading=(html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/gi)||[]);
+ assert(heading.length===1,'Missing or duplicated page heading: '+rel);
+ const title=html.match(/<title>([\s\S]*?)<\/title>/i)?.[1];
+ assert(title&&title.length>10,'Title is missing or thin: '+rel);
+ assert(/<meta\b[^>]*name="description"|<meta\b[^>]*content="[^"]+" name="description"/i.test(html),'Missing SEO description: '+rel);
+ assert(/<link\b[^>]*rel="canonical"|<link\b[^>]*href="https:\/\/docvelio\.com\/[^"]*" rel="canonical"/i.test(html),'Missing self canonical: '+rel);
+ assert(html.includes('hreflang="x-default"'),'Missing multilingual alternate: '+rel);
+ const url='https://docvelio.com/'+rel.replace(/index\.html$/,'');
+ assert(html.includes(url),'Absolute page URL missing: '+rel);
+ if(route.startsWith('tools/')){
+  assert(html.includes('class="dv-related-links"'),'Tool links missing: '+rel);
+  tips++;
+ }
+ headCount++;
+}
+assert.equal(headerTemplates.size,10,'All ten language headers are not present');
+assert.equal(tips,180,'Expected tool-specific guidance on all 180 tool pages');
+assert.equal(headCount,320);
+console.log('PASS: identical header per locale, 320 meaningful pages, 180 tool guidance sections and metadata');
