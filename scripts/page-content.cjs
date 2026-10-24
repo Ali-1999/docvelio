@@ -258,6 +258,18 @@ guides:['guides/organize-pages','guides/scanned-documents'],
 'guides/word-formatting':['word-editor','guides'],
 'guides/privacy':['privacy','contact']
 };
+const guidanceTitles={
+ en:'Helpful tips and related tools',
+ es:'Consejos y herramientas relacionadas',
+ fr:'Conseils et outils associés',
+ de:'Tipps und passende Tools',
+ pt:'Dicas e ferramentas relacionadas',
+ ar:'نصائح وأدوات ذات صلة',
+ hi:'उपयोगी सुझाव और संबंधित टूल',
+ id:'Tips dan alat terkait',
+ tr:'İpuçları ve ilgili araçlar',
+ zh:'使用提示与相关工具'
+};
 const otherCopy={
 en:'Find a relevant next step in the document workflow, or read the linked help information before working with sensitive files.',
 es:'Consulta la información de ayuda relacionada antes de trabajar con archivos sensibles o continuar con otra tarea.',
@@ -301,9 +313,32 @@ function walk(dir){
   }
   if(!/<\/main>/.test(html))throw Error('No main element: '+rel);
   const links='<div class="dv-related-links">'+chosen.filter(slug=>fs.existsSync(path.join(base,lang==='en'?'':lang,(slug.startsWith('guides/')||['about','privacy','cookies','terms','contact','disclaimer','accessibility','guides'].includes(slug)?slug:'tools/'+slug),'index.html'))).map(slug=>'<a href="'+anchor(lang,slug)+'">'+esc(labelFor(lang,slug))+'</a>').join('')+'</div>';
-  const editorial='<section class="dv-editorial" data-dv-editorial="1" aria-label="'+esc(label)+'"><h2>'+esc(label)+'</h2><p>'+esc(paragraph)+'</p>'+links+'</section>';
-  // Keep the new content within <main>, not after the footer.
-  html=html.replace('</main>',editorial+'</main>');
+  // Always put advisory copy in a normal content container. The previous version
+  // inserted an unwrapped section before </main>, making it span the viewport.
+  const heading=idx>=0?guidanceTitles[lang]:label;
+  const editorial='<section class="dv-editorial-zone" aria-label="'+esc(heading)+'"><div class="container dv-editorial-container"><div class="dv-editorial" data-dv-editorial="1"><h2>'+esc(heading)+'</h2><p>'+esc(paragraph)+'</p>'+links+'</div></div></section>';
+  if(idx>=0){
+   // Place tool tips immediately after the tool workspace's first section.
+   // Match nested <section> elements correctly rather than using the first
+   // </section> string. This covers both original and generated tool pages.
+   const mainOpen=html.search(/<main\b[^>]*>/i);
+   if(mainOpen<0)throw Error('Missing main: '+rel);
+   const sectionTags=/<\/?section\b[^>]*>/gi;
+   sectionTags.lastIndex=mainOpen;
+   let depth=0,insertAt=-1,found=false,match;
+   while((match=sectionTags.exec(html))){
+    if(match[0].startsWith('</')){
+     depth--;
+     if(found&&depth===0){insertAt=sectionTags.lastIndex;break;}
+    }else{depth++;found=true;}
+   }
+   if(insertAt<0||insertAt>html.indexOf('</main>'))throw Error('Could not place tool help: '+rel);
+   html=html.slice(0,insertAt)+editorial+html.slice(insertAt);
+  }else{
+   // Guides and policy content retain their original layout, with the
+   // supplementary links in a centred, contained region at the end.
+   html=html.replace('</main>',editorial+'</main>');
+  }
   fs.writeFileSync(file,html);
  }
 }

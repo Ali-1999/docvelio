@@ -121,3 +121,43 @@ assert.equal(headerTemplates.size,10,'All ten language headers are not present')
 assert.equal(tips,180,'Expected tool-specific guidance on all 180 tool pages');
 assert.equal(headCount,320);
 console.log('PASS: identical header per locale, 320 meaningful pages, 180 tool guidance sections and metadata');
+
+
+/* Layout regression: the tool guide must be contained and follow the workspace,
+ * not be rendered flush-left below the entire page (reported on Edit PDF).
+ */
+for(const locale of languages){
+ const prefix=locale?locale+'/':'';
+ for(const slug of [...originalTools,...tools]){
+  const file=path.join(root,prefix+'tools/'+slug+'/index.html');
+  const html=fs.readFileSync(file,'utf8');
+  const article='<section class="dv-editorial-zone"';
+  const articleAt=html.indexOf(article),mainAt=html.indexOf('<main');
+  assert(articleAt>mainAt,'Guidance missing or outside main: '+prefix+slug);
+  assert(html.indexOf('</main>')>articleAt,'Guidance inserted after main: '+prefix+slug);
+  assert(html.includes('<div class="container dv-editorial-container">'),'Guidance has no responsive page container: '+prefix+slug);
+  const pattern=/<\/?section\b[^>]*>/gi;
+  pattern.lastIndex=mainAt;
+  let depth=0,firstEnd=-1,started=false,match;
+  while((match=pattern.exec(html))){
+   if(match[0].startsWith('</')){
+    depth--;
+    if(started&&depth===0){firstEnd=pattern.lastIndex;break;}
+   }else{depth++;started=true;}
+  }
+  assert.equal(articleAt,firstEnd,'Guidance must follow the tool workspace: '+prefix+slug);
+  assert(html.includes('class="dv-related-links"'),'Related tools missing: '+prefix+slug);
+ }
+}
+for(const locale of languages){
+ const prefix=locale?locale+'/':'';
+ for(const slug of ['','about/','privacy/','guides/']){
+  const p=path.join(root,prefix+slug+'index.html');
+  const html=fs.readFileSync(p,'utf8');
+  assert(html.includes('<div class="container dv-editorial-container">'),'Non-tool editorial layout is not contained: '+prefix+slug);
+ }
+}
+const editPage=fs.readFileSync(path.join(root,'tools/edit-pdf/index.html'),'utf8');
+assert(editPage.indexOf('class="dv-editorial-zone"')<editPage.indexOf('class="container seo-help"'),
+ 'Edit PDF guidance should precede its additional help article');
+console.log('PASS: 180 in-flow tool guidance cards and 40 other aligned page sections.');
