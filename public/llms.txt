@@ -1,0 +1,35 @@
+# Docvelio
+
+> Browser-based document tools for PDF and Word. These pages describe the tools and their practical limitations; check the live tools and guides before relying on a conversion.
+
+- Official website: https://docvelio.com/
+- Operator: Ali Hamza, Riyadh, Saudi Arabia
+- Contact: https://docvelio.com/contact/
+- Languages: English, Spanish, French, German, Portuguese, Arabic, Hindi, Indonesian, Turkish and Simplified Chinese
+- Sitemap: https://docvelio.com/sitemap.xml
+
+## Tools
+
+- [PDF editor](https://docvelio.com/tools/edit-pdf/): Add visible annotations, not direct rewriting of original PDF text.
+- [Word editor](https://docvelio.com/tools/word-editor/): Basic document editing; complex DOCX formatting may vary.
+- [Merge PDF](https://docvelio.com/tools/merge-pdf/): Combine PDF files.
+- [Split PDF](https://docvelio.com/tools/split-pdf/): Extract chosen PDF pages.
+- [Organize PDF](https://docvelio.com/tools/organize-pdf/): Reorder and duplicate pages by page number.
+- [Sign PDF](https://docvelio.com/tools/sign-pdf/): Add a handwritten signature image, not a certificate-based signature.
+- [Fill PDF Forms](https://docvelio.com/tools/fill-pdf/): Fill existing interactive form fields.
+- [PDF to JPG](https://docvelio.com/tools/pdf-to-jpg/): Convert rendered pages to images.
+- [PDF to PNG](https://docvelio.com/tools/pdf-to-png/): Export page images.
+- [Extract PDF Text](https://docvelio.com/tools/pdf-to-text/): Extract selectable text only; no OCR.
+- [Compress PDF](https://docvelio.com/tools/compress-pdf/): Raster-based compression may lose searchable text, links and forms.
+
+## Guides and policies
+
+- [Guides](https://docvelio.com/guides/)
+- [Safe PDF editing](https://docvelio.com/guides/edit-pdf-safely/)
+- [Scanned PDFs and OCR](https://docvelio.com/guides/scanned-documents/)
+- [Privacy](https://docvelio.com/privacy/)
+- [Terms](https://docvelio.com/terms/)
+
+## Technical notes
+
+Files processed by these tools generally remain in the user's browser; third-party library providers may receive ordinary network metadata. Check individual tool notes for feature and format limitations. This file is an optional discovery aid, not a replacement for the sitemap.

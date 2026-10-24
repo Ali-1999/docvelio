@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: /
-# Preview only. Run scripts/prepare_launch.py after connecting docvelio.com.
+Allow: /
+
+Sitemap: https://docvelio.com/sitemap.xml
