@@ -1,0 +1,29 @@
+name: Docvelio tool build check
+on:
+  pull_request:
+  push:
+    branches:
+      - feature/ux-editors-seo-adsense-audit
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JavaScript syntax
+        run: |
+          node --check public/assets/extra-tools.js
+          node --check public/assets/improvements.js
+          node --check scripts/extend-toolkit.cjs
+          node --check scripts/build-docvelio.cjs
+          node --check scripts/test-docvelio.cjs
+      - name: Generate the website
+        run: |
+          node scripts/extend-toolkit.cjs
+          node scripts/build-docvelio.cjs
+      - name: Check localized tools and indexing metadata
+        run: node scripts/test-docvelio.cjs

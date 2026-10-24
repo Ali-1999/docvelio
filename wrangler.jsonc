@@ -1,5 +1,11 @@
 {
   "name": "docvelio",
   "compatibility_date": "2026-10-20",
-  "assets": { "directory": "./public", "html_handling": "auto-trailing-slash" }
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash"
+  },
+  "build": {
+    "command": "node scripts/extend-toolkit.cjs && node scripts/build-docvelio.cjs"
+  }
 }
