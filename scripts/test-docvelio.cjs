@@ -45,3 +45,16 @@ for(const locale of languages){
  }
 }
 console.log('PASS: 90 localized routes, SEO, owner details and build output.');
+
+const shareCode=fs.readFileSync(path.join(root,'assets','social-sharing.js'),'utf8');
+const shareStyles=fs.readFileSync(path.join(root,'assets','social-sharing.css'),'utf8');
+for(const platform of ['whatsapp','facebook','linkedin','x','telegram']){
+ assert(shareCode.includes("id:'"+platform+"'"),'Missing share platform '+platform);
+ assert(shareStyles.includes('.dv-share-'+platform),'Missing platform style '+platform);
+}
+for(const essential of ['dv-share-grid','dv-share-platform-icon','dv-share-url-input','dv-share-copy','aria-live']){
+ assert(shareCode.includes(essential),'Missing share control '+essential);
+}
+assert(shareCode.includes('icons.check'),'Copy confirmation must be visual');
+assert(shareStyles.includes('@media(max-width:540px)'),'Mobile share layout missing');
+console.log('PASS: branded icon share layout, copy interaction and 5 platform links.');
