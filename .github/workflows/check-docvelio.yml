@@ -34,4 +34,6 @@ jobs:
           node scripts/page-content.cjs
           node scripts/seo-audit-fixes.cjs
       - name: Check localized tools and indexing metadata
-        run: node scripts/test-docvelio.cjs
+        run: |
+          node scripts/test-docvelio.cjs
+          python3 scripts/verify-sitemap.py
