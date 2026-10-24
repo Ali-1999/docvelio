@@ -3,17 +3,18 @@ on:
   pull_request:
   push:
     branches:
-      - feature/ux-editors-seo-adsense-audit
+      - main
 jobs:
   build-and-check:
     runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: '22'
+          package-manager-cache: false
       - name: Check JavaScript syntax
         run: |
           node --check public/assets/extra-tools.js
