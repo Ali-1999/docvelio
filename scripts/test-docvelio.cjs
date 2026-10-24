@@ -52,9 +52,19 @@ for(const platform of ['whatsapp','facebook','linkedin','x','telegram']){
  assert(shareCode.includes("id:'"+platform+"'"),'Missing share platform '+platform);
  assert(shareStyles.includes('.dv-share-'+platform),'Missing platform style '+platform);
 }
-for(const essential of ['dv-share-grid','dv-share-platform-icon','dv-share-url-input','dv-share-copy','aria-live']){
- assert(shareCode.includes(essential),'Missing share control '+essential);
+for(const essential of ['dv-sharing--compact','dv-share-buttons','dv-share-icon','dv-share-copy','aria-live','intro.after(panel)','toolPath']){
+ assert(shareCode.includes(essential),'Missing compact share behavior '+essential);
 }
 assert(shareCode.includes('icons.check'),'Copy confirmation must be visual');
-assert(shareStyles.includes('@media(max-width:540px)'),'Mobile share layout missing');
-console.log('PASS: branded icon share layout, copy interaction and 5 platform links.');
+assert(shareStyles.includes('@media(max-width:520px)'),'Mobile share styling missing');
+assert(!shareStyles.includes('.dv-share-tile'),'Oversized sharing tiles should be removed');
+const originalTools=['merge-pdf','split-pdf','rotate-pdf','images-to-pdf','watermark-pdf','remove-pages','view-pdf','edit-pdf','word-editor'];
+for(const locale of languages){
+ for(const tool of [...originalTools,...tools]){
+  const prefix=locale?locale+'/':'';
+  const html=fs.readFileSync(path.join(root,prefix,'tools',tool,'index.html'),'utf8');
+  assert(html.includes('/assets/social-sharing.js'),'No share icons in '+locale+'/'+tool);
+  assert(html.includes('/assets/social-sharing.css'),'No sharing CSS in '+locale+'/'+tool);
+ }
+}
+console.log('PASS: compact social icons available on 180 tool pages across 10 languages.');
