@@ -80,11 +80,12 @@ function listPages(folder){
  }
 }
 listPages(root);
-assert(htmlPages.length===320,'Expected 320 HTML pages including generated localized tools, got '+htmlPages.length);
+assert(htmlPages.length===321,'Expected 320 index pages plus the custom 404 page, got '+htmlPages.length);
 const headerTemplates=new Map(),titles=new Set(),pageTitles=new Map();
 let tips=0,headCount=0;
 for(const file of htmlPages){
  const rel=path.relative(root,file).replaceAll('\\','/');
+ if(!rel.endsWith('/index.html')&&rel!=='index.html')continue;
  const parts=rel.split('/');
  const locale=['es','fr','de','pt','ar','hi','id','tr','zh'].includes(parts[0])?parts.shift():'en';
  const route=parts.slice(0,-1).join('/');
