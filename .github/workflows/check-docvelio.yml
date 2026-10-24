@@ -24,6 +24,7 @@ jobs:
           node --check scripts/build-docvelio.cjs
           node --check scripts/site-shell.cjs
           node --check scripts/page-content.cjs
+          node --check scripts/seo-audit-fixes.cjs
           node --check scripts/test-docvelio.cjs
       - name: Generate the website
         run: |
@@ -31,5 +32,6 @@ jobs:
           node scripts/build-docvelio.cjs
           node scripts/site-shell.cjs
           node scripts/page-content.cjs
+          node scripts/seo-audit-fixes.cjs
       - name: Check localized tools and indexing metadata
         run: node scripts/test-docvelio.cjs
