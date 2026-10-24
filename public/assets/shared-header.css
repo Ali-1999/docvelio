@@ -1,0 +1,50 @@
+/* Same navigation and spacing on all languages, guides, legal pages, and tool routes. */
+.dv-site-header{position:sticky;top:0;z-index:70;width:100%;background:rgba(255,255,255,.97);border-bottom:1px solid #e7edf6;backdrop-filter:blur(12px)}
+.dv-site-header .dv-site-nav{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:20px;min-height:76px;padding-block:8px;position:relative}
+.dv-site-header .brand{display:inline-flex;align-items:center;flex-shrink:0;gap:9px;font-size:1.34rem;text-decoration:none;white-space:nowrap}
+.dv-site-header .brandmark{width:38px;height:38px;display:inline-grid;place-items:center;background:transparent!important;box-shadow:none!important;margin:0}
+.dv-site-header .brandmark img{width:34px;height:34px;display:block;object-fit:contain}
+.dv-site-header .links{display:flex;align-items:center;flex-wrap:nowrap;gap:clamp(10px,1.65vw,24px)}
+.dv-site-header .links a{font-size:.88rem;font-weight:650;line-height:1.4;white-space:nowrap;color:#374f71}
+.dv-site-header .links a:hover{color:#155dd1}
+.dv-site-header .nav-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.dv-site-header .dv-language-label{white-space:nowrap;display:flex;align-items:center;gap:5px}
+.dv-site-header #language-select{max-width:140px;min-width:100px;min-height:40px;background:white;border:1px solid #dae4f1;border-radius:10px;color:#2e476a;padding:5px 7px}
+.dv-site-header .nav-start{display:inline-flex;align-items:center;gap:5px;min-height:42px;font-size:.85rem;padding:9px 12px;border-radius:10px;white-space:nowrap}
+.dv-site-header .mobile-toggle{display:none}
+@media(max-width:1090px){
+ .dv-site-header .links{gap:10px}
+ .dv-site-header .links a{font-size:.82rem}
+ .dv-site-header .nav-start{display:none}
+}
+@media(max-width:860px){
+ .dv-site-header .dv-site-nav{min-height:67px;gap:12px;padding-block:9px}
+ .dv-site-header .links{display:none;position:absolute;top:calc(100% - 1px);inset-inline:0;left:0;right:0;
+   flex-direction:column;align-items:stretch;gap:0;padding:10px;background:#fff;
+   border:1px solid #e1eaf5;border-radius:0 0 14px 14px;box-shadow:0 16px 30px rgba(20,47,91,.12)}
+ .dv-site-header .links.open{display:flex}
+ .dv-site-header .links a{display:block;font-size:.94rem;padding:12px 13px;white-space:normal;border-radius:8px}
+ .dv-site-header .links a:hover{background:#eef5ff}
+ .dv-site-header .mobile-toggle{display:inline-flex;align-items:center;justify-content:center;
+   min-width:43px;min-height:43px;padding:8px;background:#fff;border:1px solid #d9e5f3;border-radius:10px;
+   color:#233d60;font-size:20px}
+}
+@media(max-width:430px){
+ .dv-site-header .brand{font-size:1.13rem;gap:5px}
+ .dv-site-header .brandmark{width:32px;height:32px}
+ .dv-site-header .brandmark img{width:31px;height:31px}
+ .dv-site-header #language-select{min-width:75px;max-width:100px;font-size:.78rem}
+ .dv-site-header .nav-actions{gap:6px}
+ .dv-site-header .dv-language-label{gap:2px}
+}
+.dv-site-header a:focus-visible,.dv-site-header button:focus-visible,.dv-site-header select:focus-visible{outline:3px solid #ffb34f;outline-offset:2px}
+html[dir="rtl"] .dv-site-header .links{text-align:right}
+@media(prefers-reduced-motion:reduce){.dv-site-header *{scroll-behavior:auto!important}}
+/* Editorial help sections generated from individual tool behavior, not keyword stuffing. */
+.dv-editorial{margin:30px 0 20px;border-top:1px solid #e0eaf5;padding:25px 0 4px;color:#40516c}
+.dv-editorial h2{color:#153355;font-size:1.3rem;margin:0 0 12px}
+.dv-editorial p{font-size:.99rem;line-height:1.75}
+.dv-editorial .dv-related-links{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 4px}
+.dv-editorial .dv-related-links a{display:inline-flex;align-items:center;min-height:38px;padding:8px 12px;background:#edf5ff;border:1px solid #d1e2f7;border-radius:9px;color:#1555ab;text-decoration:none;font-size:.84rem;font-weight:700}
+.dv-editorial .dv-related-links a:hover{background:#dcecff}
+.dv-editorial-meta{margin:20px 0 10px;color:#556a88;font-size:.94rem}
