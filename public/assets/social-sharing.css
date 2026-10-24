@@ -2,13 +2,95 @@
 .brandmark{background:transparent!important;box-shadow:none!important;overflow:visible!important}
 .dv-hero-logo{display:block;width:min(250px,75%);height:auto;max-height:90px;object-fit:contain;object-position:left center;margin:0 0 16px}
 .dv-footer-brand-icon{width:27px;height:27px;margin-inline-end:7px;vertical-align:middle}
-.dv-sharing{margin-top:28px;padding:20px;border:1px solid #cadcf4;border-radius:18px;background:linear-gradient(115deg,#eef6ff,#f7fffe);color:#102e51;max-width:100%;box-shadow:0 9px 24px rgba(25,66,130,.06)}
-.dv-sharing h2{font-size:1.1rem;color:#12335b;margin:0 0 12px;font-weight:760}
-.dv-share-buttons{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
-.dv-share-button{appearance:none;display:inline-flex;justify-content:center;align-items:center;text-align:center;min-height:43px;border:1px solid #bfd4ec!important;border-radius:10px;padding:9px 13px!important;background:#fff!important;color:#154b80!important;text-decoration:none!important;font:700 .88rem/1.2 system-ui,-apple-system,sans-serif;cursor:pointer;margin:0!important}
-.dv-share-button:hover{background:#dfefff!important;border-color:#95c5ef!important}
-.dv-share-button:focus-visible{outline:3px solid #ffb13c;outline-offset:3px}
-.dv-share-button:first-child{background:#1263d6!important;color:#fff!important;border-color:#1263d6!important}
-@media(max-width:580px){.dv-sharing{padding:14px}.dv-share-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.dv-share-button{min-width:0;white-space:normal}.dv-hero-logo{width:min(205px,72%)}}
-@media(prefers-reduced-motion:reduce){.dv-share-button{transition:none!important}}
+
+/* Premium sharing card: compact, icon-led and fully responsive. */
+.dv-sharing{
+  --dv-shadow:0 18px 48px rgba(14,45,89,.13);
+  position:relative;isolation:isolate;overflow:hidden;
+  margin:32px 0 26px;padding:28px 30px 26px;
+  border:1px solid #d6e5f7;border-radius:24px;
+  background:linear-gradient(145deg,#fff 3%,#f2f8ff 72%,#effcfb 100%);
+  box-shadow:var(--dv-shadow);color:#142b4a;text-align:start;
+}
+.dv-sharing::before{
+  content:"";position:absolute;z-index:-1;right:-85px;top:-100px;
+  width:260px;height:260px;border-radius:50%;
+  background:radial-gradient(circle,rgba(36,116,255,.09),transparent 70%);
+  pointer-events:none;
+}
+.dv-share-header{display:flex;align-items:center;gap:15px;margin-bottom:21px}
+.dv-share-emblem{
+  display:grid;place-items:center;flex:0 0 auto;width:52px;height:52px;
+  border-radius:17px;background:linear-gradient(135deg,#1163e5,#00abc1);color:#fff;
+  box-shadow:0 9px 20px rgba(19,103,208,.19);
+}
+.dv-share-emblem svg{width:23px;height:23px}
+.dv-share-intro{min-width:0}
+.dv-share-eyebrow{margin:0 0 1px!important;color:#3677b8!important;
+  font-size:11px;font-weight:850;letter-spacing:.16em;line-height:1.4}
+.dv-sharing h2.dv-share-title{font-size:clamp(17px,2vw,20px);
+  line-height:1.3;margin:0 0 3px;color:#122f51;letter-spacing:-.02em}
+.dv-share-subtitle{margin:0!important;color:#617794!important;font-size:13px;line-height:1.5}
+.dv-share-url-row{display:flex;align-items:stretch;gap:10px}
+.dv-share-url-input{
+  flex:1 1 auto;min-width:0;min-height:46px;border-radius:12px;
+  border:1px solid #d0e0f1;background:#fff;color:#50647e;
+  font:500 13px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;
+  padding:12px 15px;overflow:hidden;text-overflow:ellipsis;
+}
+.dv-share-url-input:focus{outline:2px solid #87bdfc;outline-offset:1px}
+.dv-share-copy,.dv-share-native{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  border:1px solid transparent;border-radius:12px;min-height:46px;
+  padding:9px 16px;font:750 13px/1.25 system-ui,-apple-system,"Segoe UI",sans-serif;
+  color:#fff;background:linear-gradient(135deg,#0f64dc,#2086e9);
+  cursor:pointer;white-space:nowrap;transition:transform .16s ease,box-shadow .16s ease;
+  box-shadow:0 8px 19px rgba(21,104,214,.15);
+}
+.dv-share-copy:hover,.dv-share-native:hover{box-shadow:0 12px 24px rgba(21,104,214,.23);transform:translateY(-1px)}
+.dv-share-copy.dv-is-copied{background:linear-gradient(135deg,#078a6d,#1fbd95)}
+.dv-share-btn-icon{display:inline-flex;align-items:center;justify-content:center}
+.dv-share-btn-icon svg{width:17px;height:17px}
+.dv-share-divider{position:relative;display:flex;align-items:center;gap:12px;margin:23px 0 15px;color:#7b8faa}
+.dv-share-divider::after{content:"";height:1px;background:#d6e4f4;flex:1}
+.dv-share-divider span{font-size:11px;font-weight:750;text-transform:uppercase;letter-spacing:.09em}
+.dv-share-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.dv-share-tile{
+  --brand:#0b69b2;display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:9px;min-width:0;min-height:104px;
+  border:1px solid #dae6f3;border-radius:16px;background:#fff;
+  color:#233a58;text-decoration:none!important;
+  box-shadow:0 5px 16px rgba(15,62,117,.025);
+  transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease,background .16s ease;
+}
+.dv-share-tile:hover{background:#fbfdff;border-color:#b0cfee;transform:translateY(-3px);box-shadow:0 12px 28px rgba(26,67,123,.11)}
+.dv-share-platform-icon{
+  display:grid;place-items:center;width:43px;height:43px;border-radius:14px;
+  background:var(--brand);color:#fff;
+}
+.dv-share-platform-icon svg{display:block;width:21px;height:21px}
+.dv-share-provider-name{font:750 12px/1.25 system-ui,-apple-system,"Segoe UI",sans-serif;color:#314763}
+.dv-share-whatsapp{--brand:#20bd67}.dv-share-facebook{--brand:#176af0}
+.dv-share-linkedin{--brand:#0b73b7}.dv-share-x{--brand:#111827}.dv-share-telegram{--brand:#2199d6}
+.dv-share-native{margin-top:16px;width:100%;border-color:#d1e4f7;background:#fff;color:#1d5fba;box-shadow:none}
+.dv-share-feedback{min-height:0;margin:5px 0 0;color:#087962;font-size:12px}
+.dv-share-feedback:empty{display:none}
+.dv-sharing button:focus-visible,.dv-sharing a:focus-visible{outline:3px solid #f9b85b;outline-offset:3px}
+html[dir="rtl"] .dv-share-url-input{direction:ltr;text-align:left}
+@media(max-width:850px){
+ .dv-sharing{padding:22px 19px}
+ .dv-share-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .dv-share-tile{min-height:96px}
+}
+@media(max-width:540px){
+ .dv-sharing{margin:24px 0;padding:20px 15px;border-radius:18px}
+ .dv-share-header{gap:11px}
+ .dv-share-emblem{width:44px;height:44px;border-radius:14px}
+ .dv-share-url-row{gap:8px}
+ .dv-share-copy{padding:8px 12px}
+ .dv-share-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .dv-share-tile{min-height:92px;gap:6px;border-radius:13px}
+ .dv-share-platform-icon{width:38px;height:38px;border-radius:12px}
+}
+@media(prefers-reduced-motion:reduce){.dv-sharing .dv-share-tile,.dv-sharing .dv-share-copy,.dv-sharing .dv-share-native{transition:none}}
 html[dir="rtl"] .dv-hero-logo{object-position:right center}
