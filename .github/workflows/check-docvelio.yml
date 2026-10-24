@@ -19,6 +19,7 @@ jobs:
         run: |
           node --check public/assets/extra-tools.js
           node --check public/assets/improvements.js
+          node --check public/assets/social-sharing.js
           node --check scripts/extend-toolkit.cjs
           node --check scripts/build-docvelio.cjs
           node --check scripts/test-docvelio.cjs
