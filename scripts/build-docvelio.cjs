@@ -50,7 +50,7 @@ function walk(dir){
 }
 walk(base);
 fs.writeFileSync(path.join(base,'robots.txt'),'User-agent: *\nAllow: /\n\nSitemap: https://docvelio.com/sitemap.xml\n');
-fs.writeFileSync(path.join(base,'_headers'),'/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n');
+fs.writeFileSync(path.join(base,'_headers'),'/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n\n/sitemap.xml\n  Content-Type: application/xml; charset=utf-8\n\n/sitemap.txt\n  Content-Type: text/plain; charset=utf-8\n\n/robots.txt\n  Content-Type: text/plain; charset=utf-8\n');
 fs.writeFileSync(path.join(base,'ads.txt'),'# Docvelio has not received an AdSense publisher ID. Add Google’s real authorised-seller line after account setup.\n');
 if(count<230)throw new Error('Expected multilingual document pages not found: '+count);
 for(const locale of locales){if(locale!=='en'&&!fs.existsSync(path.join(base,locale,'index.html')))throw new Error('Missing language: '+locale);}
