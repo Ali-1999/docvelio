@@ -31,7 +31,8 @@
 .dv-cookie-accept,.dv-cookie-reject{flex:0 0 auto}
 .dv-cookie-accept{background:#1465d6;color:white;border-color:#1465d6}
 .dv-cookie-accept:hover{background:#074db4;color:white}
-.dv-cookie-reject{background:white;color:#174f90;border-color:#b7cce3}
+.dv-cookie-reject{background:#0e7480;color:white;border-color:#0e7480}
+.dv-cookie-reject:hover{background:#075763;color:#fff}
 .dv-cookie-more{background:transparent;color:#496986;border-color:transparent}
 .dv-cookie-policy{margin-inline-start:auto;text-decoration:underline;text-underline-offset:3px;
  color:#1c659d;font-size:.81rem;font-weight:680;padding:10px 3px}
