@@ -285,7 +285,7 @@ function walk(dir){
  for(const ent of fs.readdirSync(dir,{withFileTypes:true})){
   const file=path.join(dir,ent.name);
   if(ent.isDirectory()){walk(file);continue;}
-  if(!ent.name.endsWith('.html'))continue;
+  if(ent.name!=='index.html')continue;
   let html=fs.readFileSync(file,'utf8'),rel=path.relative(base,file).replaceAll('\\','/');
   const p=rel.split('/'),lang=languages.includes(p[0])&&p[0]!=='en'?p.shift():'en',route=p.slice(0,-1).join('/');
   if(html.includes('data-dv-editorial="1"'))continue;
