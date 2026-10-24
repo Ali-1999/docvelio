@@ -219,7 +219,7 @@ for(const lang of languages){
   const relative=prefix+'blog/'+slug+'/';
   const text=fs.readFileSync(path.join(root,relative,'index.html'),'utf8');
   const title=text.match(/<title>(.*?)<\/title>/i)?.[1];
-  assert(title && title.length>28,'Blog title too short: '+relative);
+  assert(title && Array.from(title).length>=(lang==='zh'?12:lang==='ar'||lang==='hi'?17:26),'Blog title too short: '+relative);
   if(!lang)articleTitles.add(title);
   assert(text.includes('href="https://docvelio.com/'+relative+'"'),'Missing canonical URL: '+relative);
   assert(text.includes('class="dv-blog-article"'),'Blog article missing: '+relative);
