@@ -31,4 +31,17 @@ for(const locale of ['','es','ar']){
  const contact=fs.readFileSync(path.join(root,locale?locale+'/':'','contact','index.html'),'utf8');
  assert(contact.includes('alihamzasbr@gmail.com'),'Missing public operator email: '+locale);
 }
+for(const required of ['docvelio-logo-icon.svg','docvelio-logo.svg','docvelio-social-card.svg','social-sharing.js','social-sharing.css']){
+ assert(fs.existsSync(path.join(root,'assets',required)), 'Missing branding asset '+required);
+}
+for(const locale of languages){
+ const prefix=locale?locale+'/':'';
+ for(const route of ['index.html','tools/organize-pdf/index.html','tools/edit-pdf/index.html']){
+  const html=fs.readFileSync(path.join(root,prefix,route),'utf8');
+  assert(html.includes('/assets/social-sharing.js'),'Missing share script: '+prefix+route);
+  assert(html.includes('/assets/social-sharing.css'),'Missing share styling: '+prefix+route);
+  assert(html.includes('property="og:image"'),'Missing OG image: '+prefix+route);
+  assert(html.includes('name="twitter:image"'),'Missing social image: '+prefix+route);
+ }
+}
 console.log('PASS: 90 localized routes, SEO, owner details and build output.');

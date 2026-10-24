@@ -39,6 +39,12 @@ function walk(dir){
   }
   if(!doc.includes('/assets/upgrade.css'))doc=doc.replace('</head>','<link rel="stylesheet" href="/assets/upgrade.css"></head>');
   if(!doc.includes('/assets/improvements.js'))doc=doc.replace('</body>','<script defer src="/assets/improvements.js"></script></body>');
+  // Site-wide Docvelio branding and sharing, including every generated language route.
+  if(!doc.includes('/assets/social-sharing.css'))doc=doc.replace('</head>','<link rel="stylesheet" href="/assets/social-sharing.css"></head>');
+  if(!doc.includes('/assets/social-sharing.js'))doc=doc.replace('</body>','<script defer src="/assets/social-sharing.js"></script></body>');
+  if(!doc.includes('property="og:image"'))doc=doc.replace('</head>','<meta property="og:image" content="https://docvelio.com/assets/docvelio-social-card.svg"><meta property="og:image:type" content="image/svg+xml"><meta property="og:image:alt" content="Docvelio PDF and Word document tools"></head>');
+  if(!doc.includes('name="twitter:image"'))doc=doc.replace('</head>','<meta name="twitter:image" content="https://docvelio.com/assets/docvelio-social-card.svg"></head>');
+  doc=doc.replace(/content="summary" name="twitter:card"/g,'content="summary_large_image" name="twitter:card"').replace(/name="twitter:card" content="summary"/g,'name="twitter:card" content="summary_large_image"');
   if(before!==doc){fs.writeFileSync(full,doc);updated++;}
  }
 }
