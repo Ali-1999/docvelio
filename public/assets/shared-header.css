@@ -40,11 +40,33 @@
 .dv-site-header a:focus-visible,.dv-site-header button:focus-visible,.dv-site-header select:focus-visible{outline:3px solid #ffb34f;outline-offset:2px}
 html[dir="rtl"] .dv-site-header .links{text-align:right}
 @media(prefers-reduced-motion:reduce){.dv-site-header *{scroll-behavior:auto!important}}
-/* Editorial help sections generated from individual tool behavior, not keyword stuffing. */
-.dv-editorial{margin:30px 0 20px;border-top:1px solid #e0eaf5;padding:25px 0 4px;color:#40516c}
-.dv-editorial h2{color:#153355;font-size:1.3rem;margin:0 0 12px}
-.dv-editorial p{font-size:.99rem;line-height:1.75}
-.dv-editorial .dv-related-links{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 4px}
-.dv-editorial .dv-related-links a{display:inline-flex;align-items:center;min-height:38px;padding:8px 12px;background:#edf5ff;border:1px solid #d1e2f7;border-radius:9px;color:#1555ab;text-decoration:none;font-size:.84rem;font-weight:700}
-.dv-editorial .dv-related-links a:hover{background:#dcecff}
-.dv-editorial-meta{margin:20px 0 10px;color:#556a88;font-size:.94rem}
+/* In-flow help: attached to the tool workspace, never stretched across the viewport. */
+.dv-editorial-zone{padding:10px 0 22px;margin:0;background:transparent}
+.dv-editorial-container{width:min(100% - 32px,1050px);margin-inline:auto}
+.dv-editorial{
+  margin:0;padding:21px 24px;
+  border:1px solid #dbe5f1;border-radius:15px;
+  background:#fff;box-shadow:0 6px 22px rgba(30,65,112,.045);
+  color:#465773;max-width:100%;
+}
+.dv-editorial h2{
+  color:#193958;font-size:clamp(1.04rem,1.7vw,1.21rem);
+  line-height:1.4;margin:0 0 8px;font-weight:750;letter-spacing:-.015em
+}
+.dv-editorial p{font-size:.94rem;line-height:1.7;margin:0 0 15px;max-width:76ch}
+.dv-editorial .dv-related-links{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:0}
+.dv-editorial .dv-related-links a{
+  display:inline-flex;align-items:center;min-height:35px;
+  padding:7px 11px;border:1px solid #d5e3f6;border-radius:9px;
+  background:#f1f6ff;color:#164eaa;text-decoration:none;
+  font-size:.82rem;font-weight:720;line-height:1.25;
+}
+.dv-editorial .dv-related-links a:hover{background:#e5f0ff;border-color:#a9caec}
+.dv-editorial .dv-related-links a:focus-visible{outline:3px solid #f6b13a;outline-offset:2px}
+@media(max-width:600px){
+  .dv-editorial-zone{padding:6px 0 18px}
+  .dv-editorial-container{width:calc(100% - 28px)}
+  .dv-editorial{padding:17px 16px;border-radius:12px}
+  .dv-editorial p{font-size:.91rem;margin-bottom:12px}
+  .dv-editorial .dv-related-links a{min-height:38px}
+}
