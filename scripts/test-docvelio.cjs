@@ -80,7 +80,7 @@ function listPages(folder){
  }
 }
 listPages(root);
-assert(htmlPages.length===441,'Expected 440 index pages plus custom 404, got '+htmlPages.length);
+assert(htmlPages.length===521,'Expected 520 index pages plus custom 404, got '+htmlPages.length);
 const headerTemplates=new Map(),titles=new Set(),pageTitles=new Map();
 let tips=0,headCount=0;
 for(const file of htmlPages){
@@ -101,7 +101,7 @@ for(const file of htmlPages){
  if(!headerTemplates.has(locale))headerTemplates.set(locale,norm);
  assert.equal(norm,headerTemplates.get(locale),'Header differs in language '+locale+': '+rel);
  assert(html.includes('href="/assets/shared-header.css"'),'Shared CSS missing: '+rel);
- assert(html.includes('data-dv-editorial="1"') || route==='blog' || route.startsWith('blog/') || route==='image-editor','Missing relevant page content: '+rel);
+ assert(html.includes('data-dv-editorial="1"') || route==='blog' || route.startsWith('blog/') || (route==='image-editor'||route.startsWith('image-tools/')),'Missing relevant page content: '+rel);
  const heading=(html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/gi)||[]);
  assert(heading.length===1,'Missing or duplicated page heading: '+rel);
  const title=html.match(/<title>([\s\S]*?)<\/title>/i)?.[1];
@@ -119,8 +119,8 @@ for(const file of htmlPages){
 }
 assert.equal(headerTemplates.size,10,'All ten language headers are not present');
 assert.equal(tips,180,'Expected tool-specific guidance on all 180 tool pages');
-assert.equal(headCount,440);
-console.log('PASS: identical header per locale, 440 meaningful pages, 180 tool guidance sections and metadata');
+assert.equal(headCount,520);
+console.log('PASS: identical header per locale, 520 meaningful pages, 180 tool guidance sections and metadata');
 
 
 /* Layout regression: the tool guide must be contained and follow the workspace,
@@ -190,7 +190,7 @@ for(const file of pagesForAlt){
 assert(fs.existsSync(path.join(root,'llms.txt')),'Missing optional llms.txt');
 assert(fs.existsSync(path.join(root,'sitemap.txt')),'Missing TXT sitemap fallback');
 const generatedSitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
-assert((generatedSitemap.match(/<url>/g)||[]).length===440,'Missing sitemap routes');
+assert((generatedSitemap.match(/<url>/g)||[]).length===520,'Missing sitemap routes');
 assert(!/X-Robots-Tag:\s*noindex/i.test(fs.readFileSync(path.join(root,'_headers'),'utf8')),'X-Robots-Tag blocks indexing');
 console.log('PASS: SEOptimer remediation, title, description, image alt attributes and sitemap count.');
 
@@ -234,5 +234,5 @@ for(const lang of languages){
  }
 }
 assert.equal(articleTitles.size,10,'Expected 10 distinct English blog titles');
-assert((generatedSitemap.match(/<url>/g)||[]).length===440,'Blog sitemap coverage missing');
+assert((generatedSitemap.match(/<url>/g)||[]).length===520,'Blog sitemap coverage missing');
 console.log('PASS: 100 localized topic pages, 10 blog indexes, 10 different English topics and multilingual discovery links.');
