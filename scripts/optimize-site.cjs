@@ -32,6 +32,7 @@ walk(root);
 if(pages<490)throw Error('Unexpected number of generated pages: '+pages);
 const wheel=fs.readFileSync(path.join(root,'wheel-of-names','index.html'),'utf8');
 if(!wheel.includes('id="wheel"')||!wheel.includes('/assets/global-navigation.js'))throw Error('Wheel missing functionality or navigation');
+if(!wheel.includes('/assets/style.css')||!wheel.includes('/assets/design-system.css')||!wheel.includes('class="footer"'))throw Error('Wheel shared layout styles/footer missing');
 const home=fs.readFileSync(path.join(root,'index.html'),'utf8');
 if(!home.includes('dv-global-header')||!home.includes('dv-global-links'))throw Error('Shared header missing');
 console.log('PERFORMANCE BUILD: '+pages+' pages, '+images+' below-fold images marked lazy, asset cache applied.');
