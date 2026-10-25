@@ -1,0 +1,10 @@
+'use strict';
+const fs = require('node:fs');
+const path = require('node:path');
+const root = path.resolve(__dirname, '..', 'public');
+const filename = 'yandex_979858cd8ffc24be.html';
+const content = '<html>\n    <head>\n        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">\n    </head>\n    <body>Verification: 979858cd8ffc24be</body>\n</html>\n';
+const target = path.join(root, filename);
+fs.writeFileSync(target, content, 'utf8');
+if (fs.readFileSync(target, 'utf8') !== content) throw new Error('Yandex verification file mismatch');
+console.log('Yandex verification asset confirmed:', filename);
