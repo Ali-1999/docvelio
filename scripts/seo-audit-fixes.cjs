@@ -100,7 +100,7 @@ if(urls.size!==files.length||urls.size>50000)throw Error('Sitemap exceeds allowe
 if(Buffer.byteLength(xml,'utf8')>50*1024*1024)throw Error('Sitemap exceeds Google 50 MiB uncompressed size limit');
 fs.writeFileSync(path.join(root,'sitemap.xml'),xml,{encoding:'utf8'});
 fs.writeFileSync(path.join(root,'sitemap.txt'),[...urls].sort().join('\n')+'\n',{encoding:'utf8'});
-fs.writeFileSync(path.join(root,'robots.txt'),'User-agent: *\nAllow: /\n\nSitemap: https://docvelio.com/sitemap.xml\n');
+fs.writeFileSync(path.join(root,'robots.txt'),'User-agent: *\nAllow: /\n\nSitemap: https://docvelio.com/sitemap.txt\nSitemap: https://docvelio.com/sitemap.xml\n');
 const headers=fs.readFileSync(path.join(root,'_headers'),'utf8');
 if(/X-Robots-Tag:\s*noindex/i.test(headers))throw Error('Page indexing is blocked');
 fs.writeFileSync(path.join(root,'assets','seo-content.css'),'.dv-home-seo{background:#f7faff;border-block:1px solid #e6edf8}.dv-home-seo-inner{max-width:1000px}.dv-home-seo h2{font-size:clamp(1.5rem,2.6vw,2rem);line-height:1.2;color:#103158;margin:0 0 16px}.dv-home-seo h3{font-size:1.15rem;margin:21px 0 7px;color:#15395f}.dv-home-seo p{color:#45607f;line-height:1.8;margin:0 0 13px;max-width:86ch}.dv-home-seo a{color:#155cc3;text-underline-offset:3px}.dv-home-seo a:focus-visible{outline:3px solid #f3b442;outline-offset:3px}\n');
