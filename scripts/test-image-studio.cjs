@@ -21,6 +21,6 @@ for(const lang of langs){const prefix=lang==='en'?'':lang+'/';const route=prefix
  assert(home.includes('class="im-discovery"'),'No image feature discoverability '+route);
 }
 const xml=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
-assert.equal((xml.match(/<loc>/g)||[]).length,520);
+assert.equal((xml.match(/<loc>/g)||[]).length,580);
 for(const lang of langs){const prefix=lang==='en'?'':lang+'/';assert(xml.includes('<loc>https://docvelio.com/'+prefix+'image-editor/</loc>'));}
-console.log('PASS: 10 localized Image Studio routes, functionality, image guards and 520 unique sitemap URLs.');
+console.log('PASS: 10 localized Image Studio routes, functionality, image guards and 580 unique sitemap URLs.');
