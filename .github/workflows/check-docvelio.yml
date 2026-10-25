@@ -41,6 +41,8 @@ jobs:
           node --check scripts/cargo-locales.cjs
           node --check scripts/build-cargo-tools.cjs
           node --check scripts/test-cargo.cjs
+          node --check scripts/check-live-indexing.cjs
+          node --check scripts/test-indexability.cjs
           node --check public/assets/cargo-core.js
           node --check public/assets/cargo-calculator.js
           node --check scripts/test-image-seo.cjs
@@ -74,4 +76,5 @@ jobs:
           node scripts/test-image-studio.cjs
           node scripts/test-image-seo.cjs
           node scripts/test-cargo.cjs
+          node scripts/test-indexability.cjs
           python3 scripts/verify-sitemap.py
