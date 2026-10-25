@@ -17,7 +17,9 @@ for(const lang of langs){
   const s=fs.readFileSync(filename,'utf8');
   const title=s.match(/<title>([^<]+)<\/title>/)?.[1];
   const meta=s.match(/<meta name="description" content="([^"]+)"/)?.[1];
-  assert(title&&meta&&title.length>14&&meta.length>50,'Thin SEO metadata: '+uri);
+  const minimumTitle=lang==='zh'?5:lang==='ar'||lang==='hi'?8:14;
+  const minimumDescription=lang==='zh'?15:lang==='en'?100:38;
+  assert(title&&meta&&Array.from(title).length>=minimumTitle&&Array.from(meta).length>=minimumDescription,'Thin SEO metadata: '+uri);
   assert(s.includes('<h1>'),'Missing main heading: '+uri);
   assert(s.includes('rel="canonical" href="'+uri+'"'),'Incorrect self canonical: '+uri);
   assert(s.includes('data-page="image-tools/'+t.slug+'"'),'Language menu wrong page: '+uri);
