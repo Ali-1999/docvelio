@@ -78,13 +78,6 @@ for(const file of files){
  if(groups.get(route).has(lang))throw Error('Duplicate route/locale: '+route+' '+lang);
  groups.get(route).set(lang,url);
 }
-function sitemapHints(url){
- const p=url.replace(/^https:\/\/docvelio\.com/,'');
- const home=/^\/(?:[a-z]{2}\/)?$/.test(p);
- const tool=/\/(?:tools|image-tools|shipping-tools)\//.test(p)||/\/(?:image-editor|cbm-calculator)\//.test(p);
- const article=/\/(?:blog|guides)\//.test(p);
- return '    <changefreq>'+(home?'weekly':tool||article?'monthly':'yearly')+'</changefreq>\n'+'    <priority>'+(home?'1.0':tool?'0.9':article?'0.7':'0.5')+'</priority>\n';
-}
 const escapeXml=value=>String(value).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');
 let xml='<?xml version="1.0" encoding="UTF-8"?>\n'+
  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
@@ -94,7 +87,7 @@ for(const [route,variants] of [...groups].sort((a,b)=>a[0].localeCompare(b[0])))
   const url=variants.get(lang);
   if(!url||urls.has(url))throw Error('Missing or duplicated URL '+url);
   urls.add(url);
-  xml+='  <url>\n    <loc>'+escapeXml(url)+'</loc>\n'+sitemapHints(url);
+  xml+='  <url>\n    <loc>'+escapeXml(url)+'</loc>\n';
   for(const language of languages){
    xml+='    <xhtml:link rel="alternate" hreflang="'+language+'" href="'+escapeXml(variants.get(language))+'"/>\n';
   }
