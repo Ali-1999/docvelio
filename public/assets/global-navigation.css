@@ -29,3 +29,26 @@
 }
 @media(max-width:430px){.dv-global-header .dv-global-brand{font-size:1.12rem}.dv-global-header .dv-global-actions select{min-width:70px;max-width:96px;font-size:12px}.dv-global-header .dv-global-actions{gap:6px}}
 html[dir="rtl"] .dv-global-header .dv-mega-panel{left:auto;right:0}
+
+/* UI polish: isolated dropdowns, no overlapping mega panels. */
+.dv-global-header .dv-global-nav{isolation:isolate}
+.dv-global-header .dv-global-links{overflow:visible}
+.dv-global-header .dv-mega{flex:none;min-width:0}
+.dv-global-header .dv-mega summary{user-select:none;transition:background-color .18s ease,color .18s ease;padding-inline:11px}
+.dv-global-header .dv-mega summary:hover,.dv-global-header .dv-mega[open]>summary{background:#f0f6ff;color:#1159bf}
+.dv-global-header .dv-mega-panel{display:none;max-width:min(310px,calc(100vw - 32px));width:max-content;min-width:220px;inset-block-start:calc(100% + 7px);z-index:150;box-shadow:0 16px 38px rgba(18,43,78,.16);animation:dv-dropdown-in .16s ease-out both}
+.dv-global-header .dv-mega[open]>.dv-mega-panel{display:grid}
+.dv-global-header .dv-mega-panel a{font-weight:600;transition:background-color .14s ease,color .14s ease}
+.dv-global-header .dv-chevron{display:inline-block;transform:rotate(0);transition:transform .18s ease}
+.dv-global-header .dv-mega[open]>.dv-mega-panel{pointer-events:auto}
+.dv-global-header .dv-mega:not([open])>.dv-mega-panel{pointer-events:none}
+.dv-global-header .dv-global-toggle{cursor:pointer}
+@keyframes dv-dropdown-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:980px){
+ .dv-global-header .dv-global-links:not(.open){display:none}
+ .dv-global-header .dv-global-links.open{display:flex}
+ .dv-global-header .dv-mega-panel{max-width:100%;width:100%;min-width:0;animation:none;position:static;box-shadow:none;background:#f6f9ff}
+ .dv-global-header .dv-mega[open]>.dv-mega-panel{display:grid}
+ .dv-global-header .dv-mega summary{min-height:46px}
+}
+@media(prefers-reduced-motion:reduce){.dv-global-header .dv-mega-panel,.dv-global-header .dv-mega summary,.dv-global-header .dv-chevron{animation:none!important;transition:none!important}}
