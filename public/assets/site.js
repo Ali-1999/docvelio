@@ -2,7 +2,7 @@
 (()=>{'use strict';
 const toggle=document.querySelector('.mobile-toggle');
 const navigation=document.querySelector('.links');
-if(toggle&&navigation)toggle.addEventListener('click',()=>{
+if(toggle&&navigation&&!document.querySelector('.dv-global-header'))toggle.addEventListener('click',()=>{
  const expanded=toggle.getAttribute('aria-expanded')==='true';
  toggle.setAttribute('aria-expanded',String(!expanded));
  navigation.classList.toggle('open',!expanded);
