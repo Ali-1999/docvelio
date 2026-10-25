@@ -2,6 +2,8 @@
 (()=>{'use strict';
  const root=document.querySelector('[data-cargo-calculator]');if(!root)return;
  const C=window.DocvelioCargo;
+ const labels=(()=>{try{return JSON.parse(root.dataset.ui||'[]')}catch(_){return []}})();
+ const l=(i,fallback)=>labels[i]||fallback;
  const tbody=root.querySelector('#cargo-lines'),tpl=root.querySelector('#cargo-row-template');
  const $=id=>root.querySelector('#'+id);
  let rows=0,last=null;
@@ -10,10 +12,10 @@
  function field(row,name){return row.querySelector('[data-field="'+name+'"]');}
  function setText(id,value){$(id).textContent=value;}
  function add(values={}){
-   if(rows>=100){say('Maximum 100 cargo rows.',true);return;}
+   if(rows>=100){say(l(25,'Maximum 100 cargo rows.')+' (100)',true);return;}
    const el=tpl.content.firstElementChild.cloneNode(true);
    for(const [k,v] of Object.entries(values)){const control=field(el,k);if(control)control.value=String(v);}
-   el.querySelector('[data-remove]').addEventListener('click',()=>{if(tbody.children.length<=1){say('Keep at least one cargo row.',true);return;}el.remove();rows--;recalculate();});
+   el.querySelector('[data-remove]').addEventListener('click',()=>{if(tbody.children.length<=1){say(l(25,'Keep at least one cargo row.'),true);return;}el.remove();rows--;recalculate();});
    el.querySelectorAll('input,select').forEach(inp=>inp.addEventListener('input',recalculate));
    tbody.append(el);rows++;recalculate();
  }
@@ -39,22 +41,22 @@
      for(const c of out.containers){
        const card=document.createElement('article');card.className='cargo-container';
        const title=document.createElement('h3');title.textContent=c.name;
-       const volume=document.createElement('p');volume.textContent='Nominal internal capacity: '+nf(c.volume,1)+' m³';
-       const label=document.createElement('p');label.textContent='Cargo volume / nominal: '+nf(c.nominalPct,1)+'%';
+       const volume=document.createElement('p');volume.textContent=l(3,'Container')+': '+nf(c.volume,1)+' m³';
+       const label=document.createElement('p');label.textContent=l(18,'Cargo volume')+' / '+l(3,'Container')+': '+nf(c.nominalPct,1)+'%';
        const bar=document.createElement('progress');bar.max=100;bar.value=Math.min(100,c.nominalPct);
        bar.setAttribute('aria-label',c.name+' nominal volume filled');
-       const plan=document.createElement('p');plan.textContent='Volume-only estimate at '+nf(out.utilisation*100,0)+'% utilisation: '+nf(c.volumeOnlyEstimate,0)+' container(s)';
+       const plan=document.createElement('p');plan.textContent=l(17,'Assumed fill')+' '+nf(out.utilisation*100,0)+'%: '+nf(c.volumeOnlyEstimate,0)+' '+l(3,'containers');
        const dim=document.createElement('small');dim.textContent='Approx. interior '+c.dimensions.map(n=>nf(n,2)).join(' × ')+' m';
        card.append(title,volume,label,bar,plan,dim);cards.append(card);
      }
-     say('Estimates updated. Actual loading and carrier billing require confirmation.');
+     say(l(25,'Important note')+': '+l(27,'Example values — replace with your own measurements.'));
    }catch(e){
      last=null;$('cargo-results').hidden=true;$('cargo-export').disabled=true;
-     say(e.message||'Please check your measurements.',true);
+     say((e.message||'Please check your measurements.'),true);
    }
  }
  $('cargo-add').addEventListener('click',()=>add({name:'Additional cargo',length:50,width:40,height:40,quantity:1,weight:0}));
- $('cargo-clear').addEventListener('click',()=>{tbody.replaceChildren();rows=0;add({name:'Cartons',length:60,width:40,height:40,unit:'cm',weight:25,weightUnit:'kg',quantity:200});});
+ $('cargo-clear').addEventListener('click',()=>{tbody.replaceChildren();rows=0;add({name:'Example cartons',length:60,width:40,height:40,unit:'cm',weight:25,weightUnit:'kg',quantity:200});});
  $('cargo-divisor').addEventListener('input',recalculate);
  $('cargo-utilisation').addEventListener('change',recalculate);
  $('cargo-export').addEventListener('click',()=>{
