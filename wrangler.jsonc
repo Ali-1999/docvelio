@@ -6,6 +6,6 @@
     "html_handling": "auto-trailing-slash"
   },
   "build": {
-    "command": "node scripts/extend-toolkit.cjs && node scripts/build-blogs.cjs && node scripts/build-docvelio.cjs && node scripts/site-shell.cjs && node scripts/page-content.cjs && node scripts/apply-design.cjs && node scripts/seo-audit-fixes.cjs && node scripts/add-image-studio.cjs && node scripts/image-seo-pages.cjs && node scripts/build-cargo-tools.cjs && node scripts/ensure-yandex-verification.cjs && node scripts/build-wheel-picker.cjs && node scripts/final-global-shell.cjs"
+    "command": "node scripts/extend-toolkit.cjs && node scripts/build-blogs.cjs && node scripts/build-docvelio.cjs && node scripts/site-shell.cjs && node scripts/page-content.cjs && node scripts/apply-design.cjs && node scripts/seo-audit-fixes.cjs && node scripts/add-image-studio.cjs && node scripts/image-seo-pages.cjs && node scripts/build-cargo-tools.cjs && node scripts/ensure-yandex-verification.cjs && node scripts/build-wheel-picker.cjs && node scripts/final-global-shell.cjs && node scripts/optimize-site.cjs"
   }
 }
