@@ -24,6 +24,7 @@ for(const relative of ['', 'tools/edit-pdf/', 'blog/', 'image-editor/', 'image-t
 }
 const robots=fs.readFileSync(path.join(root,'robots.txt'),'utf8');
 assert(robots.includes('Sitemap: https://docvelio.com/sitemap.xml'));
+assert(robots.includes('Sitemap: https://docvelio.com/sitemap.txt'));
 assert(!/^Disallow:\s*\/\s*$/m.test(robots));
 assert(fs.existsSync(path.join(__dirname,'check-live-indexing.cjs')));
 console.log('PASS: critical pages crawlable in built HTML, 404 excluded, 580 canonical sitemap URLs.');
