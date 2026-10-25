@@ -18,7 +18,7 @@ const pages=[];
  if(item.isDirectory())walk(file);
  else if(item.name.endsWith('.html'))pages.push(file);
 }})(root);
-assert.equal(pages.length,431);
+assert.equal(pages.length,441);
 for(const file of pages){
  const html=fs.readFileSync(file,'utf8');
  assert.equal((html.match(/\/assets\/cookie-consent\.css/g)||[]).length,1,'Consent CSS missing or duplicated '+file);
@@ -92,4 +92,4 @@ assert.equal(storage.has('docvelio_tool_category_v1'),false,'Declining must remo
 assert.equal(cards[0].hidden,false,'Decline resets category filter to all');
 assert.equal(cards[1].hidden,false,'Decline restores all tool categories');
 assert.equal(panel.hidden,true,'Decline should close banner');
-console.log('PASS: localized cookie choices on 431 pages, policy notices, accept/reject actions, revocation and optional category storage');
+console.log('PASS: localized cookie choices on 441 pages, policy notices, accept/reject actions, revocation and optional category storage');
