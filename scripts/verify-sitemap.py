@@ -135,7 +135,8 @@ def validate():
     text_urls = (ROOT / "sitemap.txt").read_text(encoding="utf-8").splitlines()
     assert len(text_urls) == 580 and set(text_urls) == seen, "Text sitemap differs from XML sitemap"
     robots = (ROOT / "robots.txt").read_text(encoding="utf-8")
-    assert "Sitemap: https://docvelio.com/sitemap.xml" in robots, "robots.txt omits sitemap"
+    assert "Sitemap: https://docvelio.com/sitemap.xml" in robots, "robots.txt omits XML sitemap"
+    assert "Sitemap: https://docvelio.com/sitemap.txt" in robots, "robots.txt omits accessible text sitemap"
     assert "Disallow: /" not in robots, "robots.txt blocks crawling"
     headers = (ROOT / "_headers").read_text(encoding="utf-8")
     assert "/sitemap.xml\n  Content-Type: application/xml; charset=utf-8" in headers, "Missing XML MIME headers"

@@ -1,0 +1,26 @@
+name: Check live Google indexability
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - 'public/**'
+      - 'scripts/**'
+      - 'wrangler.jsonc'
+      - '.github/workflows/live-indexability.yml'
+  schedule:
+    - cron: '17 7 * * *'
+permissions:
+  contents: read
+jobs:
+  check-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Check DNS, HTTPS, canonical pages, sitemap and error status
+        run: node scripts/check-live-indexing.cjs
