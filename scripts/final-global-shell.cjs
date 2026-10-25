@@ -27,9 +27,14 @@ function header(lang,route){
  '<div class="nav-actions dv-global-actions"><label class="dv-language-label" for="language-select"><span aria-hidden="true">🌐</span><span class="sr-only">'+esc(l[21])+'</span><select id="language-select" aria-label="'+esc(l[21])+'" data-page="'+esc(route)+'">'+options.map(([v,n])=>'<option value="'+v+'"'+(v===lang?' selected':'')+'>'+n+'</option>').join('')+'</select></label>'+
  '<button class="mobile-toggle dv-global-toggle" type="button" aria-label="'+esc(l[22])+'" aria-expanded="false" aria-controls="dv-primary-nav">☰</button></div></nav></header>';
 }
-const home=fs.readFileSync(path.join(root,'index.html'),'utf8');
-const footer=home.match(/<footer\b[^>]*>[\s\S]*?<\/footer>/i)?.[0];
-if(!footer)throw Error('Homepage footer missing');
+const footers={};
+for(const lang of langs){
+ const source=path.join(root,lang==='en'?'index.html':path.join(lang,'index.html'));
+ const html=fs.readFileSync(source,'utf8');
+ const match=html.match(/<footer\b[^>]*>[\s\S]*?<\/footer>/i)?.[0];
+ if(!match)throw Error('Localized footer missing: '+lang);
+ footers[lang]=match;
+}
 let count=0;
 function walk(dir){for(const ent of fs.readdirSync(dir,{withFileTypes:true})){
  const file=path.join(dir,ent.name);if(ent.isDirectory()){walk(file);continue;}
@@ -39,7 +44,7 @@ function walk(dir){for(const ent of fs.readdirSync(dir,{withFileTypes:true})){
  const route=parts.slice(0,-1).join('/');
  if(!/<header\b[^>]*>[\s\S]*?<\/header>/i.test(h))throw Error('Header missing: '+rel);
  h=h.replace(/<header\b[^>]*>[\s\S]*?<\/header>/i,header(lang,route));
- if(/<footer\b[^>]*>[\s\S]*?<\/footer>/i.test(h))h=h.replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/i,footer);
+ if(/<footer\b[^>]*>[\s\S]*?<\/footer>/i.test(h))h=h.replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/i,footers[lang]);
  else throw Error('Footer missing: '+rel);
  if(!h.includes('/assets/global-navigation.css'))h=h.replace('</head>','<link rel="stylesheet" href="/assets/global-navigation.css"></head>');
  fs.writeFileSync(file,h);count++;
