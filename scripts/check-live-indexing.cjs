@@ -30,8 +30,14 @@ async function probe(path,kind){
    if(/<meta[^>]+name=["']robots["'][^>]*noindex/i.test(r.body))problem(path+' is marked noindex');
   }
   if(kind==='ROBOTS'){
-   if(!/sitemap:\s*https:\/\/docvelio\.com\/sitemap\.xml/i.test(r.body))problem('robots.txt missing sitemap URL');
+   if(!/sitemap:\s*https:\/\/docvelio\.com\/sitemap\.xml/i.test(r.body))problem('robots.txt missing XML sitemap URL');
+   if(!/sitemap:\s*https:\/\/docvelio\.com\/sitemap\.txt/i.test(r.body))problem('robots.txt missing accessible text sitemap fallback');
    if(/Disallow:\s*\/\s*(?:\r?\n|$)/i.test(r.body))problem('robots.txt blocks entire site');
+  }
+  if(kind==='TEXT_SITEMAP'){
+   const list=r.body.split(/\r?\n/).filter(Boolean);
+   if(list.length!==580)problem('Live TXT sitemap has '+list.length+' URLs; 580 expected');
+   if(!list.includes(root+'/cbm-calculator/'))problem('CBM missing from TXT sitemap');
   }
   if(kind==='SITEMAP'){
    const count=(r.body.match(/<loc>/g)||[]).length;
