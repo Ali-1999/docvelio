@@ -6160,4 +6160,1124 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-editor/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-editor/"/>
   </url>
+  <url>
+    <loc>https://docvelio.com/image-tools/resize-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/resize-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/image-tools/crop-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/crop-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/image-tools/rotate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/rotate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/image-tools/flip-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/flip-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/image-tools/convert-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/convert-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/image-tools/reduce-image-size-kb/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/image-tools/pixelate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/pixelate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/image-tools/black-and-white-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/image-tools/resize-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/resize-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/image-tools/crop-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/crop-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/image-tools/rotate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/rotate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/image-tools/flip-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/flip-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/image-tools/convert-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/convert-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/image-tools/reduce-image-size-kb/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/image-tools/pixelate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/pixelate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/image-tools/black-and-white-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/image-tools/resize-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/resize-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/image-tools/crop-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/crop-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/image-tools/rotate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/rotate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/image-tools/flip-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/flip-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/image-tools/convert-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/convert-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/image-tools/reduce-image-size-kb/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/image-tools/pixelate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/pixelate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/image-tools/black-and-white-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/image-tools/resize-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/resize-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/image-tools/crop-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/crop-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/image-tools/rotate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/rotate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/image-tools/flip-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/flip-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/image-tools/convert-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/convert-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/image-tools/reduce-image-size-kb/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/image-tools/pixelate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/pixelate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/image-tools/black-and-white-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/image-tools/resize-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/resize-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/image-tools/crop-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/crop-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/image-tools/rotate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/rotate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/image-tools/flip-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/flip-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/image-tools/convert-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/convert-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/image-tools/reduce-image-size-kb/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/image-tools/pixelate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/pixelate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/image-tools/black-and-white-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/image-tools/resize-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/resize-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/image-tools/crop-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/crop-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/image-tools/rotate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/rotate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/image-tools/flip-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/flip-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/image-tools/convert-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/convert-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/image-tools/reduce-image-size-kb/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/image-tools/pixelate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/pixelate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/image-tools/black-and-white-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/image-tools/resize-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/resize-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/image-tools/crop-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/crop-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/image-tools/rotate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/rotate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/image-tools/flip-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/flip-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/image-tools/convert-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/convert-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/image-tools/reduce-image-size-kb/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/image-tools/pixelate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/pixelate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/image-tools/black-and-white-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/image-tools/resize-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/resize-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/image-tools/crop-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/crop-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/image-tools/rotate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/rotate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/image-tools/flip-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/flip-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/image-tools/convert-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/convert-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/image-tools/reduce-image-size-kb/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/image-tools/pixelate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/pixelate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/image-tools/black-and-white-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/image-tools/resize-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/resize-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/image-tools/crop-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/crop-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/image-tools/rotate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/rotate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/image-tools/flip-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/flip-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/image-tools/convert-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/convert-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/image-tools/reduce-image-size-kb/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/image-tools/pixelate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/pixelate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/image-tools/black-and-white-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/image-tools/resize-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/resize-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/resize-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/image-tools/crop-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/crop-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/crop-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/image-tools/rotate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/rotate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/rotate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/image-tools/flip-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/flip-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/flip-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/image-tools/convert-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/convert-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/convert-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/image-tools/reduce-image-size-kb/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/reduce-image-size-kb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/reduce-image-size-kb/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/image-tools/pixelate-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/pixelate-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/pixelate-image/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/image-tools/black-and-white-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/black-and-white-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/black-and-white-image/"/>
+  </url>
 </urlset>
