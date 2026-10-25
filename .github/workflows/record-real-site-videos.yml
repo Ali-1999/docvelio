@@ -1,0 +1,30 @@
+name: Record Real Docvelio TikTok Demos
+on:
+  workflow_dispatch:
+    inputs:
+      site_url:
+        description: 'Deployed website (must be publicly accessible)'
+        required: true
+        default: 'https://docvelio.com'
+jobs:
+  videos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core
+      - run: python -m pip install playwright==1.56.0
+      - run: python -m playwright install --with-deps chromium
+      - name: Record real website interactions and add energetic narration
+        env:
+          DOCVELIO_URL: ${{ inputs.site_url }}
+        run: python scripts/record-real-site-videos.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: docvelio-real-site-tiktok-videos
+          path: artifacts/docvelio-tiktok/
+          retention-days: 14
