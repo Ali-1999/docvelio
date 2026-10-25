@@ -7280,4 +7280,844 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/image-tools/black-and-white-image/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/image-tools/black-and-white-image/"/>
   </url>
+  <url>
+    <loc>https://docvelio.com/cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/shipping-tools/cubic-meter-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/shipping-tools/cubic-feet-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/shipping-tools/volumetric-weight-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/shipping-tools/container-capacity-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/shipping-tools/cubic-meter-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/shipping-tools/cubic-feet-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/shipping-tools/volumetric-weight-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/shipping-tools/container-capacity-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/es/shipping-tools/multiple-carton-cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/shipping-tools/cubic-meter-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/shipping-tools/cubic-feet-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/shipping-tools/volumetric-weight-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/shipping-tools/container-capacity-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/fr/shipping-tools/multiple-carton-cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/shipping-tools/cubic-meter-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/shipping-tools/cubic-feet-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/shipping-tools/volumetric-weight-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/shipping-tools/container-capacity-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/de/shipping-tools/multiple-carton-cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/shipping-tools/cubic-meter-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/shipping-tools/cubic-feet-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/shipping-tools/volumetric-weight-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/shipping-tools/container-capacity-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/pt/shipping-tools/multiple-carton-cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/shipping-tools/cubic-meter-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/shipping-tools/cubic-feet-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/shipping-tools/volumetric-weight-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/shipping-tools/container-capacity-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/ar/shipping-tools/multiple-carton-cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/shipping-tools/cubic-meter-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/shipping-tools/cubic-feet-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/shipping-tools/volumetric-weight-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/shipping-tools/container-capacity-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/hi/shipping-tools/multiple-carton-cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/shipping-tools/cubic-meter-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/shipping-tools/cubic-feet-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/shipping-tools/volumetric-weight-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/shipping-tools/container-capacity-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/id/shipping-tools/multiple-carton-cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/shipping-tools/cubic-meter-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/shipping-tools/cubic-feet-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/shipping-tools/volumetric-weight-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/shipping-tools/container-capacity-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/tr/shipping-tools/multiple-carton-cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/cbm-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/shipping-tools/cubic-meter-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-meter-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-meter-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/shipping-tools/cubic-feet-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/cubic-feet-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/cubic-feet-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/shipping-tools/volumetric-weight-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/volumetric-weight-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/volumetric-weight-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/shipping-tools/container-capacity-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/container-capacity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/container-capacity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://docvelio.com/zh/shipping-tools/multiple-carton-cbm-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docvelio.com/es/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docvelio.com/fr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://docvelio.com/de/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docvelio.com/pt/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://docvelio.com/ar/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docvelio.com/hi/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://docvelio.com/id/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://docvelio.com/tr/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://docvelio.com/zh/shipping-tools/multiple-carton-cbm-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docvelio.com/shipping-tools/multiple-carton-cbm-calculator/"/>
+  </url>
 </urlset>

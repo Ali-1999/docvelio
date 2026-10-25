@@ -69,7 +69,7 @@ def validate():
     doc = ET.fromstring(raw)
     assert doc.tag == "{" + NS["s"] + "}urlset", "Invalid sitemap XML namespace/root"
     pages = doc.findall("s:url", NS)
-    assert len(pages) == 520 and len(pages) <= 50000, f"Expected 520 entries, got {len(pages)}"
+    assert len(pages) == 580 and len(pages) <= 50000, f"Expected 580 entries, got {len(pages)}"
 
     seen = set()
     variants = defaultdict(dict)
@@ -107,7 +107,7 @@ def validate():
 
         page = ROOT / slug / "index.html"
         if not page.is_file():
-            assert SOURCE_ONLY and ((route.startswith("tools/") and route[6:] in GENERATED) or route=="blog" or route.startswith("blog/") or route=="image-editor" or route.startswith("image-tools/")), (
+            assert SOURCE_ONLY and ((route.startswith("tools/") and route[6:] in GENERATED) or route=="blog" or route.startswith("blog/") or route=="image-editor" or route.startswith("image-tools/") or route=="cbm-calculator" or route.startswith("shipping-tools/")), (
                 f"Sitemap URL does not exist: {url}"
             )
             missing_generated += 1
@@ -118,7 +118,7 @@ def validate():
         assert meta.language == locale, f"Wrong HTML lang: {url}"
         assert not meta.noindex, f"Noindex URL in sitemap: {url}"
 
-    assert len(variants) == 52, f"Expected 52 language-neutral routes, got {len(variants)}"
+    assert len(variants) == 58, f"Expected 58 language-neutral routes, got {len(variants)}"
     for route, locations in variants.items():
         assert set(locations) == set(LANGS), f"Incomplete hreflang group: {route}"
         expected = {locale: locations[locale] for locale in LANGS}
@@ -128,12 +128,12 @@ def validate():
             assert set(alternatives[url].values()).issubset(seen), f"Alternate missing as canonical: {url}"
 
     if SOURCE_ONLY:
-        assert missing_generated == 290, f"Expected 90 tool pages and 110 blog pages, got {missing_generated}"
+        assert missing_generated == 350, f"Expected 90 tool pages and 110 blog pages, got {missing_generated}"
     else:
         assert missing_generated == 0, f"Missing {missing_generated} tool pages after build"
 
     text_urls = (ROOT / "sitemap.txt").read_text(encoding="utf-8").splitlines()
-    assert len(text_urls) == 520 and set(text_urls) == seen, "Text sitemap differs from XML sitemap"
+    assert len(text_urls) == 580 and set(text_urls) == seen, "Text sitemap differs from XML sitemap"
     robots = (ROOT / "robots.txt").read_text(encoding="utf-8")
     assert "Sitemap: https://docvelio.com/sitemap.xml" in robots, "robots.txt omits sitemap"
     assert "Disallow: /" not in robots, "robots.txt blocks crawling"
@@ -141,7 +141,7 @@ def validate():
     assert "/sitemap.xml\n  Content-Type: application/xml; charset=utf-8" in headers, "Missing XML MIME headers"
     assert not re.search(r"X-Robots-Tag:\s*noindex", headers, re.I), "Response blocks indexing"
 
-    print("PASS: Google XML sitemap, 520 unique canonical URLs, 52 routes, reciprocal hreflang, "
+    print("PASS: Google XML sitemap, 580 unique canonical URLs, 58 routes, reciprocal hreflang, "
           + ("source-only" if SOURCE_ONLY else "complete build")
           + ", UTF-8, size, robots and content-type checks.")
 

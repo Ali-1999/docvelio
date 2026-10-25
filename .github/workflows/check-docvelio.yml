@@ -37,6 +37,12 @@ jobs:
           node --check scripts/image-seo-topics.cjs
           node --check scripts/image-seo-locales.cjs
           node --check scripts/image-seo-pages.cjs
+          node --check scripts/cargo-content-en.cjs
+          node --check scripts/cargo-locales.cjs
+          node --check scripts/build-cargo-tools.cjs
+          node --check scripts/test-cargo.cjs
+          node --check public/assets/cargo-core.js
+          node --check public/assets/cargo-calculator.js
           node --check scripts/test-image-seo.cjs
           node --check scripts/test-image-studio.cjs
           node --check public/assets/image-core.js
@@ -57,6 +63,7 @@ jobs:
           node scripts/seo-audit-fixes.cjs
           node scripts/add-image-studio.cjs
           node scripts/image-seo-pages.cjs
+          node scripts/build-cargo-tools.cjs
       - name: Ensure sitemap in Git matches generated output
         run: git diff --exit-code -- public/sitemap.xml public/sitemap.txt
       - name: Check localized tools and indexing metadata
@@ -66,4 +73,5 @@ jobs:
           node scripts/test-consent.cjs
           node scripts/test-image-studio.cjs
           node scripts/test-image-seo.cjs
+          node scripts/test-cargo.cjs
           python3 scripts/verify-sitemap.py
