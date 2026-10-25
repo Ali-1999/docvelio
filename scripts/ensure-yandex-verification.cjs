@@ -8,3 +8,13 @@ const target = path.join(root, filename);
 fs.writeFileSync(target, content, 'utf8');
 if (fs.readFileSync(target, 'utf8') !== content) throw new Error('Yandex verification file mismatch');
 console.log('Yandex verification asset confirmed:', filename);
+
+const homepage = path.join(root, 'index.html');
+const verificationTag = '<meta name="yandex-verification" content="979858cd8ffc24be" />';
+let html = fs.readFileSync(homepage, 'utf8');
+html = html.replace(/<meta\\s+name=["']yandex-verification["'][^>]*>\\s*/gi, '');
+if (!/<head\\b[^>]*>/i.test(html)) throw new Error('Homepage has no head section');
+html = html.replace(/<head\\b[^>]*>/i, match => match + verificationTag);
+fs.writeFileSync(homepage, html, 'utf8');
+if (!fs.readFileSync(homepage, 'utf8').includes(verificationTag)) throw new Error('Yandex homepage meta tag missing');
+console.log('Yandex verification homepage meta tag confirmed');
