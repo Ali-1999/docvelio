@@ -27,6 +27,8 @@ function walk(dir){
   const file=path.join(dir,entry.name);
   if(entry.isDirectory()){walk(file);continue;}
   if(!entry.name.endsWith('.html'))continue;
+  // Search engine ownership tokens are static verification assets, not HTML pages.
+  if(/^(?:naver[a-z0-9_-]+|yandex_[a-z0-9_-]+|google[a-z0-9_-]+|baidu_verify_[a-z0-9_-]+)\.html$/i.test(entry.name))continue;
   let html=fs.readFileSync(file,'utf8');
   if(!html.includes('</head>')||!html.includes('</body>'))throw Error('Incomplete HTML page: '+file);
   if(!html.includes('href="/assets/design-system.css"'))html=html.replace('</head>',css+'</head>');
