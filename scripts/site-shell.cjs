@@ -45,6 +45,8 @@ function walk(dir){
   const file=path.join(dir,ent.name);
   if(ent.isDirectory()){walk(file);continue;}
   if(!ent.name.endsWith('.html'))continue;
+  // Verification assets are not website pages and must retain their exact contents.
+  if(/^(?:naver[a-z0-9_-]+|yandex_[a-z0-9_-]+|google[a-z0-9_-]+|baidu_verify_[a-z0-9_-]+)\.html$/i.test(ent.name))continue;
   let html=fs.readFileSync(file,'utf8');
   const rel=path.relative(root,file).replaceAll('\\','/');
   const parts=rel.split('/'),locale=languages.includes(parts[0])&&parts[0]!=='en'?parts.shift():'en';
