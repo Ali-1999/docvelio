@@ -48,7 +48,7 @@ function form(lang,c){
   field('weight',ui[11],'number','25','0')+select('weightUnit',ui[12],[['kg','kg'],['g','g'],['lb','lb']])+
   field('quantity',ui[13],'number','200','1')+'<td><button type="button" class="cargo-btn danger" data-remove aria-label="'+esc(ui[15])+'">×</button></td></tr>';
  const metricCard=(id,label)=>'<div class="cargo-kpi"><small>'+esc(label)+'</small><strong id="'+id+'">—</strong></div>';
- return '<section class="cargo-layout" data-cargo-calculator data-lang="'+lang+'"><div class="container">'+
+ return '<section class="cargo-layout" data-cargo-calculator data-lang="'+lang+'" data-ui="'+esc(JSON.stringify(ui))+'"><div class="container">'+
  '<div class="cargo-panel"><div class="cargo-heading"><h2>'+esc(ui[1])+'</h2><p>'+esc(ui[27])+'</p></div>'+
  '<div class="cargo-table-wrap"><table class="cargo-table"><thead><tr>'+[ui[14],ui[7],ui[8],ui[9],ui[10],ui[11],ui[12],ui[13],ui[15]].map(h=>'<th scope="col">'+esc(h)+'</th>').join('')+'</tr></thead>'+
  '<tbody id="cargo-lines"></tbody></table></div><template id="cargo-row-template">'+row+'</template>'+
