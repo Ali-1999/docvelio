@@ -4,3 +4,10 @@
 @media(hover:hover){.tool-card:hover,.feature-card:hover{will-change:auto}}
 @media(max-width:640px){.dv-global-header .dv-global-nav{gap:10px}.dv-global-header .dv-global-brand{flex-shrink:0}.dv-global-header .dv-global-actions{min-width:0}.dv-global-header .dv-global-actions select{max-width:92px}.dv-global-header .dv-mega-panel a{min-height:44px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.dv-global-header .dv-mega-panel,.dv-global-header .dv-mega summary{animation:none!important;transition:none!important}}
+
+/* Defer rendering of distant, informational sections without hiding their content from crawlers. */
+@supports(content-visibility:auto){
+  body .why-section,body .guide-band,body .seo,body .dv-editorial-zone,body .editor-after{content-visibility:auto;contain-intrinsic-size:auto 560px}
+}
+/* Avoid costly sticky-header blur on small, lower-powered devices. */
+@media(max-width:980px){body .dv-global-header{backdrop-filter:none;-webkit-backdrop-filter:none;background:#fff}}
