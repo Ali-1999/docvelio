@@ -33,6 +33,10 @@ jobs:
           node --check public/assets/site.js
           node --check scripts/apply-design.cjs
           node --check scripts/seo-audit-fixes.cjs
+          node --check scripts/add-image-studio.cjs
+          node --check scripts/test-image-studio.cjs
+          node --check public/assets/image-core.js
+          node --check public/assets/image-studio.js
           node --check scripts/test-docvelio.cjs
           node --check scripts/test-ui.cjs
           node --check scripts/test-consent.cjs
@@ -47,6 +51,7 @@ jobs:
           node scripts/page-content.cjs
           node scripts/apply-design.cjs
           node scripts/seo-audit-fixes.cjs
+          node scripts/add-image-studio.cjs
       - name: Ensure sitemap in Git matches generated output
         run: git diff --exit-code -- public/sitemap.xml public/sitemap.txt
       - name: Check localized tools and indexing metadata
@@ -54,4 +59,5 @@ jobs:
           node scripts/test-docvelio.cjs
           node scripts/test-ui.cjs
           node scripts/test-consent.cjs
+          node scripts/test-image-studio.cjs
           python3 scripts/verify-sitemap.py

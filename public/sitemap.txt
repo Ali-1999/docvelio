@@ -24,6 +24,7 @@ https://docvelio.com/ar/guides/organize-pages/
 https://docvelio.com/ar/guides/privacy/
 https://docvelio.com/ar/guides/scanned-documents/
 https://docvelio.com/ar/guides/word-formatting/
+https://docvelio.com/ar/image-editor/
 https://docvelio.com/ar/privacy/
 https://docvelio.com/ar/terms/
 https://docvelio.com/ar/tools/add-image-to-pdf/
@@ -80,6 +81,7 @@ https://docvelio.com/de/guides/organize-pages/
 https://docvelio.com/de/guides/privacy/
 https://docvelio.com/de/guides/scanned-documents/
 https://docvelio.com/de/guides/word-formatting/
+https://docvelio.com/de/image-editor/
 https://docvelio.com/de/privacy/
 https://docvelio.com/de/terms/
 https://docvelio.com/de/tools/add-image-to-pdf/
@@ -124,6 +126,7 @@ https://docvelio.com/es/guides/organize-pages/
 https://docvelio.com/es/guides/privacy/
 https://docvelio.com/es/guides/scanned-documents/
 https://docvelio.com/es/guides/word-formatting/
+https://docvelio.com/es/image-editor/
 https://docvelio.com/es/privacy/
 https://docvelio.com/es/terms/
 https://docvelio.com/es/tools/add-image-to-pdf/
@@ -167,6 +170,7 @@ https://docvelio.com/fr/guides/organize-pages/
 https://docvelio.com/fr/guides/privacy/
 https://docvelio.com/fr/guides/scanned-documents/
 https://docvelio.com/fr/guides/word-formatting/
+https://docvelio.com/fr/image-editor/
 https://docvelio.com/fr/privacy/
 https://docvelio.com/fr/terms/
 https://docvelio.com/fr/tools/add-image-to-pdf/
@@ -216,6 +220,7 @@ https://docvelio.com/hi/guides/organize-pages/
 https://docvelio.com/hi/guides/privacy/
 https://docvelio.com/hi/guides/scanned-documents/
 https://docvelio.com/hi/guides/word-formatting/
+https://docvelio.com/hi/image-editor/
 https://docvelio.com/hi/privacy/
 https://docvelio.com/hi/terms/
 https://docvelio.com/hi/tools/add-image-to-pdf/
@@ -259,6 +264,7 @@ https://docvelio.com/id/guides/organize-pages/
 https://docvelio.com/id/guides/privacy/
 https://docvelio.com/id/guides/scanned-documents/
 https://docvelio.com/id/guides/word-formatting/
+https://docvelio.com/id/image-editor/
 https://docvelio.com/id/privacy/
 https://docvelio.com/id/terms/
 https://docvelio.com/id/tools/add-image-to-pdf/
@@ -279,6 +285,7 @@ https://docvelio.com/id/tools/split-pdf/
 https://docvelio.com/id/tools/view-pdf/
 https://docvelio.com/id/tools/watermark-pdf/
 https://docvelio.com/id/tools/word-editor/
+https://docvelio.com/image-editor/
 https://docvelio.com/privacy/
 https://docvelio.com/pt/
 https://docvelio.com/pt/about/
@@ -303,6 +310,7 @@ https://docvelio.com/pt/guides/organize-pages/
 https://docvelio.com/pt/guides/privacy/
 https://docvelio.com/pt/guides/scanned-documents/
 https://docvelio.com/pt/guides/word-formatting/
+https://docvelio.com/pt/image-editor/
 https://docvelio.com/pt/privacy/
 https://docvelio.com/pt/terms/
 https://docvelio.com/pt/tools/add-image-to-pdf/
@@ -365,6 +373,7 @@ https://docvelio.com/tr/guides/organize-pages/
 https://docvelio.com/tr/guides/privacy/
 https://docvelio.com/tr/guides/scanned-documents/
 https://docvelio.com/tr/guides/word-formatting/
+https://docvelio.com/tr/image-editor/
 https://docvelio.com/tr/privacy/
 https://docvelio.com/tr/terms/
 https://docvelio.com/tr/tools/add-image-to-pdf/
@@ -408,6 +417,7 @@ https://docvelio.com/zh/guides/organize-pages/
 https://docvelio.com/zh/guides/privacy/
 https://docvelio.com/zh/guides/scanned-documents/
 https://docvelio.com/zh/guides/word-formatting/
+https://docvelio.com/zh/image-editor/
 https://docvelio.com/zh/privacy/
 https://docvelio.com/zh/terms/
 https://docvelio.com/zh/tools/add-image-to-pdf/
