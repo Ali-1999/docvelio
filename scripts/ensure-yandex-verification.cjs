@@ -26,3 +26,12 @@ const naverPath = path.join(root, naverName);
 fs.writeFileSync(naverPath, naverBody, 'utf8');
 if (fs.readFileSync(naverPath, 'utf8') !== naverBody) throw new Error('Naver verification file mismatch');
 console.log('Naver verification asset confirmed:', naverName);
+
+// Seznam Webmaster ownership verification on the final generated homepage.
+const seznamTag = '<meta name="seznam-wmt" content="qwg8YZkrmfV0Nvkuy1Dn8zEK6ADA4EAD" />';
+let seznamHtml = fs.readFileSync(homepage, 'utf8');
+seznamHtml = seznamHtml.replace(/<meta\s+name=["']seznam-wmt["'][^>]*>\s*/gi, '');
+seznamHtml = seznamHtml.replace(/<head\b[^>]*>/i, match => match + seznamTag);
+if (!seznamHtml.includes(seznamTag)) throw new Error('Seznam verification tag could not be inserted');
+fs.writeFileSync(homepage, seznamHtml, 'utf8');
+console.log('Seznam verification homepage meta tag confirmed');
