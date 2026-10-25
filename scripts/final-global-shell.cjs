@@ -47,6 +47,7 @@ function walk(dir){for(const ent of fs.readdirSync(dir,{withFileTypes:true})){
  if(/<footer\b[^>]*>[\s\S]*?<\/footer>/i.test(h))h=h.replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/i,footers[lang]);
  else throw Error('Footer missing: '+rel);
  if(!h.includes('/assets/global-navigation.css'))h=h.replace('</head>','<link rel="stylesheet" href="/assets/global-navigation.css"></head>');
+ if(!h.includes('/assets/site-polish.css'))h=h.replace('</head>','<link rel="stylesheet" href="/assets/site-polish.css"></head>');
  if(!h.includes('/assets/global-navigation.js'))h=h.replace('</body>','<script defer src="/assets/global-navigation.js"></script></body>');
  fs.writeFileSync(file,h);count++;
 }}
