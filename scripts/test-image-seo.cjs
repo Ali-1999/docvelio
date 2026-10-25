@@ -50,7 +50,7 @@ for(const lang of langs){
  assert(compressor.includes('image-tools/reduce-image-size-kb/'),'No link from image compression tool '+lang);
 }
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
-assert.equal((sitemap.match(/<loc>/g)||[]).length,520);
+assert.equal((sitemap.match(/<loc>/g)||[]).length,580);
 assert.equal(titles.size,8);
 assert.equal(Object.keys(localized).length,9);
-console.log('PASS: 80 image SEO pages with unique intent, localized metadata, working controls, links and 520 URLs');
+console.log('PASS: 80 image SEO pages with unique intent, localized metadata, working controls, links and 580 URLs');
