@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://docvelio.com/sitemap.txt
 Sitemap: https://docvelio.com/sitemap.xml
