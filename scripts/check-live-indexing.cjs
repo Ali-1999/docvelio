@@ -10,13 +10,14 @@ async function request(url){
  const response=await fetch(url,{redirect:'follow',signal:AbortSignal.timeout(18000),
   headers:{'user-agent':'DocvelioIndexingMonitor/1.0','accept':'text/html,application/xml,text/plain;q=0.8,*/*;q=0.1'}});
  return {status:response.status,final:response.url,contentType:response.headers.get('content-type')||'',
-  robots:response.headers.get('x-robots-tag')||'',body:await response.text()};
+  robots:response.headers.get('x-robots-tag')||'',server:response.headers.get('server')||'',ray:response.headers.get('cf-ray')||'',mitigation:response.headers.get('cf-mitigated')||'',body:await response.text()};
 }
 async function probe(path,kind){
  const url=root+path;
  try{
   const r=await request(url);
   results.push([kind,path,r.status,r.final+'; '+r.contentType]);
+  if(r.status>=400){results.push(['HTTP diagnostics',path,r.status,'server='+r.server+'; cf-ray='+r.ray+'; cf-mitigated='+r.mitigation+'; first-text='+r.body.replace(/<[^>]*>/g,' ').replace(/\\s+/g,' ').slice(0,260)]);}
   if(r.status!==200)problem(path+' HTTP '+r.status+' (wanted 200)');
   if(r.final!==url)problem(path+' unexpectedly redirects to '+r.final);
   if(r.robots.toLowerCase().includes('noindex'))problem(path+' has X-Robots-Tag noindex');
@@ -50,7 +51,7 @@ async function run(){
   catch(e){results.push(['DNS '+type,host,'unavailable',e.code||e.message]);}
  }
  if(!addresses.length)problem('DNS: no public A/AAAA found. Check Cloudflare domain DNS configuration.');
- await probe('/robots.txt','ROBOTS');await probe('/sitemap.xml','SITEMAP');
+ await probe('/robots.txt','ROBOTS');await probe('/sitemap.xml','SITEMAP');await probe('/sitemap.txt','TEXT_SITEMAP');
  for(const path of pages)await probe(path,'HTML');
  try{const r=await request(root+'/__docvelio_seo_missing_404_probe__/');
   results.push(['404','/missing/',r.status,r.final]);
