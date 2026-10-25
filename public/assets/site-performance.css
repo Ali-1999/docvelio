@@ -1,0 +1,6 @@
+/* Lightweight site-wide polish. No animation frameworks or large dependencies. */
+:root{--dv-ease:cubic-bezier(.2,.8,.2,1)}
+.dv-global-header .dv-mega summary,.dv-global-header .dv-mega-panel a{transition:background-color .14s var(--dv-ease),color .14s var(--dv-ease)}
+@media(hover:hover){.tool-card:hover,.feature-card:hover{will-change:auto}}
+@media(max-width:640px){.dv-global-header .dv-global-nav{gap:10px}.dv-global-header .dv-global-brand{flex-shrink:0}.dv-global-header .dv-global-actions{min-width:0}.dv-global-header .dv-global-actions select{max-width:92px}.dv-global-header .dv-mega-panel a{min-height:44px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.dv-global-header .dv-mega-panel,.dv-global-header .dv-mega summary{animation:none!important;transition:none!important}}
