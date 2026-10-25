@@ -18,3 +18,11 @@ html = html.replace(/<head\b[^>]*>/i, match => match + verificationTag);
 fs.writeFileSync(homepage, html, 'utf8');
 if (!fs.readFileSync(homepage, 'utf8').includes(verificationTag)) throw new Error('Yandex homepage meta tag missing');
 console.log('Yandex verification homepage meta tag confirmed');
+
+// Keep the Naver ownership verification file in the deployed assets root.
+const naverName = 'naver6e9a8796eafbba1043cb7ae33c431cdc.html';
+const naverBody = 'naver-site-verification: naver6e9a8796eafbba1043cb7ae33c431cdc.html';
+const naverPath = path.join(root, naverName);
+fs.writeFileSync(naverPath, naverBody, 'utf8');
+if (fs.readFileSync(naverPath, 'utf8') !== naverBody) throw new Error('Naver verification file mismatch');
+console.log('Naver verification asset confirmed:', naverName);
