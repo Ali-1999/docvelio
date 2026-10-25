@@ -30,7 +30,7 @@ const script=fs.readFileSync(path.join(root,'assets/cargo-calculator.js'),'utf8'
 for(const x of ['cargo-lines','cargo-add','data-remove','cargo-containers','cargo-export','docvelio-cbm-shipment.csv'])
 assert(script.includes(x),'Missing interactive function '+x);
 assert(!/fetch\s*\(|XMLHttpRequest|navigator\.sendBeacon/.test(script),'Unwanted network call');
-assert(script.includes('if(/^[\s]*[=+\-@]/'),'Unsafe CSV formula handling');
+assert(script.includes('if(/^[\\s]*[=+\\-@]/'),'Unsafe CSV formula handling');
 const langs=['en','es','fr','de','pt','ar','hi','id','tr','zh'],titles=new Set();
 for(const lang of langs){
  const pre=lang==='en'?'':lang+'/';
