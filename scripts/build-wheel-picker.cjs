@@ -20,10 +20,10 @@ fs.writeFileSync(homepage,home,'utf8');
 const header=home.match(/<header\\b[^>]*>[\\s\\S]*?<\\/header>/i)?.[0];
 const footer=home.match(/<footer\\b[^>]*>[\\s\\S]*?<\\/footer>/i)?.[0];
 if(!header||!footer)throw Error('Shared Docvelio header or footer missing');
-let wheel=template.replace(/<header\\b[^>]*>[\\s\\S]*?<\\/header>/i,header)
+let wheel=template.replace('<link rel="stylesheet" href="/assets/wheel-picker.css">','').replace(/<header\\b[^>]*>[\\s\\S]*?<\\/header>/i,header)
   .replace(/<footer\\b[^>]*>[\\s\\S]*?<\\/footer>/i,footer);
 const siteStyles=['/assets/style.css','/assets/locales.css','/assets/shared-header.css','/assets/design-system.css'];
-wheel=wheel.replace('</head>',siteStyles.map(href=>'<link rel="stylesheet" href="'+href+'">').join('')+'</head>');
+wheel=wheel.replace('</head>',siteStyles.map(href=>'<link rel="stylesheet" href="'+href+'">').join('')+'<link rel="stylesheet" href="/assets/wheel-picker.css"></head>');
 // Add the same essential menu and language scripts the main site uses.
 wheel=wheel.replace('</body>','<script defer src="/assets/site.js"></script><script defer src="/assets/i18n.js"></script><script defer src="/assets/design-system.js"></script></body>');
 fs.writeFileSync(path.join(dest,'index.html'),wheel,'utf8');
