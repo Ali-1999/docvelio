@@ -122,18 +122,11 @@ function main(){
   fs.writeFileSync(file,s);
   adapted++;
  });
-function sitemapHints(url){
- const p=url.replace(/^https:\/\/docvelio\.com/,'');
- const home=/^\/(?:[a-z]{2}\/)?$/.test(p);
- const tool=/\/(?:tools|image-tools|shipping-tools)\//.test(p)||/\/(?:image-editor|cbm-calculator)\//.test(p);
- const article=/\/(?:blog|guides)\//.test(p);
- return '    <changefreq>'+(home?'weekly':tool||article?'monthly':'yearly')+'</changefreq>\n'+'    <priority>'+(home?'1.0':tool?'0.9':article?'0.7':'0.5')+'</priority>\n';
-}
  let xml=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
  if((xml.match(/<loc>/g)||[]).length!==520)throw Error('Expected 520 base URLs before adding cargo');
  let extra='';
  for(const lang of langs)for(const t of topics){
-  extra+='  <url>\n    <loc>'+escXML(url(lang,t))+'</loc>\n'+sitemapHints(url(lang,t));
+  extra+='  <url>\n    <loc>'+escXML(url(lang,t))+'</loc>\n';
   for(const other of langs)extra+='    <xhtml:link rel="alternate" hreflang="'+other+'" href="'+escXML(url(other,t))+'"/>\n';
   extra+='    <xhtml:link rel="alternate" hreflang="x-default" href="'+escXML(url('en',t))+'"/>\n  </url>\n';
  }
