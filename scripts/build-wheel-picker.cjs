@@ -16,7 +16,7 @@ let xml=fs.readFileSync(xmlPath,'utf8');
 const target='https://docvelio.com/wheel-of-names/';
 if(!xml.includes('<loc>'+target+'</loc>')){
  if(!xml.includes('</urlset>'))throw Error('Sitemap missing urlset close');
- xml=xml.replace('</urlset>','  <url>\n    <loc>'+target+'</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.9</priority>\n  </url>\n</urlset>');
+ xml=xml.replace('</urlset>','  <url>\n    <loc>'+target+'</loc>\n  </url>\n</urlset>');
  fs.writeFileSync(xmlPath,xml);
 }
 const txt=path.join(root,'sitemap.txt');let lines=fs.readFileSync(txt,'utf8').trim().split(/\r?\n/);if(!lines.includes(target)){lines.push(target);lines.sort();fs.writeFileSync(txt,lines.join('\n')+'\n')}
