@@ -15,7 +15,7 @@ SCENES=[
 ("04_cbm_calculator","/cbm-calculator/","CBM shipping calculator","Enter cargo dimensions and calculate shipping volume."),
 ("05_spin_wheel","/wheel-of-names/","Spin the Wheel","Add names, spin the wheel, and pick a winner in your browser.")
 ]
-def run(cmd): subprocess.run(cmd,check=True,stdout=subprocess.DEVNULL,timeout=120)
+def run(cmd): subprocess.run(cmd,check=True,timeout=120)
 def say(text,file):
  run(["espeak-ng","-v","en+f3","-s","154","-a","200","-w",str(file),text])
 def navigate(page,route):
@@ -62,7 +62,12 @@ def record(p,idx,scene):
   try:
    navigate(page,route)
    page.wait_for_timeout(1100)
-   perform(page,idx)
+   try:
+    perform(page,idx)
+   except Exception:
+    page.screenshot(path=str(OUT/(name+"_diagnostic.png")),full_page=True)
+    (OUT/(name+"_diagnostic.txt")).write_text("URL: "+page.url+"\\nTitle: "+page.title()+"\\n"+page.locator("body").inner_text()[:4000])
+    raise
    page.wait_for_timeout(1000)
    observed={"source":page.url,"heading":page.title(),"success":True}
   finally:
@@ -75,8 +80,8 @@ def record(p,idx,scene):
   # Add readable title and end CTA; actual site remains visible in the main area.
   dest=OUT/(name+".mp4")
   duration=None  # FFmpeg stops at the end of the captured video stream.
-  vf="drawbox=x=0:y=0:w=iw:h=148:color=0x0e2544@0.94:t=fill,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='"+title.replace("'","")+"':fontcolor=white:fontsize=39:x=(w-text_w)/2:y=48,drawbox=x=0:y=ih-140:w=iw:h=140:color=0x0e2544@0.93:t=fill,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='DOCVELIO.COM  |  FREE ONLINE TOOLS':fontcolor=white:fontsize=30:x=(w-text_w)/2:y=h-90"
-  run([FFMPEG,"-y","-i",str(raw),"-i",str(voice),"-filter_complex","[0:v]"+vf+"[v];[1:a]loudnorm=I=-13:TP=-1.5:LRA=9,apad[a]","-map","[v]","-map","[a]","-shortest","-r","25","-c:v","libx264","-preset","veryfast","-crf","24","-pix_fmt","yuv420p","-c:a","aac","-b:a","160k","-movflags","+faststart",str(dest)])
+  # Preserve the genuine browser recording. imageio FFmpeg builds may omit drawtext.
+  run([FFMPEG,"-y","-i",str(raw),"-i",str(voice),"-filter_complex","[1:a]loudnorm=I=-13:TP=-1.5:LRA=9,apad[a]","-map","0:v:0","-map","[a]","-shortest","-r","25","-c:v","libx264","-preset","ultrafast","-crf","25","-pix_fmt","yuv420p","-c:a","aac","-b:a","160k","-movflags","+faststart",str(dest)])
   voice.unlink()
   observed["video_file"]=dest.name
   (OUT/(name+".json")).write_text(json.dumps(observed,indent=2))
