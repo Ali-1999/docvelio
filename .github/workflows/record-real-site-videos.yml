@@ -27,11 +27,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Check preinstalled video dependencies
-        run: |
-          command -v ffmpeg
-          command -v ffprobe
-          test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
       - name: Install lightweight speech synthesis without full system upgrade
         run: |
           if ! command -v espeak-ng >/dev/null; then
@@ -40,7 +35,7 @@ jobs:
           command -v espeak-ng
       - name: Install browser recorder
         run: |
-          python -m pip install --disable-pip-version-check playwright==1.56.0
+          python -m pip install --disable-pip-version-check playwright==1.56.0 imageio-ffmpeg==0.6.0
           python -m playwright install --only-shell chromium
       - name: Capture and narrate actual deployed website
         env:
