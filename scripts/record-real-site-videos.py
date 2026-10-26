@@ -2,7 +2,7 @@
 """Record five REAL Docvelio page sessions, then create portrait narrated demos.
 No synthetic site replicas: Chromium navigates to the deployed site.
 """
-import os, time, subprocess, tempfile, pathlib, json
+import os, time, subprocess, tempfile, pathlib, json, argparse
 from playwright.sync_api import sync_playwright
 BASE=os.environ.get("DOCVELIO_URL","https://docvelio.com").rstrip("/")
 OUT=pathlib.Path("artifacts/docvelio-tiktok"); OUT.mkdir(parents=True,exist_ok=True)
@@ -13,7 +13,7 @@ SCENES=[
 ("04_cbm_calculator","/cbm-calculator/","CBM shipping calculator","Enter cargo dimensions and calculate shipping volume."),
 ("05_spin_wheel","/wheel-of-names/","Spin the Wheel","Add names, spin the wheel, and pick a winner in your browser.")
 ]
-def run(cmd): subprocess.run(cmd,check=True,stdout=subprocess.DEVNULL)
+def run(cmd): subprocess.run(cmd,check=True,stdout=subprocess.DEVNULL,timeout=120)
 def say(text,file):
  run(["espeak-ng","-v","en+f3","-s","154","-a","200","-w",str(file),text])
 def navigate(page,route):
@@ -46,7 +46,7 @@ def perform(page,idx):
  elif idx==4:
   ed=page.locator("#entries")
   if not ed.count():raise RuntimeError("Live wheel missing entries field")
-  ed.fill("Alex\\nJordan\\nSam\\nTaylor\\nMorgan")
+  ed.fill("Alex\nJordan\nSam\nTaylor\nMorgan")
   page.wait_for_timeout(850)
   page.locator("#spin").click(timeout=5000)
   page.wait_for_timeout(5500)
@@ -80,6 +80,11 @@ def record(p,idx,scene):
   (OUT/(name+".json")).write_text(json.dumps(observed,indent=2))
   print("CAPTURED",dest,"source",observed["source"],flush=True)
 def main():
+ parser=argparse.ArgumentParser()
+ parser.add_argument('--scene',type=int,choices=range(1,6),help='Record one scene (1-5)')
+ args=parser.parse_args()
  with sync_playwright() as p:
-  for idx,scene in enumerate(SCENES):record(p,idx,scene)
+  for idx,scene in enumerate(SCENES):
+   if args.scene is None or idx==args.scene-1:
+    record(p,idx,scene)
 if __name__=="__main__":main()
