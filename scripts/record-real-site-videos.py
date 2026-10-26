@@ -3,6 +3,8 @@
 No synthetic site replicas: Chromium navigates to the deployed site.
 """
 import os, time, subprocess, tempfile, pathlib, json, argparse
+import imageio_ffmpeg
+FFMPEG=imageio_ffmpeg.get_ffmpeg_exe()
 from playwright.sync_api import sync_playwright
 BASE=os.environ.get("DOCVELIO_URL","https://docvelio.com").rstrip("/")
 OUT=pathlib.Path("artifacts/docvelio-tiktok"); OUT.mkdir(parents=True,exist_ok=True)
@@ -72,11 +74,11 @@ def record(p,idx,scene):
   voice=OUT/(name+"_voice.wav");say(narration,voice)
   # Add readable title and end CTA; actual site remains visible in the main area.
   dest=OUT/(name+".mp4")
-  duration=float(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","default=noprint_wrappers=1:nokey=1",str(raw)]))
+  duration=None  # FFmpeg stops at the end of the captured video stream.
   vf="drawbox=x=0:y=0:w=iw:h=148:color=0x0e2544@0.94:t=fill,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='"+title.replace("'","")+"':fontcolor=white:fontsize=39:x=(w-text_w)/2:y=48,drawbox=x=0:y=ih-140:w=iw:h=140:color=0x0e2544@0.93:t=fill,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='DOCVELIO.COM  |  FREE ONLINE TOOLS':fontcolor=white:fontsize=30:x=(w-text_w)/2:y=h-90"
-  run(["ffmpeg","-y","-i",str(raw),"-i",str(voice),"-filter_complex","[0:v]"+vf+"[v];[1:a]loudnorm=I=-13:TP=-1.5:LRA=9,apad[a]","-map","[v]","-map","[a]","-t",str(duration),"-r","25","-c:v","libx264","-preset","veryfast","-crf","24","-pix_fmt","yuv420p","-c:a","aac","-b:a","160k","-movflags","+faststart",str(dest)])
+  run([FFMPEG,"-y","-i",str(raw),"-i",str(voice),"-filter_complex","[0:v]"+vf+"[v];[1:a]loudnorm=I=-13:TP=-1.5:LRA=9,apad[a]","-map","[v]","-map","[a]","-shortest","-r","25","-c:v","libx264","-preset","veryfast","-crf","24","-pix_fmt","yuv420p","-c:a","aac","-b:a","160k","-movflags","+faststart",str(dest)])
   voice.unlink()
-  observed["duration_seconds"]=round(duration,2)
+  observed["video_file"]=dest.name
   (OUT/(name+".json")).write_text(json.dumps(observed,indent=2))
   print("CAPTURED",dest,"source",observed["source"],flush=True)
 def main():
