@@ -1,35 +1,56 @@
 name: Record Real Docvelio TikTok Demos
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'scripts/record-real-site-videos.py'
-      - '.github/workflows/record-real-site-videos.yml'
   workflow_dispatch:
     inputs:
       site_url:
-        description: 'Deployed website (must be publicly accessible)'
+        description: Publicly deployed Docvelio URL
         required: true
-        default: 'https://docvelio.com'
+        default: https://docvelio.com
+  push:
+    branches: [main]
+    paths:
+      - scripts/record-real-site-videos.py
+      - .github/workflows/record-real-site-videos.yml
+permissions:
+  contents: read
 jobs:
   videos:
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
+    name: Capture demo ${{ matrix.scene }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        scene: [1, 2, 3, 4, 5]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core
-      - run: python -m pip install playwright==1.56.0
-      - run: python -m playwright install --with-deps chromium
-      - name: Record real website interactions and add energetic narration
+      - name: Check preinstalled video dependencies
+        run: |
+          command -v ffmpeg
+          command -v ffprobe
+          test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+      - name: Install lightweight speech synthesis without full system upgrade
+        run: |
+          if ! command -v espeak-ng >/dev/null; then
+            sudo timeout 120s apt-get install -y --no-install-recommends espeak-ng
+          fi
+          command -v espeak-ng
+      - name: Install browser recorder
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.56.0
+          python -m playwright install --only-shell chromium
+      - name: Capture and narrate actual deployed website
         env:
           DOCVELIO_URL: ${{ inputs.site_url || 'https://docvelio.com' }}
-        run: python scripts/record-real-site-videos.py
-      - uses: actions/upload-artifact@v4
+        run: python scripts/record-real-site-videos.py --scene ${{ matrix.scene }}
+      - name: Upload recording even when processing fails
         if: always()
+        uses: actions/upload-artifact@v4
         with:
-          name: docvelio-real-site-tiktok-videos
+          name: docvelio-real-site-video-${{ matrix.scene }}
           path: artifacts/docvelio-tiktok/
+          if-no-files-found: warn
           retention-days: 14
