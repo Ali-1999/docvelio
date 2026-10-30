@@ -63,7 +63,7 @@ const uniqueTitles={
  'pt/shipping-tools/cubic-meter-calculator/index.html':'Calculadora de metros cúbicos para caixas | Docvelio',
  'pt/shipping-tools/volumetric-weight-calculator/index.html':'Calculadora de peso volumétrico do frete | Docvelio',
  'pt/tools/edit-pdf/index.html':'Editar PDF e adicionar anotações online | Docvelio',
- 'pt/tools/organize-pdf/index.html':'Organizar páginas de PDF online | Docvelio',
+ 'pt/tools/organize-pdf/index.html':'Reordenar páginas de um PDF online | Docvelio',
  'pt/tools/rotate-pdf/index.html':'Girar páginas PDF no navegador | Docvelio',
  'pt/tools/split-pdf/index.html':'Dividir PDF por páginas online | Docvelio',
  'pt/tools/word-editor/index.html':'Editor de documentos Word online | Docvelio',
