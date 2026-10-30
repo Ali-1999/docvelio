@@ -1,0 +1,8 @@
+/* Accessible, answer-first explanation below the working document tool. */
+.dv-search-answer{padding:8px 0 21px;background:transparent}
+.dv-search-answer-inner{border:1px solid #d8e7f5;border-inline-start:4px solid #1586c8;background:#f3f9ff;border-radius:13px;padding:18px 22px;max-width:1050px}
+.dv-search-answer h2{font-size:clamp(1.12rem,1.8vw,1.38rem);margin:0 0 8px;line-height:1.35;color:#163c63}
+.dv-search-answer p{line-height:1.74;font-size:.94rem;color:#415d76;margin:0 0 9px;max-width:85ch}
+.dv-search-answer p:last-child{margin:0;font-size:.84rem}
+.dv-search-answer a{font-weight:690;text-underline-offset:3px}
+@media(max-width:600px){.dv-search-answer-inner{padding:15px}.dv-search-answer{padding:5px 0 15px}}
