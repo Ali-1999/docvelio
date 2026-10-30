@@ -51,4 +51,33 @@ function findPages(dir){
 }
 findPages(root);
 if(modified!==30)throw Error('Expected 30 targeted home/about/guides panels, got '+modified);
+
+/* Targeted duplicate-title fixes found by full generated-site audit.
+ * Specific natural-language titles, not automated locale suffix stuffing. */
+const uniqueTitles={
+ 'es/tools/organize-pdf/index.html':'Organizar páginas de PDF online | Docvelio',
+ 'fr/tools/organize-pdf/index.html':'Réorganiser les pages PDF en ligne | Docvelio',
+ 'hi/tools/organize-pdf/index.html':'PDF पेजों का क्रम बदलें ऑनलाइन | Docvelio',
+ 'pt/cookies/index.html':'Política de Cookies do Docvelio',
+ 'pt/disclaimer/index.html':'Aviso legal e limitações | Docvelio',
+ 'pt/shipping-tools/cubic-meter-calculator/index.html':'Calculadora de metros cúbicos para caixas | Docvelio',
+ 'pt/shipping-tools/volumetric-weight-calculator/index.html':'Calculadora de peso volumétrico do frete | Docvelio',
+ 'pt/tools/edit-pdf/index.html':'Editar PDF e adicionar anotações online | Docvelio',
+ 'pt/tools/organize-pdf/index.html':'Organizar páginas de PDF online | Docvelio',
+ 'pt/tools/rotate-pdf/index.html':'Girar páginas PDF no navegador | Docvelio',
+ 'pt/tools/split-pdf/index.html':'Dividir PDF por páginas online | Docvelio',
+ 'pt/tools/word-editor/index.html':'Editor de documentos Word online | Docvelio',
+ 'zh/tools/organize-pdf/index.html':'在线重新排列 PDF 页面顺序 | Docvelio'
+};
+let corrected=0;
+for(const [relative,title] of Object.entries(uniqueTitles)){
+ const file=path.join(root,relative),old=fs.readFileSync(file,'utf8');
+ if(!/<title>[\s\S]*?<\/title>/i.test(old))throw Error('Missing title in '+relative);
+ let html=old.replace(/<title>[\s\S]*?<\/title>/i,'<title>'+htmlEsc(title)+'</title>');
+ html=html.replace(/<meta\b[^>]*\bproperty=["']og:title["'][^>]*>/gi,
+  tag=>/\bcontent=["'][^"']*["']/i.test(tag)?tag.replace(/\bcontent=["'][^"']*["']/i,'content="'+htmlEsc(title)+'"'):tag);
+ fs.writeFileSync(file,html,'utf8');
+ corrected++;
+}
+
 console.log('SEO GROWTH: '+blocks+' task-specific trust/discovery blocks in ten languages; no fabricated local-business or review data.');
