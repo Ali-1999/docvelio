@@ -1,0 +1,10 @@
+.dv-seo-trust{padding:clamp(30px,4.5vw,52px) 0;background:linear-gradient(115deg,#f1f7ff,#eefbf9);border-block:1px solid #dce9f6}
+.dv-seo-trust-inner{max-width:1090px}
+.dv-seo-trust h2{font-size:clamp(1.3rem,2.6vw,1.9rem);color:#163b5f;margin:0 0 11px;line-height:1.27;letter-spacing:-.022em}
+.dv-seo-trust p{font-size:clamp(.96rem,1.5vw,1.05rem);line-height:1.8;color:#405f7b;max-width:87ch;margin:0 0 20px}
+.dv-seo-trust-links{display:flex;flex-wrap:wrap;gap:9px}
+.dv-seo-trust-links a{display:inline-flex;align-items:center;min-height:43px;padding:9px 14px;border:1px solid #c9def1;background:#fff;border-radius:10px;font-size:.88rem;font-weight:680;color:#1a60aa;text-decoration:none}
+.dv-seo-trust-links a:hover{background:#e7f4ff;border-color:#9ac7eb}
+.dv-seo-trust-links a:focus-visible{outline:3px solid #f1b23e;outline-offset:3px}
+@media(max-width:600px){.dv-seo-trust{padding:26px 0}.dv-seo-trust-links{gap:7px}.dv-seo-trust-links a{flex:1 1 auto;justify-content:center;text-align:center;font-size:.84rem}}
+@media print{.dv-seo-trust-links{display:none}}
