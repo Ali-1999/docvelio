@@ -3,8 +3,8 @@
 const fs=require('node:fs'),path=require('node:path');
 const root=path.join(__dirname,'..','public'),host='https://docvelio.com';
 const languages=['en','es','fr','de','pt','ar','hi','id','tr','zh'];
-const title='Docvelio | Free PDF & Word Tools';
-const description='Edit, merge, sign and convert PDFs online. Free Word and image tools.';
+const title='Free PDF Tools: Edit, Merge, Sign & Convert | Docvelio';
+const description='Edit, merge, split, sign and convert PDF files free in your browser. Explore Docvelio\'s Word editor, image tools and CBM calculator. No account needed.';
 const intro='<section class="section dv-home-seo" aria-label="Choosing the right PDF and Word tool"><div class="container dv-home-seo-inner">'+
 '<h2>Choose the right PDF tool for your document</h2>'+
 '<p>To assemble a report, <a href="/tools/merge-pdf/">merge PDF files</a> in reading order. To remove duplicate or unwanted sheets, use <a href="/tools/remove-pages/">Remove Pages</a>. If the pages are out of order, <a href="/tools/organize-pdf/">Organize PDF</a> creates a copy in the sequence you specify, without changing your original.</p>'+
