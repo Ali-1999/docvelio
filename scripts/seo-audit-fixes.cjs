@@ -3,7 +3,7 @@
 const fs=require('node:fs'),path=require('node:path');
 const root=path.join(__dirname,'..','public'),host='https://docvelio.com';
 const languages=['en','es','fr','de','pt','ar','hi','id','tr','zh'];
-const title='Free PDF Tools, Word Editor & Image Tools | Docvelio';
+const title='Free PDF Tools, Word Editor &amp; Image Tools | Docvelio';
 const description='Edit, merge, split, sign and convert PDF files online. Use Docvelio for free Word editing, image tools and shipping calculators in your browser.';
 const intro='<section class="section dv-home-seo" aria-label="Choosing the right PDF and Word tool"><div class="container dv-home-seo-inner">'+
 '<h2>Choose the right PDF tool for your document</h2>'+
