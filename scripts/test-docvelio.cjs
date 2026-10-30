@@ -166,7 +166,7 @@ console.log('PASS: 180 in-flow tool guidance cards and 40 other aligned page sec
 /* October 2026 SEOptimer remediation regression checks. */
 const homepage=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const pageTitle=homepage.match(/<title>(.*?)<\/title>/i)?.[1]||'';
-assert.equal(pageTitle,'Free PDF Editing Tools and Online Word Editor | Docvelio');
+assert.equal(pageTitle,'Free PDF Tools: Edit, Merge, Sign & Convert | Docvelio');
 const metaTag=(homepage.match(/<meta\b[^>]*name="description"[^>]*>/i)||[])[0]||'';
 const homeDesc=metaTag.match(/content="([^"]+)"/)?.[1]||'';
 assert(homeDesc.length>=120&&homeDesc.length<=160,'Homepage description length is not meaningful: '+homeDesc.length);
