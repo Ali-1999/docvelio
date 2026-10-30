@@ -36,12 +36,12 @@ async function probe(path,kind){
   }
   if(kind==='TEXT_SITEMAP'){
    const list=r.body.split(/\r?\n/).filter(Boolean);
-   if(list.length!==580)problem('Live TXT sitemap has '+list.length+' URLs; 580 expected');
+   if(list.length!==581)problem('Live TXT sitemap has '+list.length+' URLs; 581 expected');
    if(!list.includes(root+'/cbm-calculator/'))problem('CBM missing from TXT sitemap');
   }
   if(kind==='SITEMAP'){
    const count=(r.body.match(/<loc>/g)||[]).length;
-   if(count!==580)problem('Live sitemap has '+count+' URLs instead of current 580');
+   if(count!==581)problem('Live sitemap has '+count+' URLs instead of current 581');
    if(!/(application|text)\/xml/.test(r.contentType))problem('Incorrect XML MIME type');
    if(!r.body.includes('<loc>'+root+'/cbm-calculator/</loc>'))problem('CBM URL missing from live sitemap');
   }
