@@ -45,6 +45,7 @@ jobs:
           node --check scripts/test-indexability.cjs
           node --check scripts/seo-growth.cjs
           node --check scripts/audit-seo-final.cjs
+          node --check scripts/compare-sitemap-semantic.cjs
           node --check scripts/build-wheel-picker.cjs
           node --check scripts/final-global-shell.cjs
           node --check scripts/optimize-site.cjs
@@ -72,7 +73,7 @@ jobs:
           node scripts/image-seo-pages.cjs
           node scripts/build-cargo-tools.cjs
       - name: Ensure sitemap in Git matches generated output
-        run: git diff --exit-code -- public/sitemap.xml public/sitemap.txt
+        run: node scripts/compare-sitemap-semantic.cjs
       - name: Check localized tools and indexing metadata
         run: |
           node scripts/test-docvelio.cjs
