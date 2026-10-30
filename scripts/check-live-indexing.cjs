@@ -3,7 +3,8 @@
 const {resolve4,resolve6}=require('node:dns').promises;
 const fs=require('node:fs');
 const root='https://docvelio.com',host='docvelio.com';
-const pages=['/','/tools/edit-pdf/','/image-editor/','/image-tools/resize-image/','/cbm-calculator/','/shipping-tools/volumetric-weight-calculator/','/blog/','/ar/','/es/image-tools/resize-image/'];
+const expectedUrls=581; // 580 localized pages + /wheel-of-names/ after final build.
+const pages=['/','/tools/edit-pdf/','/image-editor/','/image-tools/resize-image/','/cbm-calculator/','/shipping-tools/volumetric-weight-calculator/','/blog/','/wheel-of-names/','/ar/','/es/image-tools/resize-image/'];
 const results=[],failures=[];
 function problem(s){failures.push(s);console.error('FAIL: '+s);}
 async function request(url){
@@ -36,12 +37,12 @@ async function probe(path,kind){
   }
   if(kind==='TEXT_SITEMAP'){
    const list=r.body.split(/\r?\n/).filter(Boolean);
-   if(list.length!==580)problem('Live TXT sitemap has '+list.length+' URLs; 580 expected');
+   if(list.length!==expectedUrls)problem('Live TXT sitemap has '+list.length+' URLs; '+expectedUrls+' expected');
    if(!list.includes(root+'/cbm-calculator/'))problem('CBM missing from TXT sitemap');
   }
   if(kind==='SITEMAP'){
    const count=(r.body.match(/<loc>/g)||[]).length;
-   if(count!==580)problem('Live sitemap has '+count+' URLs instead of current 580');
+   if(count!==expectedUrls)problem('Live sitemap has '+count+' URLs instead of current '+expectedUrls);
    if(!/(application|text)\/xml/.test(r.contentType))problem('Incorrect XML MIME type');
    if(!r.body.includes('<loc>'+root+'/cbm-calculator/</loc>'))problem('CBM URL missing from live sitemap');
   }

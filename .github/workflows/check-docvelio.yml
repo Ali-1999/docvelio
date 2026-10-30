@@ -43,6 +43,12 @@ jobs:
           node --check scripts/test-cargo.cjs
           node --check scripts/check-live-indexing.cjs
           node --check scripts/test-indexability.cjs
+          node --check scripts/seo-growth.cjs
+          node --check scripts/audit-seo-final.cjs
+          node --check scripts/compare-sitemap-semantic.cjs
+          node --check scripts/build-wheel-picker.cjs
+          node --check scripts/final-global-shell.cjs
+          node --check scripts/optimize-site.cjs
           node --check public/assets/cargo-core.js
           node --check public/assets/cargo-calculator.js
           node --check scripts/test-image-seo.cjs
@@ -67,7 +73,7 @@ jobs:
           node scripts/image-seo-pages.cjs
           node scripts/build-cargo-tools.cjs
       - name: Ensure sitemap in Git matches generated output
-        run: git diff --exit-code -- public/sitemap.xml public/sitemap.txt
+        run: node scripts/compare-sitemap-semantic.cjs
       - name: Check localized tools and indexing metadata
         run: |
           node scripts/test-docvelio.cjs
@@ -78,3 +84,12 @@ jobs:
           node scripts/test-cargo.cjs
           node scripts/test-indexability.cjs
           python3 scripts/verify-sitemap.py
+
+      - name: Verify newer wheel route and final responsive global shell
+        run: |
+          node scripts/ensure-yandex-verification.cjs
+          node scripts/build-wheel-picker.cjs
+          node scripts/final-global-shell.cjs
+          node scripts/optimize-site.cjs
+          node scripts/seo-growth.cjs
+          node scripts/audit-seo-final.cjs
