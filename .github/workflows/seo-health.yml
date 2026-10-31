@@ -47,3 +47,21 @@ jobs:
           image_headers=$(curl --location --silent --show-error --head --max-time 20 https://docvelio.com/assets/docvelio-social-card.png)
           echo "${image_headers}" | grep -Eiq '^content-type: image/png'
           echo 'Social preview PNG delivered with image/png Content-Type'
+      - name: Validate deployed image size presets
+        shell: bash
+        run: |
+          set -euo pipefail
+          url='https://docvelio.com/image-tools/reduce-image-size-kb/'
+          html=$(curl --fail --location --silent --show-error --max-time 30 "$url")
+          for kb in 50 100 200; do
+            if ! grep -Fq "data-target-kb=\"$kb\"" <<< "$html"; then
+              echo "::error::Production page missing ${kb} KB functional preset"
+              exit 1
+            fi
+          done
+          grep -Fq 'id="im-target"' <<< "$html"
+          grep -Fq 'id="im-target-toggle"' <<< "$html"
+          grep -Fq 'id="im-target-field"' <<< "$html"
+          grep -Fq 'id="im-format"' <<< "$html"
+          echo 'Production page exposes 50/100/200 KB presets and linked compressor controls'
+
