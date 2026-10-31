@@ -62,6 +62,13 @@ function topicPage(base,lang,idx){
  s=s.replace('<div class="im-controls"><h2>'+esc((require('./add-image-studio.cjs').translations)[lang][28])+'</h2>','<div class="im-controls" id="im-step-export"'+(['convert','target'].includes(t.active)?' data-current="true"':'')+'><h2>'+esc((require('./add-image-studio.cjs').translations)[lang][28])+'</h2>');
  s=s.replace('<section class="im-studio" data-image-studio','<section class="im-studio" data-image-studio data-image-task="'+t.slug+'"');
  s=s.replace(/<section class="im-guide">[\s\S]*?<\/section>/,taskArticle(lang,idx));
+ if(t.slug==='reduce-image-size-kb'){
+  // Real presets connect to the existing browser compressor rather than creating doorway pages.
+  const presetLabels=lang==='en'?['Choose a target size','Select 50 KB, 100 KB or 200 KB to fill in the actual compressor settings. The output is best-effort; inspect the downloaded file size and quality.']:['50 KB · 100 KB · 200 KB','Choose a target below. Check the resulting image size before uploading.'];
+  const panel='<section class="im-presets container" aria-label="Image file size presets"><h2>'+esc(presetLabels[0])+'</h2><p>'+esc(presetLabels[1])+'</p><div class="im-preset-buttons">'+[50,100,200].map(n=>'<button type="button" class="im-preset" data-target-kb="'+n+'">'+n+' KB</button>').join(' ')+'</div></section>';
+  const js='<script>(function(){document.querySelectorAll("[data-target-kb]").forEach(function(button){button.addEventListener("click",function(){var target=document.getElementById("im-target"),toggle=document.getElementById("im-target-toggle"),field=document.getElementById("im-target-field"),format=document.getElementById("im-format");if(!target||!toggle||!field)return;target.value=button.getAttribute("data-target-kb");toggle.checked=true;field.hidden=false;if(format&&format.value==="png"){format.value="jpg";format.dispatchEvent(new Event("change",{bubbles:true}));}target.dispatchEvent(new Event("input",{bubbles:true}));button.setAttribute("aria-pressed","true");document.querySelectorAll("[data-target-kb]").forEach(function(other){if(other!==button)other.setAttribute("aria-pressed","false");});target.scrollIntoView({behavior:"smooth",block:"center"});});});})();</script>';
+  s=s.replace('<section class="im-studio"',''+panel+'<section class="im-studio"').replace('</body>',js+'</body>');
+ }
  if(!s.includes('data-image-task="'+t.slug+'"')||!s.includes('im-task-article')||!s.includes('href="'+u+'"'))throw Error('Bad image SEO page '+u);
  return s;
 }
