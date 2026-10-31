@@ -2,6 +2,7 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path');
 const base=path.join(__dirname,'..','public');
+require('./generate-social-card.cjs');
 const operator='Ali Hamza',email='alihamzasbr@gmail.com',location='Riyadh, Saudi Arabia';
 const ownerCopy={
  en:'Operated by Ali Hamza · Riyadh, Saudi Arabia',
@@ -42,8 +43,9 @@ function walk(dir){
   // Site-wide Docvelio branding and sharing, including every generated language route.
   if(!doc.includes('/assets/social-sharing.css'))doc=doc.replace('</head>','<link rel="stylesheet" href="/assets/social-sharing.css"></head>');
   if(!doc.includes('/assets/social-sharing.js'))doc=doc.replace('</body>','<script defer src="/assets/social-sharing.js"></script></body>');
-  if(!doc.includes('property="og:image"'))doc=doc.replace('</head>','<meta property="og:image" content="https://docvelio.com/assets/docvelio-social-card.svg"><meta property="og:image:type" content="image/svg+xml"><meta property="og:image:alt" content="Docvelio PDF and Word document tools"></head>');
-  if(!doc.includes('name="twitter:image"'))doc=doc.replace('</head>','<meta name="twitter:image" content="https://docvelio.com/assets/docvelio-social-card.svg"></head>');
+  // Normalize all legacy SVG preview tags and provide a raster image.
+  doc=doc.replace(/<meta\\b[^>]*\\b(?:property|name)=["'](?:og:image(?::type|:alt|:width|:height)?|twitter:image)["'][^>]*>/gi,'');
+  doc=doc.replace('</head>','<meta property="og:image" content="https://docvelio.com/assets/docvelio-social-card.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Docvelio browser-based PDF, Word and image tools"><meta name="twitter:image" content="https://docvelio.com/assets/docvelio-social-card.png"></head>');
   doc=doc.replace(/content="summary" name="twitter:card"/g,'content="summary_large_image" name="twitter:card"').replace(/name="twitter:card" content="summary"/g,'name="twitter:card" content="summary_large_image"');
   if(before!==doc){fs.writeFileSync(full,doc);updated++;}
  }
