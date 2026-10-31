@@ -2,6 +2,17 @@
 
 Brand: **Docvelio** (`https://docvelio.com/` as the intended canonical domain). Existing Cloudflare Worker name: `curly-bonus-a447`, unchanged on purpose so deploys can update the same working site.
 
+## Try Docvelio online
+
+Docvelio provides free browser-based document tools. These links open the actual tools rather than marketing landing pages:
+
+- [Docvelio home — PDF and Word tools](https://docvelio.com/)
+- [Merge PDF files online](https://docvelio.com/tools/merge-pdf/)
+- [Edit PDF — add notes, drawings and highlights](https://docvelio.com/tools/edit-pdf/)
+- [Word editor for DOCX files](https://docvelio.com/tools/word-editor/)
+
+Files are handled in the browser for supported operations. Always inspect the exported output and keep the original document. Adding visible shapes over confidential text is not secure redaction.
+
 ## What's included
 
 - 9 existing browser tools, with original code and paths preserved: Word Editor, Edit PDF, View PDF, Merge PDF, Split PDF, Rotate PDF, Images to PDF, Watermark PDF, Remove Pages.
