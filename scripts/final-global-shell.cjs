@@ -33,7 +33,8 @@ for(const lang of langs){
  const html=fs.readFileSync(source,'utf8');
  const match=html.match(/<footer\b[^>]*>[\s\S]*?<\/footer>/i)?.[0];
  if(!match)throw Error('Localized footer missing: '+lang);
- footers[lang]=match;
+ const tiktok='<a class="dv-social-tiktok" href="https://www.tiktok.com/@docvelio" target="_blank" rel="noopener noreferrer" aria-label="Docvelio on TikTok">TikTok</a>';
+ footers[lang]=match.includes('https://www.tiktok.com/@docvelio')?match:match.replace('</footer>','<div class="dv-social-footer" style="text-align:center;padding:12px 16px"><span>Follow Docvelio: </span>'+tiktok+'</div></footer>');
 }
 let count=0;
 function walk(dir){for(const ent of fs.readdirSync(dir,{withFileTypes:true})){
