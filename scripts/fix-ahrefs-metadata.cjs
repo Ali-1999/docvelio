@@ -5,11 +5,11 @@ const root=path.join(__dirname,'../public');let checked=0,updated=0;
 function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const f=path.join(dir,e.name);if(e.isDirectory())walk(f);else if(e.name==='index.html')fix(f);}}
 function attr(tag,key){return tag.match(new RegExp('(?:^|\\s)'+key+'\\s*=\\s*(["\\x27])([^"\\x27]*)\\1','i'))?.[2]||'';}
 function esc(s){return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');}
-function clean(s){return s.replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/\\s+/g,' ').trim();}
+function clean(s){return s.replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();}
 function fix(file){
  let html=fs.readFileSync(file,'utf8'),before=html;
- const title=clean(html.match(/<title[^>]*>([\\s\\S]*?)<\\/title>/i)?.[1]||'');
- const meta=html.match(/<meta\\b[^>]*>/gi)||[],links=html.match(/<link\\b[^>]*>/gi)||[];
+ const title=clean(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]||'');
+ const meta=html.match(/<meta\b[^>]*>/gi)||[],links=html.match(/<link\b[^>]*>/gi)||[];
  const desc=meta.find(t=>attr(t,'name')==='description');
  const description=desc?attr(desc,'content'):'';
  const canonical=links.find(t=>attr(t,'rel')==='canonical');
