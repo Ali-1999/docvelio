@@ -27,6 +27,25 @@ for(const file of pages){
   const val=attr(tag,'content');
   if(val && !/^https:\/\/docvelio\.com\/assets\/.+\.(png|jpe?g|webp)(?:\?.*)?$/i.test(val))mark('warning',rel+': social preview should be a same-site raster image');
  }
+ // Google's starter guide: crawlable, descriptive internal navigation and correct snippets.
+ for(const a of tags(html,'a')){
+  const href=attr(a,'href');
+  if(!href||href==='#'||href.startsWith('javascript:'))mark('warning',rel+': non-descriptive or uncrawlable link destination');
+  if(href.startsWith('/')&&!href.startsWith('//')){
+   const target=href.split(/[?#]/)[0];
+   if(target.endsWith('/')&&!fs.existsSync(path.join(root,target.slice(1),'index.html')))
+    mark('warning',rel+': internal page link may be broken: '+target);
+  }
+ }
+ const robot=meta.find(t=>attr(t,'name').toLowerCase()==='robots');
+ if(robot&&/noindex/i.test(attr(robot,'content')))
+  mark('warning',rel+': page contains noindex (confirm intentional exclusion)');
+ const langLinks=links.filter(t=>attr(t,'rel').toLowerCase()==='alternate'&&attr(t,'hreflang'));
+ for(const link of langLinks){
+  const target=attr(link,'href');
+  if(target&&!/^https:\/\/docvelio\.com\//.test(target))
+   mark('warning',rel+': unexpected hreflang destination '+target);
+ }
  for(const img of tags(html,'img')){
   if(!/\balt\s*=/i.test(img))mark('error',rel+': image missing alt attribute');
   if(!attr(img,'width')||!attr(img,'height'))mark('warning',rel+': image lacks dimensions');
