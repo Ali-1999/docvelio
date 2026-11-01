@@ -64,6 +64,17 @@ if(fs.existsSync(path.join(root,'sitemap.xml'))){
  for(const url of unique)if(!pageUrls.has(url))mark('error','sitemap URL missing from generated pages: '+url);
  for(const url of pageUrls)if(!unique.has(url))mark('warning','generated page not in sitemap: '+url);
 }
+// AdSense publisher verification must be present in every generated HTML head.
+const adsense='ca-pub-1566581424297065';
+for(const file of pages){
+ const html=fs.readFileSync(file,'utf8');
+ const head=html.split('</head>')[0]||'';
+ const found=head.match(/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-1566581424297065/g)||[];
+ if(found.length!==1)mark('error',path.relative(root,file)+': expected one correct AdSense script in head; found '+found.length);
+}
+const adsFile=path.join(root,'ads.txt');
+if(!fs.existsSync(adsFile)||!fs.readFileSync(adsFile,'utf8').includes('google.com, pub-1566581424297065, DIRECT, f08c47fec0942fa0'))
+ mark('error','ads.txt missing correct publisher seller record');
 const png=path.join(root,'assets','docvelio-social-card.png');
 if(!fs.existsSync(png))mark('error','PNG social preview missing');
 else{
