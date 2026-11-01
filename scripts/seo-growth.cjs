@@ -91,6 +91,24 @@ for(const [relative,title] of Object.entries(uniqueTitles)){
   html=html.replace('</main>',section+'</main>');
   html=html.replace(/<title>[\s\S]*?<\/title>/i,'<title>Extract PDF Pages Online – Split PDF by Range | Docvelio</title>');
   html=html.replace(/<meta\b[^>]*\bname="description"[^>]*>/i,'<meta name="description" content="Extract one PDF page or a page range such as 1-3,5 into a separate PDF. Free browser-based PDF page extraction with no document upload.">');
+  // Keep search result copy, Open Graph copy and structured data consistent.
+  const pageTitle='Extract PDF Pages Online – Split PDF by Range | Docvelio';
+  const pageDesc='Extract one PDF page or a page range such as 1-3,5 into a separate PDF. Free browser-based PDF page extraction with no document upload.';
+  html=html.replace(/<meta\b[^>]*\bproperty=["']og:title["'][^>]*>/i,
+   '<meta property="og:title" content="'+htmlEsc(pageTitle)+'">');
+  html=html.replace(/<meta\b[^>]*\bproperty=["']og:description["'][^>]*>/i,
+   '<meta property="og:description" content="'+htmlEsc(pageDesc)+'">');
+  html=html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/i,(full,json)=>{
+   try {
+    const data=JSON.parse(json);
+    const nodes=data['@graph']||[data];
+    for(const node of nodes)if(node['@type']==='WebApplication'){
+     node.name=pageTitle.replace(' | Docvelio','');
+     node.description=pageDesc;
+    }
+    return '<script type="application/ld+json">'+JSON.stringify(data).replace(/</g,'\\u003c')+'</script>';
+   }catch(e){throw Error('Cannot parse Split PDF JSON-LD: '+e.message);}
+  });
   fs.writeFileSync(file,html,'utf8');
  }
 }
