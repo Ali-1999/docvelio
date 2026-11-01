@@ -89,8 +89,8 @@ for(const [relative,title] of Object.entries(uniqueTitles)){
   const section='<section class="section" data-sc-extraction-intent="1" aria-label="Extract PDF pages"><div class="container"><h2>Extract pages from a PDF without uploading</h2><p>Use the Split PDF tool above to save selected pages from an existing PDF as a separate document. For example, enter <strong>1-3,5</strong> to keep pages 1, 2, 3 and 5. The original document remains unchanged.</p><h3>Extract a single PDF page</h3><p>Enter one page number, such as <strong>4</strong>, and export the selected page into its own PDF. This keeps a PDF page, rather than converting its contents into a JPG or PNG.</p><h3>Extract a chapter or page range</h3><p>Enter a continuous range, such as <strong>7-12</strong>, to create a shorter PDF containing only that section. Check the exported document before sharing it, especially if the original contains confidential material.</p><p>Need a different operation? <a href="/tools/organize-pdf/">Reorder PDF pages</a> or <a href="/tools/remove-pages/">remove unwanted PDF pages</a> instead.</p></div></section>';
   if(!html.includes('</main>'))throw Error('Missing split PDF main');
   html=html.replace('</main>',section+'</main>');
-  html=html.replace(/<title>[\\s\\S]*?<\\/title>/i,'<title>Extract PDF Pages Online – Split PDF by Range | Docvelio</title>');
-  html=html.replace(/<meta\\b[^>]*\\bname="description"[^>]*>/i,'<meta name="description" content="Extract one PDF page or a page range such as 1-3,5 into a separate PDF. Free browser-based PDF page extraction with no document upload.">');
+  html=html.replace(/<title>[\s\S]*?<\/title>/i,'<title>Extract PDF Pages Online – Split PDF by Range | Docvelio</title>');
+  html=html.replace(/<meta\b[^>]*\bname="description"[^>]*>/i,'<meta name="description" content="Extract one PDF page or a page range such as 1-3,5 into a separate PDF. Free browser-based PDF page extraction with no document upload.">');
   fs.writeFileSync(file,html,'utf8');
  }
 }
