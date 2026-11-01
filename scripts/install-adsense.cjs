@@ -32,6 +32,18 @@ function walk(dir){
    html=html.replace('</head>',metaTag+'</head>');
    fs.writeFileSync(file,html);
   }
+  // Ahrefs Analytics supplied by the site owner. Avoid a second installation.
+  const ahrefsKey='X1yDGYuFwX82LOKZR9z/Yg';
+  const ahrefsUrl='https://analytics.ahrefs.com/analytics.js';
+  const ahrefsTag='<script async src="'+ahrefsUrl+'" data-key="'+ahrefsKey+'"></script>';
+  const ahrefsInstances=(html.match(/analytics\.ahrefs\.com\/analytics\.js/g)||[]).length;
+  if(ahrefsInstances>1)throw Error('Duplicate Ahrefs Analytics integration: '+file);
+  if(ahrefsInstances===1){
+   if(!html.includes(ahrefsKey))throw Error('Unexpected Ahrefs Analytics key: '+file);
+  }else{
+   html=html.replace('</head>',ahrefsTag+'</head>');
+   fs.writeFileSync(file,html);
+  }
   checked++;
  }
 }
