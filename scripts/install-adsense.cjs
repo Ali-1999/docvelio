@@ -23,6 +23,15 @@ function walk(dir){
    html=html.replace('</head>',snippet+'</head>');
    fs.writeFileSync(file,html);changed++;
   }
+  const metaTag='<meta name="google-adsense-account" content="'+client+'">';
+  const metaMatches=html.match(/<meta\b[^>]*\bname=["']google-adsense-account["'][^>]*>/gi)||[];
+  if(metaMatches.length>1)throw Error('Duplicate AdSense account meta tags: '+file);
+  if(metaMatches.length===1){
+   if(!metaMatches[0].includes(client))throw Error('Wrong AdSense account meta tag: '+file);
+  }else{
+   html=html.replace('</head>',metaTag+'</head>');
+   fs.writeFileSync(file,html);
+  }
   checked++;
  }
 }
