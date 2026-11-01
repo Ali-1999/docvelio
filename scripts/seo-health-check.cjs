@@ -71,6 +71,9 @@ for(const file of pages){
  const head=html.split('</head>')[0]||'';
  const found=head.match(/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-1566581424297065/g)||[];
  if(found.length!==1)mark('error',path.relative(root,file)+': expected one correct AdSense script in head; found '+found.length);
+ const accountTags=head.match(/<meta\b[^>]*name=["']google-adsense-account["'][^>]*>/gi)||[];
+ if(accountTags.length!==1||!accountTags[0].includes('content="ca-pub-1566581424297065"'))
+  mark('error',path.relative(root,file)+': incorrect or duplicate AdSense account meta tag');
 }
 const adsFile=path.join(root,'ads.txt');
 if(!fs.existsSync(adsFile)||!fs.readFileSync(adsFile,'utf8').includes('google.com, pub-1566581424297065, DIRECT, f08c47fec0942fa0'))
