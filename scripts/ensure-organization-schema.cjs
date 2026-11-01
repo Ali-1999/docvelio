@@ -9,7 +9,7 @@ function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){cons
 function apply(file){
  let html=fs.readFileSync(file,'utf8');
  if(!html.includes('</head>'))throw Error('Missing head: '+file);
- const structured=[...html.matchAll(/<script\\s+type=["']application\\/ld\\+json["'][^>]*>([\\s\\S]*?)<\\/script>/gi)];
+ const structured=[...html.matchAll(/<script\s+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
  let hasOrg=false;
  for(const match of structured){
   try {
