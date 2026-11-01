@@ -33,6 +33,7 @@ jobs:
           node scripts/add-search-answers.cjs
           node scripts/audit-seo-final.cjs
           node scripts/audit-seo.cjs
+          node scripts/ensure-organization-schema.cjs
           node scripts/fix-ahrefs-metadata.cjs
           node scripts/install-adsense.cjs
       - name: Check rendered HTML and image SEO
