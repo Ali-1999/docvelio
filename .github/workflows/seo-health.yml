@@ -52,6 +52,11 @@ jobs:
           grep -Fq '/api/excel-formula' public/assets/excel-formula-generator.js
           grep -Fq 'main' wrangler.jsonc
           echo 'Excel Formula Generator page, sitemap and endpoint source verified'
+      - name: Verify redesigned homepage tools and responsive UI
+        run: |
+          node --check scripts/redesign-home-toolkit.cjs
+          node --check public/assets/site.js
+          node scripts/test-home-toolkit.cjs
       - name: Check rendered HTML and image SEO
         run: node scripts/seo-health-check.cjs
       - name: Verify public SEO endpoints and social preview
