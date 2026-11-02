@@ -83,6 +83,11 @@ jobs:
           node --check scripts/implement-internal-links.cjs
           node --check scripts/test-internal-links.cjs
           node scripts/test-internal-links.cjs
+      - name: Verify Fazier launch badge in all footers
+        run: |
+          node --check scripts/install-fazier-badge.cjs
+          node --check scripts/test-fazier-badge.cjs
+          node scripts/test-fazier-badge.cjs
       - name: Check rendered HTML and image SEO
         run: node scripts/seo-health-check.cjs
       - name: Verify public SEO endpoints and social preview
