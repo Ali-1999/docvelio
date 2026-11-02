@@ -11,7 +11,10 @@ function entries(xml){
   const body=match[1],url=body.match(/<loc>([^<]+)<\/loc>/)?.[1];
   assert.ok(url,'Sitemap entry without loc');
   assert.ok(!out.has(url),'Duplicate sitemap URL: '+url);
-  out.set(url,normalize(body));
+  const links=[...body.matchAll(/<xhtml:link\b[^>]*\/>/g)].map(m=>m[0]);
+  const sortedLinks=links.map(normalize).sort();
+  const withoutLinks=normalize(body.replace(/<xhtml:link\b[^>]*\/>/g,''));
+  out.set(url,JSON.stringify({body:withoutLinks,links:sortedLinks}));
  }
  return out;
 }
