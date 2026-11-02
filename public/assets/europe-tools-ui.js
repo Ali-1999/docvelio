@@ -101,5 +101,5 @@
    else if(kind==='sepa')showSepa();
   }catch(error){output.hidden=true;note.textContent=error?.message||'Please check your inputs.';}
  });
- form.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}));
+ if(kind!=='sepa')form.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}));
 })();
