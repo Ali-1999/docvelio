@@ -40,6 +40,7 @@ jobs:
           node scripts/ensure-organization-schema.cjs
           node scripts/fix-ahrefs-metadata.cjs
           node scripts/install-adsense.cjs
+          node scripts/implement-internal-links.cjs
           node scripts/optimize-homepage-css.cjs
       - name: Verify Excel formula generator source and build integration
         shell: bash
