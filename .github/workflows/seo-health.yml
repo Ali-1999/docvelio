@@ -33,9 +33,23 @@ jobs:
           node scripts/add-search-answers.cjs
           node scripts/audit-seo-final.cjs
           node scripts/audit-seo.cjs
+          node scripts/build-excel-formula.cjs
           node scripts/ensure-organization-schema.cjs
           node scripts/fix-ahrefs-metadata.cjs
           node scripts/install-adsense.cjs
+      - name: Verify Excel formula generator source and build integration
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check src/excel-formula-worker.js
+          node --check scripts/build-excel-formula.cjs
+          node --check public/assets/excel-formula-generator.js
+          test -s public/excel-formula-generator/index.html
+          grep -Fq 'href="https://docvelio.com/excel-formula-generator/"' public/excel-formula-generator/index.html
+          grep -Fq '<loc>https://docvelio.com/excel-formula-generator/</loc>' public/sitemap.xml
+          grep -Fq '/api/excel-formula' public/assets/excel-formula-generator.js
+          grep -Fq 'main' wrangler.jsonc
+          echo 'Excel Formula Generator page, sitemap and endpoint source verified'
       - name: Check rendered HTML and image SEO
         run: node scripts/seo-health-check.cjs
       - name: Verify public SEO endpoints and social preview
