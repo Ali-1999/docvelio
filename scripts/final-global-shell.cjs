@@ -7,6 +7,18 @@ const labels={
  es:['Herramientas PDF','Imágenes','Calculadoras','Diversión','Recursos'],fr:['Outils PDF','Images','Calculateurs','Loisirs','Ressources'],de:['PDF-Tools','Bilder','Rechner','Zufall','Ressourcen'],pt:['Ferramentas PDF','Imagens','Calculadoras','Diversão','Recursos'],ar:['أدوات PDF','أدوات الصور','الحاسبات','أدوات ممتعة','الموارد'],hi:['PDF टूल','इमेज टूल','कैलकुलेटर','मज़ेदार टूल','संसाधन'],id:['Alat PDF','Alat Gambar','Kalkulator','Alat Acak','Sumber'],tr:['PDF Araçları','Görseller','Hesaplayıcılar','Eğlence','Kaynaklar'],zh:['PDF 工具','图片工具','计算器','趣味工具','资源']
 };
 const esc=x=>String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const excelFormulaLabels={
+ en:'Excel Formula Generator',
+ es:'Generador de fórmulas de Excel',
+ fr:'Générateur de formules Excel',
+ de:'Excel-Formelgenerator',
+ pt:'Gerador de fórmulas do Excel',
+ ar:'منشئ صيغ Excel',
+ hi:'Excel फ़ॉर्मूला जनरेटर',
+ id:'Generator Rumus Excel',
+ tr:'Excel Formül Oluşturucu',
+ zh:'Excel 公式生成器'
+};
 const options=[['en','English'],['es','Español'],['fr','Français'],['de','Deutsch'],['pt','Português'],['ar','العربية'],['hi','हिन्दी'],['id','Bahasa Indonesia'],['tr','Türkçe'],['zh','简体中文']];
 const a=(href,name)=>'<a href="'+href+'">'+esc(name)+'</a>';
 function menu(title,items){return '<details class="dv-mega"><summary>'+esc(title)+'<span aria-hidden="true" class="dv-chevron">⌄</span></summary><div class="dv-mega-panel">'+items.map(x=>a(...x)).join('')+'</div></details>';}
@@ -17,7 +29,7 @@ function header(lang,route){
  const groups=[
  menu(l[0],[[local(''),'All Tools'],[local('tools/edit-pdf/'),l[6]],[local('tools/merge-pdf/'),l[7]],[local('tools/compress-pdf/'),l[8]],[local('tools/word-editor/'),l[9]]]),
  menu(l[1],[[local('image-editor/'),l[10]],[local('image-tools/resize-image/'),l[11]],[local('image-tools/crop-image/'),l[12]],[local('image-tools/convert-image/'),l[13]]]),
- menu(l[2],[[local('cbm-calculator/'),l[14]],[local('shipping-tools/volumetric-weight-calculator/'),l[15]],[local('shipping-tools/container-capacity-calculator/'),'Container Capacity']]),
+ menu(l[2],[['/excel-formula-generator/',excelFormulaLabels[lang]],[local('cbm-calculator/'),l[14]],[local('shipping-tools/volumetric-weight-calculator/'),l[15]],[local('shipping-tools/container-capacity-calculator/'),'Container Capacity']]),
  menu(l[3],[['/wheel-of-names/',l[16]]]),
  menu(l[4],[[local('guides/'),l[17]],[local('blog/'),l[18]],[local('about/'),l[19]],[local('contact/'),l[20]]])
  ].join('');
