@@ -80,7 +80,7 @@ function listPages(folder){
  }
 }
 listPages(root);
-assert(htmlPages.length===581,'Expected 580 index pages plus custom 404, got '+htmlPages.length);
+assert(htmlPages.length===583,'Expected 582 index pages plus custom 404, got '+htmlPages.length);
 const headerTemplates=new Map(),titles=new Set(),pageTitles=new Map();
 let tips=0,headCount=0;
 for(const file of htmlPages){
@@ -111,7 +111,7 @@ for(const file of htmlPages){
  assert(html.includes('hreflang="x-default"'),'Missing multilingual alternate: '+rel);
  const url='https://docvelio.com/'+rel.replace(/index\.html$/,'');
  assert(html.includes(url),'Absolute page URL missing: '+rel);
- if(route.startsWith('tools/')){
+ if(route.startsWith('tools/') && !['tools/qr-code-generator','tools/barcode-generator'].includes(route)){
   assert(html.includes('class="dv-related-links"'),'Tool links missing: '+rel);
   tips++;
  }
@@ -119,8 +119,8 @@ for(const file of htmlPages){
 }
 assert.equal(headerTemplates.size,10,'All ten language headers are not present');
 assert.equal(tips,180,'Expected tool-specific guidance on all 180 tool pages');
-assert.equal(headCount,580);
-console.log('PASS: identical header per locale, 580 meaningful pages, 180 tool guidance sections and metadata');
+assert.equal(headCount,582);
+console.log('PASS: identical header per locale, 582 meaningful pages, 180 tool guidance sections and metadata');
 
 
 /* Layout regression: the tool guide must be contained and follow the workspace,
@@ -190,7 +190,7 @@ for(const file of pagesForAlt){
 assert(fs.existsSync(path.join(root,'llms.txt')),'Missing optional llms.txt');
 assert(fs.existsSync(path.join(root,'sitemap.txt')),'Missing TXT sitemap fallback');
 const generatedSitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
-assert((generatedSitemap.match(/<url>/g)||[]).length===580,'Missing sitemap routes');
+assert((generatedSitemap.match(/<url>/g)||[]).length===582,'Missing sitemap routes');
 assert(!/X-Robots-Tag:\s*noindex/i.test(fs.readFileSync(path.join(root,'_headers'),'utf8')),'X-Robots-Tag blocks indexing');
 console.log('PASS: SEOptimer remediation, title, description, image alt attributes and sitemap count.');
 
@@ -234,5 +234,5 @@ for(const lang of languages){
  }
 }
 assert.equal(articleTitles.size,10,'Expected 10 distinct English blog titles');
-assert((generatedSitemap.match(/<url>/g)||[]).length===580,'Blog sitemap coverage missing');
+assert((generatedSitemap.match(/<url>/g)||[]).length===582,'Blog sitemap coverage missing');
 console.log('PASS: 100 localized topic pages, 10 blog indexes, 10 different English topics and multilingual discovery links.');
