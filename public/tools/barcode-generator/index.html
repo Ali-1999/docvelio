@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Code 39 Barcode Generator & Printable Labels | Docvelio</title>
+<meta name="description" content="Generate Code 39 barcodes and printable product labels free in your browser. Download SVG or print labels. No API, account or uploads required.">
+<link rel="canonical" href="https://docvelio.com/tools/barcode-generator/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+:root{color-scheme:light} .barcode-app{max-width:940px;margin:2.5rem auto;padding:0 1.2rem;font-family:system-ui,sans-serif;color:#19324b}.barcode-app h1{font-size:clamp(1.8rem,4vw,2.7rem)}.barcode-app p{line-height:1.6}.bc-panel{background:#fff;border:1px solid #dae4ee;border-radius:18px;padding:1.3rem;margin:1.4rem 0;box-shadow:0 4px 26px #0e35550b}.bc-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem}.bc-field{display:flex;flex-direction:column;gap:.4rem;font-weight:650}.bc-field input,.bc-field select{width:100%;box-sizing:border-box;border:1px solid #b7c8d7;border-radius:9px;padding:.8rem;font:inherit;color:#172d44;background:white}.bc-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin:1rem 0}.bc-actions button{border:0;background:#0b62d6;color:#fff;border-radius:9px;padding:.8rem 1.2rem;font:inherit;font-weight:700;cursor:pointer}.bc-actions button.secondary{background:#e8f1fc;color:#1152a2}.bc-preview{background:#fff;border:1px dashed #aac2d9;border-radius:10px;padding:1.5rem;overflow-x:auto;text-align:center}.bc-preview svg{max-width:100%;height:auto}.bc-error{color:#b42318;font-weight:650;min-height:1.5rem}.bc-note{color:#50667a;font-size:.93rem}.bc-print{display:none}.bc-label{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;break-inside:avoid;page-break-inside:avoid;border:1px solid #ddd;padding:8mm;min-height:42mm;box-sizing:border-box}.bc-label svg{max-width:100%;height:auto}.bc-label h2{font-size:13pt;margin:0 0 5mm}.bc-label small{margin-top:3mm}.bc-sample{font-weight:650}.bc-tag{display:inline-block;background:#e9f5ef;color:#166534;border-radius:99px;padding:.3rem .7rem;font-size:.85rem}@media print{body>*{display:none!important}.bc-print{display:grid!important;grid-template-columns:repeat(2,1fr);gap:4mm;padding:0}.bc-label{border:1px solid #ccc} @page{size:A4;margin:10mm}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Docvelio Code 39 Barcode Generator","url":"https://docvelio.com/tools/barcode-generator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+</head>
+<body>
+<main id="content" class="barcode-app">
+<a href="/">← Docvelio Home</a>
+<h1>Free Barcode Generator and Printable Labels</h1>
+<p>Generate a genuine <strong>Code 39</strong> linear barcode locally in your browser. Save clean, scalable SVG artwork or print product labels. No file uploads, external barcode API, login or watermark.</p>
+<span class="bc-tag">100% browser-side · No third-party requests</span>
+<section class="bc-panel" aria-label="Barcode configuration">
+<div class="bc-fields">
+<label class="bc-field">Barcode text<input id="value" maxlength="60" value="DOCVELIO-123" autocomplete="off" spellcheck="false"></label>
+<label class="bc-field">Bar width (pixels)<input id="module" type="number" value="3" min="1" max="8"></label>
+<label class="bc-field">Barcode height (pixels)<input id="height" type="number" value="90" min="30" max="300"></label>
+<label class="bc-field">Label title<input id="heading" maxlength="80" value="Product Label"></label>
+<label class="bc-field">Number of labels<input id="copies" type="number" value="4" min="1" max="100"></label>
+<label class="bc-field">Include readable text<select id="human"><option value="yes">Yes</option><option value="no">No</option></select></label>
+</div>
+<div class="bc-actions"><button id="make" type="button">Generate barcode</button><button id="download" type="button" class="secondary">Download SVG</button><button id="print" type="button" class="secondary">Print labels</button></div>
+<p class="bc-error" id="error" role="alert" aria-live="polite"></p>
+<div id="preview" class="bc-preview" aria-label="Generated barcode preview"></div>
+</section>
+<section class="bc-panel"><h2>How to use</h2><p>Enter uppercase letters, numbers or Code 39 symbols (- . space $ / + %). The tool adds the required start and stop characters automatically. Download SVG for logos, packaging or documents; use Print labels to print multiple A4 labels.</p><p class="bc-note">This tool currently supports <strong>Code 39 only</strong>. It is not an EAN/UPC retail numbering service, a GS1 certification tool or a shipping-carrier integration. Check print quality with your actual scanner before production use.</p></section>
+</main>
+<div id="printArea" class="bc-print" aria-hidden="true"></div>
+<script>
+(()=>{'use strict';
+const dict={
+'0':'nnnwwnwnn','1':'wnnwnnnnw','2':'nnwwnnnnw','3':'wnwwnnnnn','4':'nnnwwnnnw','5':'wnnwwnnnn','6':'nnwwwnnnn','7':'nnnwnnwnw','8':'wnnwnnwnn','9':'nnwwnnwnn',
+'A':'wnnnnwnnw','B':'nnwnnwnnw','C':'wnwnnwnnn','D':'nnnnwwnnw','E':'wnnnwwnnn','F':'nnwnwwnnn','G':'nnnnnwwnw','H':'wnnnnwwnn','I':'nnwnnwwnn','J':'nnnnwwwnn',
+'K':'wnnnnnnww','L':'nnwnnnnww','M':'wnwnnnnwn','N':'nnnnwnnww','O':'wnnnwnnwn','P':'nnwnwnnwn','Q':'nnnnnnwww','R':'wnnnnnwwn','S':'nnwnnnwwn','T':'nnnnwnwwn',
+'U':'wwnnnnnnw','V':'nwwnnnnnw','W':'wwwnnnnnn','X':'nwnnwnnnw','Y':'wwnnwnnnn','Z':'nwwnwnnnn','-':'nwnnnnwnw','.':'wwnnnnwnn',' ':'nwwnnnwnn','$':'nwnwnwnnn','/':'nwnwnnnwn','+':'nwnnnwnwn','%':'nnnwnwnwn','*':'nwnnwnwnn'
+};
+const byId=id=>document.getElementById(id);let current='';
+function render(){
+let v=byId('value').value.toUpperCase(), m=Number(byId('module').value), h=Number(byId('height').value);
+const error=byId('error');error.textContent='';
+if(!v||v.length>60||[...v].some(x=>!dict[x]||x==='*')){error.textContent='Enter 1–60 valid Code 39 characters (A–Z, 0–9, space, - . $ / + %).';return false;}
+if(!Number.isInteger(m)||m<1||m>8||!Number.isInteger(h)||h<30||h>300){error.textContent='Bar width must be 1–8 px, and height 30–300 px.';return false;}
+let pos=10*m,rects=[];const sequence='*'+v+'*';
+for(let k=0;k<sequence.length;k++){
+const pattern=dict[sequence[k]];
+for(let i=0;i<9;i++){let width=(pattern[i]==='w'?3:1)*m;if(i%2===0)rects.push('<rect x="'+pos+'" y="0" width="'+width+'" height="'+h+'"/>');pos+=width;}
+if(k<sequence.length-1)pos+=m;
+}
+const width=pos+10*m,hasHuman=byId('human').value==='yes';const label=hasHuman?'<text x="'+(width/2)+'" y="'+(h+21)+'" font-size="16" text-anchor="middle" font-family="Arial, sans-serif">'+escapeXml(v)+'</text>':'';
+current='<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Code 39 barcode for '+escapeXml(v)+'" viewBox="0 0 '+width+' '+(h+(hasHuman?29:5))+'" width="'+width+'" height="'+(h+(hasHuman?29:5))+'"><rect width="100%" height="100%" fill="white"/><g fill="black">'+rects.join('')+'</g>'+label+'</svg>';
+byId('preview').innerHTML=current;return true;
+}
+function escapeXml(x){return x.replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[ch]));}
+function download(){if(!render())return;const blob=new Blob([current],{type:'image/svg+xml;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='docvelio-code39.svg';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+function printLabels(){if(!render())return;const copies=Number(byId('copies').value);if(!Number.isInteger(copies)||copies<1||copies>100){byId('error').textContent='Choose 1 to 100 labels.';return;}const title=escapeXml(byId('heading').value||'Product Label');byId('printArea').innerHTML=Array.from({length:copies},()=>'<div class="bc-label"><h2>'+title+'</h2>'+current+'</div>').join('');window.print();}
+byId('make').addEventListener('click',render);byId('download').addEventListener('click',download);byId('print').addEventListener('click',printLabels);
+for(const id of ['value','module','height','human'])byId(id).addEventListener('change',render);
+render();
+})();
+</script>
+</body></html>
