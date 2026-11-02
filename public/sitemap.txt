@@ -578,3 +578,5 @@ https://docvelio.com/zh/tools/split-pdf/
 https://docvelio.com/zh/tools/view-pdf/
 https://docvelio.com/zh/tools/watermark-pdf/
 https://docvelio.com/zh/tools/word-editor/
+https://docvelio.com/tools/qr-code-generator/
+https://docvelio.com/tools/barcode-generator/
