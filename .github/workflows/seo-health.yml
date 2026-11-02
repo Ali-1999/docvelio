@@ -39,6 +39,7 @@ jobs:
           node scripts/ensure-organization-schema.cjs
           node scripts/fix-ahrefs-metadata.cjs
           node scripts/install-adsense.cjs
+          node scripts/optimize-homepage-css.cjs
       - name: Verify Excel formula generator source and build integration
         shell: bash
         run: |
@@ -60,6 +61,8 @@ jobs:
           node scripts/test-home-toolkit.cjs
           node --check scripts/redesign-full-homepage.cjs
           node scripts/test-full-homepage.cjs
+          node --check scripts/optimize-homepage-css.cjs
+          node scripts/test-homepage-performance.cjs
       - name: Check rendered HTML and image SEO
         run: node scripts/seo-health-check.cjs
       - name: Verify public SEO endpoints and social preview
