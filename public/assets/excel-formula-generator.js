@@ -44,8 +44,7 @@
  $('ef-preview').addEventListener('click',()=>{
   const nums=sample.value.split(/[,;\s]+/).map(x=>x.trim()).filter(Boolean).map(Number);
   if(nums.length<2||nums.length>100||nums.some(n=>!Number.isFinite(n))){sampleOutput.textContent='Enter 2 to 100 numbers separated by commas or spaces.';return;}
-  if(!window.formulajs){sampleOutput.textContent='Formula.js is unavailable. Check your internet connection.';return;}
-  const total=window.formulajs.SUM(nums),average=window.formulajs.AVERAGE(nums);
-  sampleOutput.textContent='Formula.js check: SUM = '+total+' | AVERAGE = '+average;
+  const total=nums.reduce((sum,n)=>sum+n,0),average=total/nums.length;
+  sampleOutput.textContent='Docvelio calculation: SUM = '+total+' | AVERAGE = '+average;
  });
 })();
