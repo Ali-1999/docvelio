@@ -18,6 +18,13 @@ const copy={
  tr:{k:'HER GÖREV İÇİN ARAÇLAR',h:'Doğru aracı bulun, işi bitirin.',s:'PDF, görsel, Word ve hesaplayıcı araçları bir arada.',search:'Araç veya görev ara…',featured:'Öne çıkan araçlar',browse:'Tüm araçlara göz at',tabs:['Tümü','PDF','Word','Görseller','Hesaplayıcılar','Diğer'],open:'Aracı aç',count:'araç mevcut',empty:'Eşleşen araç bulunamadı. Başka bir arama deneyin.',bottom:'Orijinal dosyayı saklayın ve sonucu kontrol edin.',guide:'Rehberlere bak',spot:['PDF sayfalarına not, çizim ve vurgu ekleyin.','Görselleri yeniden boyutlandırın ve dönüştürün.','Hesabı tarif edin, Excel formülünü kopyalayın.'],extras:['Görsel Stüdyosu','Görsel Boyutlandır','Görsel Dönüştür','Dosya Boyutu Küçült','CBM Hesaplayıcı','Hacimsel Ağırlık','Excel Formül Oluşturucu','İsim Çarkı'],detail:['Görsel düzenleyin.','Boyutları ayarlayın.','Desteklenen biçimleri dönüştürün.','JPG veya WebP küçültün.','Kargo hacmini hesaplayın.','Hacimsel ağırlığı tahmin edin.','Metinden formül oluşturun.','Rastgele seçim yapın.']},
  zh:{k:'为每项任务找到工具',h:'找到合适工具，快速完成任务。',s:'PDF、图片、Word 和计算工具，都在这里。',search:'搜索工具或任务…',featured:'从精选工具开始',browse:'浏览全部工具',tabs:['全部','PDF','Word','图片','计算器','更多'],open:'打开工具',count:'个工具可用',empty:'没有找到匹配的工具，请更换关键词。',bottom:'保留原始文件，并在分享前检查结果。',guide:'查看指南',spot:['为 PDF 页面添加文字批注、绘图和高亮。','调整图片大小、裁剪并转换格式。','描述计算需求并复制 Excel 公式。'],extras:['图片工作室','调整图片大小','图片格式转换','压缩图片大小','CBM 计算器','体积重量计算器','Excel 公式生成器','随机转盘'],detail:['编辑并导出图片。','设置新的图片尺寸。','转换受支持的格式。','缩小 JPG 或 WebP 文件。','计算货物体积。','估算体积重量。','根据文字描述生成公式。','随机选择选项。']}
 };
+const europeanCards=[
+ {route:'calculators/euro-pallet-stacking-calculator',cat:'calculators',glyph:'▣',names:['Euro Pallet Calculator','Calculadora de palés','Calculateur de palettes','Europaletten-Rechner','Calculadora de paletes','حاسبة منصات اليورو','यूरो पैलेट कैलकुलेटर','Kalkulator Palet Euro','Euro Palet Hesaplayıcı','欧标托盘计算器'],desc:'Estimate cartons per EPAL pallet, stack height and load with a visual plan.'},
+ {route:'image-tools/a4-a3-dpi-pixel-calculator',cat:'image',glyph:'◫',names:['A4/A3 DPI Calculator','Calculadora DPI A4/A3','Calculateur DPI A4/A3','A4/A3 DPI Rechner','Calculadora DPI A4/A3','حاسبة DPI A4/A3','A4/A3 DPI कैलकुलेटर','Kalkulator DPI A4/A3','A4/A3 DPI Hesaplayıcı','A4/A3 DPI 计算器'],desc:'Convert paper measurements into pixels at your chosen print resolution.'},
+ {route:'calculators/sepa-qr-code-generator',cat:'calculators',glyph:'▦',names:['SEPA Payment QR Generator','QR de pago SEPA','QR de paiement SEPA','SEPA-QR-Code erstellen','Gerador QR SEPA','منشئ رمز SEPA QR','SEPA QR जनरेटर','Generator QR SEPA','SEPA QR Oluşturucu','SEPA 二维码生成器'],desc:'Create an EPC payment QR code locally for a SEPA invoice.'},
+ {route:'image-tools/bleed-print-margin-calculator',cat:'image',glyph:'▤',names:['Print Bleed Calculator','Calculadora de sangrado','Calculateur de fond perdu','Beschnitt-Rechner','Calculadora de sangria','حاسبة هوامش الطباعة','प्रिंट ब्लीड कैलकुलेटर','Kalkulator Bleed Cetak','Baskı Taşma Hesaplayıcı','印刷出血计算器'],desc:'Calculate print trim, bleed and safe margins with a layout guide.'},
+ {route:'calculators/rf-creditor-reference-generator',cat:'calculators',glyph:'RF',names:['RF Creditor Reference','Referencia acreedor RF','Référence créancier RF','RF-Referenzgenerator','Referência RF','مرجع RF','RF रेफ़रेंस','Referensi RF','RF Referans','RF 收款参考号'],desc:'Generate and validate ISO 11649 payment references.'}
+];
 const extras=[
  ['image-editor','image','▧',0],
  ['image-tools/resize-image','image','⇲',1],
@@ -26,7 +33,8 @@ const extras=[
  ['cbm-calculator','calculators','㎥',4],
  ['shipping-tools/volumetric-weight-calculator','calculators','◫',5],
  ['excel-formula-generator','calculators','ƒ',6],
- ['wheel-of-names','more','◉',7]
+ ['wheel-of-names','more','◉',7],
+ ...europeanCards.map((item,i)=>[item.route,item.cat,item.glyph,i+8])
 ];
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const noTags=s=>String(s).replace(/<[^>]*>/g,'').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;/g,"'").trim();
@@ -41,7 +49,8 @@ function hrefFor(lang,route){
 function attr(markup,name){return markup.match(new RegExp('(?:^|\\s)'+name+'="([^"]*)"','i'))?.[1]||'';}
 function newCard(lang,t){
  const d=copy[lang],route=t[0],category=t[1],glyph=t[2],idx=t[3];
- const url=hrefFor(lang,route),name=d.extras[idx],desc=d.detail[idx];
+ const en=europeanCards[idx-8],langIndex=langs.indexOf(lang);
+ const url=hrefFor(lang,route),name=idx<8?d.extras[idx]:en.names[langIndex],desc=idx<8?d.detail[idx]:en.desc;
  return '<a class="tool-card dv-toolkit-card" data-category="'+category+'" data-title="'+esc(name+' '+route.split('/').pop().replaceAll('-',' '))+'" href="'+url+'">'+
   '<div class="tool-card-top"><span class="tool-icon dv-icon-'+category+'" aria-hidden="true">'+esc(glyph)+'</span><span class="dv-card-type">'+esc(d.tabs[cats.indexOf(category)])+'</span></div>'+
   '<h3>'+esc(name)+' <span class="card-arrow" aria-hidden="true">↗</span></h3>'+
