@@ -17,7 +17,7 @@ function retail(value,format){
  return {bits,text:data};
 }
 function itf(value){
- const data=value.trim();if(!/^\\d{2,80}$/.test(data)||data.length%2)throw Error('ITF needs an even number of digits (2–80).');
+ const data=value.trim();if(!/^\d{2,80}$/.test(data)||data.length%2)throw Error('ITF needs an even number of digits (2–80).');
  let bits='1010';for(let i=0;i<data.length;i+=2){const b=ITF[Number(data[i])],s=ITF[Number(data[i+1])];for(let j=0;j<5;j++)bits+='1'.repeat(b[j]==='1'?3:1)+'0'.repeat(s[j]==='1'?3:1);}
  return {bits:bits+'11101',text:data};
 }
