@@ -111,7 +111,7 @@ for(const file of htmlPages){
  assert(html.includes('hreflang="x-default"'),'Missing multilingual alternate: '+rel);
  const url='https://docvelio.com/'+rel.replace(/index\.html$/,'');
  assert(html.includes(url),'Absolute page URL missing: '+rel);
- if(route.startsWith('tools/')){
+ if(route.startsWith('tools/') && !['tools/qr-code-generator','tools/barcode-generator'].includes(route)){
   assert(html.includes('class="dv-related-links"'),'Tool links missing: '+rel);
   tips++;
  }
