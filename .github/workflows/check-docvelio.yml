@@ -58,6 +58,8 @@ jobs:
           node --check scripts/test-image-studio.cjs
           node --check public/assets/image-core.js
           node --check public/assets/image-studio.js
+          node --check scripts/test-code128.cjs
+          node --check public/assets/barcode-code128.js
           node --check scripts/test-barcode-retail.cjs
           node --check public/assets/barcode-retail.js
           node --check scripts/test-docvelio.cjs
@@ -81,6 +83,7 @@ jobs:
         run: node scripts/compare-sitemap-semantic.cjs
       - name: Check localized tools and indexing metadata
         run: |
+          node scripts/test-code128.cjs
           node scripts/test-barcode-retail.cjs
           node scripts/test-docvelio.cjs
           node scripts/test-ui.cjs

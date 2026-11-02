@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Free Barcode Generator: EAN-13, UPC-A, ITF, Code 39 & Labels | Docvelio</title>
+<title>Free Barcode Generator: Code 128, EAN, UPC, ITF & Labels | Docvelio</title>
 <meta name="description" content="Generate EAN-13, UPC-A, ITF and Code 39 barcodes and printable labels free in your browser. Download SVG or print labels. No API, account or uploads required.">
 <link rel="canonical" href="https://docvelio.com/tools/barcode-generator/"><link rel="alternate" hreflang="en" href="https://docvelio.com/tools/barcode-generator/"><link rel="alternate" hreflang="x-default" href="https://docvelio.com/tools/barcode-generator/">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/style.css">
 <style>
-:root{color-scheme:light} .barcode-app{max-width:940px;margin:2.5rem auto;padding:0 1.2rem;font-family:system-ui,sans-serif;color:#19324b}.barcode-app h1{font-size:clamp(1.8rem,4vw,2.7rem)}.barcode-app p{line-height:1.6}.bc-panel{background:#fff;border:1px solid #dae4ee;border-radius:18px;padding:1.3rem;margin:1.4rem 0;box-shadow:0 4px 26px #0e35550b}.bc-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem}.bc-field{display:flex;flex-direction:column;gap:.4rem;font-weight:650}.bc-field input,.bc-field select{width:100%;box-sizing:border-box;border:1px solid #b7c8d7;border-radius:9px;padding:.8rem;font:inherit;color:#172d44;background:white}.bc-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin:1rem 0}.bc-actions button{border:0;background:#0b62d6;color:#fff;border-radius:9px;padding:.8rem 1.2rem;font:inherit;font-weight:700;cursor:pointer}.bc-actions button.secondary{background:#e8f1fc;color:#1152a2}.bc-preview{background:#fff;border:1px dashed #aac2d9;border-radius:10px;padding:1.5rem;overflow-x:auto;text-align:center}.bc-preview svg{max-width:100%;height:auto}.bc-error{color:#b42318;font-weight:650;min-height:1.5rem}.bc-note{color:#50667a;font-size:.93rem}.bc-print{display:none}.bc-label{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;break-inside:avoid;page-break-inside:avoid;border:1px solid #ddd;padding:8mm;min-height:42mm;box-sizing:border-box}.bc-label svg{max-width:100%;height:auto}.bc-label h2{font-size:13pt;margin:0 0 5mm}.bc-label small{margin-top:3mm}.bc-sample{font-weight:650}.bc-tag{display:inline-block;background:#e9f5ef;color:#166534;border-radius:99px;padding:.3rem .7rem;font-size:.85rem}@media print{body>*{display:none!important}.bc-print{display:grid!important;grid-template-columns:repeat(2,1fr);gap:4mm;padding:0}.bc-label{border:1px solid #ccc} @page{size:A4;margin:10mm}}
+:root{color-scheme:light} .barcode-app{max-width:940px;margin:2.5rem auto;padding:0 1.2rem;font-family:system-ui,sans-serif;color:#19324b}.barcode-app h1{font-size:clamp(1.8rem,4vw,2.7rem)}.barcode-app p{line-height:1.6}.bc-panel{background:#fff;border:1px solid #dae4ee;border-radius:18px;padding:1.3rem;margin:1.4rem 0;box-shadow:0 4px 26px #0e35550b}.bc-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem}.bc-field{display:flex;flex-direction:column;gap:.4rem;font-weight:650}.bc-field input,.bc-field select{width:100%;box-sizing:border-box;border:1px solid #b7c8d7;border-radius:9px;padding:.8rem;font:inherit;color:#172d44;background:white}.bc-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin:1rem 0}.bc-actions button{border:0;background:#0b62d6;color:#fff;border-radius:9px;padding:.8rem 1.2rem;font:inherit;font-weight:700;cursor:pointer}.bc-actions button.secondary{background:#e8f1fc;color:#1152a2}.bc-preview{background:#fff;border:1px dashed #aac2d9;border-radius:10px;padding:1.5rem;overflow-x:auto;text-align:center}.bc-preview svg{max-width:100%;height:auto}.bc-error{color:#b42318;font-weight:650;min-height:1.5rem}.bc-note{color:#50667a;font-size:.93rem}.bc-print{display:none}.bc-label{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;break-inside:avoid;page-break-inside:avoid;border:1px solid #ddd;padding:8mm;min-height:var(--bc-label-height,42mm);box-sizing:border-box}.bc-label svg{max-width:100%;height:auto}.bc-label h2{font-size:13pt;margin:0 0 5mm}.bc-label small{margin-top:3mm}.bc-sample{font-weight:650}.bc-tag{display:inline-block;background:#e9f5ef;color:#166534;border-radius:99px;padding:.3rem .7rem;font-size:.85rem}@media print{body>*{display:none!important}.bc-print{display:grid!important;gap:4mm;padding:0}.bc-label{border:1px solid #ccc} @page{size:A4;margin:10mm}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Docvelio Code 39 Barcode Generator","url":"https://docvelio.com/tools/barcode-generator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 </head>
@@ -16,26 +16,37 @@
 <main id="content" class="barcode-app">
 <a href="/">← Docvelio Home</a>
 <h1>Free Barcode Generator and Printable Labels</h1>
-<p>Generate <strong>Code 39, EAN-13, UPC-A or ITF</strong> linear barcodes locally in your browser. Save clean, scalable SVG artwork or print product labels. No file uploads, external barcode API, login or watermark.</p>
+<p>Generate <strong>Code 39, Code 128, EAN-13, UPC-A or ITF</strong> linear barcodes locally in your browser. Save clean, scalable SVG artwork or print product labels. No file uploads, external barcode API, login or watermark.</p>
 <span class="bc-tag">100% browser-side · No third-party requests</span>
 <section class="bc-panel" aria-label="Barcode configuration">
 <div class="bc-fields">
-<label class="bc-field">Barcode format<select id="format"><option value="code39">Code 39</option><option value="ean13">EAN-13 (retail)</option><option value="upca">UPC-A (retail)</option><option value="itf">Interleaved 2 of 5</option></select></label>
+<label class="bc-field">Barcode format<select id="format"><option value="code39">Code 39</option><option value="code128">Code 128</option><option value="ean13">EAN-13 (retail)</option><option value="upca">UPC-A (retail)</option><option value="itf">Interleaved 2 of 5</option></select></label>
 <label class="bc-field">Barcode text<input id="value" maxlength="60" value="DOCVELIO-123" autocomplete="off" spellcheck="false"></label>
 <label class="bc-field">Bar width (pixels)<input id="module" type="number" value="3" min="1" max="8"></label>
 <label class="bc-field">Barcode height (pixels)<input id="height" type="number" value="90" min="30" max="300"></label>
 <label class="bc-field">Label title<input id="heading" maxlength="80" value="Product Label"></label>
-<label class="bc-field">Number of labels<input id="copies" type="number" value="4" min="1" max="100"></label>
+<label class="bc-field">Print columns<select id="columns"><option value="2">2 labels across</option><option value="3">3 labels across</option><option value="1">1 label across</option></select></label><label class="bc-field">Label height (mm)<input id="labelHeight" type="number" min="25" max="100" value="42"></label><label class="bc-field">Number of labels<input id="copies" type="number" value="4" min="1" max="100"></label>
 <label class="bc-field">Include readable text<select id="human"><option value="yes">Yes</option><option value="no">No</option></select></label>
 </div>
 <div class="bc-actions"><button id="make" type="button">Generate barcode</button><button id="download" type="button" class="secondary">Download SVG</button><button id="print" type="button" class="secondary">Print labels</button></div>
 <p class="bc-error" id="error" role="alert" aria-live="polite"></p>
 <div id="preview" class="bc-preview" aria-label="Generated barcode preview"></div>
 </section>
-<section class="bc-panel"><h2>How to use</h2><p>Enter uppercase letters, numbers or Code 39 symbols (- . space $ / + %). The tool adds the required start and stop characters automatically. Download SVG for logos, packaging or documents; use Print labels to print multiple A4 labels.</p><p class="bc-note">Supported formats: <strong>Code 39, EAN-13, UPC-A and Interleaved 2 of 5</strong>. EAN and UPC accept a missing check digit and calculate it locally. It is not an EAN/UPC retail numbering service, a GS1 certification tool or a shipping-carrier integration. Check print quality with your actual scanner before production use.</p></section>
+<section class="bc-panel"><h2>How to use</h2><p>Enter uppercase letters, numbers or Code 39 symbols (- . space $ / + %). The tool adds the required start and stop characters automatically. Download SVG for logos, packaging or documents; use Print labels to print multiple A4 labels.</p><p class="bc-note">Supported formats: <strong>Code 39, Code 128, EAN-13, UPC-A and Interleaved 2 of 5</strong>. EAN and UPC accept a missing check digit and calculate it locally. It is not an EAN/UPC retail numbering service, a GS1 certification tool or a shipping-carrier integration. Check print quality with your actual scanner before production use.</p></section>
+<section class="bc-panel" aria-label="Bulk CSV label generation">
+<h2>Bulk CSV labels</h2><p>Paste or upload a CSV with columns <code>value,title</code>. Generate up to 100 labels locally without uploading your data.</p>
+<label class="bc-field">CSV data<textarea id="bulkCsv" rows="5" placeholder="value,title&#10;ABC-123,Widget A&#10;XYZ-456,Widget B"></textarea></label>
+<label class="bc-field">Choose CSV file<input type="file" id="bulkFile" accept=".csv,text/csv"></label>
+<div class="bc-actions"><button type="button" id="bulkPrint">Print CSV labels</button></div>
+<p class="bc-note" id="bulkStatus" role="status"></p></section>
+<section class="bc-panel" aria-label="Barcode scan">
+<h2>Scan barcode with camera</h2><p>Uses the browser’s built-in BarcodeDetector when available. Images and camera frames remain on your device. Requires a secure connection and camera permission.</p>
+<div class="bc-actions"><button id="scanStart" type="button">Start camera</button><button id="scanStop" type="button" class="secondary">Stop camera</button></div>
+<video id="scanVideo" playsinline muted style="width:100%;max-width:420px;display:none;border-radius:12px" aria-label="Live barcode scanner"></video>
+<p id="scanStatus" role="status"></p></section>
 </main><footer aria-label="Site footer"><p>Docvelio free browser-based tools</p></footer>
 <div id="printArea" class="bc-print" aria-hidden="true"></div>
-<script src="/assets/barcode-retail.js"></script>
+<script src="/assets/barcode-retail.js"></script><script src="/assets/barcode-code128.js"></script>
 <script>
 (()=>{'use strict';
 const dict={
@@ -48,7 +59,7 @@ const byId=id=>document.getElementById(id);let current='';
 function renderRetail(format){
  const error=byId('error');error.textContent='';
  try{
-  const result=window.DocvelioLinear.encode(format,byId('value').value);
+  const result=format==='code128'?window.DocvelioCode128.encode(byId('value').value):window.DocvelioLinear.encode(format,byId('value').value);
   const m=Number(byId('module').value),h=Number(byId('height').value);
   if(!Number.isInteger(m)||m<1||m>8||!Number.isInteger(h)||h<30||h>300)throw Error('Bar width must be 1–8 px, and height 30–300 px.');
   const bits=result.bits;let rects=[];for(let i=0;i<bits.length;i++)if(bits[i]==='1')rects.push('<rect x="'+((i+10)*m)+'" y="0" width="'+m+'" height="'+h+'"/>');
@@ -76,9 +87,41 @@ byId('preview').innerHTML=current;return true;
 }
 function escapeXml(x){return x.replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[ch]));}
 function download(){if(!render())return;const blob=new Blob([current],{type:'image/svg+xml;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='docvelio-code39.svg';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
-function printLabels(){if(!render())return;const copies=Number(byId('copies').value);if(!Number.isInteger(copies)||copies<1||copies>100){byId('error').textContent='Choose 1 to 100 labels.';return;}const title=escapeXml(byId('heading').value||'Product Label');byId('printArea').innerHTML=Array.from({length:copies},()=>'<div class="bc-label"><h2>'+title+'</h2>'+current+'</div>').join('');window.print();}
+function configurePrint(){const cols=Number(byId('columns').value),height=Number(byId('labelHeight').value);if(![1,2,3].includes(cols)||!Number.isFinite(height)||height<25||height>100)throw Error('Invalid label layout');const sheet=byId('printArea');sheet.style.gridTemplateColumns='repeat('+cols+',minmax(0,1fr))';sheet.style.setProperty('--bc-label-height',height+'mm');}
+function printLabels(){if(!render())return;try{configurePrint();}catch(e){byId('error').textContent=e.message;return;}const copies=Number(byId('copies').value);if(!Number.isInteger(copies)||copies<1||copies>100){byId('error').textContent='Choose 1 to 100 labels.';return;}const title=escapeXml(byId('heading').value||'Product Label');byId('printArea').innerHTML=Array.from({length:copies},()=>'<div class="bc-label"><h2>'+title+'</h2>'+current+'</div>').join('');window.print();}
 byId('make').addEventListener('click',render);byId('download').addEventListener('click',download);byId('print').addEventListener('click',printLabels);
 for(const id of ['format','value','module','height','human'])byId(id).addEventListener('change',render);
+const bulkCsv=byId('bulkCsv'),bulkStatus=byId('bulkStatus');
+byId('bulkFile').addEventListener('change',async e=>{const file=e.target.files?.[0];if(!file)return;if(file.size>1024*1024){bulkStatus.textContent='CSV file must be under 1 MB.';return;}bulkCsv.value=await file.text();});
+function parseCSV(raw){
+ const rows=[];let record=[],field='',quoted=false;
+ for(let i=0;i<raw.length;i++){const c=raw[i];
+  if(c==='"'){if(quoted&&raw[i+1]==='"'){field+='"';i++;}else quoted=!quoted;}
+  else if(c===','&&!quoted){record.push(field);field='';}
+  else if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&raw[i+1]==='\n')i++;record.push(field);field='';if(record.some(x=>x.trim()))rows.push(record);record=[];}
+  else field+=c;
+ }if(quoted)throw Error('CSV contains an unclosed quoted field.');
+ record.push(field);if(record.some(x=>x.trim()))rows.push(record);
+ if(rows[0]?.[0]?.trim().toLowerCase()==='value')rows.shift();
+ if(!rows.length||rows.length>100)throw Error('Supply 1–100 CSV rows.');
+ return rows.map(r=>({value:(r[0]||'').trim(),title:(r[1]||'Product Label').slice(0,80)}));
+}
+byId('bulkPrint').addEventListener('click',()=>{
+ const originalValue=byId('value').value,originalTitle=byId('heading').value,labels=[];
+ try{for(const row of parseCSV(bulkCsv.value)){byId('value').value=row.value;if(!render())throw Error(byId('error').textContent||'Invalid barcode');labels.push('<div class="bc-label"><h2>'+escapeXml(row.title)+'</h2>'+current+'</div>');}
+ configurePrint();byId('printArea').innerHTML=labels.join('');bulkStatus.textContent=labels.length+' labels ready for printing.';window.print();
+ }catch(e){bulkStatus.textContent=e.message;}finally{byId('value').value=originalValue;byId('heading').value=originalTitle;render();}
+});
+let stream=null,scanToken=0;
+byId('scanStart').addEventListener('click',async()=>{
+ const status=byId('scanStatus'),video=byId('scanVideo');status.textContent='';
+ if(!('BarcodeDetector' in window)){status.textContent='Camera barcode scanning is not supported by this browser. Try a current Chromium-based browser.';return;}
+ try{if(stream)return;stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'environment'},audio:false});video.srcObject=stream;video.style.display='block';await video.play();const detector=new BarcodeDetector();const token=++scanToken;
+ const frame=async()=>{if(!stream||token!==scanToken)return;try{const codes=await detector.detect(video);if(codes.length){byId('value').value=codes[0].rawValue;status.textContent='Scanned: '+codes[0].rawValue;render();stopScan();return;}}catch(e){status.textContent='Scanning failed: '+e.message;stopScan();return;}requestAnimationFrame(frame);};requestAnimationFrame(frame);
+ }catch(e){status.textContent='Camera unavailable: '+e.message;stopScan();}
+});
+function stopScan(){scanToken++;if(stream){stream.getTracks().forEach(t=>t.stop());stream=null;}const v=byId('scanVideo');v.pause();v.srcObject=null;v.style.display='none';}
+byId('scanStop').addEventListener('click',stopScan);document.addEventListener('visibilitychange',()=>{if(document.hidden)stopScan();});window.addEventListener('pagehide',stopScan);
 render();
 })();
 </script>
