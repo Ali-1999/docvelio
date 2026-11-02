@@ -1,0 +1,15 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
+const context={window:{}};vm.createContext(context);
+vm.runInContext(fs.readFileSync(path.resolve(__dirname,'../public/assets/barcode-retail.js'),'utf8'),context);
+const {encode,checkDigit}=context.window.DocvelioLinear;
+assert.equal(checkDigit('400638133393'),'1');
+assert.equal(checkDigit('03600029145'),'2');
+const e=encode('ean13','400638133393');assert.equal(e.text,'4006381333931');assert.equal(e.bits.length,95);
+assert.ok(e.bits.startsWith('101')&&e.bits.slice(45,50)==='01010'&&e.bits.endsWith('101'));
+const u=encode('upca','03600029145');assert.equal(u.text,'036000291452');assert.equal(u.bits.length,95);
+assert.equal(u.bits,encode('ean13','0036000291452').bits);
+assert.throws(()=>encode('ean13','4006381333932'),/Invalid check digit/);
+assert.throws(()=>encode('upca','abc'),/Enter/);
+const itf=encode('itf','123456');assert.equal(itf.text,'123456');assert.ok(itf.bits.startsWith('1010')&&itf.bits.endsWith('11101'));assert.throws(()=>encode('itf','123'),/even/);
+console.log('PASS: self-hosted EAN-13 UPC-A ITF encoding and checksums.');
