@@ -52,6 +52,12 @@ for(const sample of ['HELLO WORLD','BCD\n002\n1\nSCT\n\nMüller\nDE8937040044053
  assert.ok(result.modules.some(row=>row.some(Boolean)));
 }
 assert.throws(()=>qr.encode('X'.repeat(390)),/payload is too large/);
+// Reject reintroduction of copied GitHub QR sources into the project.
+assert.ok(!fs.existsSync(path.join(root,'assets/vendor/qrcode-generator.js')),'Copied external QR library must remain removed');
+assert.ok(!fs.existsSync(path.join(root,'assets/vendor/QR-CODE-LICENSE.txt')),'Obsolete vendor attribution should not remain');
+const ui=fs.readFileSync(path.join(root,'assets/europe-tools-ui.js'),'utf8');
+assert.ok(ui.includes('window.DVQRCode.encode'),'SEPA UI must use first-party QR encoder');
+assert.ok(!ui.includes('window.qrcode('),'SEPA UI still calls external QR library');
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 const shellPages=['index.html',...['es','fr','de','pt','ar','hi','id','tr','zh'].map(x=>x+'/index.html')];
 for(const r of routes){
