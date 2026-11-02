@@ -1,5 +1,5 @@
 /* Client-side tool interface. No uploads; calculations run locally in the browser.
- * The QR renderer is the vendored MIT qrcode-generator library.
+ * SEPA QR codes are encoded locally by Docvelio's original dependency-free implementation.
  */
 (function(){
  'use strict';
@@ -76,17 +76,14 @@
  }
  function showSepa(){
   const d=core.sepa({name:v('name'),iban:v('iban'),bic:v('bic'),amount:v('amount'),rf:v('rf'),note:v('note')});
-  if(typeof window.qrcode!=='function')throw new Error('QR encoding library has not loaded. Refresh and try again.');
-  // The local, MIT-licensed library supports UTF-8 data encoding for EPC payloads.
-  if(window.qrcode.stringToBytesFuncs?.['UTF-8'])window.qrcode.stringToBytes=window.qrcode.stringToBytesFuncs['UTF-8'];
-  const qr=window.qrcode(0,'M');
-  qr.addData(d.payload,'Byte');qr.make();
-  const size=qr.getModuleCount(),margin=4;
+  if(typeof window.DVQRCode?.encode!=='function')throw new Error('Docvelio QR encoder is unavailable. Refresh and try again.');
+  const qr=window.DVQRCode.encode(d.payload);
+  const size=qr.size,margin=4;
   const canvas=document.createElement('canvas');canvas.width=canvas.height=560;
   const ctx=canvas.getContext('2d');if(!ctx)throw new Error('Canvas is not available in this browser.');
   ctx.fillStyle='#fff';ctx.fillRect(0,0,560,560);
   const unit=560/(size+2*margin);ctx.fillStyle='#152d51';
-  for(let y=0;y<size;y++)for(let x=0;x<size;x++)if(qr.isDark(y,x))ctx.fillRect(Math.floor((x+margin)*unit),Math.floor((y+margin)*unit),Math.ceil(unit+.2),Math.ceil(unit+.2));
+  for(let y=0;y<size;y++)for(let x=0;x<size;x++)if(qr.modules[y][x])ctx.fillRect(Math.floor((x+margin)*unit),Math.floor((y+margin)*unit),Math.ceil(unit+.2),Math.ceil(unit+.2));
   canvas.setAttribute('role','img');canvas.setAttribute('aria-label','Generated EPC SEPA payment QR code');
   const text='Beneficiary: '+d.name+'\nIBAN: '+d.formattedIBAN+'\n'+(d.amount?'Amount: EUR '+d.amount+'\n':'')+(d.reference?'Reference: '+d.reference+'\n':'')+(d.note?'Message: '+d.note+'\n':'')+'\nEPC payload:\n'+d.payload;
   set('<div class="dv-eu-stats">'+stat('Beneficiary',d.name)+stat('IBAN',d.formattedIBAN)+stat('Amount',d.amount?'€'+d.amount:'Not specified')+stat('Payload length',d.bytes+' / 331 bytes')+'</div><div id="dv-eu-qr" class="dv-eu-qr"></div><p class="dv-eu-note">'+escape(d.warning)+'</p><div class="dv-eu-actions">'+copyButton+dlButton('Download QR PNG')+'</div>',text,()=>canvas.toBlob(b=>b?downloadBlob(b,'image/png','sepa-payment-qr.png'):note.textContent='Could not export QR PNG.','image/png'));
