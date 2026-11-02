@@ -82,13 +82,13 @@ const escapeXml=value=>String(value).replace(/&/g,'&amp;').replace(/</g,'&lt;').
 let xml='<?xml version="1.0" encoding="UTF-8"?>\n'+
  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
 for(const [route,variants] of [...groups].sort((a,b)=>a[0].localeCompare(b[0]))){
- if(variants.size!==languages.length)throw Error('Incomplete hreflang set: '+route);
- for(const lang of languages){
+ if(variants.size!==languages.length && !(variants.size===1&&variants.has('en')))throw Error('Incomplete hreflang set: '+route);
+ for(const lang of variants.keys()){
   const url=variants.get(lang);
   if(!url||urls.has(url))throw Error('Missing or duplicated URL '+url);
   urls.add(url);
   xml+='  <url>\n    <loc>'+escapeXml(url)+'</loc>\n';
-  for(const language of languages){
+  for(const language of variants.keys()){
    xml+='    <xhtml:link rel="alternate" hreflang="'+language+'" href="'+escapeXml(variants.get(language))+'"/>\n';
   }
   xml+='    <xhtml:link rel="alternate" hreflang="x-default" href="'+escapeXml(variants.get('en'))+'"/>\n';
