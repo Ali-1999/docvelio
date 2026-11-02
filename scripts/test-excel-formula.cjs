@@ -11,6 +11,16 @@ assert.match(html,/src="\/assets\/excel-formula-generator\.js"/);
 assert.ok(sitemap.includes('<loc>https://docvelio.com/excel-formula-generator/</loc>'));
 assert.ok(fs.readFileSync(path.join(root,'index.html'),'utf8').includes('Open the Excel Formula Generator'));
 assert.ok(fs.readFileSync(path.join(root,'privacy/index.html'),'utf8').includes('data-excel-ai-disclosure="1"'));
+
+// Navigation link must survive global shell generation for all language homepages.
+for(const locale of ['en','es','fr','de','pt','ar','hi','id','tr','zh']){
+ const homeFile=path.join(root,locale==='en'?'index.html':locale+'/index.html');
+ const homeHtml=fs.readFileSync(homeFile,'utf8');
+ assert.ok(homeHtml.includes('href="/excel-formula-generator/"'),
+  'Excel Formula Generator missing from '+locale+' navigation');
+}
+assert.ok(html.includes('href="/excel-formula-generator/"'),
+ 'New Excel page should also expose its link through the shared navigation');
 async function main(){
  const source=fs.readFileSync(path.join(__dirname,'../src/excel-formula-worker.js'),'utf8');
  const handle=new Function('Response','URL','console',source.replace('export default {','const handler={')+';return handler;')(Response,URL,console);
