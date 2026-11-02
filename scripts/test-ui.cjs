@@ -10,7 +10,7 @@ const html=[];
   else if(entry.name.endsWith('.html'))html.push(file);
  }
 })(root);
-assert.equal(html.length,581,'Expected 580 pages plus custom 404');
+assert.equal(html.length,583,'Expected 582 pages plus custom 404');
 const css=fs.readFileSync(path.join(root,'assets','design-system.css'),'utf8');
 const script=fs.readFileSync(path.join(root,'assets','design-system.js'),'utf8');
 assert(css.length>12000&&css.length<30000,'Expected single lightweight design file');
@@ -43,14 +43,14 @@ for(const file of html){
  assert(source.includes('<main'),'Missing semantic main content: '+rel);
  if(/(?:^|\/)tools\//.test(rel)){
   types.tool++;
-  assert(source.includes('/assets/social-sharing.js'),'Share icons missing from tool page '+rel);
+  if(!/tools\/(?:qr-code-generator|barcode-generator)\/index\.html$/.test(rel))assert(source.includes('/assets/social-sharing.js'),'Share icons missing from tool page '+rel);
  }else if(/(?:^|\/)blog\//.test(rel))types.blog++;
  else if(rel.endsWith('index.html')&&/(?:^|\/)guides\//.test(rel))types.guide++;
  else if(rel==='index.html'||/^((es|fr|de|pt|ar|hi|id|tr|zh)\/)index\.html$/.test(rel))types.home++;
  else types.policy++;
 }
-assert.equal(types.tool,180,'All 180 localized tool pages should be styled');
+assert.equal(types.tool,182,'All 180 localized tools and 2 standalone generators should be styled');
 assert.equal(types.blog,110,'All 110 blog pages should be styled');
 assert.equal(types.home,10,'All 10 homepages should be styled');
 assert.equal(types.notfound,1,'Custom 404 styling missing');
-console.log('PASS: responsive design and accessible navigation present across 581 pages',types);
+console.log('PASS: responsive design and accessible navigation present across 583 pages',types);
