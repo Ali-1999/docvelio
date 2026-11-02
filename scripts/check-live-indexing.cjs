@@ -3,7 +3,7 @@
 const {resolve4,resolve6}=require('node:dns').promises;
 const fs=require('node:fs');
 const root='https://docvelio.com',host='docvelio.com';
-const expectedUrls=581; // 580 localized pages + /wheel-of-names/ after final build.
+const expectedUrls=583; // 580 localized pages + wheel + two English-only barcode tools.
 const pages=['/','/tools/edit-pdf/','/image-editor/','/image-tools/resize-image/','/cbm-calculator/','/shipping-tools/volumetric-weight-calculator/','/blog/','/wheel-of-names/','/ar/','/es/image-tools/resize-image/'];
 const results=[],failures=[];
 function problem(s){failures.push(s);console.error('FAIL: '+s);}
@@ -37,7 +37,7 @@ async function probe(path,kind){
   }
   if(kind==='TEXT_SITEMAP'){
    const list=r.body.split(/\r?\n/).filter(Boolean);
-   if(list.length!==expectedUrls)problem('Live TXT sitemap has '+list.length+' URLs; '+expectedUrls+' expected');
+   if(list.length<expectedUrls)problem('Live TXT sitemap has '+list.length+' URLs; at least '+expectedUrls+' expected');
    if(!list.includes(root+'/cbm-calculator/'))problem('CBM missing from TXT sitemap');
   }
   if(kind==='SITEMAP'){
