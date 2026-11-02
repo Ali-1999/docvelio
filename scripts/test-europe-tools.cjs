@@ -4,7 +4,7 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const lib=require('../public/assets/europe-tools-core.js');
-const qr=require('../public/assets/vendor/qrcode-generator.js');
+const qr=require('../public/assets/docvelio-qr.js');
 const root=path.resolve(__dirname,'..','public');
 const routes=[
  'calculators/euro-pallet-stacking-calculator',
@@ -40,10 +40,18 @@ assert.ok(sepa.payload.includes('EUR25.50\n\nRF712348231'));
 assert.ok(sepa.bytes<=331);
 assert.throws(()=>lib.sepa({name:'Example',iban:'DE89370400440532013001'}),/Invalid IBAN/);
 assert.throws(()=>lib.sepa({name:'Example',iban:'DE89370400440532013000',rf:'RF712348231',note:'invoice'}),/either a structured RF/);
-assert.equal(typeof qr,'function','QR generator library missing');
-qr.stringToBytes=qr.stringToBytesFuncs['UTF-8'];
-const graphic=qr(0,'M');graphic.addData(sepa.payload,'Byte');graphic.make();
-assert.ok(graphic.getModuleCount()>20,'QR matrix should be generated');
+assert.equal(typeof qr.encode,'function','Docvelio QR generator missing');
+const graphic=qr.encode(sepa.payload);
+assert.ok(graphic.size>20,'QR matrix should be generated');
+assert.equal(graphic.modules.length,graphic.size);
+assert.ok(graphic.modules.every(row=>row.length===graphic.size));
+assert.ok(graphic.version>=1&&graphic.version<=13);
+for(const sample of ['HELLO WORLD','BCD\n002\n1\nSCT\n\nMüller\nDE89370400440532013000\nEUR20.00', 'BCD\n002\n1\nSCT\n'+'A'.repeat(310)]){
+ const result=qr.encode(sample);
+ assert.equal(result.level,'M');
+ assert.ok(result.modules.some(row=>row.some(Boolean)));
+}
+assert.throws(()=>qr.encode('X'.repeat(390)),/payload is too large/);
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 const shellPages=['index.html',...['es','fr','de','pt','ar','hi','id','tr','zh'].map(x=>x+'/index.html')];
 for(const r of routes){
@@ -58,7 +66,7 @@ for(const r of routes){
  assert.ok(html.includes('application/ld+json'),'Missing WebApplication schema '+r);
  assert.ok(html.includes('href="https://www.tiktok.com/@docvelio"'),'Missing shared footer '+r);
  assert.ok(sitemap.includes('<loc>'+url+'</loc>'),'Missing sitemap URL '+r);
- if(r.includes('sepa-qr'))assert.ok(html.includes('/assets/vendor/qrcode-generator.js'),'Missing offline QR encoder');
+ if(r.includes('sepa-qr'))assert.ok(html.includes('/assets/docvelio-qr.js'),'Missing first-party QR encoder');
  for(const p of shellPages){
   const page=fs.readFileSync(path.join(root,p),'utf8');
   assert.ok(page.includes('href="/'+r+'/"'),'Missing menu or homepage link '+r+' in '+p);
