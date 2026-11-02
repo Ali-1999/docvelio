@@ -1,0 +1,2572 @@
+{
+  "version": 1,
+  "origin": "Docvelio 2026-11-02 SEO editorial plan",
+  "total": 285,
+  "links": [
+    {
+      "source": "/tools/split-pdf/",
+      "target": "/tools/merge-pdf/",
+      "anchor": "PDF merger",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/split-pdf/",
+      "target": "/tools/organize-pdf/",
+      "anchor": "reorder PDF pages",
+      "placement": "After tool instructions",
+      "priority": "P0",
+      "example": "Need to change page order rather than divide the file? Use the PDF page organiser to rearrange pages before saving.",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/split-pdf/",
+      "target": "/tools/pdf-to-jpg/",
+      "anchor": "PDF to JPG",
+      "placement": "Next-step callout",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/split-pdf/",
+      "target": "/tools/remove-pages/",
+      "anchor": "delete pages from a PDF",
+      "placement": "Related tools panel",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/pt/blog/split-pdf-extract-pages/",
+      "target": "/pt/tools/organize-pdf/",
+      "anchor": "organizar páginas PDF",
+      "placement": "Related task paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/blog/split-pdf-extract-pages/",
+      "target": "/pt/tools/split-pdf/",
+      "anchor": "dividir PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/shipping-tools/cubic-meter-calculator/",
+      "target": "/cbm-calculator/",
+      "anchor": "calculate shipment CBM",
+      "placement": "Below calculation results",
+      "priority": "P0",
+      "example": "Need a shipment-level result across boxes and quantities? Use the CBM calculator.",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/cubic-meter-calculator/",
+      "target": "/shipping-tools/container-capacity-calculator/",
+      "anchor": "Container capacity calculator",
+      "placement": "Related freight tools",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/cubic-meter-calculator/",
+      "target": "/shipping-tools/cubic-feet-calculator/",
+      "anchor": "cubic feet calculator",
+      "placement": "When-to-use comparison",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/cubic-meter-calculator/",
+      "target": "/shipping-tools/multiple-carton-cbm-calculator/",
+      "anchor": "carton volume calculator",
+      "placement": "Shipping FAQ",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/guides/organize-pages/",
+      "target": "/tools/organize-pdf/",
+      "anchor": "reorder PDF pages",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/guides/organize-pages/",
+      "target": "/tools/remove-pages/",
+      "anchor": "PDF page remover",
+      "placement": "Related task paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/guides/organize-pages/",
+      "target": "/tools/rotate-pdf/",
+      "anchor": "rotate pdf",
+      "placement": "Related task paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/shipping-tools/cubic-feet-calculator/",
+      "target": "/cbm-calculator/",
+      "anchor": "cubic metre shipping calculator",
+      "placement": "When-to-use comparison",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/cubic-feet-calculator/",
+      "target": "/shipping-tools/container-capacity-calculator/",
+      "anchor": "container capacity calculator tool",
+      "placement": "Shipping FAQ",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/cubic-feet-calculator/",
+      "target": "/shipping-tools/cubic-meter-calculator/",
+      "anchor": "Cubic metre calculator",
+      "placement": "Below calculation results",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/de/blog/how-to-merge-pdf-files/",
+      "target": "/de/tools/merge-pdf/",
+      "anchor": "PDF-Dateien zusammenfügen",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/de/blog/how-to-merge-pdf-files/",
+      "target": "/de/tools/organize-pdf/",
+      "anchor": "PDF-Seiten sortieren",
+      "placement": "Related task paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/how-to-merge-pdf-files/",
+      "target": "/fr/tools/merge-pdf/",
+      "anchor": "fusionner des PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/how-to-merge-pdf-files/",
+      "target": "/fr/tools/organize-pdf/",
+      "anchor": "organiser les pages PDF",
+      "placement": "Related task paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/fill-pdf-forms-online/",
+      "target": "/fr/tools/fill-pdf/",
+      "anchor": "remplir un formulaire PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/fill-pdf-forms-online/",
+      "target": "/fr/tools/sign-pdf/",
+      "anchor": "signer un PDF",
+      "placement": "Related task paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/split-pdf-extract-pages/",
+      "target": "/fr/tools/organize-pdf/",
+      "anchor": "organiser les pages PDF",
+      "placement": "Related task paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/split-pdf-extract-pages/",
+      "target": "/fr/tools/split-pdf/",
+      "anchor": "diviser un PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/shipping-tools/container-capacity-calculator/",
+      "target": "/calculators/euro-pallet-stacking-calculator/",
+      "anchor": "EPAL pallet calculator",
+      "placement": "Shipping FAQ",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/container-capacity-calculator/",
+      "target": "/cbm-calculator/",
+      "anchor": "calculate shipment CBM",
+      "placement": "Below calculation results",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/container-capacity-calculator/",
+      "target": "/shipping-tools/cubic-feet-calculator/",
+      "anchor": "cubic feet calculator",
+      "placement": "When-to-use comparison",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/container-capacity-calculator/",
+      "target": "/shipping-tools/multiple-carton-cbm-calculator/",
+      "anchor": "calculate mixed-carton shipment CBM",
+      "placement": "Related freight tools",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/pt/blog/compress-pdf-file-size/",
+      "target": "/pt/tools/compress-pdf/",
+      "anchor": "LOCALISE: Compress PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/blog/compress-pdf-file-size/",
+      "target": "/pt/tools/merge-pdf/",
+      "anchor": "juntar arquivos PDF",
+      "placement": "Related task paragraph",
+      "priority": "P0",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tools/view-pdf/",
+      "target": "/tools/edit-pdf/",
+      "anchor": "add notes to a PDF",
+      "placement": "After tool instructions",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/view-pdf/",
+      "target": "/tools/pdf-to-text/",
+      "anchor": "copy text from a PDF",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/view-pdf/",
+      "target": "/tools/rotate-pdf/",
+      "anchor": "rotate pdf",
+      "placement": "Related tools panel",
+      "priority": "P0",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/",
+      "target": "/calculators/euro-pallet-stacking-calculator/",
+      "anchor": "Euro pallet loading calculator",
+      "placement": "Featured tools section",
+      "priority": "P0",
+      "example": "",
+      "kind": "Homepage"
+    },
+    {
+      "source": "/",
+      "target": "/calculators/sepa-qr-code-generator/",
+      "anchor": "generate a SEPA payment QR code",
+      "placement": "Featured tools section",
+      "priority": "P0",
+      "example": "",
+      "kind": "Homepage"
+    },
+    {
+      "source": "/",
+      "target": "/cbm-calculator/",
+      "anchor": "cubic metre shipping calculator",
+      "placement": "Featured tools section",
+      "priority": "P0",
+      "example": "",
+      "kind": "Homepage"
+    },
+    {
+      "source": "/",
+      "target": "/excel-formula-generator/",
+      "anchor": "spreadsheet formula generator",
+      "placement": "Featured tools section",
+      "priority": "P0",
+      "example": "",
+      "kind": "Homepage"
+    },
+    {
+      "source": "/",
+      "target": "/image-editor/",
+      "anchor": "edit images in Image Studio",
+      "placement": "Featured tools section",
+      "priority": "P0",
+      "example": "",
+      "kind": "Homepage"
+    },
+    {
+      "source": "/",
+      "target": "/tools/edit-pdf/",
+      "anchor": "edit PDF tool",
+      "placement": "Featured tools section",
+      "priority": "P0",
+      "example": "",
+      "kind": "Homepage"
+    },
+    {
+      "source": "/",
+      "target": "/tools/merge-pdf/",
+      "anchor": "combine PDF files",
+      "placement": "Featured tools section",
+      "priority": "P0",
+      "example": "",
+      "kind": "Homepage"
+    },
+    {
+      "source": "/",
+      "target": "/tools/split-pdf/",
+      "anchor": "extract selected PDF pages",
+      "placement": "Featured tools section",
+      "priority": "P0",
+      "example": "",
+      "kind": "Homepage"
+    },
+    {
+      "source": "/",
+      "target": "/tools/word-editor/",
+      "anchor": "Word editor",
+      "placement": "Existing homepage tool discovery grid",
+      "priority": "P0",
+      "example": "",
+      "kind": "Homepage"
+    },
+    {
+      "source": "/",
+      "target": "/wheel-of-names/",
+      "anchor": "spin a wheel of names",
+      "placement": "Existing homepage tool discovery grid",
+      "priority": "P0",
+      "example": "",
+      "kind": "Homepage"
+    },
+    {
+      "source": "/blog/how-to-edit-pdf-online/",
+      "target": "/tools/edit-pdf/",
+      "anchor": "add notes to a PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/how-to-edit-pdf-online/",
+      "target": "/tools/fill-pdf/",
+      "anchor": "complete a PDF form",
+      "placement": "Related task paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/cbm-calculator/",
+      "target": "/shipping-tools/cubic-meter-calculator/",
+      "anchor": "cubic metre calculator",
+      "placement": "When-to-use comparison",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/cbm-calculator/",
+      "target": "/shipping-tools/volumetric-weight-calculator/",
+      "anchor": "volumetric weight calculator",
+      "placement": "Shipping FAQ",
+      "priority": "P1",
+      "example": "Once you know the package dimensions, calculate dimensional shipping weight if your carrier uses volumetric pricing.",
+      "kind": "Tool"
+    },
+    {
+      "source": "/guides/word-formatting/",
+      "target": "/tools/word-editor/",
+      "anchor": "Word editor",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/shipping-tools/volumetric-weight-calculator/",
+      "target": "/cbm-calculator/",
+      "anchor": "calculate shipment CBM",
+      "placement": "Below calculation results",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/volumetric-weight-calculator/",
+      "target": "/shipping-tools/cubic-meter-calculator/",
+      "anchor": "cubic metre calculator tool",
+      "placement": "Shipping FAQ",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/es/blog/split-pdf-extract-pages/",
+      "target": "/es/tools/organize-pdf/",
+      "anchor": "organizar páginas PDF",
+      "placement": "Related task paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/split-pdf-extract-pages/",
+      "target": "/es/tools/split-pdf/",
+      "anchor": "dividir PDF en páginas",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/blog/fill-pdf-forms-online/",
+      "target": "/pt/tools/fill-pdf/",
+      "anchor": "preencher formulário PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/blog/fill-pdf-forms-online/",
+      "target": "/pt/tools/sign-pdf/",
+      "anchor": "assinar PDF",
+      "placement": "Related task paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/extract-text-scanned-pdf-ocr/",
+      "target": "/tools/pdf-to-text/",
+      "anchor": "extract selectable PDF text",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/extract-text-scanned-pdf-ocr/",
+      "target": "/tools/view-pdf/",
+      "anchor": "view pdf",
+      "placement": "Limitations / next step",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/tools/organize-pdf/",
+      "anchor": "reorder PDF pages",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/tools/remove-pages/",
+      "anchor": "PDF page remover",
+      "placement": "Related task paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/tools/rotate-pdf/",
+      "anchor": "rotate pdf",
+      "placement": "Related task paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/blog/how-to-sign-pdf-online/",
+      "target": "/pt/tools/fill-pdf/",
+      "anchor": "preencher formulário PDF",
+      "placement": "Related task paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/blog/how-to-sign-pdf-online/",
+      "target": "/pt/tools/sign-pdf/",
+      "anchor": "assinar PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tools/remove-pages/",
+      "target": "/tools/split-pdf/",
+      "anchor": "extract selected PDF pages",
+      "placement": "Related tools panel",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/pt/guides/organize-pages/",
+      "target": "/pt/tools/organize-pdf/",
+      "anchor": "organizar páginas PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/guides/organize-pages/",
+      "target": "/pt/tools/remove-pages/",
+      "anchor": "LOCALISE: Remove PDF pages",
+      "placement": "Related task paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/guides/organize-pages/",
+      "target": "/pt/tools/rotate-pdf/",
+      "anchor": "LOCALISE: Rotate PDF",
+      "placement": "Related task paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/how-to-sign-pdf-online/",
+      "target": "/es/tools/fill-pdf/",
+      "anchor": "rellenar formularios PDF",
+      "placement": "Related task paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/how-to-sign-pdf-online/",
+      "target": "/es/tools/sign-pdf/",
+      "anchor": "firmar un PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/fill-pdf-forms-online/",
+      "target": "/tools/fill-pdf/",
+      "anchor": "fill interactive PDF fields",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/fill-pdf-forms-online/",
+      "target": "/tools/sign-pdf/",
+      "anchor": "sign a PDF document",
+      "placement": "Related task paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tools/pdf-to-text/",
+      "target": "/tools/view-pdf/",
+      "anchor": "View PDF",
+      "placement": "After tool instructions",
+      "priority": "P1",
+      "example": "Before extracting text, open the PDF viewer to confirm that its text is selectable.",
+      "kind": "Tool"
+    },
+    {
+      "source": "/blog/how-to-merge-pdf-files/",
+      "target": "/tools/merge-pdf/",
+      "anchor": "combine PDF files",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/how-to-merge-pdf-files/",
+      "target": "/tools/organize-pdf/",
+      "anchor": "organise PDF page order",
+      "placement": "Related task paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/how-to-merge-pdf-files/",
+      "target": "/es/tools/merge-pdf/",
+      "anchor": "unir archivos PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/how-to-merge-pdf-files/",
+      "target": "/es/tools/organize-pdf/",
+      "anchor": "organizar páginas PDF",
+      "placement": "Related task paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/extract-text-scanned-pdf-ocr/",
+      "target": "/fr/tools/pdf-to-text/",
+      "anchor": "LOCALISE: Extract PDF text",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/extract-text-scanned-pdf-ocr/",
+      "target": "/fr/tools/view-pdf/",
+      "anchor": "LOCALISE: View PDF",
+      "placement": "Limitations / next step",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/how-to-edit-pdf-online/",
+      "target": "/es/tools/edit-pdf/",
+      "anchor": "editar PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/how-to-edit-pdf-online/",
+      "target": "/es/tools/fill-pdf/",
+      "anchor": "rellenar formularios PDF",
+      "placement": "Related task paragraph",
+      "priority": "P1",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tools/merge-pdf/",
+      "target": "/tools/split-pdf/",
+      "anchor": "extract selected PDF pages",
+      "placement": "Related tools panel",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/organize-pdf/",
+      "target": "/tools/remove-pages/",
+      "anchor": "delete pages from a PDF",
+      "placement": "Related tools panel",
+      "priority": "P1",
+      "example": "If you only need to discard unnecessary sheets, use the PDF page removal tool.",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/organize-pdf/",
+      "target": "/tools/split-pdf/",
+      "anchor": "PDF splitting tool",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/multiple-carton-cbm-calculator/",
+      "target": "/cbm-calculator/",
+      "anchor": "calculate shipment CBM",
+      "placement": "Below calculation results",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/multiple-carton-cbm-calculator/",
+      "target": "/shipping-tools/container-capacity-calculator/",
+      "anchor": "container capacity calculator tool",
+      "placement": "Shipping FAQ",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/multiple-carton-cbm-calculator/",
+      "target": "/shipping-tools/volumetric-weight-calculator/",
+      "anchor": "courier dimensional weight calculator",
+      "placement": "When-to-use comparison",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/compress-pdf/",
+      "target": "/tools/split-pdf/",
+      "anchor": "extract selected PDF pages",
+      "placement": "Related tools panel",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/rotate-pdf/",
+      "target": "/tools/remove-pages/",
+      "anchor": "delete pages from a PDF",
+      "placement": "Related tools panel",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/fill-pdf/",
+      "target": "/tools/view-pdf/",
+      "anchor": "view pdf tool",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/calculators/euro-pallet-stacking-calculator/",
+      "target": "/cbm-calculator/",
+      "anchor": "cubic metre shipping calculator",
+      "placement": "After the key explanation",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/calculators/euro-pallet-stacking-calculator/",
+      "target": "/shipping-tools/container-capacity-calculator/",
+      "anchor": "container capacity calculator tool",
+      "placement": "Tool comparison section",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/excel-formula-generator/",
+      "target": "/cbm-calculator/",
+      "anchor": "calculate shipment CBM",
+      "placement": "Related tasks panel",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/excel-formula-generator/",
+      "target": "/shipping-tools/volumetric-weight-calculator/",
+      "anchor": "courier dimensional weight calculator",
+      "placement": "After the key explanation",
+      "priority": "P1",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/cbm-calculator/",
+      "target": "/calculators/euro-pallet-stacking-calculator/",
+      "anchor": "calculate cartons per Euro pallet",
+      "placement": "Related freight tools",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/cbm-calculator/",
+      "target": "/shipping-tools/multiple-carton-cbm-calculator/",
+      "anchor": "calculate mixed-carton shipment CBM",
+      "placement": "Below calculation results",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/volumetric-weight-calculator/",
+      "target": "/shipping-tools/multiple-carton-cbm-calculator/",
+      "anchor": "multiple-carton CBM calculator",
+      "placement": "When-to-use comparison",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/remove-pages/",
+      "target": "/tools/merge-pdf/",
+      "anchor": "PDF merger",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/remove-pages/",
+      "target": "/tools/organize-pdf/",
+      "anchor": "reorder PDF pages",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/pdf-to-text/",
+      "target": "/tools/edit-pdf/",
+      "anchor": "annotate PDF pages",
+      "placement": "Related tools panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/pdf-to-text/",
+      "target": "/tools/word-editor/",
+      "anchor": "word editor tool",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/edit-pdf/",
+      "target": "/tools/add-image-to-pdf/",
+      "anchor": "add image to pdf tool",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/edit-pdf/",
+      "target": "/tools/fill-pdf/",
+      "anchor": "fill interactive PDF fields",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/edit-pdf/",
+      "target": "/tools/sign-pdf/",
+      "anchor": "sign a PDF document",
+      "placement": "Related tools panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/edit-pdf/",
+      "target": "/tools/watermark-pdf/",
+      "anchor": "Add PDF watermark",
+      "placement": "Next-step callout",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/blog/compress-pdf-file-size/",
+      "target": "/tools/compress-pdf/",
+      "anchor": "reduce a PDF file size",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/compress-pdf-file-size/",
+      "target": "/tools/merge-pdf/",
+      "anchor": "merge PDF files",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/how-to-sign-pdf-online/",
+      "target": "/fr/tools/fill-pdf/",
+      "anchor": "remplir un formulaire PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/how-to-sign-pdf-online/",
+      "target": "/fr/tools/sign-pdf/",
+      "anchor": "signer un PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/how-to-sign-pdf-online/",
+      "target": "/tools/fill-pdf/",
+      "anchor": "complete a PDF form",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/how-to-sign-pdf-online/",
+      "target": "/tools/sign-pdf/",
+      "anchor": "add a drawn signature to a PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/extract-text-scanned-pdf-ocr/",
+      "target": "/es/tools/pdf-to-text/",
+      "anchor": "LOCALISE: Extract PDF text",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/extract-text-scanned-pdf-ocr/",
+      "target": "/es/tools/view-pdf/",
+      "anchor": "LOCALISE: View PDF",
+      "placement": "Limitations / next step",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/guides/organize-pages/",
+      "target": "/fr/tools/organize-pdf/",
+      "anchor": "organiser les pages PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/guides/organize-pages/",
+      "target": "/fr/tools/remove-pages/",
+      "anchor": "LOCALISE: Remove PDF pages",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/guides/organize-pages/",
+      "target": "/fr/tools/rotate-pdf/",
+      "anchor": "LOCALISE: Rotate PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tools/add-image-to-pdf/",
+      "target": "/image-tools/resize-image/",
+      "anchor": "resize an image",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/add-image-to-pdf/",
+      "target": "/tools/edit-pdf/",
+      "anchor": "annotate PDF pages",
+      "placement": "Related tools panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/add-image-to-pdf/",
+      "target": "/tools/images-to-pdf/",
+      "anchor": "images to pdf tool",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tr/blog/how-to-merge-pdf-files/",
+      "target": "/tr/tools/merge-pdf/",
+      "anchor": "PDF dosyalarını birleştir",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tr/blog/how-to-merge-pdf-files/",
+      "target": "/tr/tools/organize-pdf/",
+      "anchor": "LOCALISE: Organise PDF pages",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tr/blog/split-pdf-extract-pages/",
+      "target": "/tr/tools/organize-pdf/",
+      "anchor": "LOCALISE: Organise PDF pages",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tr/blog/split-pdf-extract-pages/",
+      "target": "/tr/tools/split-pdf/",
+      "anchor": "PDF ayır",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/fill-pdf-forms-online/",
+      "target": "/es/tools/fill-pdf/",
+      "anchor": "rellenar formularios PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/fill-pdf-forms-online/",
+      "target": "/es/tools/sign-pdf/",
+      "anchor": "firmar un PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/how-to-sign-pdf-online/",
+      "target": "/id/tools/fill-pdf/",
+      "anchor": "LOCALISE: Fill PDF forms",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/how-to-sign-pdf-online/",
+      "target": "/id/tools/sign-pdf/",
+      "anchor": "tanda tangani PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/image-editor/",
+      "target": "/image-tools/convert-image/",
+      "anchor": "image format converter",
+      "placement": "Tool comparison section",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-editor/",
+      "target": "/image-tools/crop-image/",
+      "anchor": "crop image",
+      "placement": "After the key explanation",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-editor/",
+      "target": "/image-tools/reduce-image-size-kb/",
+      "anchor": "reduce an image's KB size",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-editor/",
+      "target": "/image-tools/resize-image/",
+      "anchor": "resize an image",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/pt/blog/extract-text-scanned-pdf-ocr/",
+      "target": "/pt/tools/pdf-to-text/",
+      "anchor": "LOCALISE: Extract PDF text",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/blog/extract-text-scanned-pdf-ocr/",
+      "target": "/pt/tools/view-pdf/",
+      "anchor": "LOCALISE: View PDF",
+      "placement": "Limitations / next step",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tools/word-editor/",
+      "target": "/tools/edit-pdf/",
+      "anchor": "edit PDF tool",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/word-editor/",
+      "target": "/tools/images-to-pdf/",
+      "anchor": "images to pdf",
+      "placement": "Related tools panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/word-editor/",
+      "target": "/tools/pdf-to-text/",
+      "anchor": "extract selectable PDF text",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/guides/privacy/",
+      "target": "/tools/edit-pdf/",
+      "anchor": "add notes to a PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/hi/blog/how-to-merge-pdf-files/",
+      "target": "/hi/tools/merge-pdf/",
+      "anchor": "PDF फ़ाइलें जोड़ें",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/hi/blog/how-to-merge-pdf-files/",
+      "target": "/hi/tools/organize-pdf/",
+      "anchor": "LOCALISE: Organise PDF pages",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/image-tools/flip-image/",
+      "target": "/image-editor/",
+      "anchor": "browser image editor",
+      "placement": "Print or file-format FAQ",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/flip-image/",
+      "target": "/image-tools/crop-image/",
+      "anchor": "crop image",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/flip-image/",
+      "target": "/image-tools/rotate-image/",
+      "anchor": "Rotate image",
+      "placement": "After output options",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/merge-pdf/",
+      "target": "/tools/compress-pdf/",
+      "anchor": "PDF compression tool",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "After combining several files, you can try to reduce the PDF size; note that raster-based compression can affect searchable text.",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/merge-pdf/",
+      "target": "/tools/organize-pdf/",
+      "anchor": "reorder PDF pages",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/merge-pdf/",
+      "target": "/tools/rotate-pdf/",
+      "anchor": "Rotate PDF",
+      "placement": "Next-step callout",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/sign-pdf/",
+      "target": "/tools/edit-pdf/",
+      "anchor": "annotate PDF pages",
+      "placement": "Related tools panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/sign-pdf/",
+      "target": "/tools/fill-pdf/",
+      "anchor": "fill interactive PDF fields",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/sign-pdf/",
+      "target": "/tools/merge-pdf/",
+      "anchor": "PDF merger",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/ar/blog/how-to-merge-pdf-files/",
+      "target": "/ar/tools/merge-pdf/",
+      "anchor": "دمج ملفات PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/ar/blog/how-to-merge-pdf-files/",
+      "target": "/ar/tools/organize-pdf/",
+      "anchor": "LOCALISE: Organise PDF pages",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/convert-images-to-pdf/",
+      "target": "/image-tools/resize-image/",
+      "anchor": "change image pixel dimensions",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/blog/convert-images-to-pdf/",
+      "target": "/tools/images-to-pdf/",
+      "anchor": "Images to PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/compress-pdf-file-size/",
+      "target": "/es/tools/compress-pdf/",
+      "anchor": "LOCALISE: Compress PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/compress-pdf-file-size/",
+      "target": "/es/tools/merge-pdf/",
+      "anchor": "unir archivos PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/fr/tools/organize-pdf/",
+      "anchor": "organiser les pages PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/fr/tools/remove-pages/",
+      "anchor": "LOCALISE: Remove PDF pages",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/fr/tools/rotate-pdf/",
+      "anchor": "LOCALISE: Rotate PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/guides/scanned-documents/",
+      "target": "/tools/pdf-to-text/",
+      "anchor": "extract selectable PDF text",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/guides/scanned-documents/",
+      "target": "/tools/view-pdf/",
+      "anchor": "view pdf",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/id/tools/organize-pdf/",
+      "anchor": "atur halaman PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/id/tools/remove-pages/",
+      "anchor": "LOCALISE: Remove PDF pages",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/id/tools/rotate-pdf/",
+      "anchor": "LOCALISE: Rotate PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tools/organize-pdf/",
+      "target": "/tools/merge-pdf/",
+      "anchor": "combine PDF files",
+      "placement": "Next-step callout",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/organize-pdf/",
+      "target": "/tools/rotate-pdf/",
+      "anchor": "Rotate PDF",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/pdf-to-png/",
+      "target": "/image-tools/convert-image/",
+      "anchor": "image format converter",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/pdf-to-png/",
+      "target": "/tools/images-to-pdf/",
+      "anchor": "images to pdf",
+      "placement": "Related tools panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/pdf-to-png/",
+      "target": "/tools/pdf-to-jpg/",
+      "anchor": "PDF to JPG",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/fr/blog/how-to-edit-pdf-online/",
+      "target": "/fr/tools/edit-pdf/",
+      "anchor": "annoter un PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/how-to-edit-pdf-online/",
+      "target": "/fr/tools/fill-pdf/",
+      "anchor": "remplir un formulaire PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/image-tools/convert-image/",
+      "target": "/image-tools/reduce-image-size-kb/",
+      "anchor": "reduce an image's KB size",
+      "placement": "After output options",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/convert-image/",
+      "target": "/image-tools/resize-image/",
+      "anchor": "change image pixel dimensions",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/convert-image/",
+      "target": "/tools/images-to-pdf/",
+      "anchor": "images to pdf tool",
+      "placement": "Print or file-format FAQ",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/crop-image/",
+      "target": "/image-editor/",
+      "anchor": "Image Studio",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/crop-image/",
+      "target": "/image-tools/resize-image/",
+      "anchor": "resize an image",
+      "placement": "After output options",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/crop-image/",
+      "target": "/image-tools/rotate-image/",
+      "anchor": "rotate image tool",
+      "placement": "Print or file-format FAQ",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/shipping-tools/multiple-carton-cbm-calculator/",
+      "target": "/calculators/euro-pallet-stacking-calculator/",
+      "anchor": "calculate cartons per Euro pallet",
+      "placement": "Related freight tools",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/compress-pdf/",
+      "target": "/tools/merge-pdf/",
+      "anchor": "combine PDF files",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/compress-pdf/",
+      "target": "/tools/pdf-to-jpg/",
+      "anchor": "pdf to jpg tool",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/rotate-pdf/",
+      "target": "/tools/merge-pdf/",
+      "anchor": "PDF merger",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/rotate-pdf/",
+      "target": "/tools/organize-pdf/",
+      "anchor": "reorder PDF pages",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/ar/blog/compress-pdf-file-size/",
+      "target": "/ar/tools/compress-pdf/",
+      "anchor": "LOCALISE: Compress PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/ar/blog/compress-pdf-file-size/",
+      "target": "/ar/tools/merge-pdf/",
+      "anchor": "دمج ملفات PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/de/blog/extract-text-scanned-pdf-ocr/",
+      "target": "/de/tools/pdf-to-text/",
+      "anchor": "LOCALISE: Extract PDF text",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/de/blog/extract-text-scanned-pdf-ocr/",
+      "target": "/de/tools/view-pdf/",
+      "anchor": "LOCALISE: View PDF",
+      "placement": "Limitations / next step",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/de/blog/fill-pdf-forms-online/",
+      "target": "/de/tools/fill-pdf/",
+      "anchor": "PDF-Formulare ausfüllen",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/de/blog/fill-pdf-forms-online/",
+      "target": "/de/tools/sign-pdf/",
+      "anchor": "PDF unterschreiben",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/guides/organize-pages/",
+      "target": "/es/tools/organize-pdf/",
+      "anchor": "organizar páginas PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/guides/organize-pages/",
+      "target": "/es/tools/remove-pages/",
+      "anchor": "LOCALISE: Remove PDF pages",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/guides/organize-pages/",
+      "target": "/es/tools/rotate-pdf/",
+      "anchor": "LOCALISE: Rotate PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/guides/edit-pdf-safely/",
+      "target": "/tools/edit-pdf/",
+      "anchor": "add notes to a PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/guides/edit-pdf-safely/",
+      "target": "/tools/sign-pdf/",
+      "anchor": "sign a PDF document",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/image-tools/pixelate-image/",
+      "target": "/image-editor/",
+      "anchor": "edit images in Image Studio",
+      "placement": "After output options",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/pixelate-image/",
+      "target": "/image-tools/black-and-white-image/",
+      "anchor": "black and white image",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/pixelate-image/",
+      "target": "/image-tools/resize-image/",
+      "anchor": "image resizer",
+      "placement": "Print or file-format FAQ",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/pt/blog/how-to-edit-pdf-online/",
+      "target": "/pt/tools/edit-pdf/",
+      "anchor": "editar PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/blog/how-to-edit-pdf-online/",
+      "target": "/pt/tools/fill-pdf/",
+      "anchor": "preencher formulário PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/blog/how-to-merge-pdf-files/",
+      "target": "/pt/tools/merge-pdf/",
+      "anchor": "juntar arquivos PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/blog/how-to-merge-pdf-files/",
+      "target": "/pt/tools/organize-pdf/",
+      "anchor": "organizar páginas PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/guides/scanned-documents/",
+      "target": "/pt/tools/pdf-to-text/",
+      "anchor": "LOCALISE: Extract PDF text",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/guides/scanned-documents/",
+      "target": "/pt/tools/view-pdf/",
+      "anchor": "LOCALISE: View PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/de/blog/how-to-sign-pdf-online/",
+      "target": "/de/tools/fill-pdf/",
+      "anchor": "PDF-Formulare ausfüllen",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/de/blog/how-to-sign-pdf-online/",
+      "target": "/de/tools/sign-pdf/",
+      "anchor": "PDF unterschreiben",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/de/guides/word-formatting/",
+      "target": "/de/tools/word-editor/",
+      "anchor": "LOCALISE: Word editor",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/es/tools/organize-pdf/",
+      "anchor": "organizar páginas PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/es/tools/remove-pages/",
+      "anchor": "LOCALISE: Remove PDF pages",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/es/tools/rotate-pdf/",
+      "anchor": "LOCALISE: Rotate PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/guides/scanned-documents/",
+      "target": "/es/tools/pdf-to-text/",
+      "anchor": "LOCALISE: Extract PDF text",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/guides/scanned-documents/",
+      "target": "/es/tools/view-pdf/",
+      "anchor": "LOCALISE: View PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/es/guides/word-formatting/",
+      "target": "/es/tools/word-editor/",
+      "anchor": "LOCALISE: Word editor",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/convert-images-to-pdf/",
+      "target": "/fr/image-tools/resize-image/",
+      "anchor": "LOCALISE: Resize image",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/blog/convert-images-to-pdf/",
+      "target": "/fr/tools/images-to-pdf/",
+      "anchor": "LOCALISE: Images to PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/guides/scanned-documents/",
+      "target": "/fr/tools/pdf-to-text/",
+      "anchor": "LOCALISE: Extract PDF text",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/fr/guides/scanned-documents/",
+      "target": "/fr/tools/view-pdf/",
+      "anchor": "LOCALISE: View PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/hi/blog/compress-pdf-file-size/",
+      "target": "/hi/tools/compress-pdf/",
+      "anchor": "LOCALISE: Compress PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/hi/blog/compress-pdf-file-size/",
+      "target": "/hi/tools/merge-pdf/",
+      "anchor": "PDF फ़ाइलें जोड़ें",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/hi/guides/scanned-documents/",
+      "target": "/hi/tools/pdf-to-text/",
+      "anchor": "LOCALISE: Extract PDF text",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/hi/guides/scanned-documents/",
+      "target": "/hi/tools/view-pdf/",
+      "anchor": "LOCALISE: View PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/convert-images-to-pdf/",
+      "target": "/id/image-tools/resize-image/",
+      "anchor": "LOCALISE: Resize image",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/convert-images-to-pdf/",
+      "target": "/id/tools/images-to-pdf/",
+      "anchor": "LOCALISE: Images to PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/extract-text-scanned-pdf-ocr/",
+      "target": "/id/tools/pdf-to-text/",
+      "anchor": "LOCALISE: Extract PDF text",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/extract-text-scanned-pdf-ocr/",
+      "target": "/id/tools/view-pdf/",
+      "anchor": "LOCALISE: View PDF",
+      "placement": "Limitations / next step",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/fill-pdf-forms-online/",
+      "target": "/id/tools/fill-pdf/",
+      "anchor": "LOCALISE: Fill PDF forms",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/fill-pdf-forms-online/",
+      "target": "/id/tools/sign-pdf/",
+      "anchor": "tanda tangani PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/how-to-merge-pdf-files/",
+      "target": "/id/tools/merge-pdf/",
+      "anchor": "LOCALISE: Merge PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/how-to-merge-pdf-files/",
+      "target": "/id/tools/organize-pdf/",
+      "anchor": "atur halaman PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/split-pdf-extract-pages/",
+      "target": "/id/tools/organize-pdf/",
+      "anchor": "atur halaman PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/id/blog/split-pdf-extract-pages/",
+      "target": "/id/tools/split-pdf/",
+      "anchor": "LOCALISE: Split PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/pt/tools/organize-pdf/",
+      "anchor": "organizar páginas PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/pt/tools/remove-pages/",
+      "anchor": "LOCALISE: Remove PDF pages",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/pt/tools/rotate-pdf/",
+      "anchor": "LOCALISE: Rotate PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/pt/guides/word-formatting/",
+      "target": "/pt/tools/word-editor/",
+      "anchor": "LOCALISE: Word editor",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tools/fill-pdf/",
+      "target": "/tools/edit-pdf/",
+      "anchor": "annotate PDF pages",
+      "placement": "Related tools panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/fill-pdf/",
+      "target": "/tools/sign-pdf/",
+      "anchor": "add a drawn signature to a PDF",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/watermark-pdf/",
+      "target": "/tools/compress-pdf/",
+      "anchor": "PDF compression tool",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/watermark-pdf/",
+      "target": "/tools/edit-pdf/",
+      "anchor": "add notes to a PDF",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/watermark-pdf/",
+      "target": "/tools/sign-pdf/",
+      "anchor": "sign a PDF document",
+      "placement": "Related tools panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tr/blog/compress-pdf-file-size/",
+      "target": "/tr/tools/compress-pdf/",
+      "anchor": "LOCALISE: Compress PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tr/blog/compress-pdf-file-size/",
+      "target": "/tr/tools/merge-pdf/",
+      "anchor": "PDF dosyalarını birleştir",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tr/blog/how-to-edit-pdf-online/",
+      "target": "/tr/tools/edit-pdf/",
+      "anchor": "LOCALISE: Edit PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tr/blog/how-to-edit-pdf-online/",
+      "target": "/tr/tools/fill-pdf/",
+      "anchor": "LOCALISE: Fill PDF forms",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tr/blog/how-to-sign-pdf-online/",
+      "target": "/tr/tools/fill-pdf/",
+      "anchor": "LOCALISE: Fill PDF forms",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tr/blog/how-to-sign-pdf-online/",
+      "target": "/tr/tools/sign-pdf/",
+      "anchor": "LOCALISE: Sign PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tr/guides/scanned-documents/",
+      "target": "/tr/tools/pdf-to-text/",
+      "anchor": "LOCALISE: Extract PDF text",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/tr/guides/scanned-documents/",
+      "target": "/tr/tools/view-pdf/",
+      "anchor": "LOCALISE: View PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/zh/blog/fill-pdf-forms-online/",
+      "target": "/zh/tools/fill-pdf/",
+      "anchor": "LOCALISE: Fill PDF forms",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/zh/blog/fill-pdf-forms-online/",
+      "target": "/zh/tools/sign-pdf/",
+      "anchor": "LOCALISE: Sign PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/zh/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/zh/tools/organize-pdf/",
+      "anchor": "LOCALISE: Organise PDF pages",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/zh/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/zh/tools/remove-pages/",
+      "anchor": "LOCALISE: Remove PDF pages",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/zh/blog/organize-rotate-delete-pdf-pages/",
+      "target": "/zh/tools/rotate-pdf/",
+      "anchor": "LOCALISE: Rotate PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/zh/guides/edit-pdf-safely/",
+      "target": "/zh/tools/edit-pdf/",
+      "anchor": "LOCALISE: Edit PDF",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/zh/guides/edit-pdf-safely/",
+      "target": "/zh/tools/sign-pdf/",
+      "anchor": "LOCALISE: Sign PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/zh/guides/scanned-documents/",
+      "target": "/zh/tools/pdf-to-text/",
+      "anchor": "LOCALISE: Extract PDF text",
+      "placement": "First relevant explanatory paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/zh/guides/scanned-documents/",
+      "target": "/zh/tools/view-pdf/",
+      "anchor": "LOCALISE: View PDF",
+      "placement": "Related task paragraph",
+      "priority": "P2",
+      "example": "",
+      "kind": "Guide / blog"
+    },
+    {
+      "source": "/calculators/euro-pallet-stacking-calculator/",
+      "target": "/shipping-tools/multiple-carton-cbm-calculator/",
+      "anchor": "calculate mixed-carton shipment CBM",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/calculators/rf-creditor-reference-generator/",
+      "target": "/calculators/sepa-qr-code-generator/",
+      "anchor": "generate a SEPA payment QR code",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/calculators/rf-creditor-reference-generator/",
+      "target": "/excel-formula-generator/",
+      "anchor": "Excel formula assistant",
+      "placement": "After the key explanation",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/calculators/sepa-qr-code-generator/",
+      "target": "/calculators/rf-creditor-reference-generator/",
+      "anchor": "generate an RF creditor reference",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "If your invoice needs a structured payment reference, generate an ISO 11649 RF reference before creating the SEPA QR code.",
+      "kind": "Tool"
+    },
+    {
+      "source": "/calculators/sepa-qr-code-generator/",
+      "target": "/excel-formula-generator/",
+      "anchor": "Excel formula assistant",
+      "placement": "After the key explanation",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/excel-formula-generator/",
+      "target": "/calculators/rf-creditor-reference-generator/",
+      "anchor": "ISO 11649 reference checker",
+      "placement": "Tool comparison section",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/a4-a3-dpi-pixel-calculator/",
+      "target": "/image-editor/",
+      "anchor": "browser image editor",
+      "placement": "Print or file-format FAQ",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/a4-a3-dpi-pixel-calculator/",
+      "target": "/image-tools/bleed-print-margin-calculator/",
+      "anchor": "calculate print bleed and safe margins",
+      "placement": "After output options",
+      "priority": "P2",
+      "example": "For artwork going to print, calculate bleed and safe margins after selecting the target paper size and DPI.",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/a4-a3-dpi-pixel-calculator/",
+      "target": "/image-tools/resize-image/",
+      "anchor": "change image pixel dimensions",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/black-and-white-image/",
+      "target": "/image-editor/",
+      "anchor": "edit images in Image Studio",
+      "placement": "After output options",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/black-and-white-image/",
+      "target": "/image-tools/convert-image/",
+      "anchor": "image format converter",
+      "placement": "Print or file-format FAQ",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/black-and-white-image/",
+      "target": "/image-tools/pixelate-image/",
+      "anchor": "pixelate image",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/bleed-print-margin-calculator/",
+      "target": "/image-tools/a4-a3-dpi-pixel-calculator/",
+      "anchor": "calculate A4 pixels at 300 DPI",
+      "placement": "After output options",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/bleed-print-margin-calculator/",
+      "target": "/image-tools/resize-image/",
+      "anchor": "change image pixel dimensions",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/bleed-print-margin-calculator/",
+      "target": "/tools/pdf-to-png/",
+      "anchor": "pdf to png tool",
+      "placement": "Print or file-format FAQ",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/reduce-image-size-kb/",
+      "target": "/image-tools/convert-image/",
+      "anchor": "JPG/PNG/WebP converter",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/reduce-image-size-kb/",
+      "target": "/image-tools/resize-image/",
+      "anchor": "resize an image",
+      "placement": "After output options",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/reduce-image-size-kb/",
+      "target": "/tools/compress-image/",
+      "anchor": "compress image tool",
+      "placement": "Print or file-format FAQ",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/resize-image/",
+      "target": "/image-tools/a4-a3-dpi-pixel-calculator/",
+      "anchor": "calculate A4 pixels at 300 DPI",
+      "placement": "After output options",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/resize-image/",
+      "target": "/image-tools/convert-image/",
+      "anchor": "image format converter",
+      "placement": "Print or file-format FAQ",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/resize-image/",
+      "target": "/image-tools/crop-image/",
+      "anchor": "crop image",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/resize-image/",
+      "target": "/image-tools/reduce-image-size-kb/",
+      "anchor": "reduce an image's KB size",
+      "placement": "After output options",
+      "priority": "P2",
+      "example": "Changing pixel dimensions is different from compressing a file. Use the image size reduction tool if your goal is fewer kilobytes.",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/rotate-image/",
+      "target": "/image-editor/",
+      "anchor": "browser image editor",
+      "placement": "Print or file-format FAQ",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/rotate-image/",
+      "target": "/image-tools/crop-image/",
+      "anchor": "Crop image",
+      "placement": "After output options",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/image-tools/rotate-image/",
+      "target": "/image-tools/flip-image/",
+      "anchor": "flip image",
+      "placement": "Related tasks panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/compress-image/",
+      "target": "/image-tools/convert-image/",
+      "anchor": "JPG/PNG/WebP converter",
+      "placement": "Related tools panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/compress-image/",
+      "target": "/image-tools/reduce-image-size-kb/",
+      "anchor": "reduce an image's KB size",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/compress-image/",
+      "target": "/tools/images-to-pdf/",
+      "anchor": "images to pdf tool",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/images-to-pdf/",
+      "target": "/image-tools/convert-image/",
+      "anchor": "convert image formats",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/images-to-pdf/",
+      "target": "/image-tools/resize-image/",
+      "anchor": "change image pixel dimensions",
+      "placement": "Related tools panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/images-to-pdf/",
+      "target": "/tools/merge-pdf/",
+      "anchor": "PDF merger",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/images-to-pdf/",
+      "target": "/tools/pdf-to-jpg/",
+      "anchor": "PDF to JPG",
+      "placement": "Next-step callout",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/pdf-to-jpg/",
+      "target": "/image-tools/resize-image/",
+      "anchor": "image resizer",
+      "placement": "Under a relevant FAQ answer",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/pdf-to-jpg/",
+      "target": "/tools/images-to-pdf/",
+      "anchor": "images to pdf",
+      "placement": "Related tools panel",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    },
+    {
+      "source": "/tools/pdf-to-jpg/",
+      "target": "/tools/pdf-to-png/",
+      "anchor": "PDF to PNG",
+      "placement": "After tool instructions",
+      "priority": "P2",
+      "example": "",
+      "kind": "Tool"
+    }
+  ]
+}
