@@ -23,7 +23,7 @@ for(const lang of langs){
  assert.equal((html.match(/class="dv-home-guides"/g)||[]).length,1,lang+' guide band');
  assert.ok(html.includes('data-dv-home-tools="v2"'),lang+' tool discovery lost');
  assert.ok(html.includes('id="tool-search"')&&html.includes('id="tool-grid"'),lang+' tool filtering lost');
- assert.ok(html.includes('/assets/homepage-v3.css'),lang+' missing stylesheet');
+ assert.ok(html.includes('/assets/homepage-v3.css')||/href="\/_immutable\/home-[a-f0-9]{16}\.css"/.test(html),lang+' missing stylesheet');
  assert.ok(html.includes('/assets/homepage-workspace.svg'),lang+' missing illustration');
  assert.ok(html.includes('class="dv-home-privacy-note"'),lang+' missing AI processing disclosure');
  assert.ok(html.includes('href="/excel-formula-generator/"'),lang+' missing formula link');
