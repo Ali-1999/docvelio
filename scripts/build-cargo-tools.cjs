@@ -123,7 +123,7 @@ function main(){
   adapted++;
  });
  let xml=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
- if((xml.match(/<loc>/g)||[]).length!==520)throw Error('Expected 520 base URLs before adding cargo');
+ if((xml.match(/<loc>/g)||[]).length!==522)throw Error('Expected 522 base URLs before adding cargo');
  let extra='';
  for(const lang of langs)for(const t of topics){
   extra+='  <url>\n    <loc>'+escXML(url(lang,t))+'</loc>\n';
@@ -132,10 +132,10 @@ function main(){
  }
  xml=xml.replace('</urlset>',extra+'</urlset>');
  const urls=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
- if(created!==60||urls.length!==580||new Set(urls).size!==580)throw Error('Bad cargo URLs in sitemap');
+ if(created!==60||urls.length!==582||new Set(urls).size!==582)throw Error('Bad cargo URLs in sitemap');
  fs.writeFileSync(path.join(root,'sitemap.xml'),xml);
  fs.writeFileSync(path.join(root,'sitemap.txt'),[...urls].sort().join('\n')+'\n');
- console.log('CARGO BUILD: '+created+' localized freight pages, '+adapted+' site nav updates, 580 canonical sitemap URLs.');
+ console.log('CARGO BUILD: '+created+' localized freight pages, '+adapted+' site nav updates, 582 canonical sitemap URLs.');
 }
 if(require.main===module)main();
 module.exports={main,render,translated};
