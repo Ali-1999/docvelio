@@ -87,6 +87,8 @@
   if(name.length<1||name.length>70||/[\r\n]/.test(name))fail('Beneficiary name must contain 1–70 characters, with no line breaks.');
   if(!iban(account))fail('Invalid IBAN format, length or check digits.');
   if(bic&&!/^[A-Z]{6}[A-Z0-9]{2}([A-Z0-9]{3})?$/.test(bic))fail('BIC must contain 8 or 11 valid characters.');
+  if(/^(GB|CH|MC|SM|AD|VA)/.test(account)&&!bic)fail('BIC is required for payments involving these non-EEA SEPA countries.');
+  if(x.amount!==''&&x.amount!=null&&!/^\d+(?:\.\d{1,2})?$/.test(String(x.amount)))fail('Enter an EUR amount with no more than two decimal places.');
   if(note.length>140||/[\r\n]/.test(note))fail('Unstructured message must be 140 characters or fewer.');
   if(reference&&!verifyRF(reference))fail('RF structured reference must contain valid ISO 11649 check digits.');
   if(reference&&note)fail('Use either a structured RF reference or an unstructured message, not both.');
