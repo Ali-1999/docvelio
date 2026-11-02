@@ -8,8 +8,8 @@ assert(!/<link[^>]+rel="canonical"/i.test(notFound),'Custom 404 must not canonic
 assert(!/<link[^>]+hreflang=/i.test(notFound),'Custom 404 must not declare localized homepage alternates');
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 const urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-assert.equal(urls.length,580);
-assert.equal(new Set(urls).size,580);
+assert.equal(urls.length,582);
+assert.equal(new Set(urls).size,582);
 assert(urls.every(u=>!u.includes('/404')),'404 must never appear in sitemap');
 for(const relative of ['', 'tools/edit-pdf/', 'blog/', 'image-editor/', 'image-tools/resize-image/', 'cbm-calculator/','shipping-tools/container-capacity-calculator/','ar/','es/cbm-calculator/']){
  const file=path.join(root,relative,'index.html');
