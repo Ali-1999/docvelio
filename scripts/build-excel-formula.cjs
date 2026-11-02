@@ -49,7 +49,7 @@ const html=`<!doctype html>
 <link rel="stylesheet" href="/assets/excel-formula-generator.css">
 <script type="application/ld+json">${JSON.stringify(structured)}</script>
 <script defer src="/assets/site.js"></script><script defer src="/assets/global-navigation.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/@formulajs/formulajs@4.6.1/lib/browser/formula.min.js"></script>
+
 <script defer src="/assets/excel-formula-generator.js"></script>
 </head>
 <body>
@@ -88,10 +88,10 @@ ${header}
     <h2 id="ef-ex-title">Try a verified formula example</h2>
     <p class="ef-hint">Click an example to see a working formula immediately, even if AI is unavailable.</p>
     <div id="ef-examples" class="ef-examples"></div>
-    <h2 style="margin-top:27px">Test simple maths with Formula.js</h2>
+    <h2 style="margin-top:27px">Test simple maths locally</h2>
     <label for="ef-sample">Numbers for a sample calculation</label>
     <div class="ef-sample-row"><input id="ef-sample" value="10, 20, 30" aria-label="Numbers to calculate"><button class="ef-secondary" type="button" id="ef-preview">Calculate</button></div>
-    <p id="ef-sample-output" class="ef-hint" role="status" aria-live="polite">Runs locally using the open-source Formula.js library.</p>
+    <p id="ef-sample-output" class="ef-hint" role="status" aria-live="polite">Runs locally in your browser using Docvelio code.</p>
   </section>
  </div>
  <div class="ef-features">
@@ -107,7 +107,7 @@ ${header}
  <h2>Does this accept every language and every formula?</h2>
  <p>You may enter instructions in any language, but the AI does not guarantee accurate interpretation of every language or ambiguous task. It may request more specific details. Generated formulas are checked for basic structure, not evaluated against your actual workbook. Double-check financial and business results before relying on them.</p>
  <h2>Is it free?</h2>
- <p>Docvelio provides free basic formula examples and limited AI generation subject to availability and daily usage capacity. No payment or API key is required from visitors. Source acknowledgements: <a href="https://github.com/formulajs/formulajs" target="_blank" rel="noopener noreferrer">Formula.js (MIT)</a> is used for the example calculator; formula generation uses Cloudflare Workers AI. Read the <a href="/privacy/">privacy policy</a> before submitting spreadsheet instructions.</p>
+ <p>Docvelio provides free basic formula examples and limited AI generation subject to availability and daily usage capacity. No payment or API key is required from visitors. Basic calculations use original browser JavaScript without external libraries; AI formula generation uses Cloudflare Workers AI. Read the <a href="/privacy/">privacy policy</a> before submitting spreadsheet instructions.</p>
  </article>
 </div>
 </main>
