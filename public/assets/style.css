@@ -60,3 +60,7 @@ body{background:#fafbff;font-size:15px;line-height:1.65}*{box-sizing:border-box}
 
 /* Relevant document workflows on tool landing pages */
 .seo-help{padding-top:8px;padding-bottom:52px}.seo-help-inner{max-width:900px;margin:0 auto;background:#f7faff;border:1px solid #e7edfa;border-radius:18px;padding:28px 32px}.seo-help h2{font-size:clamp(1.3rem,2vw,1.65rem);line-height:1.28;margin:0 0 14px;color:#182a4a}.seo-help p{color:#475572;line-height:1.7;margin:10px 0}.seo-help a{color:#315be7;text-decoration:underline;text-underline-offset:3px}@media(max-width:640px){.seo-help{padding-bottom:30px}.seo-help-inner{padding:20px}}
+
+/* Editorial next-step links: contextual, accessible and light-weight. */
+.dv-topic-followup{margin:22px 0;padding:15px 19px;border-inline-start:3px solid #3673d1;border-radius:8px;background:#f3f7ff;color:#35506f;line-height:1.75;overflow-wrap:anywhere}
+.dv-topic-followup strong{color:#193f79}.dv-topic-followup a{color:#1b5eb7;text-underline-offset:3px;font-weight:700}.dv-topic-followup a:focus-visible{outline:3px solid #eaaa42;outline-offset:2px}
