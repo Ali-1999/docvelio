@@ -38,6 +38,13 @@ function apply(){
  }
  const empty=document.querySelector('#empty-tools');
  if(empty)empty.hidden=visible!==0;
+ const spotlight=document.querySelector('#dv-toolkit-spotlight');
+ const featuredHeading=document.querySelector('#dv-toolkit-featured-label');
+ const showFeatured=category==='all'&&!query;
+ if(spotlight)spotlight.hidden=!showFeatured;
+ if(featuredHeading)featuredHeading.hidden=!showFeatured;
+ const counter=document.querySelector('#dv-toolkit-visible-count');
+ if(counter)counter.textContent=visible+' '+(counter.dataset.countLabel||'tools available');
  filters.forEach(button=>{
   const active=button.dataset.filter===category;
   button.classList.toggle('active',active);
