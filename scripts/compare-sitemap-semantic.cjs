@@ -30,9 +30,9 @@ const expectedNew=new Set([
 const newUrls=[...generated.keys()].filter(url=>!previous.has(url));
 assert.deepEqual(new Set(newUrls),expectedNew,'Unexpected added/missing sitemap URLs');
 for(const url of expectedNew){
- const item=generated.get(url);
- assert.ok(item.includes('hreflang="en"')&&item.includes('hreflang="x-default"'),'New tool missing English hreflang: '+url);
- assert.ok(!item.includes('hreflang="es"'),'Do not advertise nonexistent translations: '+url);
+ const item=JSON.parse(generated.get(url));\n const links=item.links.join(' ');
+ assert.ok(links.includes('hreflang="en"')&&links.includes('hreflang="x-default"'),'New tool missing English hreflang: '+url);
+ assert.ok(!links.includes('hreflang="es"'),'Do not advertise nonexistent translations: '+url);
 }
 function textEntries(value){const lines=value.trim().split(/\r?\n/).filter(Boolean);assert.equal(new Set(lines).size,lines.length,'Duplicate text sitemap URL');return new Set(lines);}
 const oldText=cp.execFileSync('git',['show','HEAD:public/sitemap.txt'],{encoding:'utf8',maxBuffer:2*1024*1024});
