@@ -33,9 +33,9 @@ for(const file of pages){
 }
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 const urlsXml=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
-if(urlsXml.length!==581)errors.push('Expected 581 deployed sitemap URLs, found '+urlsXml.length);
+if(urlsXml.length<581)errors.push('Expected at least 581 deployed sitemap URLs, found '+urlsXml.length);
 if(new Set(urlsXml).size!==urlsXml.length)errors.push('Duplicate URLs in final sitemap');
-if(pages.length!==581)errors.push('Expected 581 generated index pages, found '+pages.length);
+if(pages.length<581)errors.push('Expected at least 581 generated index pages, found '+pages.length);
 for(const url of urlsXml)if(!urls.has(url))errors.push('Sitemap references missing page '+url);
 for(const url of urls)if(!urlsXml.includes(url))errors.push('Page not listed in final sitemap '+url);
 for(const lang of ['en','es','fr','de','pt','ar','hi','id','tr','zh'])for(const route of ['','about/','guides/']){

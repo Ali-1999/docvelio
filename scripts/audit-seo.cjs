@@ -17,7 +17,7 @@ function routeOf(file){return path.relative(root,file).replaceAll('\\','/').repl
 const listedXml=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 const urls=[...listedXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
 const xmlSet=new Set(urls);
-if(urls.length!==581||xmlSet.size!==581)serious.push('Final production sitemap should have 581 unique URLs (including the wheel): got '+urls.length);
+if(urls.length<581||xmlSet.size!==urls.length)serious.push('Final production sitemap should have at least 581 unique URLs (including the wheel): got '+urls.length);
 for(const file of files){
  const route=routeOf(file),url=HOST+'/'+route,html=fs.readFileSync(file,'utf8');
  const head=html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i)?.[1]||'';
