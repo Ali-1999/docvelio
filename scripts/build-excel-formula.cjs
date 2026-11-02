@@ -122,6 +122,16 @@ for(const rel of ['index.html','guides/index.html']){
   page=page.replace('</main>',discovery+'</main>');write(rel,page);
  }
 }
+// Disclose exactly what the AI feature sends and why, without suggesting a workbook upload.
+{
+ const privacyFile='privacy/index.html';
+ let privacy=read(privacyFile);
+ if(!privacy.includes('data-excel-ai-disclosure="1"')){
+  const notice='<section class="section" data-excel-ai-disclosure="1" aria-label="Excel formula AI privacy"><div class="container"><h2>Excel Formula Generator and AI processing</h2><p>When you choose to generate a formula, your typed instruction is sent to Cloudflare Workers AI to create the requested formula. Do not include passwords, personal records, confidential workbook values or other sensitive information. Docvelio does not ask you to upload spreadsheets for this tool. Requests may be temporarily rate-limited using network information to protect availability. Cloudflare processes the submitted instruction as an AI service provider; see <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare’s privacy policy</a> for information about its processing practices.</p></div></section>';
+  privacy=privacy.replace('</main>',notice+'</main>');
+  write(privacyFile,privacy);
+ }
+}
 const file=path.join(root,'sitemap.xml');
 let xml=fs.readFileSync(file,'utf8');
 if(!xml.includes('<loc>'+url+'</loc>')){
