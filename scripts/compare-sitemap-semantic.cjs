@@ -30,7 +30,8 @@ const expectedNew=new Set([
 const newUrls=[...generated.keys()].filter(url=>!previous.has(url));
 assert.deepEqual(new Set(newUrls),expectedNew,'Unexpected added/missing sitemap URLs');
 for(const url of expectedNew){
- const item=JSON.parse(generated.get(url));\n const links=item.links.join(' ');
+ const item=JSON.parse(generated.get(url));
+ const links=item.links.join(' ');
  assert.ok(links.includes('hreflang="en"')&&links.includes('hreflang="x-default"'),'New tool missing English hreflang: '+url);
  assert.ok(!links.includes('hreflang="es"'),'Do not advertise nonexistent translations: '+url);
 }
