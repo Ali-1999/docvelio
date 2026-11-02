@@ -70,13 +70,13 @@ function spotlight(lang,route,kind,label,desc,glyph){
  '<div class="dv-spotlight-top"><span class="dv-spotlight-category">'+esc(d.tabs[cats.indexOf(kind)])+'</span><span class="dv-spotlight-glyph" aria-hidden="true">'+esc(glyph)+'</span></div>'+
  '<div><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p><span class="dv-spotlight-action">'+esc(d.open)+' <span aria-hidden="true">↗</span></span></div></a>';
 }
-let updated=0,allCards=0;
+let updated=0,already=0,allCards=0;
 for(const lang of langs){
  const file=path.join(root,lang==='en'?'':lang,'index.html');
  let html=fs.readFileSync(file,'utf8');
  const start=html.indexOf('<section class="section tools-section" id="tools">');
  const previous=html.indexOf('<section class="section dv-home-toolkit" id="tools"');
- if(start<0&&previous>=0){console.log('Home toolkit already redesigned: '+lang);continue;}
+ if(start<0&&previous>=0){already++;console.log('Home toolkit already redesigned: '+lang);continue;}
  if(start<0)throw Error('Tool section anchor not found for '+lang);
  const end=html.indexOf('</section>',start);
  if(end<0)throw Error('Tool section close not found for '+lang);
@@ -102,7 +102,7 @@ for(const lang of langs){
  '<div class="dv-toolkit-spotlight" id="dv-toolkit-spotlight">'+spotlightCards+'</div>'+
  '<div class="dv-toolkit-featured-label">'+esc(d.browse)+'</div>'+
  '<div class="dv-toolkit-controls"><div class="filter-tabs" role="group" aria-label="'+esc(d.browse)+'">'+tabs+'</div>'+
- '<span class="dv-toolkit-count" id="dv-toolkit-visible-count" role="status" aria-live="polite">'+counts.all+' '+esc(d.count)+'</span></div>'+
+ '<span class="dv-toolkit-count" id="dv-toolkit-visible-count" data-count-label="'+esc(d.count)+'" role="status" aria-live="polite">'+counts.all+' '+esc(d.count)+'</span></div>'+
  '<div class="grid tool-grid" id="tool-grid">'+all.map(c=>c.markup).join('\n')+'</div>'+
  '<p class="dv-toolkit-empty empty-tools" hidden id="empty-tools">'+esc(d.empty)+'</p>'+
  '<div class="dv-toolkit-bottom"><p>'+esc(d.bottom)+'</p><a href="'+(lang==='en'?'/':'/'+lang+'/')+'guides/">'+esc(d.guide)+' ↗</a></div>'+
@@ -112,5 +112,5 @@ for(const lang of langs){
  fs.writeFileSync(file,html);updated++;allCards+=all.length;
  console.log('HOME TOOLKIT: '+lang+' '+all.length+' tools');
 }
-if(updated!==10)throw Error('Expected 10 localized homepages, modified '+updated);
+if(updated+already!==10)throw Error('Expected 10 localized homepages, found '+(updated+already));
 console.log('HOME TOOLKIT: redesigned '+updated+' localized homepages with '+allCards+' total card instances.');
