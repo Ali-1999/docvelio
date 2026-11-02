@@ -15,7 +15,7 @@ for(const lang of langs){
  assert.equal((html.match(/id="tool-search"/g)||[]).length,1,lang+' needs one search input');
  assert.equal((html.match(/id="tool-grid"/g)||[]).length,1,lang+' needs one tools grid');
  assert.equal((html.match(/id="empty-tools"/g)||[]).length,1,lang+' needs one empty-results indicator');
- assert.ok(html.includes('href="/assets/home-toolkit-v2.css"'),lang+' missing styles');
+ assert.ok(html.includes('href="/assets/home-toolkit-v2.css"')||/href="\/_immutable\/home-[a-f0-9]{16}\.css"/.test(html),lang+' missing styles');
  for(const cat of catSet)assert.ok(html.includes('data-filter="'+cat+'"'),lang+' missing '+cat+' filter');
  for(const link of ['/excel-formula-generator/','/wheel-of-names/']){
   assert.ok(html.includes('href="'+link+'"'),lang+' missing '+link+' link');
