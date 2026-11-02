@@ -3,9 +3,13 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const root=path.join(__dirname,'../public');
 const html=fs.readFileSync(path.join(root,'excel-formula-generator/index.html'),'utf8');
+const examples=fs.readFileSync(path.join(root,'assets/excel-formula-generator.js'),'utf8');
+assert.ok(!examples.includes('window.formulajs'),'Excel sample arithmetic must be first-party');
+
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 assert.match(html,/<h1>Excel Formula Generator<\/h1>/);
 assert.match(html,/href="https:\/\/docvelio\.com\/excel-formula-generator\/"/);
+assert.ok(!html.includes('cdn.jsdelivr.net/npm/@formulajs'),'Remove Formula.js external script');
 assert.match(html,/id="ef-request"/);
 assert.match(html,/src="\/assets\/excel-formula-generator\.js"/);
 assert.ok(sitemap.includes('<loc>https://docvelio.com/excel-formula-generator/</loc>'));
