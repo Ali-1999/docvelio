@@ -1,0 +1,26 @@
+/* Local regression checks for the Excel generator. Run after production build. */
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'../public');
+const html=fs.readFileSync(path.join(root,'excel-formula-generator/index.html'),'utf8');
+const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
+assert.match(html,/<h1>Excel Formula Generator<\/h1>/);
+assert.match(html,/href="https:\/\/docvelio\.com\/excel-formula-generator\/"/);
+assert.match(html,/id="ef-request"/);
+assert.match(html,/src="\/assets\/excel-formula-generator\.js"/);
+assert.ok(sitemap.includes('<loc>https://docvelio.com/excel-formula-generator/</loc>'));
+assert.ok(fs.readFileSync(path.join(root,'index.html'),'utf8').includes('Open the Excel Formula Generator'));
+assert.ok(fs.readFileSync(path.join(root,'privacy/index.html'),'utf8').includes('data-excel-ai-disclosure="1"'));
+async function main(){
+ const source=fs.readFileSync(path.join(__dirname,'../src/excel-formula-worker.js'),'utf8');
+ const handle=new Function('Response','URL','console',source.replace('export default {','const handler={')+';return handler;')(Response,URL,console);
+ const mockRequest=new Request('https://docvelio.com/api/excel-formula',{method:'POST',headers:{Origin:'https://docvelio.com','Content-Type':'application/json'},body:JSON.stringify({request:'اجمع الخلايا من A1 إلى A5'})});
+ const success=await handle.fetch(mockRequest,{AI:{run:async()=>({response:JSON.stringify({formula:'=SUM(A1:A5)',explanation:'Sum selected cells',assumptions:''})})}});
+ assert.equal(success.status,200);
+ const data=await success.json();assert.equal(data.formula,'=SUM(A1:A5)');
+ const bad=new Request('https://docvelio.com/api/excel-formula',{method:'POST',headers:{Origin:'https://docvelio.com','Content-Type':'application/json'},body:JSON.stringify({request:'Create a dangerous external web request formula'})});
+ const denied=await handle.fetch(bad,{AI:{run:async()=>({response:JSON.stringify({formula:'=WEBSERVICE("https://evil.test")',explanation:'',assumptions:''})})}});
+ assert.equal(denied.status,422);
+ console.log('Excel generator tests passed: page, sitemap, privacy, multilingual API response, formula safety.');
+}
+main().catch(error=>{console.error(error);process.exitCode=1;});
