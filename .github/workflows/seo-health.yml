@@ -64,6 +64,16 @@ jobs:
           node scripts/test-full-homepage.cjs
           node --check scripts/optimize-homepage-css.cjs
           node scripts/test-homepage-performance.cjs
+      - name: Verify five European utility tools and payment QR logic
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check scripts/build-europe-tools.cjs
+          node --check scripts/test-europe-tools.cjs
+          node --check public/assets/europe-tools-core.js
+          node --check public/assets/europe-tools-ui.js
+          node --check public/assets/vendor/qrcode-generator.js
+          node scripts/test-europe-tools.cjs
       - name: Check rendered HTML and image SEO
         run: node scripts/seo-health-check.cjs
       - name: Verify public SEO endpoints and social preview
