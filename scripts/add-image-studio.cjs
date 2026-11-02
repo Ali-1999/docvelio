@@ -53,10 +53,10 @@ function main(){
   fs.writeFileSync(file,s);changed++;
  });
  const pathXml=path.join(root,'sitemap.xml');let xml=fs.readFileSync(pathXml,'utf8');
- if((xml.match(/<loc>/g)||[]).length!==430)throw Error('Image Studio must run after 430-page SEO generator');
+ if((xml.match(/<loc>/g)||[]).length!==432)throw Error('Image Studio must run after 432-page SEO generator');
  let extra='';for(const l of locales){extra+='  <url>\n    <loc>'+link(l)+'</loc>\n';for(const lang of locales)extra+='    <xhtml:link rel="alternate" hreflang="'+lang+'" href="'+link(lang)+'"/>\n';extra+='    <xhtml:link rel="alternate" hreflang="x-default" href="'+link('en')+'"/>\n  </url>\n';}
  xml=xml.replace('</urlset>',extra+'</urlset>');fs.writeFileSync(pathXml,xml);
- const urls=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);if(urls.length!==440||new Set(urls).size!==440)throw Error('Expected 440 unique canonical pages');
+ const urls=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);if(urls.length!==442||new Set(urls).size!==442)throw Error('Expected 442 unique canonical pages');
  fs.writeFileSync(path.join(root,'sitemap.txt'),urls.sort().join('\n')+'\n');
  console.log('IMAGE STUDIO: 10 localized image editor pages, '+changed+' site navigation links, 440 canonical URLs.');
 }
