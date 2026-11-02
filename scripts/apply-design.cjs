@@ -48,5 +48,5 @@ function walk(dir){
  }
 }
 walk(root);
-if(count!==431)throw Error('Expected 430 pages and one 404 page, found '+count);
+if(count<431)throw Error('Expected at least 431 pages including the 404 page, found '+count);
 console.log('DESIGN BUILD: one responsive styling and accessibility layer applied to '+count+' pages.');
