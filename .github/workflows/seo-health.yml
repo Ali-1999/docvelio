@@ -44,6 +44,7 @@ jobs:
           node --check src/excel-formula-worker.js
           node --check scripts/build-excel-formula.cjs
           node --check public/assets/excel-formula-generator.js
+          node scripts/test-excel-formula.cjs
           test -s public/excel-formula-generator/index.html
           grep -Fq 'href="https://docvelio.com/excel-formula-generator/"' public/excel-formula-generator/index.html
           grep -Fq '<loc>https://docvelio.com/excel-formula-generator/</loc>' public/sitemap.xml
@@ -82,3 +83,14 @@ jobs:
           grep -Fq 'id="im-format"' <<< "$html"
           echo 'Production page exposes 50/100/200 KB presets and linked compressor controls'
 
+
+      - name: Validate Excel Formula Generator in production
+        shell: bash
+        run: |
+          set -euo pipefail
+          html=$(curl --fail --location --silent --show-error --max-time 30 https://docvelio.com/excel-formula-generator/)
+          grep -Fq 'id="ef-request"' <<< "$html"
+          grep -Fq 'excel-formula-generator.js' <<< "$html"
+          code=$(curl --silent --show-error --location --max-time 20 --output /dev/null --write-out '%{http_code}' https://docvelio.com/api/excel-formula)
+          test "$code" = '405'
+          echo 'Excel page available; API responds with expected method restriction'
