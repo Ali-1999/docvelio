@@ -75,6 +75,13 @@ jobs:
           node --check public/assets/europe-tools-ui.js
           node --check public/assets/docvelio-qr.js
           node scripts/test-europe-tools.cjs
+      - name: Validate contextual internal linking map
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check scripts/implement-internal-links.cjs
+          node --check scripts/test-internal-links.cjs
+          node scripts/test-internal-links.cjs
       - name: Check rendered HTML and image SEO
         run: node scripts/seo-health-check.cjs
       - name: Verify public SEO endpoints and social preview
