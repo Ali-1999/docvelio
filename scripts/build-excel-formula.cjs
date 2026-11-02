@@ -12,8 +12,8 @@ const home=read('index.html');
 const header=home.match(/<header\b[^>]*>[\s\S]*?<\/header>/i)?.[0];
 const footer=home.match(/<footer\b[^>]*>[\s\S]*?<\/footer>/i)?.[0];
 if(!header||!footer)throw Error('Missing shared Docvelio navigation or footer');
-const desc='Describe a spreadsheet task in your own language and generate an Excel formula with a clear explanation. Copy formulas, browse examples and check simple functions for free.';
-const title='Excel Formula Generator – Describe Your Task in Any Language | Docvelio';
+const desc='Generate Excel formulas from instructions in your language. Copy formulas, see clear explanations and test free examples with Docvelio.';
+const title='Excel Formula Generator in Any Language | Docvelio';
 const structured={
  '@context':'https://schema.org','@graph':[
   {'@type':'BreadcrumbList',itemListElement:[
