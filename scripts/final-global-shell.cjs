@@ -19,6 +19,19 @@ const excelFormulaLabels={
  tr:'Excel Formül Oluşturucu',
  zh:'Excel 公式生成器'
 };
+const europeToolLinks=['/calculators/euro-pallet-stacking-calculator/','/image-tools/a4-a3-dpi-pixel-calculator/','/calculators/sepa-qr-code-generator/','/image-tools/bleed-print-margin-calculator/','/calculators/rf-creditor-reference-generator/'];
+const europeLabels={
+ en:['Euro Pallet Calculator','A4/A3 DPI Calculator','SEPA QR Code','Print Bleed Calculator','RF Reference Generator'],
+ es:['Calculadora de palés EUR','Calculadora DPI A4/A3','Código QR SEPA','Calculadora de sangrado','Generador referencia RF'],
+ fr:['Calculateur de palettes EUR','Calculateur DPI A4/A3','QR de paiement SEPA','Calculateur de fond perdu','Générateur de référence RF'],
+ de:['Europaletten-Rechner','A4/A3 DPI Rechner','SEPA-QR-Code','Beschnitt-Rechner','RF-Referenzgenerator'],
+ pt:['Calculadora de paletes EUR','Calculadora DPI A4/A3','Código QR SEPA','Calculadora de sangria','Referência RF'],
+ ar:['حاسبة منصات اليورو','حاسبة DPI لأحجام A4/A3','رمز SEPA QR','حاسبة هوامش الطباعة','منشئ مرجع RF'],
+ hi:['यूरो पैलेट कैलकुलेटर','A4/A3 DPI कैलकुलेटर','SEPA QR कोड','प्रिंट ब्लीड कैलकुलेटर','RF रेफ़रेंस जनरेटर'],
+ id:['Kalkulator Palet Euro','Kalkulator DPI A4/A3','Kode QR SEPA','Kalkulator Bleed Cetak','Generator Referensi RF'],
+ tr:['Euro Palet Hesaplayıcı','A4/A3 DPI Hesaplayıcı','SEPA QR Kodu','Baskı Taşma Hesaplayıcı','RF Referans Oluşturucu'],
+ zh:['欧标托盘计算器','A4/A3 DPI 计算器','SEPA 支付二维码','印刷出血计算器','RF 收款参考号生成器']
+};
 const options=[['en','English'],['es','Español'],['fr','Français'],['de','Deutsch'],['pt','Português'],['ar','العربية'],['hi','हिन्दी'],['id','Bahasa Indonesia'],['tr','Türkçe'],['zh','简体中文']];
 const a=(href,name)=>'<a href="'+href+'">'+esc(name)+'</a>';
 function menu(title,items){return '<details class="dv-mega"><summary>'+esc(title)+'<span aria-hidden="true" class="dv-chevron">⌄</span></summary><div class="dv-mega-panel">'+items.map(x=>a(...x)).join('')+'</div></details>';}
@@ -29,7 +42,7 @@ function header(lang,route){
  const groups=[
  menu(l[0],[[local(''),'All Tools'],[local('tools/edit-pdf/'),l[6]],[local('tools/merge-pdf/'),l[7]],[local('tools/compress-pdf/'),l[8]],[local('tools/word-editor/'),l[9]]]),
  menu(l[1],[[local('image-editor/'),l[10]],[local('image-tools/resize-image/'),l[11]],[local('image-tools/crop-image/'),l[12]],[local('image-tools/convert-image/'),l[13]]]),
- menu(l[2],[['/excel-formula-generator/',excelFormulaLabels[lang]],[local('cbm-calculator/'),l[14]],[local('shipping-tools/volumetric-weight-calculator/'),l[15]],[local('shipping-tools/container-capacity-calculator/'),'Container Capacity']]),
+ menu(l[2],[...europeToolLinks.map((url,i)=>[url,europeLabels[lang][i]]),['/excel-formula-generator/',excelFormulaLabels[lang]],[local('cbm-calculator/'),l[14]],[local('shipping-tools/volumetric-weight-calculator/'),l[15]],[local('shipping-tools/container-capacity-calculator/'),'Container Capacity']]),
  menu(l[3],[['/wheel-of-names/',l[16]]]),
  menu(l[4],[[local('guides/'),l[17]],[local('blog/'),l[18]],[local('about/'),l[19]],[local('contact/'),l[20]]])
  ].join('');
