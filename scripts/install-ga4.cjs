@@ -1,21 +1,21 @@
-/* Add a single first-party, consent-gated GA4 loader to all generated Docvelio pages.
+/* Add consent-mode GA4 to all generated Docvelio pages.
  * Run as the final build step so generated and hand-written pages are covered.
  */
 'use strict';
 const fs=require('node:fs'),path=require('node:path');
 const root=path.resolve(__dirname,'../public');
-const tag='<script defer src="/assets/docvelio-ga4.js"></script>';
+const tag='<script src="/assets/docvelio-ga4.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-1RNSZ473TY"></script>';
 const policyNotes={
- en:'Google Analytics 4 (measurement ID G-1RNSZ473TY) is optional. It loads only after you accept analytics in the privacy banner. Google may receive website usage information and set analytics cookies. You can withdraw your choice using Privacy settings in the footer.',
- es:'Google Analytics 4 es opcional y solo se carga después de aceptar. Google puede recibir datos de uso y colocar cookies analíticas. Puede retirar su consentimiento en Configuración de privacidad.',
- fr:'Google Analytics 4 est facultatif et se charge uniquement après votre accord. Google peut recevoir des données d’utilisation et déposer des cookies. Vous pouvez retirer votre consentement dans les paramètres de confidentialité.',
- de:'Google Analytics 4 ist optional und wird erst nach Zustimmung geladen. Google kann Nutzungsdaten erhalten und Analyse-Cookies setzen. Die Zustimmung kann über die Datenschutzeinstellungen widerrufen werden.',
- pt:'O Google Analytics 4 é opcional e só carrega após o seu consentimento. A Google pode receber dados de utilização e definir cookies. Pode retirar o consentimento nas definições de privacidade.',
- ar:'Google Analytics 4 اختياري ولا يُحمّل إلا بعد موافقتك. قد تتلقى Google بيانات الاستخدام وتضع ملفات تعريف ارتباط للتحليلات. يمكنك سحب الموافقة من إعدادات الخصوصية.',
- hi:'Google Analytics 4 वैकल्पिक है और केवल सहमति के बाद लोड होता है। Google को उपयोग डेटा मिल सकता है और विश्लेषण कुकीज़ सेट हो सकती हैं। गोपनीयता सेटिंग से सहमति वापस लें।',
- id:'Google Analytics 4 bersifat opsional dan hanya dimuat setelah persetujuan. Google dapat menerima data penggunaan dan memasang cookie analitik. Cabut persetujuan melalui Pengaturan privasi.',
- tr:'Google Analytics 4 isteğe bağlıdır ve yalnızca onaydan sonra yüklenir. Google kullanım verileri alabilir ve analiz çerezleri ayarlayabilir. Gizlilik ayarlarından onayınızı geri çekebilirsiniz.',
- zh:'Google Analytics 4 是可选功能，仅在您同意后加载。Google 可能接收使用数据并设置分析 Cookie。您可以在隐私设置中撤回同意。'
+ "en": "Docvelio uses Google Analytics 4 (G-1RNSZ473TY) with Google Consent Mode v2. Analytics cookies are denied until you accept. Google’s tag may send limited cookieless signals even before consent. Accepting enables analytics cookies; you can withdraw consent using Privacy settings.",
+ "es": "Docvelio usa Google Analytics 4 con Consent Mode v2. Las cookies analíticas están desactivadas hasta que acepte. La etiqueta puede enviar señales limitadas sin cookies antes de aceptar. Puede retirar el consentimiento.",
+ "fr": "Docvelio utilise Google Analytics 4 avec Consent Mode v2. Les cookies analytiques sont refusés avant votre accord. La balise peut envoyer des signaux limités sans cookies avant cet accord. Vous pouvez retirer votre consentement.",
+ "de": "Docvelio verwendet Google Analytics 4 mit Consent Mode v2. Analyse-Cookies sind bis zur Zustimmung deaktiviert. Der Tag kann zuvor begrenzte Signale ohne Cookies senden. Sie können die Zustimmung widerrufen.",
+ "pt": "O Docvelio usa Google Analytics 4 com Consent Mode v2. Os cookies analíticos são negados até aceitar. A etiqueta pode enviar sinais limitados sem cookies antes da autorização. Pode retirar o consentimento.",
+ "ar": "يستخدم Docvelio خدمة Google Analytics 4 مع Consent Mode v2. تُرفض ملفات تعريف ارتباط التحليلات حتى توافق. قد ترسل علامة Google إشارات محدودة بدون ملفات تعريف ارتباط قبل الموافقة. يمكنك سحب الموافقة.",
+ "hi": "Docvelio Google Analytics 4 और Consent Mode v2 इस्तेमाल करता है। आपकी सहमति तक एनालिटिक्स कुकीज़ बंद रहती हैं। टैग सहमति से पहले सीमित कुकी-रहित सिग्नल भेज सकता है। आप सहमति वापस ले सकते हैं।",
+ "id": "Docvelio memakai Google Analytics 4 dengan Consent Mode v2. Cookie analitik ditolak sampai Anda setuju. Tag dapat mengirim sinyal terbatas tanpa cookie sebelum persetujuan. Anda dapat menarik persetujuan.",
+ "tr": "Docvelio Google Analytics 4 ve Consent Mode v2 kullanır. Onay verilene kadar analiz çerezleri reddedilir. Etiket önceden sınırlı, çerezsiz sinyaller gönderebilir. Onayınızı geri çekebilirsiniz.",
+ "zh": "Docvelio 使用 Google Analytics 4 和 Consent Mode v2。您同意前不会启用分析 Cookie，但 Google 标签可能发送有限的不含 Cookie 的信号。您可以撤回同意。"
 };
 
 let count=0,changed=0;
@@ -25,11 +25,13 @@ function walk(dir){
   if(entry.isDirectory()){walk(file);continue;}
   if(!entry.name.endsWith('.html'))continue;
   let html=fs.readFileSync(file,'utf8');
-  if(!html.includes('</body>'))continue; // Search-engine verification HTML files have no document body.
+  if(!html.includes('</body>')||!html.includes('</head>'))continue; // Exclude verification files.
   const present=(html.match(/\bsrc=["']\/assets\/docvelio-ga4\.js["']/g)||[]).length;
+  const google=(html.match(/www\.googletagmanager\.com\/gtag\/js\?id=G-1RNSZ473TY/g)||[]).length;
+  if(google>1||google!==present)throw Error('Duplicate or unmatched GA4 scripts: '+file);
   if(present>1)throw Error('Duplicate GA4 initializer: '+file);
   if(!present){
-   html=html.replace(/<\/body>/i,tag+'</body>');
+   html=html.replace(/<\/head>/i,tag+'</head>');
    fs.writeFileSync(file,html,'utf8');changed++;
   }
   const relative=path.relative(root,file).replaceAll('\\','/');
