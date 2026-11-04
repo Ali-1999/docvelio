@@ -6,7 +6,7 @@ const consent=fs.readFileSync(path.join(root,'assets/cookie-consent.js'),'utf8')
 const tools=fs.readFileSync(path.join(root,'assets/site.js'),'utf8');
 const choices=['accepted','declined'];
 for(const x of ['cookie-consent.css','cookie-consent.js'])assert(fs.existsSync(path.join(root,'assets',x)));
-for(const phrase of ['docvelio_privacy_choice_v1','docvelio_tool_category_v1','180*24*60*60*1000','Cookie Policy']){
+for(const phrase of ['docvelio_privacy_choice_v2','docvelio_tool_category_v1','180*24*60*60*1000','Cookie Policy']){
  assert(consent.includes(phrase),'Missing privacy disclosure '+phrase);
 }
 assert(!/adsbygoogle|gtag\s*\(|fbq\s*\(/i.test(consent),'A simple preference banner must not load ad tags');
@@ -80,14 +80,14 @@ assert.equal(storage.has('docvelio_tool_category_v1'),false,'No optional storage
 buttons[1].click();
 assert.equal(storage.has('docvelio_tool_category_v1'),false,'Category was stored before consent');
 accept.click();
-assert.equal(JSON.parse(storage.get('docvelio_privacy_choice_v1')).choice,'accepted');
+assert.equal(JSON.parse(storage.get('docvelio_privacy_choice_v2')).choice,'accepted');
 assert.equal(storage.get('docvelio_tool_category_v1'),'pdf','Accept must enable optional preference storage');
 assert.equal(panel.hidden,true,'Consent banner should close after choice');
 assert(footer.children.length===1,'Footer should offer one settings button');
 footer.children[0].click();
 assert.equal(panel.hidden,false,'Settings should reopen');
 reject.click();
-assert.equal(JSON.parse(storage.get('docvelio_privacy_choice_v1')).choice,'declined');
+assert.equal(JSON.parse(storage.get('docvelio_privacy_choice_v2')).choice,'declined');
 assert.equal(storage.has('docvelio_tool_category_v1'),false,'Declining must remove optional preference');
 assert.equal(cards[0].hidden,false,'Decline resets category filter to all');
 assert.equal(cards[1].hidden,false,'Decline restores all tool categories');
