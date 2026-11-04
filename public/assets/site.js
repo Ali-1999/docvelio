@@ -10,11 +10,11 @@ if(toggle&&navigation&&!document.querySelector('.dv-global-header'))toggle.addEv
 const search=document.querySelector('#tool-search');
 const filters=[...document.querySelectorAll('.filter')];
 const cards=[...document.querySelectorAll('.tool-card')];
-const choiceKey='docvelio_privacy_choice_v1',filterKey='docvelio_tool_category_v1';
+const choiceKey='docvelio_privacy_choice_v2',filterKey='docvelio_tool_category_v1';
 function allowed(){
  try{
   const data=JSON.parse(localStorage.getItem(choiceKey)||'null');
-  return data?.version===1 && data.choice==='accepted' &&
+  return data?.version===2 && data.choice==='accepted' &&
    Number.isFinite(data.time) && Date.now()-data.time>=0 &&
    Date.now()-data.time<180*24*60*60*1000;
  }catch(_){return false;}
