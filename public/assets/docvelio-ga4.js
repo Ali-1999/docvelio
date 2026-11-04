@@ -22,6 +22,7 @@ function withdraw(){
  for(const key of document.cookie.split(';').map(x=>x.trim().split('=')[0])){
   if(/^_ga(?:_|$)/.test(key))document.cookie=key+'=; Max-Age=0; Path=/; SameSite=Lax';
  }
+ if(started&&typeof window.location?.reload==='function')window.location.reload();
 }
 window.addEventListener('docvelio:privacy-choice',e=>{
  if(e.detail?.choice==='accepted')activate();
