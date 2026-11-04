@@ -33,10 +33,10 @@ function walk(dir){
    fs.writeFileSync(file,html,'utf8');changed++;
   }
   const relative=path.relative(root,file).replaceAll('\\','/');
-  if(/(?:^|\\/)(?:privacy|cookies)\\/index\\.html$/.test(relative)){
+  if(relative.endsWith('/privacy/index.html')||relative==='privacy/index.html'||relative.endsWith('/cookies/index.html')||relative==='cookies/index.html'){
    const lang=relative.split('/')[0],note=policyNotes[lang]||policyNotes.en;
    if(!html.includes('id="dv-ga4-policy"')){
-    html=html.replace(/<\\/main>/i,'<section id="dv-ga4-policy" class="container" aria-label="Google Analytics 4"><h2>Google Analytics 4</h2><p>'+note+'</p></section></main>');
+    html=html.replace('</main>','<section id="dv-ga4-policy" class="container" aria-label="Google Analytics 4"><h2>Google Analytics 4</h2><p>'+note+'</p></section></main>');
     fs.writeFileSync(file,html,'utf8');changed++;
    }
   }
