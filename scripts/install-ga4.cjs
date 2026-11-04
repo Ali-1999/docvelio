@@ -25,7 +25,7 @@ function walk(dir){
   if(entry.isDirectory()){walk(file);continue;}
   if(!entry.name.endsWith('.html'))continue;
   let html=fs.readFileSync(file,'utf8');
-  if(!html.includes('</body>'))throw Error('Missing body close tag: '+file);
+  if(!html.includes('</body>'))continue; // Search-engine verification HTML files have no document body.
   const present=(html.match(/\bsrc=["']\/assets\/docvelio-ga4\.js["']/g)||[]).length;
   if(present>1)throw Error('Duplicate GA4 initializer: '+file);
   if(!present){
