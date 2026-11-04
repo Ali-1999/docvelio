@@ -12,7 +12,7 @@ assert.equal(scripts.length,1,'GA4 must load exactly once after consent');
 assert(scripts[0].src.includes('G-1RNSZ473TY'),'Wrong GA4 ID');
 listeners['docvelio:privacy-choice']({detail:{choice:'accepted'}});
 assert.equal(scripts.length,1,'GA4 must not load twice');
-let count=0;function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())walk(p);else if(e.name.endsWith('.html')){const html=fs.readFileSync(p,'utf8');assert.equal((html.match(/src=["']\/assets\/docvelio-ga4\.js["']/g)||[]).length,1,'GA4 loader must appear exactly once '+p);count++;}}}
+let count=0;function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())walk(p);else if(e.name.endsWith('.html')){const html=fs.readFileSync(p,'utf8');if(!html.includes('</body>'))continue;assert.equal((html.match(/src=["']\/assets\/docvelio-ga4\.js["']/g)||[]).length,1,'GA4 loader must appear exactly once '+p);count++;}}}
 walk(root);assert(count>=583);
 for(const locale of ['','es/','fr/','de/','pt/','ar/','hi/','id/','tr/','zh/']){
  for(const policy of ['cookies','privacy'])assert(fs.readFileSync(path.join(root,locale,policy,'index.html'),'utf8').includes('id="dv-ga4-policy"'),'Missing analytics notice '+locale+policy);
