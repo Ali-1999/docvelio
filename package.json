@@ -1,0 +1,14 @@
+{
+  "name": "docvelio-website-qa",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Development-only, real-browser verification for Docvelio.com",
+  "scripts": {
+    "build:site": "node scripts/run-production-build.cjs",
+    "test:e2e": "playwright test",
+    "test:e2e:smoke": "playwright test --grep @smoke"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
+  }
+}
