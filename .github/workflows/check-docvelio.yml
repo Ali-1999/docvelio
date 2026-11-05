@@ -70,6 +70,8 @@ jobs:
           node --check scripts/test-ga4.cjs
           node --check scripts/audit-adsense-site-quality.cjs
           node --check scripts/check-adsense-readiness.cjs
+          node --check scripts/refresh-guide-descriptions.cjs
+          node --check scripts/test-guide-descriptions.cjs
       - name: Verify committed sitemap before build
         run: python3 scripts/verify-sitemap.py --source-only
       - name: Generate the website
@@ -121,6 +123,8 @@ jobs:
           node scripts/redesign-full-homepage.cjs
           node scripts/ensure-organization-schema.cjs
           node scripts/fix-ahrefs-metadata.cjs
+          node scripts/refresh-guide-descriptions.cjs
+          node scripts/test-guide-descriptions.cjs
           node scripts/install-adsense.cjs
           node scripts/implement-internal-links.cjs
           node scripts/install-fazier-badge.cjs
