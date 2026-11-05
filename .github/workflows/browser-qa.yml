@@ -1,0 +1,58 @@
+name: Docvelio real-browser QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'public/**'
+      - 'scripts/**'
+      - 'tests/e2e/**'
+      - 'playwright.config.cjs'
+      - 'package.json'
+      - 'wrangler.jsonc'
+      - '.github/workflows/browser-qa.yml'
+  pull_request:
+    paths:
+      - 'public/**'
+      - 'scripts/**'
+      - 'tests/e2e/**'
+      - 'playwright.config.cjs'
+      - 'package.json'
+      - 'wrangler.jsonc'
+      - '.github/workflows/browser-qa.yml'
+
+permissions:
+  contents: read
+jobs:
+  real-browser-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      CI: 'true'
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Install pinned development-only Playwright
+        run: npm install --no-audit --no-fund
+      - name: Install Chromium and WebKit browser dependencies
+        run: npx playwright install --with-deps chromium webkit
+      - name: Run exactly the production build locally
+        run: npm run build:site
+      - name: Run actual browser interactions and output checks
+        run: npm run test:e2e
+      - name: Upload HTML report and failure screenshots/traces
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: docvelio-browser-qa
+          path: |
+            playwright-report/
+            test-results/
+            reports/adsense-readiness.json
+            reports/adsense-site-quality.json
+            reports/adsense-site-quality.md
+          if-no-files-found: warn
+          retention-days: 14
