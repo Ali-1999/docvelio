@@ -46,6 +46,7 @@ jobs:
           node scripts/integrate-qr-barcode.cjs
           node scripts/install-ga4.cjs
           node scripts/check-adsense-readiness.cjs
+          node scripts/audit-adsense-site-quality.cjs
       - name: Verify AdSense preflight and Google consent order
         run: |
           node --check scripts/install-adsense.cjs
@@ -53,6 +54,12 @@ jobs:
           node --check scripts/check-adsense-readiness.cjs
           node scripts/test-ga4.cjs
           node scripts/check-adsense-readiness.cjs
+      - name: Validate full site-quality and content inventory
+        run: |
+          node --check scripts/audit-adsense-site-quality.cjs
+          node scripts/audit-adsense-site-quality.cjs
+          test -s reports/adsense-site-quality.json
+          test -s reports/adsense-site-quality.md
       - name: Verify Excel formula generator source and build integration
         shell: bash
         run: |
@@ -149,3 +156,15 @@ jobs:
           code=$(curl --silent --show-error --location --max-time 20 --output /dev/null --write-out '%{http_code}' https://docvelio.com/api/excel-formula)
           test "$code" = '405'
           echo 'Excel page available; API responds with expected method restriction'
+
+      - name: Upload AdSense review and page-level content reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: docvelio-adsense-quality-reports
+          path: |
+            reports/adsense-readiness.json
+            reports/adsense-site-quality.json
+            reports/adsense-site-quality.md
+          if-no-files-found: warn
+          retention-days: 21
