@@ -43,6 +43,16 @@ jobs:
           node scripts/implement-internal-links.cjs
           node scripts/install-fazier-badge.cjs
           node scripts/optimize-homepage-css.cjs
+          node scripts/integrate-qr-barcode.cjs
+          node scripts/install-ga4.cjs
+          node scripts/check-adsense-readiness.cjs
+      - name: Verify AdSense preflight and Google consent order
+        run: |
+          node --check scripts/install-adsense.cjs
+          node --check scripts/install-ga4.cjs
+          node --check scripts/check-adsense-readiness.cjs
+          node scripts/test-ga4.cjs
+          node scripts/check-adsense-readiness.cjs
       - name: Verify Excel formula generator source and build integration
         shell: bash
         run: |
