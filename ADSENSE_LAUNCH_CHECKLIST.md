@@ -1,20 +1,22 @@
 # Docvelio: Google AdSense readiness checklist
 
+**Updated 5 November 2026:** The domain, operator details, owner-supplied publisher ID and verification installer are configured in the production build. Live Cloudflare deployment, dashboard-specific reasons and certified advertising CMP are **not yet confirmed**. See [current AdSense review audit](docs/ADSENSE_REVIEW_AUDIT_2026-11-05.md).
+
 Google AdSense has no promise of approval, guaranteed traffic threshold, or universally required article count. Site quality, originality, ownership, policy compliance and useful navigation all matter.
 
 ## A. Required owner decisions (not filled by ChatGPT)
 
-- [ ] Register **docvelio.com** under your control (availability alone is not ownership).
+- [ ] Confirm **docvelio.com** remains under your control and resolves to the production Cloudflare deployment.
 - [ ] Check name/trademark conflicts in countries where you intend to operate.
 - [ ] Connect permanent domain to Worker in Cloudflare, configure TLS and redirect `www` to primary domain (or vice versa).
-- [ ] Set a **real monitored email**, actual operator/business name and country via `py scripts\prepare_launch.py --email ... --operator ... --jurisdiction ... --launch`.
+- [ ] Confirm existing operator details in `scripts/build-docvelio.cjs` are correct and the public support mailbox is monitored; do not replace them with sample values.
 - [ ] Review Privacy/Cookies/Terms for your actual legal circumstances. In particular, update any claim that becomes inaccurate when adding analytics, other ads vendors, file uploads or accounts.
-- [ ] Verify all nine tool actions with real files, including PDF download, DOCX export and error states on mobile.
+- [ ] Test the full current tool inventory with real non-sensitive sample files, including PDF download, DOCX export, image operations and error states on mobile.
 - [ ] Verify tool pages, guides and policies are genuinely helpful and correct, not merely filler; add original screenshots/examples if useful.
 
 ## B. SEO / indexation
 
-- [ ] After domain connection, run `--launch` and redeploy so `robots.txt` is not `Disallow: /` and `_headers` no longer has `noindex`.
+- [ ] Check that deployed `robots.txt` allows crawling and no HTTP `X-Robots-Tag: noindex` is served. Do not activate `--preview` on production.
 - [ ] Visit `/robots.txt`, `/sitemap.xml`, `/ads.txt`, `/privacy/`, `/terms/`, `/cookies/`, `/contact/`, `/about/` on the **permanent** domain.
 - [ ] Make sure canonical URLs on pages point to the public production domain and `www` redirects consistently.
 - [ ] Verify Search Console domain property, submit `/sitemap.xml`, review Coverage / indexing issues.
@@ -23,9 +25,9 @@ Google AdSense has no promise of approval, guaranteed traffic threshold, or univ
 ## C. AdSense — after you have an account
 
 - [ ] Create/complete AdSense account and add your domain.
-- [ ] Get the actual `pub-XXXXXXXXXXXXXXXX` publisher ID. Run `py scripts\prepare_launch.py --publisher "pub-YOUR_REAL_16_DIGITS"` and redeploy. This project uses static verification meta plus proper root `ads.txt`. Check account for any different required verification snippet.
+- [x] Site build already uses owner-supplied publisher `pub-1566581424297065`, inserting the verification script/meta and root `ads.txt`. Confirm the ID is still accurate in AdSense.
 - [ ] Ensure `/ads.txt` has the exact line from your own account, without placeholders; wait for Google to detect it (may take days).
-- [ ] Do **not** run generic ad scripts on pages until consent and privacy arrangements are accurate. When approved, insert Google-provided ad code as directed.
+- [ ] AdSense ownership verification is already installed. Do not enable display-ad placements/personalised ads before account approval and applicable consent/privacy configuration.
 - [ ] If serving ads to EEA / UK / Swiss visitors, use Google-certified CMP integrated with IAB TCF per Google requirements. Configure Privacy & messaging or another certified CMP and test messages.
 - [ ] Do not place ads where visitors might confuse an ad with a download action or tool button.
 - [ ] Submit site for review; approval is not guaranteed and any violations/content quality issues must be addressed.
