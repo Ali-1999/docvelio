@@ -25,7 +25,22 @@ const gaNotices={"en":["Accept enables Google Analytics 4 (GA4) to measure websi
 const gaNotice=gaNotices[locale]||gaNotices.en;
 t[1]=gaNotice[0];t[12]=gaNotice[1];t[13]=gaNotice[2];
 const modeNotice={"en":["Google Analytics 4 measures visits. Analytics cookies remain off until you accept, but the tag may send limited cookieless signals beforehand. Accept also remembers your tool category.","The Google tag can send limited cookieless signals before consent. Accept enables analytics cookies. You can withdraw your choice."],"es":["Google Analytics 4 mide visitas. Las cookies analíticas están desactivadas hasta aceptar, aunque pueden enviarse señales limitadas sin cookies.","La etiqueta puede enviar señales sin cookies antes de aceptar. Aceptar permite cookies analíticas. Puede retirar el consentimiento."],"fr":["Google Analytics 4 mesure les visites. Aucun cookie analytique avant votre accord, mais des signaux limités sans cookies peuvent être envoyés.","La balise peut envoyer des signaux sans cookies avant l’accord. Accepter active les cookies analytiques."],"de":["Google Analytics 4 misst Besuche. Analyse-Cookies bleiben bis zur Zustimmung aus; begrenzte Signale ohne Cookies sind vorher möglich.","Der Tag kann vor der Zustimmung begrenzte Signale ohne Cookies senden. Zustimmung aktiviert Analyse-Cookies."],"pt":["Google Analytics 4 mede visitas. Os cookies analíticos ficam desativados até aceitar, mas podem ser enviados sinais limitados sem cookies.","A etiqueta pode enviar sinais sem cookies antes da autorização. Aceitar permite cookies analíticos."],"ar":["يقيس Google Analytics 4 الزيارات. تظل ملفات تعريف ارتباط التحليلات معطلة حتى توافق، لكن قد تُرسل إشارات محدودة بدونها.","قد ترسل علامة Google إشارات بدون ملفات تعريف ارتباط قبل الموافقة. الموافقة تسمح بملفات ارتباط التحليلات."],"hi":["Google Analytics 4 विज़िट मापता है। आपकी सहमति तक एनालिटिक्स कुकीज़ बंद रहती हैं, लेकिन सीमित कुकी-रहित सिग्नल भेजे जा सकते हैं।","सहमति से पहले सीमित कुकी-रहित सिग्नल संभव हैं। स्वीकार करने पर एनालिटिक्स कुकीज़ चालू होती हैं।"],"id":["Google Analytics 4 mengukur kunjungan. Cookie analitik mati sampai Anda setuju, namun sinyal terbatas tanpa cookie mungkin dikirim.","Tag mungkin mengirim sinyal tanpa cookie sebelum persetujuan. Setuju mengaktifkan cookie analitik."],"tr":["Google Analytics 4 ziyaretleri ölçer. Analiz çerezleri onaya kadar kapalıdır ancak sınırlı çerezsiz sinyaller gönderilebilir.","Etiket onaydan önce sınırlı çerezsiz sinyaller gönderebilir. Kabul etmek analiz çerezlerini açar."],"zh":["Google Analytics 4 用于统计访问。您同意前不会启用分析 Cookie，但可能发送有限的无 Cookie 信号。","Google 标签可能在同意前发送有限的无 Cookie 信号。同意后会启用分析 Cookie。"]};
-const mode=modeNotice[locale]||modeNotice.en;t[1]=mode[0];t[13]=mode[1];
+const mode=modeNotice[locale]||modeNotice.en;
+const adScope={
+ en:'This choice does not grant advertising consent.',
+ es:'Esta elección no concede consentimiento para publicidad.',
+ fr:'Ce choix ne constitue pas un consentement publicitaire.',
+ de:'Diese Auswahl erteilt keine Einwilligung für Werbung.',
+ pt:'Esta opção não concede consentimento para publicidade.',
+ ar:'هذا الخيار لا يمنح موافقة على الإعلانات.',
+ hi:'यह विकल्प विज्ञापन की सहमति नहीं देता।',
+ id:'Pilihan ini tidak memberikan persetujuan untuk iklan.',
+ tr:'Bu seçim reklam izni vermez.',
+ zh:'此选项不会授予广告同意。'
+};
+const advertisingWarning=adScope[locale]||adScope.en;
+t[1]=mode[0]+' '+advertisingWarning;
+t[13]=mode[1]+' '+advertisingWarning;
 function read(){
  try{
   const data=JSON.parse(localStorage.getItem(KEY)||'null');
