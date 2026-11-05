@@ -53,7 +53,8 @@ function walk(dir){
 walk(base);
 fs.writeFileSync(path.join(base,'robots.txt'),'User-agent: *\nAllow: /\n\nSitemap: https://docvelio.com/sitemap.txt\nSitemap: https://docvelio.com/sitemap.xml\n');
 fs.writeFileSync(path.join(base,'_headers'),'/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n\n/sitemap.xml\n  Content-Type: application/xml; charset=utf-8\n\n/sitemap.txt\n  Content-Type: text/plain; charset=utf-8\n\n/robots.txt\n  Content-Type: text/plain; charset=utf-8\n');
-fs.writeFileSync(path.join(base,'ads.txt'),'# Docvelio has not received an AdSense publisher ID. Add Google’s real authorised-seller line after account setup.\n');
+// Keep the checked-in declaration correct even before install-adsense.cjs runs.
+fs.writeFileSync(path.join(base,'ads.txt'),'google.com, pub-1566581424297065, DIRECT, f08c47fec0942fa0\n');
 if(count<230)throw new Error('Expected multilingual document pages not found: '+count);
 for(const locale of locales){if(locale!=='en'&&!fs.existsSync(path.join(base,locale,'index.html')))throw new Error('Missing language: '+locale);}
 for(const rel of ['about/index.html','contact/index.html','privacy/index.html','es/about/index.html','ar/contact/index.html']){
@@ -61,4 +62,4 @@ for(const rel of ['about/index.html','contact/index.html','privacy/index.html','
  if(/\{\{(?:CONTACT_EMAIL|OPERATOR_NAME|JURISDICTION)\}\}/.test(data))throw new Error('Unfilled placeholder: '+rel);
 }
 console.log('Docvelio build: '+count+' pages checked, '+updated+' updated. Operator: '+operator+'; location: '+location);
-console.log('AdSense advertising remains inactive until a valid publisher ID and required certified consent platform are configured.');
+console.log('AdSense ownership and ads.txt prepared; actual approval and required consent management must still be verified.');
