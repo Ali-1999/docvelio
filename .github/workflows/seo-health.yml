@@ -39,6 +39,7 @@ jobs:
           node scripts/redesign-full-homepage.cjs
           node scripts/ensure-organization-schema.cjs
           node scripts/fix-ahrefs-metadata.cjs
+          node scripts/refresh-guide-descriptions.cjs
           node scripts/install-adsense.cjs
           node scripts/implement-internal-links.cjs
           node scripts/install-fazier-badge.cjs
@@ -47,6 +48,11 @@ jobs:
           node scripts/install-ga4.cjs
           node scripts/check-adsense-readiness.cjs
           node scripts/audit-adsense-site-quality.cjs
+      - name: Check localized guide metadata
+        run: |
+          node --check scripts/refresh-guide-descriptions.cjs
+          node --check scripts/test-guide-descriptions.cjs
+          node scripts/test-guide-descriptions.cjs
       - name: Verify AdSense preflight and Google consent order
         run: |
           node --check scripts/install-adsense.cjs
