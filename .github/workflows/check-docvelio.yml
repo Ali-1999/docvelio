@@ -68,6 +68,8 @@ jobs:
           node --check public/assets/docvelio-ga4.js
           node --check scripts/install-ga4.cjs
           node --check scripts/test-ga4.cjs
+          node --check scripts/audit-adsense-site-quality.cjs
+          node --check scripts/check-adsense-readiness.cjs
       - name: Verify committed sitemap before build
         run: python3 scripts/verify-sitemap.py --source-only
       - name: Generate the website
@@ -111,11 +113,34 @@ jobs:
           node scripts/install-ga4.cjs
           node scripts/test-ga4.cjs
 
+      - name: Complete production generation and audit all published pages
+        run: |
+          node scripts/build-excel-formula.cjs
+          node scripts/build-europe-tools.cjs
+          node scripts/redesign-home-toolkit.cjs
+          node scripts/redesign-full-homepage.cjs
+          node scripts/ensure-organization-schema.cjs
+          node scripts/fix-ahrefs-metadata.cjs
+          node scripts/install-adsense.cjs
+          node scripts/implement-internal-links.cjs
+          node scripts/install-fazier-badge.cjs
+          node scripts/optimize-homepage-css.cjs
+          node scripts/integrate-qr-barcode.cjs
+          node scripts/install-ga4.cjs
+          node scripts/check-adsense-readiness.cjs
+          node scripts/audit-adsense-site-quality.cjs
+          node scripts/test-ga4.cjs
+          test -s reports/adsense-site-quality.json
+          test -s reports/adsense-site-quality.md
       - name: Preserve detailed SEO inventory as a downloadable artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: docvelio-seo-page-inventory
-          path: seo-reports/
+          path: |
+            seo-reports/
+            reports/adsense-readiness.json
+            reports/adsense-site-quality.json
+            reports/adsense-site-quality.md
           if-no-files-found: warn
           retention-days: 21
