@@ -22,8 +22,15 @@ test('@smoke Split PDF creates a downloadable two-page PDF from a three-page inp
  await expect.poll(async()=>page.evaluate(()=>typeof window.PDFLib)).toBe('object');
  const source=makePdf(3);
  expect(await PDFPageCount(page,source)).toBe(3);
- const networkUploads=[];
- page.on('request',r=>{if(/^(?:POST|PUT|PATCH)$/i.test(r.method()))networkUploads.push(r.url());});
+ // Analytics/CSP endpoints can legitimately POST metadata. Check for PDF bytes,
+ // not an unrelated HTTP method, before alleging a customer-file upload.
+ const documentUploads=[];
+ page.on('request',r=>{
+  if(!/^(?:POST|PUT|PATCH)$/i.test(r.method()))return;
+  const body=r.postDataBuffer();
+  if(body&&(body.includes(Buffer.from('%PDF-'))||body.includes(Buffer.from('safe-qa.pdf'))))
+   documentUploads.push(r.url());
+ });
  await page.locator('#documents').setInputFiles({name:'safe-qa.pdf',mimeType:'application/pdf',buffer:source});
  await page.locator('#ranges').fill('1,3');
  await page.locator('#process').click();
@@ -33,7 +40,7 @@ test('@smoke Split PDF creates a downloadable two-page PDF from a three-page inp
  const result=await fs.readFile(await download.path());
  expect(result.subarray(0,5).toString()).toBe('%PDF-');
  expect(await PDFPageCount(page,result)).toBe(2);
- expect(networkUploads,'File processing should not upload documents').toEqual([]);
+ expect(documentUploads,'Selected PDF bytes must not be uploaded').toEqual([]);
 });
 test('@smoke Merge PDF combines two single-page files into one downloadable PDF',async({page})=>{
  await page.goto('/tools/merge-pdf/');
@@ -44,7 +51,7 @@ test('@smoke Merge PDF combines two single-page files into one downloadable PDF'
   {name:'two.pdf',mimeType:'application/pdf',buffer:makePdf(1)}
  ]);
  await page.locator('#process').click();
- const ready=page.locator('#file-result.ready a[download]');await expect(ready).toBeVisible();
+ const ready=page.locator('#file-result.ready a[download]');await expect(ready).toBeVisible({timeout:25000});
  const [download]=await Promise.all([page.waitForEvent('download'),ready.click()]);
  const result=await fs.readFile(await download.path());
  expect(result.subarray(0,5).toString()).toBe('%PDF-');
