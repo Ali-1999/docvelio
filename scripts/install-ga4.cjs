@@ -30,9 +30,24 @@ function walk(dir){
   const google=(html.match(/www\.googletagmanager\.com\/gtag\/js\?id=G-1RNSZ473TY/g)||[]).length;
   if(google>1||google!==present)throw Error('Duplicate or unmatched GA4 scripts: '+file);
   if(present>1)throw Error('Duplicate GA4 initializer: '+file);
+  // Apply default-denied consent before loading any Google ad or analytics tag.
+  // The initializer is synchronous; Google network scripts remain asynchronous.
+  const earlyInsert=(page)=>{
+    const charset=page.match(/<meta\b[^>]*\bcharset\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)[^>]*>/i)?.[0];
+    return charset?page.replace(charset,charset+tag):page.replace(/<head\b[^>]*>/i,m=>m+tag);
+  };
   if(!present){
-   html=html.replace(/<\/head>/i,tag+'</head>');
+   html=earlyInsert(html);
    fs.writeFileSync(file,html,'utf8');changed++;
+  }else{
+   const initializer=html.match(/<script\b[^>]*\bsrc=["']\/assets\/docvelio-ga4\.js["'][^>]*><\/script>/i)?.[0];
+   const gtagScript=html.match(/<script\b[^>]*\bsrc=["']https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-1RNSZ473TY["'][^>]*><\/script>/i)?.[0];
+   if(!initializer||!gtagScript)throw Error('Expected GA4 scripts: '+file);
+   const adAt=html.indexOf('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
+   if(adAt!==-1&&html.indexOf(initializer)>adAt){
+    html=earlyInsert(html.replace(initializer,'').replace(gtagScript,''));
+    fs.writeFileSync(file,html,'utf8');changed++;
+   }
   }
   const relative=path.relative(root,file).replaceAll('\\','/');
   if(relative.endsWith('/privacy/index.html')||relative==='privacy/index.html'||relative.endsWith('/cookies/index.html')||relative==='cookies/index.html'){
