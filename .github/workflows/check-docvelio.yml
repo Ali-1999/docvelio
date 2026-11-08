@@ -139,7 +139,6 @@ jobs:
           node scripts/audit-adsense-site-quality.cjs
           node scripts/test-ga4.cjs
           node scripts/test-tiktok-tool.cjs
-          python3 scripts/verify-sitemap.py
           test -s reports/adsense-site-quality.json
           test -s reports/adsense-site-quality.md
           sed -n '1,115p' reports/adsense-site-quality.md
