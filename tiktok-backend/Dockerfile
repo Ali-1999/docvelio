@@ -10,4 +10,4 @@ COPY app.py /app/app.py
 USER appuser
 ENV HOME=/home/appuser PYTHONDONTWRITEBYTECODE=1
 EXPOSE 8080
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080", "--workers", "1"]
+CMD ["sh", "-c", "exec uvicorn app:app --host 0.0.0.0 --port ${PORT:-8080} --workers 1"]
