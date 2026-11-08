@@ -15,6 +15,13 @@ for(const phrase of ['Save your original MP4','TikTok video link','educational u
  assert(html.includes(phrase),'Missing useful educational section: '+phrase);
 }
 assert(html.includes('id="tk-file"')&&html.includes('id="tk-save"')&&html.includes('id="tk-open"'),'Main controls absent');
+assert(html.includes('id="tk-link-download"')&&html.includes('id="tk-permission"'),'Permitted public-link download UI missing');
+assert(html.includes("fetch('/api/tiktok/download'")&&html.includes("fetch('/api/tiktok/status'"),'Gateway routes missing from UI');
+assert(html.includes("backendReady=false")&&html.includes("button.disabled=!backendReady"),'Downloader must fail closed while backend is not configured');
+const worker=fs.readFileSync(path.join(root,'..','src','excel-formula-worker.js'),'utf8');
+assert(worker.includes("'/api/tiktok/download'")&&worker.includes("'/api/tiktok/status'"),'Cloudflare backend gateway missing');
+assert(worker.includes('TIKTOK_BACKEND_URL')&&worker.includes('TIKTOK_BACKEND_TOKEN'),'Backend binding configuration missing');
+
 assert(html.includes('URL.createObjectURL')&&html.includes('URL.revokeObjectURL'),'Local-only saver missing cleanup');
 assert(html.includes("'vm.tiktok.com'")&&html.includes("'vt.tiktok.com'")&&html.includes("u.protocol!=='https:'"),'TikTok URL allowlist missing');
 const inline=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi)].map(x=>x[1]).filter(x=>x.includes("const $=id=>"));
