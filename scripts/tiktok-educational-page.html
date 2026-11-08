@@ -49,7 +49,7 @@
 <section class="tk-hero"><a href="/">Home</a> / Video tools
 <p><span class="tk-pill">Free educational tool • No signup</span></p>
 <h1>TikTok Video Downloader &amp; Original MP4 Saver</h1>
-<p class="tk-lead">Check a TikTok video link, download a public video you have permission to save when our backend is available, or keep a clean copy of your own original MP4 file. The local file saver does not upload your video or add a watermark.</p>
+<p class="tk-lead">Check a TikTok video link, attempt to download a public video you have permission to save when an accessible source is available, or keep a clean copy of your own original MP4 file. The local file saver does not upload your video or add a watermark.</p>
 <p class="tk-note"><strong>What this tool does not do:</strong> It does not access private or protected media or guarantee watermark-free files from arbitrary TikTok links. Public link downloads use a best-effort Cloudflare Worker fallback and may fail when TikTok restricts access.</p>
 </section>
 <div class="tk-grid">
@@ -74,6 +74,12 @@
 <li><strong>For a public TikTok post:</strong> open the link in TikTok and look for Share → Save Video. If that option is absent, the creator may have disabled downloads.</li>
 <li><strong>For a watermark-free original:</strong> export from your editing application before uploading to TikTok, or use the clean original file you already have.</li>
 <li><strong>For lessons or presentations:</strong> keep the creator’s attribution and verify that your intended reuse is permitted.</li></ol></section>
+<section class="tk-section tk-card tk-card--wide" aria-labelledby="tk-formats"><h2 id="tk-formats">TikTok video, MP3 audio, photo slideshow or Story: what works here?</h2>
+<p>Different types of TikTok posts require different media extraction methods. Docvelio's current public-link workflow attempts only a downloadable <strong>MP4 video</strong>. It does not advertise or generate MP3, slideshow ZIP files or expired Story downloads.</p>
+<h3>Video (MP4)</h3><p>Use a permitted public video link, then choose Download MP4. If TikTok does not expose the source to our Cloudflare service, use the creator-permitted Save Video action on TikTok or your own original export.</p>
+<h3>Audio (MP3)</h3><p>MP3 requires actual audio extraction and encoding; simply renaming MP4 does not produce a valid audio file. This feature is not available in this tool.</p>
+<h3>Photo slideshows</h3><p>Photo posts may contain separate images rather than a normal video. A proper slideshow downloader must inspect the post and present available image files individually. That feature has not been implemented here.</p>
+<h3>Stories</h3><p>Stories may disappear or have access restrictions. Docvelio cannot recover expired, private or otherwise inaccessible Stories.</p></section>
 <section class="tk-section"><h2>What is the difference between a TikTok share link and an original MP4?</h2>
 <p>A TikTok URL points to a video on TikTok’s platform. It is not a direct MP4 file address. Docvelio first attempts a public permitted MP4 using Cloudflare Workers Free; if configured, a separately hosted yt-dlp backend takes priority. Both are subject to upstream availability. TikTok’s official developer display interfaces are for playback and metadata rather than unrestricted original media downloads. A locally stored MP4 is already a video file and can be saved again without creating a new watermark.</p>
 <p>Different creators and regions may see different options. Video quality, availability, reuse rights and download settings remain controlled by the source and its owner. This page does not claim to work around those restrictions.</p></section>
