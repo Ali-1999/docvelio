@@ -1,0 +1,42 @@
+name: TikTok backend build and security checks
+on:
+  pull_request:
+    paths:
+      - 'tiktok-backend/**'
+      - '.github/workflows/tiktok-backend-check.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'tiktok-backend/**'
+      - '.github/workflows/tiktok-backend-check.yml'
+  workflow_dispatch:
+jobs:
+  backend-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install backend test dependencies
+        run: |
+          python -m pip install --disable-pip-version-check 'yt-dlp==2026.10.26' 'fastapi==0.115.12' 'uvicorn==0.34.2' 'httpx>=0.27,<1'
+      - name: Check Python syntax and backend health/auth
+        run: |
+          python -m compileall -q tiktok-backend
+          cd tiktok-backend
+          python -m unittest -v test_app.py
+      - name: Build upstream yt-dlp Docker image
+        run: |
+          docker build --pull --tag docvelio-tiktok:test tiktok-backend
+      - name: Verify container starts and responds to health check
+        run: |
+          docker run -d --name docvelio-tiktok-ci -p 127.0.0.1:18080:8080 -e DOWNLOADER_TOKEN=ci-test-secret docvelio-tiktok:test
+          for i in $(seq 1 25); do
+            if curl --fail --silent http://127.0.0.1:18080/health | grep -q '"status":"ok"'; then exit 0; fi
+            sleep 1
+          done
+          docker logs docvelio-tiktok-ci
+          exit 1
