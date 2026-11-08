@@ -30,4 +30,18 @@ assert(fs.readFileSync(path.join(root,'index.html'),'utf8').includes('href="/'+s
 for(const p of ['tools/qr-code-generator/index.html','tools/barcode-generator/index.html'])assert(fs.readFileSync(path.join(root,p),'utf8').includes('href="/'+slug+'/'),'Internal link missing: '+p);
 assert.equal((html.match(/www\.googletagmanager\.com\/gtag\/js\?id=G-1RNSZ473TY/g)||[]).length,1,'GA4 tag missing');
 assert.equal((html.match(/\/assets\/cookie-consent\.js/g)||[]).length,1,'Privacy banner duplicated or missing');
+
+// The shared site chrome must be identical across new pages, not a custom navbar.
+const main=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const headerRe=/<header\b[^>]*>[\s\S]*?<\/header>/i,footerRe=/<footer\b[^>]*>[\s\S]*?<\/footer>/i;
+const expectedHeader=main.match(headerRe)?.[0],expectedFooter=main.match(footerRe)?.[0];
+assert(expectedHeader&&expectedFooter&&expectedHeader.includes('data-dv-unified="1"'));
+for(const tool of ['tools/tiktok-video-downloader','tools/qr-code-generator','tools/barcode-generator']){
+ const content=fs.readFileSync(path.join(root,tool,'index.html'),'utf8');
+ assert.equal(content.match(headerRe)?.[0],expectedHeader,'Different global header: '+tool);
+ assert.equal(content.match(footerRe)?.[0],expectedFooter,'Different global footer: '+tool);
+ for(const asset of ['/assets/global-navigation.css','/assets/site-polish.css','/assets/global-navigation.js'])
+  assert(content.includes(asset),'Missing shared navigation asset '+asset+': '+tool);
+}
+
 console.log('PASS: TikTok educational page, original MP4 workflow, SEO, verified sitemap URLs, GA4, and internal links.');
