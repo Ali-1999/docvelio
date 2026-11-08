@@ -16,6 +16,12 @@ for(const phrase of ['Save your original MP4','TikTok video link','educational u
 }
 assert(html.includes('id="tk-file"')&&html.includes('id="tk-save"')&&html.includes('id="tk-open"'),'Main controls absent');
 assert(html.includes('id="tk-link-download"')&&html.includes('id="tk-permission"'),'Permitted public-link download UI missing');
+assert(html.includes('id="tk-paste"')&&html.includes("navigator.clipboard.readText()"),'Clipboard paste flow missing');
+assert(html.includes('id="tk-progress"')&&html.includes('progress.hidden=false')&&html.includes('progress.hidden=true'),'Busy status must be shown and restored');
+assert(html.includes('tk-url-row')&&html.includes('tk-button:focus-visible'),'Responsive accessible input styling missing');
+assert(html.includes('TikTok video, MP3 audio, photo slideshow or Story'),'Honest capabilities and format SEO section missing');
+assert(html.includes('MP3 requires actual audio extraction'),'Unsupported format must not be presented as working');
+
 assert(html.includes("fetch('/api/tiktok/download'")&&html.includes("fetch('/api/tiktok/status'"),'Gateway routes missing from UI');
 assert(html.includes("backendReady=false")&&html.includes("button.disabled=!backendReady"),'Downloader must fail closed while backend is not configured');
 const worker=fs.readFileSync(path.join(root,'..','src','excel-formula-worker.js'),'utf8');
