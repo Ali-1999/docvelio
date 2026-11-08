@@ -40,7 +40,13 @@ const error=(msg,code)=>Response.json({error:msg},{status:code,headers:{'Cache-C
 export async function workerFreeTikTok(url){
  if(!validTikTokLink(url))return error('Enter a valid public HTTPS TikTok video URL.',400);
  try{
-  const page=await fetch(url,{redirect:'manual',headers:{'Accept':'text/html,application/xhtml+xml','User-Agent':'Mozilla/5.0 (compatible; DocvelioPublicVideo/1.0)'},signal:AbortSignal.timeout(12000)});
+  let page,targetPage=url;
+  for(let hop=0;hop<4;hop++){
+   if(!validTikTokLink(targetPage))return error('TikTok link redirected to an untrusted host.',422);
+   page=await fetch(targetPage,{redirect:'manual',headers:{'Accept':'text/html,application/xhtml+xml','User-Agent':'Mozilla/5.0 (compatible; DocvelioPublicVideo/1.0)'},signal:AbortSignal.timeout(12000)});
+   if(page.status>=300&&page.status<400){const next=page.headers.get('Location');if(!next)return error('TikTok page redirect was incomplete.',422);targetPage=new URL(next,targetPage).href;continue;}
+   break;
+  }
   if(!page.ok)return error('TikTok did not expose this public page to Cloudflare.',422);
   if(!(page.headers.get('Content-Type')||'').includes('text/html'))return error('TikTok returned an unexpected response.',422);
   if(Number(page.headers.get('Content-Length')||0)>1500000)return error('The video page exceeded the processing limit.',413);
