@@ -1,3 +1,4 @@
+import {workerFreeTikTok} from './tiktok-worker-free.js';
 /* Docvelio multilingual Excel formula assistant.
  * Cloudflare Workers AI optional binding; static site files remain asset-first.
  * Formula generation sends only the visitor's instruction (not workbook contents).
@@ -29,10 +30,10 @@ async function videoEndpoint(request,env,url){
  const configured=Boolean(env.TIKTOK_BACKEND_URL&&env.TIKTOK_BACKEND_TOKEN);
  if(url.pathname==='/api/tiktok/status'){
   if(request.method!=='GET')return json({error:'Use GET'},405);
-  return json({available:configured,engine:'yt-dlp',note:configured?'Self-hosted download gateway configured':'Self-hosted video backend has not been deployed'});
+  return json({available:true,engine:configured?'yt-dlp':'cloudflare-best-effort',note:configured?'Self-hosted download gateway configured':'Free-plan public video retrieval is experimental; TikTok may block it and watermark-free output is not guaranteed.'});
  }
  if(request.method!=='POST')return json({error:'Use POST'},405);
- if(!configured)return json({error:'TikTok URL downloads are not currently configured. You can still save your original video locally.'},503);
+ 
  if(request.headers.get('Origin')!=='https://docvelio.com')return json({error:'Invalid request origin'},403);
  if(!/application\/json/i.test(request.headers.get('Content-Type')||''))return json({error:'Expected JSON'},415);
  if(Number(request.headers.get('Content-Length')||0)>4096)return json({error:'Request too large'},413);
@@ -45,6 +46,7 @@ async function videoEndpoint(request,env,url){
  try{const body=await request.text();if(body.length>4096)return json({error:'Request too large'},413);data=JSON.parse(body);}
  catch{return json({error:'Invalid request'},400);}
  if(typeof data.url!=='string'||!tiktokUrl(data.url)||data.authorized!==true)return json({error:'Valid TikTok URL and content permission confirmation required'},400);
+ if(!configured)return workerFreeTikTok(data.url);
  let target;
  try{target=new URL(env.TIKTOK_BACKEND_URL);}
  catch{return json({error:'Backend configuration invalid'},503);}

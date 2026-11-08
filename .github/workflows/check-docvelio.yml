@@ -71,6 +71,8 @@ jobs:
           node --check scripts/install-tiktok-tool.cjs
           node --check scripts/test-tiktok-tool.cjs
           node --check src/excel-formula-worker.js
+          node --check src/tiktok-worker-free.js
+          node --check scripts/test-tiktok-worker-free.cjs
           python3 -m py_compile tiktok-backend/app.py
           node --check scripts/audit-adsense-site-quality.cjs
           node --check scripts/check-adsense-readiness.cjs
@@ -141,6 +143,7 @@ jobs:
           node scripts/audit-adsense-site-quality.cjs
           node scripts/test-ga4.cjs
           node scripts/test-tiktok-tool.cjs
+          node scripts/test-tiktok-worker-free.cjs
           test -s reports/adsense-site-quality.json
           test -s reports/adsense-site-quality.md
           sed -n '1,115p' reports/adsense-site-quality.md
