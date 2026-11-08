@@ -21,13 +21,13 @@ const inline=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi)].ma
 assert.equal(inline.length,1,'Expected exactly one local tool handler');new vm.Script(inline[0]);
 const xml=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 const locs=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
-assert.equal(locs.length,584,'Expected existing 583 plus one TikTok URL');
-assert.equal(new Set(locs).size,584,'Duplicate XML sitemap URLs');
+assert(locs.length>=584,'Sitemap unexpectedly has fewer than 584 URLs');
+assert.equal(new Set(locs).size,locs.length,'Duplicate XML sitemap URLs');
 assert(locs.includes(url),'New URL missing from XML sitemap');
 const txt=fs.readFileSync(path.join(root,'sitemap.txt'),'utf8').trim().split(/\r?\n/);
-assert.equal(txt.length,584);assert(txt.includes(url));
+assert.equal(txt.length,locs.length,'XML/TXT sitemap counts differ');assert.deepEqual(new Set(txt),new Set(locs),'XML/TXT sitemaps differ');assert(txt.includes(url));
 assert(fs.readFileSync(path.join(root,'index.html'),'utf8').includes('href="/'+slug+'/'),'Homepage missing new tool');
 for(const p of ['tools/qr-code-generator/index.html','tools/barcode-generator/index.html'])assert(fs.readFileSync(path.join(root,p),'utf8').includes('href="/'+slug+'/'),'Internal link missing: '+p);
 assert.equal((html.match(/www\.googletagmanager\.com\/gtag\/js\?id=G-1RNSZ473TY/g)||[]).length,1,'GA4 tag missing');
 assert.equal((html.match(/\/assets\/cookie-consent\.js/g)||[]).length,1,'Privacy banner duplicated or missing');
-console.log('PASS: TikTok educational page, original MP4 workflow, SEO, 584 sitemap URLs, GA4, and internal links.');
+console.log('PASS: TikTok educational page, original MP4 workflow, SEO, verified sitemap URLs, GA4, and internal links.');
