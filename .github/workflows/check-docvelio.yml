@@ -70,6 +70,8 @@ jobs:
           node --check scripts/test-ga4.cjs
           node --check scripts/install-tiktok-tool.cjs
           node --check scripts/test-tiktok-tool.cjs
+          node --check src/excel-formula-worker.js
+          python3 -m py_compile tiktok-backend/app.py
           node --check scripts/audit-adsense-site-quality.cjs
           node --check scripts/check-adsense-readiness.cjs
           node --check scripts/refresh-guide-descriptions.cjs

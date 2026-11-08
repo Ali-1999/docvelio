@@ -43,16 +43,17 @@
 <section class="tk-hero"><a href="/">Home</a> / Video tools
 <p><span class="tk-pill">Free educational tool • No signup</span></p>
 <h1>TikTok Video Downloader &amp; Original MP4 Saver</h1>
-<p class="tk-lead">Check a TikTok video link and find its official save options, or download a clean copy of your own original MP4 file. The local file saver does not upload your video or add a watermark.</p>
-<p class="tk-note"><strong>What this tool does not do:</strong> It does not extract private or protected media, override a creator’s download settings, or guarantee watermark-free files from arbitrary TikTok links.</p>
+<p class="tk-lead">Check a TikTok video link, download a public video you have permission to save when our backend is available, or keep a clean copy of your own original MP4 file. The local file saver does not upload your video or add a watermark.</p>
+<p class="tk-note"><strong>What this tool does not do:</strong> It does not access private or protected media or guarantee watermark-free files from arbitrary TikTok links. Public link downloads require our separately hosted backend and may fail when TikTok restricts access.</p>
 </section>
 <div class="tk-grid">
 <section class="tk-card" aria-labelledby="tk-url-title"><h2 id="tk-url-title">1. Check a TikTok video link</h2>
 <p>Paste a public TikTok share URL. Open the original post to use TikTok’s built-in Save Video option, when available.</p>
 <label for="tk-url"><strong>TikTok video URL</strong></label><input id="tk-url" class="tk-input" type="url" inputmode="url" autocomplete="url" placeholder="https://www.tiktok.com/@creator/video/..." maxlength="2048">
-<div class="tk-actions"><button type="button" class="tk-button" id="tk-open">Open TikTok video</button><button type="button" class="tk-button tk-button--secondary" id="tk-clear">Clear</button></div>
+<label class="tk-note" for="tk-permission"><input type="checkbox" id="tk-permission"> I own this video or have permission to download it.</label>
+<div class="tk-actions"><button type="button" class="tk-button" id="tk-open">Open TikTok video</button><button type="button" class="tk-button tk-button--secondary" id="tk-link-download" disabled>Download permitted MP4</button><button type="button" class="tk-button tk-button--secondary" id="tk-clear">Clear</button></div>
 <p id="tk-link-status" class="tk-status" role="status" aria-live="polite"></p>
-<p class="tk-small">This opens TikTok, not a third-party extraction service. To save, choose Share → Save Video if the creator allows downloading.</p>
+<p class="tk-small">The download option uses Docvelio’s self-hosted yt-dlp backend when configured. It only attempts public permitted videos, and no watermark-free result is guaranteed. If unavailable, choose Share → Save Video on TikTok when the creator allows it.</p>
 </section>
 <section class="tk-card" aria-labelledby="tk-original-title"><h2 id="tk-original-title">2. Save your original MP4</h2>
 <p>Have an unwatermarked original export from your own video editor? Select it here to preview and save that exact file locally.</p>
@@ -68,9 +69,9 @@
 <li><strong>For a watermark-free original:</strong> export from your editing application before uploading to TikTok, or use the clean original file you already have.</li>
 <li><strong>For lessons or presentations:</strong> keep the creator’s attribution and verify that your intended reuse is permitted.</li></ol></section>
 <section class="tk-section"><h2>What is the difference between a TikTok share link and an original MP4?</h2>
-<p>A TikTok URL points to a video on TikTok’s platform. It is not a direct MP4 file address, and TikTok’s official developer display interfaces focus on playback and metadata rather than unrestricted downloads of original media. A locally stored MP4 is already a video file and can be saved again without creating a new watermark.</p>
+<p>A TikTok URL points to a video on TikTok’s platform. It is not a direct MP4 file address. When configured, Docvelio can request a public permitted MP4 via a separately hosted yt-dlp backend, subject to upstream availability. TikTok’s official developer display interfaces are for playback and metadata rather than unrestricted original media downloads. A locally stored MP4 is already a video file and can be saved again without creating a new watermark.</p>
 <p>Different creators and regions may see different options. Video quality, availability, reuse rights and download settings remain controlled by the source and its owner. This page does not claim to work around those restrictions.</p></section>
-<section class="tk-section"><h2>Private, free, browser-based file handling</h2><p>When you select an original video from your device, Docvelio creates a temporary local preview and download link with your browser’s Blob URL support. It does not send the selected video to Docvelio servers or to a paid media-downloader API. The link-check function validates a TikTok hostname and opens the corresponding page in a new tab.</p>
+<section class="tk-section"><h2>Private, free, browser-based file handling</h2><p>When you select an original video from your device, Docvelio creates a temporary local preview and download link with your browser’s Blob URL support. It does not send the selected video to Docvelio servers or to a paid media-downloader API. The link-check function validates a TikTok hostname and opens the corresponding page in a new tab. If you explicitly request a permitted link download, the TikTok URL is sent through our Cloudflare Worker to our own downloader server; bandwidth and hosting limits apply.</p>
 <p>Modern browsers may handle large files and downloads differently, especially on iOS. If saving is blocked, use your device’s native Share or Save to Files controls.</p></section>
 <section class="tk-section tk-faq"><h2>Frequently asked questions</h2>
 <details><summary>Does this website remove the TikTok watermark automatically?</summary><p>No. If the file already includes an embedded watermark, downloading the same file does not remove it. Start with an original clean export for watermark-free results.</p></details>
@@ -98,6 +99,32 @@ $('tk-open').addEventListener('click',()=>{
  catch(e){message(linkStatus,e.message,true);}
 });
 $('tk-clear').addEventListener('click',()=>{url.value='';message(linkStatus,'',false);});
+let backendReady=false;
+(async()=>{try{
+ const res=await fetch('/api/tiktok/status',{cache:'no-store'});
+ const data=await res.json();
+ backendReady=res.ok&&data.available===true;
+ $('tk-link-download').disabled=!backendReady;
+ if(!backendReady)message(linkStatus,'Link downloads are not active yet. The original video saver below still works.',false);
+ }catch{message(linkStatus,'Video backend status is unavailable. The original file saver still works.',true);}
+})();
+$('tk-link-download').addEventListener('click',async()=>{
+ if(!backendReady)return;
+ if(!$('tk-permission').checked){message(linkStatus,'Confirm you own this video or have permission to download it.',true);return;}
+ let link;try{link=validTikTok(url.value);}catch(e){message(linkStatus,e.message,true);return;}
+ const button=$('tk-link-download');button.disabled=true;message(linkStatus,'Requesting permitted MP4 from Docvelio backend…',false);
+ try{
+ const res=await fetch('/api/tiktok/download',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url:link,authorized:true})});
+ if(!res.ok){const payload=await res.json().catch(()=>({}));throw Error(payload.error||'Video unavailable');}
+ if(!(res.headers.get('Content-Type')||'').startsWith('video/mp4'))throw Error('Download did not return MP4');
+ const media=await res.blob();if(!media.size||media.size>80*1024*1024)throw Error('Video size outside allowed range');
+ const blobUrl=URL.createObjectURL(media),a=document.createElement('a');a.href=blobUrl;a.download='docvelio-tiktok.mp4';
+ document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(blobUrl),10000);
+ message(linkStatus,'Your browser was asked to save the MP4. The original watermark state may vary.',false);
+ }catch(e){message(linkStatus,'Download failed: '+e.message,true);}
+ finally{button.disabled=!backendReady;}
+});
+
 function reset(){if(objectUrl)URL.revokeObjectURL(objectUrl);objectUrl=null;chosen=null;preview.pause();preview.removeAttribute('src');preview.hidden=true;fileInput.value='';$('tk-save').disabled=true;}
 fileInput.addEventListener('change',()=>{
  resetFileOnly();
