@@ -16,9 +16,73 @@ function valid(formula){
  for(let i=0;i<formula.length;i++){const c=formula[i];if(c==='"'){if(quotes&&formula[i+1]==='"'){i++;continue;}quotes=!quotes;}if(!quotes){if(c==='(')depth++;if(c===')')depth--;if(depth<0)return false;}}
  return !quotes&&depth===0;
 }
+
+// Public-video service requires a separately deployed authenticated Python backend.
+// Cloudflare Workers cannot run yt-dlp itself.
+const videoLimits=new Map();
+function tiktokUrl(value){
+ try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&!u.hash&&
+ ['tiktok.com','www.tiktok.com','m.tiktok.com','vm.tiktok.com','vt.tiktok.com'].includes(u.hostname.toLowerCase())&&u.pathname.length>1&&value.length<=2048;}
+ catch{return false;}
+}
+async function videoEndpoint(request,env,url){
+ const configured=Boolean(env.TIKTOK_BACKEND_URL&&env.TIKTOK_BACKEND_TOKEN);
+ if(url.pathname==='/api/tiktok/status'){
+  if(request.method!=='GET')return json({error:'Use GET'},405);
+  return json({available:configured,engine:'yt-dlp',note:configured?'Self-hosted download gateway configured':'Self-hosted video backend has not been deployed'});
+ }
+ if(request.method!=='POST')return json({error:'Use POST'},405);
+ if(!configured)return json({error:'TikTok URL downloads are not currently configured. You can still save your original video locally.'},503);
+ if(request.headers.get('Origin')!=='https://docvelio.com')return json({error:'Invalid request origin'},403);
+ if(!/application\/json/i.test(request.headers.get('Content-Type')||''))return json({error:'Expected JSON'},415);
+ if(Number(request.headers.get('Content-Length')||0)>4096)return json({error:'Request too large'},413);
+ const ip=(request.headers.get('CF-Connecting-IP')||'unknown').slice(0,80);
+ const now=Date.now(),entry=videoLimits.get(ip);
+ if(videoLimits.size>4000)videoLimits.clear();
+ if(entry&&now-entry.start<3600000){if(entry.count>=6)return json({error:'Download limit reached; try again later'},429);entry.count++;}
+ else videoLimits.set(ip,{start:now,count:1});
+ let data;
+ try{const body=await request.text();if(body.length>4096)return json({error:'Request too large'},413);data=JSON.parse(body);}
+ catch{return json({error:'Invalid request'},400);}
+ if(typeof data.url!=='string'||!tiktokUrl(data.url)||data.authorized!==true)return json({error:'Valid TikTok URL and content permission confirmation required'},400);
+ let target;
+ try{target=new URL(env.TIKTOK_BACKEND_URL);}
+ catch{return json({error:'Backend configuration invalid'},503);}
+ if(target.protocol!=='https:'||target.username||target.password||target.hash)return json({error:'Backend must use HTTPS'},503);
+ try{
+  const response=await fetch(target.toString(),{
+   method:'POST',
+   headers:{'Content-Type':'application/json','X-Downloader-Token':env.TIKTOK_BACKEND_TOKEN,'X-Client-IP':ip},
+   body:JSON.stringify({url:data.url,authorized:true}),
+   redirect:'manual',
+   signal:AbortSignal.timeout(90000)
+  });
+  if(!response.ok){
+   let error='Video unavailable or the backend could not retrieve it';
+   if(response.status===429)error='Download limit reached';
+   else if(response.status===504)error='Download timed out';
+   else if(response.status===422)error='Video unavailable, restricted, or not downloadable as MP4';
+   return json({error},response.status>=400&&response.status<600?response.status:502);
+  }
+  if(!(response.headers.get('Content-Type')||'').toLowerCase().startsWith('video/mp4'))
+   return json({error:'Backend did not return an MP4 video'},502);
+  const length=Number(response.headers.get('Content-Length')||0);
+  if(length>80*1024*1024)return json({error:'Video too large'},413);
+  return new Response(response.body,{status:200,headers:{
+   'Content-Type':'video/mp4',
+   'Content-Disposition':'attachment; filename="docvelio-tiktok.mp4"',
+   'Cache-Control':'no-store',
+   'X-Content-Type-Options':'nosniff'
+  }});
+ }catch{
+  return json({error:'Video downloader is temporarily unavailable'},503);
+ }
+}
+
 export default {
  async fetch(request,env){
   const url=new URL(request.url);
+  if(url.pathname==='/api/tiktok/status'||url.pathname==='/api/tiktok/download')return videoEndpoint(request,env,url);
   if(url.pathname!=='/api/excel-formula')return env.ASSETS.fetch(request);
   if(request.method!=='POST')return json({error:'Use POST to generate a formula.'},405);
   const origin=request.headers.get('Origin');
