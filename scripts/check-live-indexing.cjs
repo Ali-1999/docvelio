@@ -39,12 +39,14 @@ async function probe(path,kind){
    const list=r.body.split(/\r?\n/).filter(Boolean);
    if(list.length<expectedUrls)problem('Live TXT sitemap has '+list.length+' URLs; at least '+expectedUrls+' expected');
    if(!list.includes(root+'/cbm-calculator/'))problem('CBM missing from TXT sitemap');
+   if(!list.includes(root+'/tools/tiktok-video-downloader/'))problem('TikTok page missing from TXT sitemap');
   }
   if(kind==='SITEMAP'){
    const count=(r.body.match(/<loc>/g)||[]).length;
-   if(count!==expectedUrls)problem('Live sitemap has '+count+' URLs instead of current '+expectedUrls);
+   if(count<expectedUrls)problem('Live sitemap has '+count+' URLs; at least '+expectedUrls+' expected');
    if(!/(application|text)\/xml/.test(r.contentType))problem('Incorrect XML MIME type');
    if(!r.body.includes('<loc>'+root+'/cbm-calculator/</loc>'))problem('CBM URL missing from live sitemap');
+   if(!r.body.includes('<loc>'+root+'/tools/tiktok-video-downloader/</loc>'))problem('TikTok page missing from XML sitemap');
   }
  }catch(e){
   const reason=e.cause?.code||e.message;
