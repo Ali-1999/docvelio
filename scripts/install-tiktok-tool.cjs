@@ -27,6 +27,33 @@ if(!site.includes('href="/'+slug+'/')){
  else throw Error('English homepage has no insertion location');
  fs.writeFileSync(home,site,'utf8');
 }
+
+// Reuse the final English homepage shell, not a separate header/footer design.
+// This runs after the site's global-shell and navbar integrations.
+const homeHtml=fs.readFileSync(home,'utf8');
+const sharedHeader=homeHtml.match(/<header\b[^>]*>[\s\S]*?<\/header>/i)?.[0];
+const sharedFooter=homeHtml.match(/<footer\b[^>]*>[\s\S]*?<\/footer>/i)?.[0];
+if(!sharedHeader||!sharedFooter||!sharedHeader.includes('data-dv-unified="1"'))
+ throw Error('Cannot reuse Docvelio shared homepage header/footer');
+function unifyShell(page){
+ const file=path.join(root,page);
+ let contents=fs.readFileSync(file,'utf8');
+ if(!/<header\b[^>]*>[\s\S]*?<\/header>/i.test(contents)||!/<footer\b[^>]*>[\s\S]*?<\/footer>/i.test(contents))
+  throw Error('New tool needs header and footer placeholders: '+page);
+ // The English-only tools use the English homepage as their language-selector fallback.
+ contents=contents.replace(/<header\b[^>]*>[\s\S]*?<\/header>/i,sharedHeader);
+ contents=contents.replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/i,sharedFooter);
+ for(const css of ['/assets/global-navigation.css','/assets/site-polish.css','/assets/shared-header.css']){
+  if(!contents.includes('href="'+css+'"'))contents=contents.replace('</head>','<link rel="stylesheet" href="'+css+'"></head>');
+ }
+ for(const js of ['/assets/global-navigation.js','/assets/design-system.js']){
+  if(!contents.includes('src="'+js+'"'))contents=contents.replace('</body>','<script defer src="'+js+'"></script></body>');
+ }
+ fs.writeFileSync(file,contents,'utf8');
+}
+for(const page of ['tools/tiktok-video-downloader/index.html','tools/qr-code-generator/index.html','tools/barcode-generator/index.html'])
+ unifyShell(page);
+
 for(const page of ['tools/qr-code-generator/index.html','tools/barcode-generator/index.html']){
  const file=path.join(root,page);let content=fs.readFileSync(file,'utf8');
  if(!content.includes('href="/'+slug+'/')){
