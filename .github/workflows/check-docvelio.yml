@@ -68,6 +68,8 @@ jobs:
           node --check public/assets/docvelio-ga4.js
           node --check scripts/install-ga4.cjs
           node --check scripts/test-ga4.cjs
+          node --check scripts/install-tiktok-tool.cjs
+          node --check scripts/test-tiktok-tool.cjs
           node --check scripts/audit-adsense-site-quality.cjs
           node --check scripts/check-adsense-readiness.cjs
           node --check scripts/refresh-guide-descriptions.cjs
@@ -130,10 +132,13 @@ jobs:
           node scripts/install-fazier-badge.cjs
           node scripts/optimize-homepage-css.cjs
           node scripts/integrate-qr-barcode.cjs
+          node scripts/install-tiktok-tool.cjs
+          node scripts/install-adsense.cjs
           node scripts/install-ga4.cjs
           node scripts/check-adsense-readiness.cjs
           node scripts/audit-adsense-site-quality.cjs
           node scripts/test-ga4.cjs
+          node scripts/test-tiktok-tool.cjs
           test -s reports/adsense-site-quality.json
           test -s reports/adsense-site-quality.md
           sed -n '1,115p' reports/adsense-site-quality.md

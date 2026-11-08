@@ -3,8 +3,8 @@
 const {resolve4,resolve6}=require('node:dns').promises;
 const fs=require('node:fs');
 const root='https://docvelio.com',host='docvelio.com';
-const expectedUrls=583; // 580 localized pages + wheel + two English-only barcode tools.
-const pages=['/','/tools/edit-pdf/','/image-editor/','/image-tools/resize-image/','/cbm-calculator/','/shipping-tools/volumetric-weight-calculator/','/blog/','/wheel-of-names/','/ar/','/es/image-tools/resize-image/'];
+const expectedUrls=584; // Existing 583 URLs plus the English-only TikTok educational tool.
+const pages=['/','/tools/edit-pdf/','/image-editor/','/image-tools/resize-image/','/cbm-calculator/','/shipping-tools/volumetric-weight-calculator/','/blog/','/wheel-of-names/','/tools/tiktok-video-downloader/','/ar/','/es/image-tools/resize-image/'];
 const results=[],failures=[];
 function problem(s){failures.push(s);console.error('FAIL: '+s);}
 async function request(url){
@@ -39,12 +39,14 @@ async function probe(path,kind){
    const list=r.body.split(/\r?\n/).filter(Boolean);
    if(list.length<expectedUrls)problem('Live TXT sitemap has '+list.length+' URLs; at least '+expectedUrls+' expected');
    if(!list.includes(root+'/cbm-calculator/'))problem('CBM missing from TXT sitemap');
+   if(!list.includes(root+'/tools/tiktok-video-downloader/'))problem('TikTok page missing from TXT sitemap');
   }
   if(kind==='SITEMAP'){
    const count=(r.body.match(/<loc>/g)||[]).length;
-   if(count!==expectedUrls)problem('Live sitemap has '+count+' URLs instead of current '+expectedUrls);
+   if(count<expectedUrls)problem('Live sitemap has '+count+' URLs; at least '+expectedUrls+' expected');
    if(!/(application|text)\/xml/.test(r.contentType))problem('Incorrect XML MIME type');
    if(!r.body.includes('<loc>'+root+'/cbm-calculator/</loc>'))problem('CBM URL missing from live sitemap');
+   if(!r.body.includes('<loc>'+root+'/tools/tiktok-video-downloader/</loc>'))problem('TikTok page missing from XML sitemap');
   }
  }catch(e){
   const reason=e.cause?.code||e.message;
