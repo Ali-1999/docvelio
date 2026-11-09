@@ -26,8 +26,12 @@ for(const locale of ['en','es','fr','de','pt','ar','hi','id','tr','zh']){
 assert.ok(html.includes('href="/excel-formula-generator/"'),
  'New Excel page should also expose its link through the shared navigation');
 async function main(){
- const source=fs.readFileSync(path.join(__dirname,'../src/excel-formula-worker.js'),'utf8');
- const handle=new Function('Response','URL','console',source.replace('export default {','const handler={')+';return handler;')(Response,URL,console);
+ // The real Worker is an ES module with a first-party import. Test its actual
+ // module export instead of parsing ESM source through CommonJS new Function().
+ const {pathToFileURL}=require('node:url');
+ const file=path.join(__dirname,'../src/excel-formula-worker.js');
+ const {default:handle}=await import(pathToFileURL(file).href);
+ assert.equal(typeof handle.fetch,'function','Worker must export its fetch handler');
  const mockRequest=new Request('https://docvelio.com/api/excel-formula',{method:'POST',headers:{Origin:'https://docvelio.com','Content-Type':'application/json'},body:JSON.stringify({request:'اجمع الخلايا من A1 إلى A5'})});
  const success=await handle.fetch(mockRequest,{AI:{run:async()=>({response:JSON.stringify({formula:'=SUM(A1:A5)',explanation:'Sum selected cells',assumptions:''})})}});
  assert.equal(success.status,200);
