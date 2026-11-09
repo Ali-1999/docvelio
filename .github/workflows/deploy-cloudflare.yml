@@ -45,11 +45,17 @@ jobs:
           node --check src/tiktok-worker-free.js
           node scripts/test-tiktok-worker-free.cjs
       - name: Deploy Worker and generated assets to Cloudflare
+        id: cloudflare_deploy
         uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy
+      - name: Report required Cloudflare account access repairs
+        if: ${{ failure() && steps.cloudflare_deploy.outcome == 'failure' }}
+        run: |
+          echo "::error::Cloudflare deployment failed. Review Wrangler error first; if assets-upload-session says 'No access to the specified resource', confirm the GitHub CLOUDFLARE_ACCOUNT_ID is the actual Worker account and regenerate CLOUDFLARE_API_TOKEN with Workers Editor access scoped to that account."
+          echo "::notice::Do not put tokens in source, issues or logs. See docs/SEO_SCHEDULE_RECOVERY_2026-11-09.md."
       - name: Check live TikTok page and same-origin status endpoint
         shell: bash
         run: |
