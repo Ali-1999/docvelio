@@ -1,16 +1,10 @@
 name: Deploy Docvelio to Cloudflare Workers
 
+# Cloudflare Workers Builds already deploys Ali-1999/docvelio (main) directly.
+# Avoid a second automatic Wrangler deployment that fails when its separate
+# GitHub API token lacks Workers asset-upload permissions.
+# Keep manual dispatch for emergencies after credentials have been repaired.
 on:
-  push:
-    branches: [main]
-    # Documentation-only commits do not require another production deployment.
-    paths:
-      - 'public/**'
-      - 'scripts/**'
-      - 'src/**'
-      - 'wrangler.jsonc'
-      - 'package.json'
-      - '.github/workflows/deploy-cloudflare.yml'
   workflow_dispatch:
 
 concurrency:
