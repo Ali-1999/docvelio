@@ -71,7 +71,7 @@ for(const file of pages){
  const head=html.split('</head>')[0]||'';
  const found=head.match(/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-1566581424297065/g)||[];
  if(found.length!==1)mark('error',path.relative(root,file)+': expected one correct AdSense script in head; found '+found.length);
- const ahrefsMatches=head.match(/<script\\b[^>]*src=["']https:\\/\\/analytics\\.ahrefs\\.com\\/analytics\\.js["'][^>]*>/gi)||[];
+  const ahrefsMatches=head.match(/<script\b[^>]*src=["']https:\/\/analytics\.ahrefs\.com\/analytics\.js["'][^>]*>/gi)||[];
  if(ahrefsMatches.length!==1||!ahrefsMatches[0].includes('data-key="X1yDGYuFwX82LOKZR9z/Yg"'))
   mark('error',path.relative(root,file)+': missing, duplicate or incorrect Ahrefs Analytics script');
  const accountTags=head.match(/<meta\b[^>]*name=["']google-adsense-account["'][^>]*>/gi)||[];
