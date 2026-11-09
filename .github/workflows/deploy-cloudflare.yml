@@ -3,6 +3,14 @@ name: Deploy Docvelio to Cloudflare Workers
 on:
   push:
     branches: [main]
+    # Documentation-only commits do not require another production deployment.
+    paths:
+      - 'public/**'
+      - 'scripts/**'
+      - 'src/**'
+      - 'wrangler.jsonc'
+      - 'package.json'
+      - '.github/workflows/deploy-cloudflare.yml'
   workflow_dispatch:
 
 concurrency:
