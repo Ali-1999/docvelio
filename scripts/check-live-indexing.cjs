@@ -19,7 +19,13 @@ async function probe(path,kind){
   const r=await request(url);
   results.push([kind,path,r.status,r.final+'; '+r.contentType]);
   if(r.status>=400){results.push(['HTTP diagnostics',path,r.status,'server='+r.server+'; cf-ray='+r.ray+'; cf-mitigated='+r.mitigation+'; first-text='+r.body.replace(/<[^>]*>/g,' ').replace(/\\s+/g,' ').slice(0,260)]);}
-  if(r.status!==200)problem(path+' HTTP '+r.status+' (wanted 200)');
+  if(r.status!==200){
+   const hint=r.mitigation?' (Cloudflare mitigation: '+r.mitigation+'; ray: '+r.ray+')':'';
+   problem(path+' HTTP '+r.status+' (wanted 200)'+hint);
+   // A challenge response is HTML, not sitemap XML. Avoid fabricating
+   // additional "missing URL" and wrong-MIME findings from the same 403 page.
+   return;
+  }
   if(r.final!==url)problem(path+' unexpectedly redirects to '+r.final);
   if(r.robots.toLowerCase().includes('noindex'))problem(path+' has X-Robots-Tag noindex');
   if(kind==='HTML'){
@@ -70,6 +76,8 @@ async function run(){
  for(const [type,url,status,detail] of results)markdown+='| '+type+' | '+url+' | '+status+' | '+String(detail).replaceAll('|',';').slice(0,160)+' |\n';
  markdown+='\nResult: '+(failures.length?'FAIL ('+failures.length+' issues)':'PASS (technical reachability, not Google indexing)')+'\n';
  if(failures.length)markdown+='\n'+failures.map(x=>'- '+x).join('\n')+'\n';
+ fs.mkdirSync('reports',{recursive:true});
+ fs.writeFileSync('reports/live-indexability.md',markdown,'utf8');
  console.log(markdown);
  if(process.env.GITHUB_STEP_SUMMARY)fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,markdown);
  if(failures.length)process.exitCode=1;
