@@ -80,7 +80,7 @@ function listPages(folder){
  }
 }
 listPages(root);
-assert(htmlPages.length===583,'Expected 582 index pages plus custom 404, got '+htmlPages.length);
+assert(htmlPages.length===584,'Expected 582 index pages plus custom 404, got '+htmlPages.length);
 const headerTemplates=new Map(),titles=new Set(),pageTitles=new Map();
 let tips=0,headCount=0;
 for(const file of htmlPages){
@@ -119,8 +119,8 @@ for(const file of htmlPages){
 }
 assert.equal(headerTemplates.size,10,'All ten language headers are not present');
 assert.equal(tips,180,'Expected tool-specific guidance on all 180 tool pages');
-assert.equal(headCount,582);
-console.log('PASS: identical header per locale, 582 meaningful pages, 180 tool guidance sections and metadata');
+assert.equal(headCount,583);
+console.log('PASS: identical header per locale, 583 meaningful pages, 180 tool guidance sections and metadata');
 
 
 /* Layout regression: the tool guide must be contained and follow the workspace,
