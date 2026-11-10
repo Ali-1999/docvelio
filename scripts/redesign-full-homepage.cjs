@@ -106,6 +106,7 @@ for(const lang of langs){
  if(oldWhy>=0)html=replaceSection(html,'<section class="why-section section">','',lang);
  html=html.replace(/<section class="dv-home-trust"[\s\S]*?<\/section>(?=\s*<section class="dv-home-trust")/g,'');
  html=html.replace(/<body([^>]*)>/i,(m,attrs)=>'<body'+(attrs.includes('class=')?attrs.replace(/class="([^"]*)"/,'class="$1 dv-home-v3"'):' class="dv-home-v3"'+attrs)+'>');
+ if(!html.includes('rel="preload" as="image" href="/assets/homepage-workspace.svg"'))html=html.replace('</head>','<link rel="preload" as="image" href="/assets/homepage-workspace.svg" fetchpriority="high"></head>');
  if(!html.includes('href="/assets/homepage-v3.css"'))html=html.replace('</head>','<link rel="stylesheet" href="/assets/homepage-v3.css"></head>');
  // Explain the one operation that is different from local-file tools.
  const notice='<p class="dv-home-privacy-note">'+esc(t.privacy)+' <a href="'+base+'privacy/">'+esc(lang==='en'?'Privacy policy':lang==='es'?'Privacidad':lang==='fr'?'Confidentialité':lang==='de'?'Datenschutz':lang==='ar'?'الخصوصية':lang==='zh'?'隐私政策':'Privacy')+'</a></p>';
