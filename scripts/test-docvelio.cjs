@@ -236,3 +236,20 @@ for(const lang of languages){
 assert.equal(articleTitles.size,10,'Expected 10 distinct English blog titles');
 assert((generatedSitemap.match(/<url>/g)||[]).length===583,'Blog sitemap coverage missing');
 console.log('PASS: 100 localized topic pages, 10 blog indexes, 10 different English topics and multilingual discovery links.');
+
+const portfolioPath=path.join(root,'ali-hamza','index.html');
+assert(fs.existsSync(portfolioPath),'Ali Hamza portfolio route missing');
+const portfolio=fs.readFileSync(portfolioPath,'utf8');
+assert(portfolio.includes('data-dv-editorial="1"'),'Portfolio editorial marker missing');
+assert(portfolio.includes('class="site-header"')&&portfolio.includes('class="portfolio-footer"'),'Portfolio-owned header/footer missing');
+assert(!portfolio.includes('dv-global-header')&&!portfolio.includes('data-dv-unified="1"'),'Docvelio global header must not be injected into portfolio');
+assert(portfolio.includes('https://wa.me/966570826521'),'Portfolio WhatsApp contact link missing');
+assert(portfolio.includes('class="whatsapp-float"')&&portfolio.includes('aria-label="Chat with Ali Hamza on WhatsApp"'),'Sticky WhatsApp CTA missing');
+const portfolioCss=fs.readFileSync(path.join(root,'ali-hamza','assets','styles.css'),'utf8');
+assert(portfolioCss.includes('--portfolio-accent:#63d9c2'),'Portfolio colour system missing');
+assert(portfolioCss.includes('.whatsapp-float{position:fixed'),'Sticky WhatsApp styling missing');
+for(const script of ['site-shell.cjs','final-global-shell.cjs']){
+ const source=fs.readFileSync(path.join(__dirname,script),'utf8');
+ assert(source.includes("rel==='ali-hamza/index.html'"),'Standalone portfolio exclusion missing from '+script);
+}
+console.log('PASS: Ali Hamza standalone portfolio keeps its own header/footer, cohesive teal palette and sticky WhatsApp CTA.');
