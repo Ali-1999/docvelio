@@ -66,6 +66,8 @@ function walk(dir){for(const ent of fs.readdirSync(dir,{withFileTypes:true})){
  const file=path.join(dir,ent.name);if(ent.isDirectory()){walk(file);continue;}
  if(ent.name!=='index.html'&&ent.name!=='404.html')continue;
  let h=fs.readFileSync(file,'utf8'),rel=path.relative(root,file).replaceAll('\\','/');
+ // Standalone Ali Hamza portfolio uses its own identity, navigation and footer.
+ if(rel==='ali-hamza/index.html' || h.includes('data-dv-editorial="1"')){count++;continue;}
  const parts=rel.split('/');const lang=langs.includes(parts[0])&&parts[0]!=='en'?parts.shift():'en';
  const route=parts.slice(0,-1).join('/');
  if(!/<header\b[^>]*>[\s\S]*?<\/header>/i.test(h))throw Error('Header missing: '+rel);
