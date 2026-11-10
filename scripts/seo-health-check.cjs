@@ -81,6 +81,16 @@ for(const file of pages){
 const adsFile=path.join(root,'ads.txt');
 if(!fs.existsSync(adsFile)||!fs.readFileSync(adsFile,'utf8').includes('google.com, pub-1566581424297065, DIRECT, f08c47fec0942fa0'))
  mark('error','ads.txt missing correct publisher seller record');
+const headerFile=path.join(root,'_headers');
+if(!fs.existsSync(headerFile))mark('error','missing Cloudflare _headers file');
+else{
+ const configured=fs.readFileSync(headerFile,'utf8');
+ for(const value of ['X-Frame-Options: SAMEORIGIN','Strict-Transport-Security: max-age=31536000'])
+  if(!configured.includes(value))mark('error','missing security header configuration: '+value);
+}
+const llms=path.join(root,'llms.txt');
+if(!fs.existsSync(llms)||!fs.readFileSync(llms,'utf8').includes('## Main tools'))
+ mark('error','llms.txt missing or incomplete');
 const png=path.join(root,'assets','docvelio-social-card.png');
 if(!fs.existsSync(png))mark('error','PNG social preview missing');
 else{
