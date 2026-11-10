@@ -255,11 +255,13 @@ assert(portfolio.includes('https://wa.me/966570826521'),'Portfolio WhatsApp cont
 assert(portfolio.includes('class="whatsapp-float"')&&portfolio.includes('aria-label="Chat with Ali Hamza on WhatsApp"'),'Sticky WhatsApp CTA missing');
 const portfolioCss=fs.readFileSync(path.join(root,'ali-hamza','assets','styles.css'),'utf8');
 assert(portfolioCss.includes('--portfolio-indigo:#5146d8')&&portfolioCss.includes('--portfolio-coral:#ff765e'),'Portfolio colour system missing');
-assert(portfolio.includes('class="project-feature project-docvelio reveal"')&&portfolio.includes('class="project-feature project-applinovo reveal"')&&portfolio.includes('class="project-feature project-asan reveal"'),'Redesigned project case studies missing');
-assert(portfolioCss.includes('.project-feature{display:grid')&&portfolioCss.includes('.projects-intro{display:grid'),'Responsive case-study layout missing');
+assert(portfolio.includes('class="project-card glass"')&&portfolio.includes('Docvelio')&&portfolio.includes('Applinovo')&&portfolio.includes('Asan Education'),'Portfolio project cards missing');
+assert(portfolioCss.includes('.project-grid{display:grid')&&portfolioCss.includes('.project-card{overflow:hidden'),'Responsive project-card layout missing');
+assert(portfolio.includes('id="langToggle"')&&portfolio.includes('id="themeToggle"'),'Bilingual and theme controls missing');
+assert(portfolio.includes('id="techTimeline"')&&portfolio.includes('id="opsTimeline"'),'Career pathway switch missing');
 assert(portfolioCss.includes('.whatsapp-float{position:fixed'),'Sticky WhatsApp styling missing');
 for(const script of ['site-shell.cjs','final-global-shell.cjs']){
  const source=fs.readFileSync(path.join(__dirname,script),'utf8');
  assert(source.includes("rel==='ali-hamza/index.html'"),'Standalone portfolio exclusion missing from '+script);
 }
-console.log('PASS: Ali Hamza standalone portfolio keeps its own header/footer, new editorial colour palette, redesigned case studies and sticky WhatsApp CTA.');
+console.log('PASS: Ali Hamza standalone portfolio keeps its own header/footer, Kan3an-inspired glass dashboard, bilingual controls and responsive project cards and sticky WhatsApp CTA.');
