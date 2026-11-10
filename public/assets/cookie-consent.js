@@ -4,6 +4,8 @@
  * This is not an IAB TCF or Google-certified advertising CMP.
  */
 (()=>{'use strict';
+// The standalone Ali Hamza portfolio intentionally has no cookie banner or settings control.
+if(window.location?.pathname==='/ali-hamza'||window.location?.pathname==='/ali-hamza/')return;
 const KEY='docvelio_privacy_choice_v2';
 const FILTER='docvelio_tool_category_v1';
 const VERSION=2,MAX_AGE=180*24*60*60*1000;
