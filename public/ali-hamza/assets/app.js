@@ -12,4 +12,4 @@ document.getElementById("themeToggle")?.addEventListener("click",()=>{const next
 document.querySelectorAll("[data-career]").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll("[data-career]").forEach(b=>b.classList.toggle("active",b===btn));document.getElementById("techTimeline").hidden=btn.dataset.career!=="tech";document.getElementById("opsTimeline").hidden=btn.dataset.career!=="ops"}));
 document.getElementById("menuToggle")?.addEventListener("click",()=>document.querySelector(".sidebar")?.classList.toggle("open"));
 document.querySelectorAll(".side-nav a").forEach(a=>a.addEventListener("click",()=>{document.querySelectorAll(".side-nav a").forEach(x=>x.classList.toggle("active",x===a));document.querySelector(".sidebar")?.classList.remove("open")}));
-try{const lang=localStorage.getItem("aliPortfolioLanguage");if(lang==="ar")setLanguage("ar");const theme=localStorage.getItem("aliPortfolioTheme");if(theme==="light"){root.dataset.theme="light";document.getElementById("themeToggle").textContent="☾"}}catch(e){}
+try{const lang=localStorage.getItem("aliPortfolioLanguage");if(lang==="ar")setLanguage("ar");}catch(e){}
