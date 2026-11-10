@@ -26,7 +26,7 @@ let count=0;function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:
  const adTag=html.indexOf('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
  if(adTag!==-1)assert(html.indexOf('src="/assets/docvelio-ga4.js"')<adTag,'Consent defaults must precede AdSense script: '+p);
  count++;}}}
-walk(root);assert(count>=583);
+walk(root);assert(count>=584);
 for(const locale of ['','es/','fr/','de/','pt/','ar/','hi/','id/','tr/','zh/']){
  for(const policy of ['cookies','privacy'])assert(fs.readFileSync(path.join(root,locale,policy,'index.html'),'utf8').includes('id="dv-ga4-policy"'),'Missing GA4 policy '+locale+policy);
 }
