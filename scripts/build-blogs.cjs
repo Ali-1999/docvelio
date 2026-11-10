@@ -28,12 +28,16 @@ function hreflang(slug){
  '<link rel="alternate" hreflang="x-default" href="'+baseUrl+routeUrl('en',slug)+'">';
 }
 function richJson(o){return JSON.stringify(o).replace(/</g,'\\u003c').replace(/>/g,'\\u003e').replace(/&/g,'\\u0026');}
-function head(lang,slug,title,desc,isIndex=false){
+function head(lang,slug,title,desc,isIndex=false,faqs=[]){
  const u=baseUrl+routeUrl(lang,slug),bread=[{'@type':'ListItem',position:1,name:'Docvelio',item:baseUrl+prefix(lang)},{'@type':'ListItem',position:2,name:words[lang][0],item:baseUrl+prefix(lang)+'blog/'}];
  if(!isIndex)bread.push({'@type':'ListItem',position:3,name:title,item:u});
  const graph=[{'@type':'BreadcrumbList',itemListElement:bread}];
  if(isIndex)graph.push({'@type':'CollectionPage',name:title,url:u,inLanguage:lang,description:desc});
- else graph.push({'@type':'BlogPosting',headline:title,description:desc,mainEntityOfPage:u,inLanguage:lang,isPartOf:{'@type':'Blog',name:'Docvelio Blog',url:baseUrl+prefix(lang)+'blog/'},publisher:{'@type':'Organization',name:'Docvelio',url:baseUrl+'/'}});
+ else {
+  const org={'@type':'Organization','@id':baseUrl+'/#organization',name:'Docvelio',url:baseUrl+'/'};
+  graph.push({'@type':'BlogPosting',headline:title,description:desc,mainEntityOfPage:{'@type':'WebPage','@id':u},inLanguage:lang,isPartOf:{'@type':'Blog',name:'Docvelio Blog',url:baseUrl+prefix(lang)+'blog/'},author:org,publisher:org,image:baseUrl+'/assets/docvelio-social-card.png'});
+  if(Array.isArray(faqs)&&faqs.length)graph.push({'@type':'FAQPage',inLanguage:lang,mainEntity:faqs.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))});
+ }
  const short=desc.length>165?desc.slice(0,162).replace(/\s+\S*$/,'')+'…':desc;
  return '<!doctype html><html lang="'+lang+'"'+(lang==='ar'?' dir="rtl"':'')+'><head><meta charset="utf-8">'+
  '<meta name="viewport" content="width=device-width,initial-scale=1">'+
@@ -93,7 +97,8 @@ function blogPage(lang,item,idx){
  (lang==='en'?bodyEnglish(item,idx):bodyLocalized(lang,item,idx))+
  '<p class="dv-blog-final-note"><strong>'+html(w[18])+'</strong>: '+html(w[16])+'.</p>'+
  related(lang,item,idx)+'</article></div></section></main>';
- return head(lang,item.slug,title,desc)+main+footer(lang);
+ const faqs=lang==='en'?item.faq:[[w[11]+'?',tr[1]+' '+tr[3]]];
+ return head(lang,item.slug,title,desc,false,faqs)+main+footer(lang);
 }
 function blogIndex(lang){
  const w=words[lang],title=w[1],desc=w[2],items=posts.map((a,i)=>{
