@@ -255,7 +255,7 @@ assert(portfolio.includes('https://wa.me/966570826521'),'Portfolio WhatsApp cont
 assert(portfolio.includes('class="whatsapp-float"')&&portfolio.includes('aria-label="Chat with Ali Hamza on WhatsApp"'),'Sticky WhatsApp CTA missing');
 const portfolioCss=fs.readFileSync(path.join(root,'ali-hamza','assets','styles.css'),'utf8');
 assert(portfolioCss.includes('--portfolio-indigo:#5146d8')&&portfolioCss.includes('--portfolio-coral:#ff765e'),'Portfolio colour system missing');
-assert(portfolio.includes('class="project-feature project-docvelio"')&&portfolio.includes('class="project-feature project-applinovo"')&&portfolio.includes('class="project-feature project-asan"'),'Redesigned project case studies missing');
+assert(portfolio.includes('class="project-feature project-docvelio reveal"')&&portfolio.includes('class="project-feature project-applinovo reveal"')&&portfolio.includes('class="project-feature project-asan reveal"'),'Redesigned project case studies missing');
 assert(portfolioCss.includes('.project-feature{display:grid')&&portfolioCss.includes('.projects-intro{display:grid'),'Responsive case-study layout missing');
 assert(portfolioCss.includes('.whatsapp-float{position:fixed'),'Sticky WhatsApp styling missing');
 for(const script of ['site-shell.cjs','final-global-shell.cjs']){
