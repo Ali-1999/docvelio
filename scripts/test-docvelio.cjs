@@ -178,7 +178,7 @@ assert.equal(pageTitle,'Free PDF Tools, Word Editor &amp; Image Tools | Docvelio
 const metaTag=(homepage.match(/<meta\b[^>]*name="description"[^>]*>/i)||[])[0]||'';
 const homeDesc=metaTag.match(/content="([^"]+)"/)?.[1]||'';
 assert(homeDesc.length>=120&&homeDesc.length<=160,'Homepage description length is not meaningful: '+homeDesc.length);
-assert(homepage.includes('<h1>Free PDF tools.'),'Homepage H1 does not describe tool offering');
+assert(homepage.includes('<h1>Free PDF, Word &amp; image tools.'),'Homepage H1 does not describe the full tool offering');
 assert(homepage.includes('class="section dv-home-seo"'),'Missing people-first homepage guidance');
 assert(homepage.includes('/assets/seo-content.css'),'Missing homepage SEO styling');
 const pagesForAlt=[];
