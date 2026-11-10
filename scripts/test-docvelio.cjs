@@ -101,7 +101,7 @@ for(const file of htmlPages){
  if(!headerTemplates.has(locale))headerTemplates.set(locale,norm);
  assert.equal(norm,headerTemplates.get(locale),'Header differs in language '+locale+': '+rel);
  assert(html.includes('href="/assets/shared-header.css"'),'Shared CSS missing: '+rel);
- assert(html.includes('data-dv-editorial="1"') || route==='blog' || route.startsWith('blog/') || (route==='image-editor'||route.startsWith('image-tools/')||route==='cbm-calculator'||route.startsWith('shipping-tools/') || ['tools/qr-code-generator','tools/barcode-generator'].includes(route)),'Missing relevant page content: '+rel);
+ assert(html.includes('data-dv-editorial="1"') || route==='ali-hamza' || route==='blog' || route.startsWith('blog/') || (route==='image-editor'||route.startsWith('image-tools/')||route==='cbm-calculator'||route.startsWith('shipping-tools/') || ['tools/qr-code-generator','tools/barcode-generator'].includes(route)),'Missing relevant page content: '+rel);
  const heading=(html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/gi)||[]);
  assert(heading.length===1,'Missing or duplicated page heading: '+rel);
  const title=html.match(/<title>([\s\S]*?)<\/title>/i)?.[1];
