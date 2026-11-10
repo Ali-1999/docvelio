@@ -35,7 +35,7 @@ function walk(dir){
    doc=doc.replace(/(<h1\b[^>]*>[\s\S]*?<\/h1>)/i,'$1'+line);
   }
   if(/^(?:index\.html|(?:es|fr|de|pt|ar|hi|id|tr|zh)\/index\.html)$/.test(rel)&&!doc.includes('id="dv-owner-schema"')){
-   const profile=JSON.stringify({'@context':'https://schema.org','@type':'WebSite',name:'Docvelio',url:'https://docvelio.com/',publisher:{'@type':'Person',name:operator,email:email,homeLocation:{'@type':'Place',name:location}}});
+   const profile=JSON.stringify({'@context':'https://schema.org','@type':'Person','@id':'https://docvelio.com/#ali-hamza',name:operator,url:'https://docvelio.com/about/',email:email,homeLocation:{'@type':'Place',name:location},worksFor:{'@id':'https://docvelio.com/#organization'}});
    doc=doc.replace('</head>','<script id="dv-owner-schema" type="application/ld+json">'+profile+'</script></head>');
   }
   if(!doc.includes('/assets/upgrade.css'))doc=doc.replace('</head>','<link rel="stylesheet" href="/assets/upgrade.css"></head>');
@@ -52,7 +52,7 @@ function walk(dir){
 }
 walk(base);
 fs.writeFileSync(path.join(base,'robots.txt'),'User-agent: *\nAllow: /\n\nSitemap: https://docvelio.com/sitemap.txt\nSitemap: https://docvelio.com/sitemap.xml\n');
-fs.writeFileSync(path.join(base,'_headers'),'/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n\n/sitemap.xml\n  Content-Type: application/xml; charset=utf-8\n\n/sitemap.txt\n  Content-Type: text/plain; charset=utf-8\n\n/robots.txt\n  Content-Type: text/plain; charset=utf-8\n');
+fs.writeFileSync(path.join(base,'_headers'),'/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  X-Frame-Options: SAMEORIGIN\n  Strict-Transport-Security: max-age=31536000\n\n/sitemap.xml\n  Content-Type: application/xml; charset=utf-8\n\n/sitemap.txt\n  Content-Type: text/plain; charset=utf-8\n\n/robots.txt\n  Content-Type: text/plain; charset=utf-8\n');
 // Keep the checked-in declaration correct even before install-adsense.cjs runs.
 fs.writeFileSync(path.join(base,'ads.txt'),'google.com, pub-1566581424297065, DIRECT, f08c47fec0942fa0\n');
 if(count<230)throw new Error('Expected multilingual document pages not found: '+count);
