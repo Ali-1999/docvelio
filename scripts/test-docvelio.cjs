@@ -190,7 +190,7 @@ for(const file of pagesForAlt){
 assert(fs.existsSync(path.join(root,'llms.txt')),'Missing optional llms.txt');
 assert(fs.existsSync(path.join(root,'sitemap.txt')),'Missing TXT sitemap fallback');
 const generatedSitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
-assert((generatedSitemap.match(/<url>/g)||[]).length===582,'Missing sitemap routes');
+assert((generatedSitemap.match(/<url>/g)||[]).length===583,'Missing sitemap routes');
 assert(!/X-Robots-Tag:\s*noindex/i.test(fs.readFileSync(path.join(root,'_headers'),'utf8')),'X-Robots-Tag blocks indexing');
 console.log('PASS: SEOptimer remediation, title, description, image alt attributes and sitemap count.');
 
