@@ -46,7 +46,7 @@ function main(){
  }
  for(const l of locales){const file=path.join(root,l==='en'?'':l,'image-editor','index.html');fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,render(l,headers[l],footers[l]));}
  let changed=0;walk(root,file=>{
-  const rel=path.relative(root,file).replaceAll('\\','/');if(rel==='404.html')return;
+  const rel=path.relative(root,file).replaceAll('\\','/');if(rel==='404.html'||rel==='ali-hamza/index.html')return;
   const segments=rel.split('/'),l=locales.slice(1).includes(segments[0])?segments.shift():'en',route=segments.join('/');
   let s=fs.readFileSync(file,'utf8');if(!s.includes('data-dv-unified="1"'))throw Error('Missing shared header: '+rel);s=nav(s,l);
   if(route==='index.html'||route==='guides/index.html'){s=discovery(s,l);if(!s.includes('/assets/image-studio.css'))s=s.replace('</head>','<link rel="stylesheet" href="/assets/image-studio.css"></head>');}
