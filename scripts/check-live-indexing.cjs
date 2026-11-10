@@ -3,7 +3,7 @@
 const {resolve4,resolve6}=require('node:dns').promises;
 const fs=require('node:fs');
 const root='https://docvelio.com',host='docvelio.com';
-const expectedUrls=584; // Existing 583 URLs plus the English-only TikTok educational tool.
+const expectedUrls=585; // Existing 584 URLs plus the English-only TikTok educational tool.
 const pages=['/','/tools/edit-pdf/','/image-editor/','/image-tools/resize-image/','/cbm-calculator/','/shipping-tools/volumetric-weight-calculator/','/blog/','/wheel-of-names/','/tools/tiktok-video-downloader/','/ar/','/es/image-tools/resize-image/'];
 const results=[],failures=[];
 function problem(s){failures.push(s);console.error('FAIL: '+s);}
