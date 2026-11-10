@@ -69,7 +69,7 @@ def validate():
     doc = ET.fromstring(raw)
     assert doc.tag == "{" + NS["s"] + "}urlset", "Invalid sitemap XML namespace/root"
     pages = doc.findall("s:url", NS)
-    assert (len(pages) == 580 if SOURCE_ONLY else len(pages) >= 580) and len(pages) <= 50000, f"Unexpected sitemap entries: {len(pages)}"
+    assert (len(pages) == 581 if SOURCE_ONLY else len(pages) >= 581) and len(pages) <= 50000, f"Unexpected sitemap entries: {len(pages)}"
 
     seen = set()
     variants = defaultdict(dict)
@@ -118,7 +118,7 @@ def validate():
         assert meta.language == locale, f"Wrong HTML lang: {url}"
         assert not meta.noindex, f"Noindex URL in sitemap: {url}"
 
-    assert (len(variants) == 58 if SOURCE_ONLY else len(variants) >= 58), f"Unexpected route count: {len(variants)}"
+    assert (len(variants) == 59 if SOURCE_ONLY else len(variants) >= 59), f"Unexpected route count: {len(variants)}"
     for route, locations in variants.items():
         assert set(locations) == set(LANGS) or locations.keys() == {"en"}, f"Incomplete hreflang group: {route}"
         expected = {locale: locations[locale] for locale in locations}
