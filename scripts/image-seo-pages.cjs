@@ -98,7 +98,7 @@ function main(){
  }
  const map=path.join(root,'sitemap.xml');
  let xml=fs.readFileSync(map,'utf8');
- if((xml.match(/<loc>/g)||[]).length!==443)throw Error('Expected base 442 URLs before adding image SEO pages');
+ if((xml.match(/<loc>/g)||[]).length!==443)throw Error('Expected base 443 URLs before adding image SEO pages');
  let extra='';
  for(const lang of langs)for(const t of topics){
   extra+='  <url>\n    <loc>'+xmlEsc(url(lang,t.slug))+'</loc>\n';
@@ -110,7 +110,7 @@ function main(){
  const all=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
  if(count!==80||all.length!==523||new Set(all).size!==523)throw Error('Image SEO page/sitemap mismatch');
  fs.writeFileSync(path.join(root,'sitemap.txt'),[...all].sort().join('\n')+'\n');
- console.log('IMAGE SEO: 80 localized task pages, 8 distinct functional search intents, 521 sitemap URLs.');
+ console.log('IMAGE SEO: 80 localized task pages, 8 distinct functional search intents, 523 sitemap URLs.');
 }
 if(require.main===module)main();
 module.exports={main,taskText,topicPage};
