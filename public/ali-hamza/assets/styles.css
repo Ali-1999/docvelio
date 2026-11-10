@@ -97,3 +97,78 @@ html[data-theme=light] .contact-links .whatsapp-link{color:#08785b}
 html[data-theme=light] .current,html[data-theme=light] .live-tag{color:#075c46;border-color:#6db99f;background:#e1f6ed}
 html[data-theme=light] button:focus-visible,html[data-theme=light] a:focus-visible{outline-color:#08785b!important;box-shadow:0 0 0 2px #fff!important}
 @media(prefers-contrast:more){:root{--line:rgba(220,232,248,.42)}body{color:#fff}.hero-text,.timeline-main ul,.project-info p,.education-card p,.cert-empty p,.contact-card p{color:#fff}}
+
+
+/* Accessible semantic theme layer, following shadcn/ui token conventions.
+   Components consume role-based tokens instead of hard-coded theme-specific text colours. */
+:root{
+ --page-bg:#0b1220;
+ --surface:#121d2e;
+ --surface-raised:#19283c;
+ --foreground:#f8fafc;
+ --muted-foreground:#b8c4d6;
+ --border-strong:#46566e;
+ --accent:#aFC5ff;
+ --accent-foreground:#101a2a;
+ --success-foreground:#6ee7b7;
+ --focus-ring:#6ee7b7;
+ --link:#afc5ff;
+ --page-bg: #0b1220;
+}
+html[data-theme=light]{
+ --page-bg:#f5f7fb;
+ --surface:#ffffff;
+ --surface-raised:#edf2f8;
+ --foreground:#172033;
+ --muted-foreground:#52627a;
+ --border-strong:#aab8ca;
+ --accent:#3549a8;
+ --accent-foreground:#ffffff;
+ --success-foreground:#08785b;
+ --focus-ring:#08785b;
+ --link:#275dad;
+}
+body{background:var(--page-bg);color:var(--foreground)}
+.glass{background:var(--surface);border-color:var(--line)}
+.nav-label,.section-kicker,.card-top,.timeline-date,.section-note,
+.stat-card small,.profile-mini small,.location-pill small,.brand small,
+.hero-meta,.crumb,.side-link,.timeline-main ul,.project-info p,
+.education-card p,.education-card small,.cert-empty p,.contact-card p,
+.profile-footer,.skill-heading small,.company span,.profile-card>p{
+ color:var(--muted-foreground)!important
+}
+.side-nav a{color:var(--muted-foreground)}
+.side-nav a span{color:var(--muted-foreground)}
+.hero-role,.company{color:var(--accent)}
+.hero-card h1 em{background:none;color:var(--accent);-webkit-text-fill-color:var(--accent)}
+.eyebrow,.project-info>a,.text-link,.cert-empty a{color:var(--link)}
+.profile-tags span,.chips span{color:var(--foreground);background:var(--surface-raised);border-color:var(--line)}
+.career-switch{background:var(--surface-raised);border-color:var(--line)}
+.career-tab{color:var(--muted-foreground)}
+.career-tab.active{background:var(--accent);color:var(--accent-foreground);box-shadow:none}
+.current,.live-tag{color:var(--success-foreground);border-color:var(--success-foreground);background:color-mix(in srgb,var(--success-foreground) 12%,transparent)}
+.control-btn{color:var(--foreground);background:var(--surface-raised);border-color:var(--border-strong)}
+.btn.secondary{color:var(--foreground);background:var(--surface-raised);border-color:var(--border-strong)}
+.contact-links a{color:var(--foreground);background:var(--surface-raised);border-color:var(--line)}
+.contact-links .whatsapp-link{color:var(--success-foreground)}
+.edu-badge{color:var(--success-foreground)}
+button:focus-visible,a:focus-visible{outline:3px solid var(--focus-ring)!important;outline-offset:3px;box-shadow:0 0 0 2px var(--page-bg)!important}
+html[dir=rtl] .side-nav a.active{box-shadow:inset -3px 0 var(--success-foreground)}
+/* Improve legibility: avoid tiny metadata and low-contrast captions. */
+.nav-label,.section-kicker,.card-top,.timeline-date,.section-note,
+.hero-meta,.crumb,.side-link,.location-pill small,.profile-mini small,
+.brand small,.stat-card small,.skill-heading small,.company span,
+.education-card small,.profile-footer,.project-visual>span,.project-visual i{
+ font-size:11px
+}
+.timeline-main ul,.project-info p,.education-card p,.cert-empty p,
+.contact-card p,.hero-text{font-size:13px;line-height:1.75}
+.profile-tags span,.chips span{font-size:11px}
+@media(max-width:580px){
+ .nav-label,.section-kicker,.timeline-date,.section-note,.hero-meta,
+ .crumb,.side-link,.location-pill small,.profile-mini small,.brand small,
+ .stat-card small,.skill-heading small,.company span,.education-card small,
+ .profile-footer{font-size:11px}
+ .timeline-main ul,.project-info p,.education-card p,.cert-empty p,
+ .contact-card p,.hero-text{font-size:13px}
+}
