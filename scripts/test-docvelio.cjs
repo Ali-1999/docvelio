@@ -80,7 +80,7 @@ function listPages(folder){
  }
 }
 listPages(root);
-assert(htmlPages.length===584,'Expected 582 index pages plus custom 404, got '+htmlPages.length);
+assert(htmlPages.length===584,'Expected 583 index pages plus custom 404, got '+htmlPages.length);
 const headerTemplates=new Map(),titles=new Set(),pageTitles=new Map();
 let tips=0,headCount=0;
 for(const file of htmlPages){
@@ -234,5 +234,5 @@ for(const lang of languages){
  }
 }
 assert.equal(articleTitles.size,10,'Expected 10 distinct English blog titles');
-assert((generatedSitemap.match(/<url>/g)||[]).length===582,'Blog sitemap coverage missing');
+assert((generatedSitemap.match(/<url>/g)||[]).length===583,'Blog sitemap coverage missing');
 console.log('PASS: 100 localized topic pages, 10 blog indexes, 10 different English topics and multilingual discovery links.');
