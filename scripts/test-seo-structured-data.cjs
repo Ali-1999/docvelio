@@ -27,6 +27,17 @@ assert.equal(homeNodes.filter(node=>node['@type']==='WebSite').length,1,'Homepag
 assert.ok(has(homeNodes,'Person'),'Homepage operator Person entity missing');
 assert.ok(has(homeNodes,'Organization'),'Homepage Organization entity missing');
 assert.ok(has(homeNodes,'ItemList'),'Homepage visible tools ItemList missing');
+assert.ok(has(homeNodes,'FAQPage'),'Homepage visible FAQ schema missing');
+const homeHtml=fs.readFileSync(home,'utf8');
+assert.ok(homeHtml.includes('Free PDF tools'),'Homepage body must include its primary PDF-tools phrase');
+assert.ok(homeHtml.includes('dv-home-faq'),'Homepage must render the FAQ answers represented in structured data');
+assert.ok(homeHtml.includes('property="og:image"'),'Homepage Open Graph image missing');
+assert.ok(homeHtml.includes('name="twitter:image"'),'Homepage Twitter image missing');
+const faqBlock=homeHtml.match(/<script id="dv-home-faq-schema" type="application\/ld\+json">([\s\S]*?)<\/script>/);
+assert.ok(faqBlock,'Homepage FAQ JSON-LD missing');
+const faq=JSON.parse(faqBlock[1]);
+assert.equal(faq.mainEntity.length,4,'Homepage should contain four visible FAQ questions');
+
 let guides=0,blogs=0,collections=0;
 for(const file of pages){
  const relative=path.relative(root,file).replaceAll('\\','/');
