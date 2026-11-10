@@ -93,14 +93,22 @@ for(const file of htmlPages){
  assert(html.includes('<main'),'No main content: '+rel);
  const nav=(html.match(/<header\b[^>]*>[\s\S]*?<\/header>/gi)||[]);
  assert(nav.length===1,'Expected exactly one header: '+rel);
- assert(nav[0].includes('data-dv-unified="1"'),'Missing shared header: '+rel);
- assert(nav[0].includes('aria-controls="dv-primary-nav"'),'Mobile navigation not accessible: '+rel);
- assert(nav[0].includes('id="language-select"'),'Language switcher missing: '+rel);
- assert(nav[0].includes('data-page="'+route+'"'),'Language switcher wrong route: '+rel);
- const norm=nav[0].replace(/data-page="[^"]*"/,'data-page=""');
- if(!headerTemplates.has(locale))headerTemplates.set(locale,norm);
- assert.equal(norm,headerTemplates.get(locale),'Header differs in language '+locale+': '+rel);
- assert(html.includes('href="/assets/shared-header.css"'),'Shared CSS missing: '+rel);
+ if(route==='ali-hamza'){
+  assert(nav[0].includes('class="site-header"'),'Portfolio-owned header missing');
+  assert(!nav[0].includes('data-dv-unified="1"'),'Docvelio global header must not be used on portfolio');
+  assert(!html.includes('href="/assets/shared-header.css"'),'Docvelio shared header CSS must not be injected on portfolio');
+  assert(html.includes('class="portfolio-footer"'),'Portfolio-owned footer missing');
+  assert(html.includes('class="whatsapp-float"'),'Sticky WhatsApp contact missing');
+ }else{
+  assert(nav[0].includes('data-dv-unified="1"'),'Missing shared header: '+rel);
+  assert(nav[0].includes('aria-controls="dv-primary-nav"'),'Mobile navigation not accessible: '+rel);
+  assert(nav[0].includes('id="language-select"'),'Language switcher missing: '+rel);
+  assert(nav[0].includes('data-page="'+route+'"'),'Language switcher wrong route: '+rel);
+  const norm=nav[0].replace(/data-page="[^"]*"/,'data-page=""');
+  if(!headerTemplates.has(locale))headerTemplates.set(locale,norm);
+  assert.equal(norm,headerTemplates.get(locale),'Header differs in language '+locale+': '+rel);
+  assert(html.includes('href="/assets/shared-header.css"'),'Shared CSS missing: '+rel);
+ }
  assert(html.includes('data-dv-editorial="1"') || route==='ali-hamza' || route==='blog' || route.startsWith('blog/') || (route==='image-editor'||route.startsWith('image-tools/')||route==='cbm-calculator'||route.startsWith('shipping-tools/') || ['tools/qr-code-generator','tools/barcode-generator'].includes(route)),'Missing relevant page content: '+rel);
  const heading=(html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/gi)||[]);
  assert(heading.length===1,'Missing or duplicated page heading: '+rel);
