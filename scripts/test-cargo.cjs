@@ -54,5 +54,5 @@ for(const lang of langs){
 }
 assert.equal(titles.size,6);
 const xml=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
-assert.equal((xml.match(/<loc>/g)||[]).length,582);
-console.log('PASS: CBM numeric maths, security, 60 localized pages, canonical metadata and 580 URLs.');
+assert.equal((xml.match(/<loc>/g)||[]).length,583);
+console.log('PASS: CBM numeric maths, security, 60 localized pages, canonical metadata and 581 URLs.');
