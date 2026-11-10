@@ -19,6 +19,7 @@ function patch(html,location){
  // Idempotency for local post-build repeats. Never replace a different badge.
  const marker=new RegExp('<!-- DV_FAZIER_BADGE_START -->[\\s\\S]*?<!-- DV_FAZIER_BADGE_END -->','g');
  const without=html.replace(marker,'');
+ if(location==='ali-hamza/index.html')return without;
  const all=without.match(/<footer\b[^>]*>[\s\S]*?<\/footer>/gi)||[];
  if(all.length!==1)throw Error('Expected exactly one footer at '+location+'; found '+all.length);
  if(without.includes('href="'+link+'"'))throw Error('Unmarked Fazier badge found: '+location);
