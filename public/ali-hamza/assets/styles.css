@@ -159,16 +159,16 @@ html[dir=rtl] .side-nav a.active{box-shadow:inset -3px 0 var(--success-foregroun
 .hero-meta,.crumb,.side-link,.location-pill small,.profile-mini small,
 .brand small,.stat-card small,.skill-heading small,.company span,
 .education-card small,.profile-footer,.project-visual>span,.project-visual i{
- font-size:11px
+ font-size:12px
 }
 .timeline-main ul,.project-info p,.education-card p,.cert-empty p,
-.contact-card p,.hero-text{font-size:13px;line-height:1.75}
-.profile-tags span,.chips span{font-size:11px}
+.contact-card p,.hero-text{font-size:14px;line-height:1.75}
+.profile-tags span,.chips span{font-size:12px}
 @media(max-width:580px){
  .nav-label,.section-kicker,.timeline-date,.section-note,.hero-meta,
  .crumb,.side-link,.location-pill small,.profile-mini small,.brand small,
  .stat-card small,.skill-heading small,.company span,.education-card small,
- .profile-footer{font-size:11px}
+ .profile-footer{font-size:12px}
  .timeline-main ul,.project-info p,.education-card p,.cert-empty p,
- .contact-card p,.hero-text{font-size:13px}
+ .contact-card p,.hero-text{font-size:14px}
 }
