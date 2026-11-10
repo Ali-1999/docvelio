@@ -31,7 +31,7 @@ function walk(dir){
 function apply(file){
  let html=fs.readFileSync(file,'utf8');
  if(!html.includes('</head>'))throw Error('Missing head: '+file);
- const scripts=[...html.matchAll(/<script\\s+type=["']application\\/ld\\+json["'][^>]*>([\\s\\S]*?)<\\/script>/gi)];
+ const scripts=[...html.matchAll(/<script\s+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
  let found=false,changed=false;
  for(const match of scripts){
   let data;
