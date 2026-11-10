@@ -34,7 +34,7 @@ const inline=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi)].ma
 assert.equal(inline.length,1,'Expected exactly one local tool handler');new vm.Script(inline[0]);
 const xml=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 const locs=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
-assert(locs.length>=584,'Sitemap unexpectedly has fewer than 584 URLs');
+assert(locs.length>=585,'Sitemap unexpectedly has fewer than 584 URLs');
 assert.equal(new Set(locs).size,locs.length,'Duplicate XML sitemap URLs');
 assert(locs.includes(url),'New URL missing from XML sitemap');
 const txt=fs.readFileSync(path.join(root,'sitemap.txt'),'utf8').trim().split(/\r?\n/);
