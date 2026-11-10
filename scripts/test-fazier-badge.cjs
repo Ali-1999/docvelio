@@ -22,6 +22,7 @@ let total=0,langs=new Set();
 for(const file of files){
  const rel=path.relative(root,file).replaceAll('\\','/');
  const html=fs.readFileSync(file,'utf8');
+ if(rel==='ali-hamza/index.html'){assert(!/<footer\\b/.test(html),'Portfolio footer must remain removed');assert(!html.includes('DV_FAZIER_BADGE_START'),'Portfolio must be excluded from site footer badge');total++;continue;}
  const marked=(html.match(/<!-- DV_FAZIER_BADGE_START -->/g)||[]).length;
  const urls=(html.match(/href="https:\/\/fazier\.com\/launches\/docvelio\.com"/g)||[]).length;
  assert.equal(marked,1,'Badge marker count: '+rel);
