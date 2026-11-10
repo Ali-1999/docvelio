@@ -110,7 +110,7 @@ function main(){
  let adapted=0;
  walk(root,file=>{
   const relative=path.relative(root,file).replaceAll('\\','/');
-  if(relative==='404.html')return;
+  if(relative==='404.html'||relative==='ali-hamza/index.html')return;
   const seg=relative.split('/'),lang=langs.slice(1).includes(seg[0])?seg.shift():'en',route=seg.join('/');
   let s=fs.readFileSync(file,'utf8');
   if(!s.includes('data-dv-unified="1"'))throw Error('Header missing '+relative);
