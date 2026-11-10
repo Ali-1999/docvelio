@@ -4,9 +4,9 @@ const root=path.join(__dirname,'..','public');
 const xml=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 const txt=fs.readFileSync(path.join(root,'sitemap.txt'),'utf8').trim().split(/\r?\n/);
 const list=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
-assert.equal(list.length,583,'Production build should include wheel picker as 581st URL');
-assert.equal(new Set(list).size,583);
-assert.equal(new Set(txt).size,583);
+assert.equal(list.length,584,'Production build should include wheel picker as 582nd URL');
+assert.equal(new Set(list).size,584);
+assert.equal(new Set(txt).size,584);
 assert(list.includes('https://docvelio.com/wheel-of-names/'));
 for(const slug of ['edit-pdf','view-pdf','word-editor','merge-pdf','split-pdf','rotate-pdf','images-to-pdf','watermark-pdf','remove-pages','organize-pdf','pdf-to-jpg','pdf-to-png','pdf-to-text','sign-pdf','fill-pdf','add-image-to-pdf','compress-image','compress-pdf']){
  const html=fs.readFileSync(path.join(root,'tools',slug,'index.html'),'utf8');
