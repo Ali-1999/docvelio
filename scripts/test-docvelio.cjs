@@ -254,7 +254,7 @@ assert(!portfolio.includes('dv-global-header')&&!portfolio.includes('data-dv-uni
 assert(portfolio.includes('https://wa.me/966570826521'),'Portfolio WhatsApp contact link missing');
 assert(portfolio.includes('class="whatsapp-float"')&&portfolio.includes('aria-label="Chat with Ali Hamza on WhatsApp"'),'Sticky WhatsApp CTA missing');
 const portfolioCss=fs.readFileSync(path.join(root,'ali-hamza','assets','styles.css'),'utf8');
-assert(portfolioCss.includes('--purple:#8b78ff')&&portfolioCss.includes('--blue:#58b9ff'),'Portfolio colour system missing');
+assert(portfolioCss.includes('--purple:#66d1b5')&&portfolioCss.includes('--orange:#e8b978'),'Portfolio colour system missing');
 assert(portfolio.includes('class="project-card glass"')&&portfolio.includes('Docvelio')&&portfolio.includes('Applinovo')&&portfolio.includes('Asan Education'),'Portfolio project cards missing');
 assert(portfolioCss.includes('.project-grid{display:grid')&&portfolioCss.includes('.project-card{overflow:hidden'),'Responsive project-card layout missing');
 assert(portfolio.includes('id="langToggle"')&&portfolio.includes('id="themeToggle"'),'Bilingual and theme controls missing');
