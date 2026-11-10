@@ -50,7 +50,7 @@ function walk(dir){
   let html=fs.readFileSync(file,'utf8');
   const rel=path.relative(root,file).replaceAll('\\','/');
   // Standalone portfolio owns its own branded navigation and footer; do not inject Docvelio chrome.
-  if(rel==='ali-hamza/index.html' || html.includes('data-dv-editorial="1"')){pages++;continue;}
+  if(rel==='ali-hamza/index.html'){pages++;continue;}
   const parts=rel.split('/'),locale=languages.includes(parts[0])&&parts[0]!=='en'?parts.shift():'en';
   const route=parts.slice(0,-1).join('/');
   if(!/(\<header\b[^>]*>[\s\S]*?<\/header>)/i.test(html))throw Error('Missing header: '+rel);
