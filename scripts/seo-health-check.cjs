@@ -14,7 +14,8 @@ for(const file of pages){
  if(!title)mark('error',rel+': title missing');
  else if(titles.has(title))mark('warning',rel+': duplicate title also used by '+titles.get(title));
  else titles.set(title,rel);
- if(!html.includes('href="https://www.tiktok.com/@docvelio"'))
+ // The standalone portfolio intentionally has no Docvelio footer or footer social links.
+ if(rel!=='ali-hamza/index.html'&&!html.includes('href="https://www.tiktok.com/@docvelio"'))
   mark('error',rel+': TikTok footer link missing');
  const meta=tags(html,'meta'),links=tags(html,'link');
  const desc=meta.find(t=>attr(t,'name').toLowerCase()==='description');
