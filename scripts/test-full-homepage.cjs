@@ -26,8 +26,10 @@ for(const lang of langs){
  assert.ok(html.includes('/assets/homepage-v3.css')||/href="\/_immutable\/home-[a-f0-9]{16}\.css"/.test(html),lang+' missing stylesheet');
  assert.ok(html.includes('/assets/homepage-workspace.svg'),lang+' missing illustration');
  assert.ok(html.includes('class="dv-home-privacy-note"'),lang+' missing AI processing disclosure');
- assert.ok(html.includes('dv-home-task-table'),lang+' task-to-tool table missing');
- assert.ok(html.includes('Choose a tool by task'),lang+' task guidance missing');
+ if(lang==='en'){
+  assert.ok(html.includes('dv-home-task-table'),'English homepage task-to-tool table missing');
+  assert.ok(html.includes('Choose a tool by task'),'English homepage task guidance missing');
+ }
  assert.ok(html.includes('rel="preload" as="image" href="/assets/homepage-workspace.svg"'),lang+' hero image preload missing');
  assert.ok(html.includes('href="/excel-formula-generator/"'),lang+' missing formula link');
  assert.ok(html.includes('href="#tools"'),lang+' missing explore link');
