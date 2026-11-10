@@ -10,7 +10,7 @@ const html=[];
   else if(entry.name.endsWith('.html'))html.push(file);
  }
 })(root);
-assert.equal(html.length,583,'Expected 582 pages plus custom 404');
+assert.equal(html.length,584,'Expected 583 pages plus custom 404');
 const css=fs.readFileSync(path.join(root,'assets','design-system.css'),'utf8');
 const script=fs.readFileSync(path.join(root,'assets','design-system.js'),'utf8');
 assert(css.length>12000&&css.length<30000,'Expected single lightweight design file');
@@ -53,4 +53,4 @@ assert.equal(types.tool,182,'All 180 localized tools and 2 standalone generators
 assert.equal(types.blog,110,'All 110 blog pages should be styled');
 assert.equal(types.home,10,'All 10 homepages should be styled');
 assert.equal(types.notfound,1,'Custom 404 styling missing');
-console.log('PASS: responsive design and accessible navigation present across 583 pages',types);
+console.log('PASS: responsive design and accessible navigation present across 584 pages',types);
