@@ -1,18 +1,26 @@
-/* Ahrefs audit remediation: fill genuinely missing social preview metadata. */
+/* Normalize social previews to the generated same-site 1200x630 PNG on every page. */
 'use strict';
 const fs=require('node:fs'),path=require('node:path');
 const root=path.join(__dirname,'../public');let checked=0,updated=0;
-function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const f=path.join(dir,e.name);if(e.isDirectory())walk(f);else if(e.name==='index.html')fix(f);}}
+function walk(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory())walk(file);else if(entry.name==='index.html')fix(file);}}
 function attr(tag,key){return tag.match(new RegExp('(?:^|\\s)'+key+'\\s*=\\s*(["\\x27])([^"\\x27]*)\\1','i'))?.[2]||'';}
-function esc(s){return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');}
-function clean(s){return s.replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();}
+function esc(value){return String(value).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');}
+function setMeta(html,kind,key,value){
+ const tags=html.match(/<meta\b[^>]*>/gi)||[];
+ const existing=tags.filter(tag=>attr(tag,kind)===key);
+ if(existing.length===1&&attr(existing[0],'content')===value)return html;
+ for(const tag of existing)html=html.replace(tag,'');
+ const tag='<meta '+kind+'="'+key+'" content="'+esc(value)+'">';
+ return html.replace('</head>',tag+'</head>');
+}
 function fix(file){
  let html=fs.readFileSync(file,'utf8'),before=html;
- const title=clean(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]||'');
- const meta=html.match(/<meta\b[^>]*>/gi)||[],links=html.match(/<link\b[^>]*>/gi)||[];
- const desc=meta.find(t=>attr(t,'name')==='description');
+ const title=html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]?.replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').trim()||'';
+ const meta=html.match(/<meta\b[^>]*>/gi)||[];
+ const desc=meta.find(tag=>attr(tag,'name')==='description');
  const description=desc?attr(desc,'content'):'';
- const canonical=links.find(t=>attr(t,'rel')==='canonical');
+ const links=html.match(/<link\b[^>]*>/gi)||[];
+ const canonical=links.find(tag=>attr(tag,'rel')==='canonical');
  const url=canonical?attr(canonical,'href'):'';
  if(!title||!description||!url)throw Error('Missing essential metadata: '+file);
  const isArticle=html.includes('"BlogPosting"')||html.includes('"Article"');
@@ -22,20 +30,20 @@ function fix(file){
   ['property','og:title',title],
   ['property','og:description',description],
   ['property','og:url',url],
+  ['property','og:site_name','Docvelio'],
   ['property','og:image',image],
+  ['property','og:image:type','image/png'],
   ['property','og:image:width','1200'],
   ['property','og:image:height','630'],
+  ['property','og:image:alt','Docvelio browser-based PDF, Word and image tools'],
   ['name','twitter:card','summary_large_image'],
   ['name','twitter:title',title],
   ['name','twitter:description',description],
   ['name','twitter:image',image]
  ];
- for(const [kind,key,value] of values){
-  if(meta.some(t=>attr(t,kind)===key))continue;
-  html=html.replace('</head>','<meta '+kind+'="'+key+'" content="'+esc(value)+'"></head>');
- }
- if(html!==before){fs.writeFileSync(file,html);updated++;}
+ for(const [kind,key,value] of values)html=setMeta(html,kind,key,value);
+ if(html!==before){fs.writeFileSync(file,html,'utf8');updated++;}
  checked++;
 }
 walk(root);
-console.log('AHREFS social tags: '+checked+' pages checked, '+updated+' pages completed.');
+console.log('Social preview normalization: '+checked+' pages checked, '+updated+' normalized to the same-site 1200x630 PNG.');
