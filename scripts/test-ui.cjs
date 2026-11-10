@@ -39,7 +39,7 @@ for(const file of html){
  if(rel==='404.html'){types.notfound++;continue;}
  if(rel==='ali-hamza/index.html'){
   assert(/class="[^"]*site-header[^"]*"/.test(source)&&!source.includes('data-dv-unified="1"'),'Portfolio must use its own header');
-  assert(/class="[^"]*portfolio-footer[^"]*"/.test(source),'Portfolio must use its own footer');
+  assert(!/<footer\b/.test(source),'Portfolio footer should remain removed');
   assert(source.includes('class="whatsapp-float"'),'Portfolio sticky WhatsApp CTA missing');
  }else{
   assert(source.includes('data-dv-unified="1"'),'No unified header: '+rel);
