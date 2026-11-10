@@ -23,6 +23,7 @@ for(const lang of languages){
  assert.match(html,/data-dv-home-full="v3"/,lang+' homepage design lost');
  assert.match(html,/data-dv-home-tools="v2"/,lang+' toolkit lost');
  assert.match(html,/<h1\b/i,lang+' page heading lost');
+  assert.ok(html.includes('rel="preload" as="image" href="/assets/homepage-workspace.svg"'),lang+' hero illustration is not preloaded');
  assert.ok(html.includes('analytics.ahrefs.com/analytics.js'),lang+' Ahrefs missing');
  assert.ok(html.includes('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'),lang+' AdSense missing');
  assert.ok(html.includes('href="https://docvelio.com/')||html.includes('rel="canonical"'),lang+' canonical lost');
