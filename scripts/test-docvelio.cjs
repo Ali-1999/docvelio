@@ -94,10 +94,10 @@ for(const file of htmlPages){
  const nav=(html.match(/<header\b[^>]*>[\s\S]*?<\/header>/gi)||[]);
  assert(nav.length===1,'Expected exactly one header: '+rel);
  if(route==='ali-hamza'){
-  assert(nav[0].includes('class="site-header"'),'Portfolio-owned header missing');
+  assert(/class="[^"]*site-header[^"]*"/.test(nav[0]),'Portfolio-owned header missing');
   assert(!nav[0].includes('data-dv-unified="1"'),'Docvelio global header must not be used on portfolio');
   assert(!html.includes('href="/assets/shared-header.css"'),'Docvelio shared header CSS must not be injected on portfolio');
-  assert(html.includes('class="portfolio-footer"'),'Portfolio-owned footer missing');
+  assert(/class="[^"]*portfolio-footer[^"]*"/.test(html),'Portfolio-owned footer missing');
   assert(html.includes('class="whatsapp-float"'),'Sticky WhatsApp contact missing');
  }else{
   assert(nav[0].includes('data-dv-unified="1"'),'Missing shared header: '+rel);
