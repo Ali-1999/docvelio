@@ -97,7 +97,7 @@ for(const file of htmlPages){
   assert(/class="[^"]*site-header[^"]*"/.test(nav[0]),'Portfolio-owned header missing');
   assert(!nav[0].includes('data-dv-unified="1"'),'Docvelio global header must not be used on portfolio');
   assert(!html.includes('href="/assets/shared-header.css"'),'Docvelio shared header CSS must not be injected on portfolio');
-  assert(/class="[^"]*portfolio-footer[^"]*"/.test(html),'Portfolio-owned footer missing');
+  assert(!/<footer\\b/.test(html),'Portfolio footer should be removed as requested');
   assert(html.includes('class="whatsapp-float"'),'Sticky WhatsApp contact missing');
  }else{
   assert(nav[0].includes('data-dv-unified="1"'),'Missing shared header: '+rel);
@@ -249,7 +249,7 @@ const portfolioPath=path.join(root,'ali-hamza','index.html');
 assert(fs.existsSync(portfolioPath),'Ali Hamza portfolio route missing');
 const portfolio=fs.readFileSync(portfolioPath,'utf8');
 assert(portfolio.includes('data-dv-editorial="1"'),'Portfolio editorial marker missing');
-assert(/class="[^"]*site-header[^"]*"/.test(portfolio)&&/class="[^"]*portfolio-footer[^"]*"/.test(portfolio),'Portfolio-owned header/footer missing');
+assert(/class="[^"]*site-header[^"]*"/.test(portfolio)&&!/<footer\\b/.test(portfolio),'Portfolio-owned header present and footer removed');
 assert(!portfolio.includes('dv-global-header')&&!portfolio.includes('data-dv-unified="1"'),'Docvelio global header must not be injected into portfolio');
 assert(portfolio.includes('https://wa.me/966570826521'),'Portfolio WhatsApp contact link missing');
 assert(portfolio.includes('class="whatsapp-float"')&&portfolio.includes('aria-label="Chat with Ali Hamza on WhatsApp"'),'Sticky WhatsApp CTA missing');
@@ -264,4 +264,4 @@ for(const script of ['site-shell.cjs','final-global-shell.cjs']){
  const source=fs.readFileSync(path.join(__dirname,script),'utf8');
  assert(source.includes("rel==='ali-hamza/index.html'"),'Standalone portfolio exclusion missing from '+script);
 }
-console.log('PASS: Ali Hamza standalone portfolio keeps its own header/footer, Kan3an-inspired glass dashboard, bilingual controls and responsive project cards and sticky WhatsApp CTA.');
+console.log('PASS: Ali Hamza standalone portfolio keeps its own header with no footer, Kan3an-inspired glass dashboard, bilingual controls and responsive project cards and sticky WhatsApp CTA.');
