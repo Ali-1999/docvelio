@@ -1,0 +1,43 @@
+name: Docvelio production Lighthouse audit
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 4 * * 1'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lighthouse-performance.yml'
+permissions:
+  contents: read
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Install pinned Lighthouse CLI
+        run: npm install --no-save --no-audit --no-fund lighthouse@13.6.0
+      - name: Measure live homepage on mobile
+        run: |
+          mkdir -p reports
+          npx lighthouse https://docvelio.com/ --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage" --form-factor=mobile --throttling-method=simulate --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=reports/home-mobile.json --quiet
+      - name: Measure live Merge PDF page on mobile
+        run: |
+          npx lighthouse https://docvelio.com/tools/merge-pdf/ --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage" --form-factor=mobile --throttling-method=simulate --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=reports/merge-pdf-mobile.json --quiet
+      - name: Summarise measured scores and Core Web Vitals diagnostics
+        run: node scripts/summarize-lighthouse.cjs
+      - name: Upload complete Lighthouse reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: docvelio-production-lighthouse
+          path: |
+            reports/home-mobile.json
+            reports/merge-pdf-mobile.json
+            reports/lighthouse-summary.md
+          if-no-files-found: warn
+          retention-days: 21
