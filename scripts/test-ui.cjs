@@ -38,8 +38,8 @@ for(const file of html){
   'UI script must defer and load before closing body: '+rel);
  if(rel==='404.html'){types.notfound++;continue;}
  if(rel==='ali-hamza/index.html'){
-  assert(source.includes('class="site-header"')&&!source.includes('data-dv-unified="1"'),'Portfolio must use its own header');
-  assert(source.includes('class="portfolio-footer"'),'Portfolio must use its own footer');
+  assert(/class="[^"]*site-header[^"]*"/.test(source)&&!source.includes('data-dv-unified="1"'),'Portfolio must use its own header');
+  assert(/class="[^"]*portfolio-footer[^"]*"/.test(source),'Portfolio must use its own footer');
   assert(source.includes('class="whatsapp-float"'),'Portfolio sticky WhatsApp CTA missing');
  }else{
   assert(source.includes('data-dv-unified="1"'),'No unified header: '+rel);
