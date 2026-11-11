@@ -18,12 +18,6 @@
     "binding": "AI"
   },
   "previews": {
-    "analytics_engine_datasets": [
-      {
-        "binding": "RECRUITMENT_ANALYTICS",
-        "dataset": "docvelio_preview_placeholder"
-      }
-    ],
     "ai": {
       "binding": "AI"
     }
