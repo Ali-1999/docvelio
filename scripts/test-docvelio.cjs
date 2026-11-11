@@ -268,7 +268,11 @@ assert(portfolioCss.includes('--purple:#66d1b5')&&portfolioCss.includes('--orang
 assert(portfolio.includes('class="project-card glass"')&&portfolio.includes('Docvelio')&&portfolio.includes('Applinovo')&&portfolio.includes('Asan Education'),'Portfolio project cards missing');
 assert(portfolioCss.includes('.project-grid{display:grid')&&portfolioCss.includes('.project-card{overflow:hidden'),'Responsive project-card layout missing');
 assert(portfolio.includes('id="langToggle"')&&portfolio.includes('id="themeToggle"'),'Bilingual and theme controls missing');
-assert(portfolio.includes('id="techTimeline"')&&portfolio.includes('id="opsTimeline"'),'Career pathway switch missing');
+assert(portfolio.includes('id="techTimeline"')&&portfolio.includes('Warehouse Administrator')&&!portfolio.includes('id="opsTimeline"'),'Unified experience timeline with Riyadh operations role last missing');
+assert(portfolio.indexOf('id="projects"')<portfolio.indexOf('id="experience"'),'Recruiter-focused projects-before-experience order missing');
+assert(portfolio.includes('Book a 30-min interview')&&portfolio.includes('data-open-interview'),'Recruiter interview CTA missing');
+assert(portfolio.includes('Transferable Iqama')&&portfolio.includes('Available immediately'),'Recruiter availability facts missing');
+assert(!portfolio.includes('id="certifications"'),'Empty certifications section should be hidden');
 assert(portfolioCss.includes('.whatsapp-float{position:fixed'),'Sticky WhatsApp styling missing');
 for(const script of ['site-shell.cjs','final-global-shell.cjs']){
  const source=fs.readFileSync(path.join(__dirname,script),'utf8');
