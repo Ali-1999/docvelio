@@ -16,5 +16,11 @@
   "main": "src/excel-formula-worker.js",
   "ai": {
     "binding": "AI"
-  }
+  },
+  "analytics_engine_datasets": [
+    {
+      "binding": "RECRUITMENT_ANALYTICS",
+      "dataset": "recruitment_performance"
+    }
+  ]
 }
