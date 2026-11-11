@@ -12,7 +12,7 @@
 <title>Ali Hamza Sabir | Software Engineer & Full Stack Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css"><script src="assets/app.js" defer></script>
+<link rel="stylesheet" href="assets/styles.css"><link rel="stylesheet" href="assets/ai-assistant.css"><script src="assets/app.js" defer></script><script src="assets/ai-assistant.js" defer></script>
 </head>
 <body>
 <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="ambient-grid"></div>
@@ -72,5 +72,29 @@
 <section class="content-section contact-section" id="contact"><div class="contact-card glass"><div><span class="section-kicker">06 / <span data-i18n="connect">CONNECT</span></span><h2 data-i18n="contactTitle">Let's build something useful.</h2><p data-i18n="contactText">For software development, website projects, e-commerce, digital operations or professional opportunities, get in touch.</p></div><div class="contact-links"><a href="mailto:alihamzasbr@gmail.com">✉ alihamzasbr@gmail.com</a><a href="tel:+966570826521">☎ +966 570 826 521</a><a href="https://www.linkedin.com/in/ali-hamza-19b014169/" target="_blank" rel="noopener">in LinkedIn ↗</a><a href="https://github.com/Ali-1999" target="_blank" rel="noopener">⌘ GitHub ↗</a><a class="whatsapp-link" href="https://wa.me/966570826521" target="_blank" rel="noopener">WhatsApp ↗</a></div></div></section>
 
 </main></div>
+<button class="ai-recruit-launcher" id="aiRecruitLauncher" type="button" aria-controls="aiRecruitPanel" aria-expanded="false"><span class="ai-dot"></span> Ask Ali's AI</button>
+<section class="ai-recruit-panel" id="aiRecruitPanel" role="dialog" aria-modal="false" aria-label="Ali Hamza AI recruitment assistant">
+ <header class="ai-recruit-head"><div class="ai-recruit-avatar">AH</div><div class="ai-recruit-head-copy"><strong>Ali's AI Recruitment Assistant</strong><small>CV-grounded answers · Riyadh, Saudi Arabia</small></div><button class="ai-recruit-close" id="aiRecruitClose" type="button" aria-label="Close chat">✕</button></header>
+ <div class="ai-recruit-disclaimer">You are chatting with an AI assistant, not Ali personally. Answers are based on his supplied CV.</div>
+ <div class="ai-recruit-messages" id="aiRecruitMessages" aria-live="polite"></div>
+ <div class="ai-recruit-quick" id="aiRecruitQuick"><button type="button" data-question="Summarise Ali's professional experience.">Experience</button><button type="button" data-question="What technical skills does Ali have?">Technical skills</button><button type="button" data-question="Tell me about Ali's education and projects.">Education & projects</button></div>
+ <button class="ai-recruit-book-toggle" id="aiRecruitBookToggle" type="button" style="margin:0 13px 9px;align-self:flex-start">Book an interview</button>
+ <form class="ai-recruit-book" id="aiRecruitBooking" autocomplete="on">
+  <h3>Schedule an interview with Ali</h3><p>30 minutes · Weekdays · Riyadh time (Asia/Riyadh). Slots are checked against the live calendar.</p>
+  <div class="ai-recruit-fields">
+   <label>Recruiter name<input name="name" required minlength="2" maxlength="100" autocomplete="name"></label>
+   <label>Work email<input name="email" type="email" required maxlength="254" autocomplete="email"></label>
+   <label>Company<input name="company" required minlength="2" maxlength="120" autocomplete="organization"></label>
+   <label>Position / role<input name="role" required minlength="2" maxlength="120"></label>
+   <label>Interview type<select name="type"><option>Online</option><option>Phone</option><option>In person</option></select></label>
+   <label>Date<input id="aiInterviewDate" name="date" type="date" required></label>
+   <label class="wide">Available time (Riyadh)<select id="aiInterviewSlot" name="time" required><option value="">Choose a date first</option></select></label>
+  </div>
+  <div class="ai-recruit-book-actions"><button class="ai-recruit-confirm" type="submit">Confirm interview</button></div>
+  <div class="ai-recruit-status" id="aiRecruitBookStatus" aria-live="polite"></div>
+  <div class="ai-recruit-privacy">Submitting sends a calendar invitation to the recruiter and Ali. Do not enter sensitive personal information.</div>
+ </form>
+ <form class="ai-recruit-composer" id="aiRecruitForm"><input id="aiRecruitInput" type="text" maxlength="1800" placeholder="Ask about Ali's CV, skills or experience…" autocomplete="off" required aria-label="Ask a question"><button class="ai-recruit-send" id="aiRecruitSend" type="submit">Send</button></form>
+</section>
 <a class="whatsapp-float" href="https://wa.me/966570826521?text=Hello%20Ali%2C%20I%20visited%20your%20portfolio." target="_blank" rel="noopener noreferrer" aria-label="Chat with Ali Hamza on WhatsApp">☏ <span>WhatsApp</span></a>
 </body></html>
