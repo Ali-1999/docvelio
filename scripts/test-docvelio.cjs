@@ -257,6 +257,7 @@ assert(portfolio.includes('id="aiRecruitPanel"')&&portfolio.includes('id="aiRecr
 assert(portfolio.includes('assets/ai-assistant.css')&&portfolio.includes('assets/ai-assistant.js'),'AI recruitment assets are not loaded');
 const aiAssistantJs=fs.readFileSync(path.join(root,'ali-hamza','assets','ai-assistant.js'),'utf8');
 const aiAssistantCss=fs.readFileSync(path.join(root,'ali-hamza','assets','ai-assistant.css'),'utf8');
+assert.doesNotThrow(()=>new Function(aiAssistantJs),'AI recruitment assistant JavaScript must parse without syntax errors');
 assert(aiAssistantJs.includes('/api/recruitment/chat')&&aiAssistantJs.includes('/api/recruitment/availability')&&aiAssistantJs.includes('/api/recruitment/book'),'AI recruitment API integration missing');
 assert(aiAssistantJs.includes('aria-live')||portfolio.includes('aria-live="polite"'),'AI recruitment status is not announced accessibly');
 assert(aiAssistantCss.includes('.ai-recruit-panel')&&aiAssistantCss.includes('@media(max-width:560px)'),'AI recruitment responsive styles missing');
