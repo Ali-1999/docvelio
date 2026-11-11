@@ -16,5 +16,10 @@
   "main": "src/excel-formula-worker.js",
   "ai": {
     "binding": "AI"
+  },
+  "previews": {
+    "ai": {
+      "binding": "AI"
+    }
   }
 }
