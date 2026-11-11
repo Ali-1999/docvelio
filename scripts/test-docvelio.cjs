@@ -266,7 +266,8 @@ assert(workerSource.includes('GOOGLE_REFRESH_TOKEN')&&workerSource.includes('sen
 assert(aiAssistantJs.includes('/api/recruitment/metrics')&&aiAssistantJs.includes('firstTokenAt'),'Recruitment response performance instrumentation missing');
 assert(workerSource.includes('/api/recruitment/metrics')&&workerSource.includes('RECRUITMENT_ANALYTICS.writeDataPoint'),'Recruitment metrics endpoint or Analytics Engine write missing');
 const wranglerConfig=JSON.parse(fs.readFileSync(path.join(__dirname,'..','wrangler.jsonc'),'utf8').replace(/\/\*[\s\S]*?\*\//g,'').replace(/\/\/.*$/gm,''));
-assert(wranglerConfig.analytics_engine_datasets?.some(x=>x.binding==='RECRUITMENT_ANALYTICS'&&x.dataset==='recruitment_performance'),'Recruitment Analytics Engine binding missing');
+assert(!wranglerConfig.analytics_engine_datasets?.some(x=>x.binding==='RECRUITMENT_ANALYTICS'),'Deployment must not require Analytics Engine when the account feature is disabled');
+assert(workerSource.includes('if(env.RECRUITMENT_ANALYTICS)')&&workerSource.includes('recorded:Boolean(env.RECRUITMENT_ANALYTICS)'),'Recruitment analytics must degrade gracefully without an Analytics Engine binding');
 const portfolioCss=fs.readFileSync(path.join(root,'ali-hamza','assets','styles.css'),'utf8');
 assert(portfolioCss.includes('--purple:#66d1b5')&&portfolioCss.includes('--orange:#e8b978'),'Portfolio colour system missing');
 assert(portfolio.includes('class="project-card glass"')&&portfolio.includes('Docvelio')&&portfolio.includes('Applinovo')&&portfolio.includes('Asan Education'),'Portfolio project cards missing');
