@@ -15,26 +15,26 @@ The repository's existing keyword map supplies the initial route-to-intent hypot
 ## Research sources and findings
 
 ### Merge PDF
-- PDF24's merge page exposes drag-and-drop file ordering, page mode, bookmarks, blank pages, cover pages, table of contents and page labels. It explains how to merge and offers no-registration messaging. <https://tools.pdf24.org/en/merge-pdf> [source](https://tools.pdf24.org/en/merge-pdf). <Cite refs={["turn466068search0","turn466068search1"]}/>
-- Smallpdf's merge page describes file upload, multiple input formats and combining into one PDF; it links into a wider PDF suite. <Cite refs={["turn466068search11"]}/>
+- PDF24's merge page exposes drag-and-drop file ordering, page mode, bookmarks, blank pages, cover pages, table of contents and page labels. It explains how to merge and offers no-registration messaging. <https://tools.pdf24.org/en/merge-pdf> [source](https://tools.pdf24.org/en/merge-pdf).
+- Smallpdf's merge page describes file upload, multiple input formats and combining into one PDF; it links into a wider PDF suite.
 - Implication: Docvelio should show its actual ordering and page controls, file limits and export state clearly. Do not claim PDF24's extra formats or page mode unless Docvelio actually supports them.
 
 ### Compress PDF
-- PDF24 exposes adjustable DPI/image quality and multiple optional optimisation controls, including metadata, annotations and attachments. Its FAQ explicitly notes that image-heavy PDFs tend to compress more than text-only PDFs and that quality/size are trade-offs. <Cite refs={["turn466068search2"]}/>
-- Smallpdf positions a free compressor and notes usage limits and paid stronger compression modes. <Cite refs={["turn466068search6"]}/>
+- PDF24 exposes adjustable DPI/image quality and multiple optional optimisation controls, including metadata, annotations and attachments. Its FAQ explicitly notes that image-heavy PDFs tend to compress more than text-only PDFs and that quality/size are trade-offs.
+- Smallpdf positions a free compressor and notes usage limits and paid stronger compression modes.
 - Implication: show actual input size, output size and reduction where technically measured. Explain why a text-only or already-compressed PDF may show little reduction. Do not promise a percentage or exact KB outcome.
 
 ### Resize image
-- iLoveIMG's current resize page supports pixel and percentage modes, maximum dimensions, maintain-aspect-ratio and do-not-enlarge options. <Cite refs={["turn466068search14"]}/>
-- A further image-resizer result describes exact width/height, browser processing and result dimensions; treat that domain separately from the supplied competitor list. <Cite refs={["turn466068search5"]}/>
+- iLoveIMG's current resize page supports pixel and percentage modes, maximum dimensions, maintain-aspect-ratio and do-not-enlarge options.
+- A further image-resizer result describes exact width/height, browser processing and result dimensions; treat that domain separately from the supplied competitor list.
 - Implication: the useful benchmark is precise dimensions, aspect-ratio clarity and actual output dimensions. Bulk resizing is a feature opportunity only if Docvelio implements and tests it.
 
 ### Edit/annotate PDF
-- Smallpdf's PDF annotator lists highlighting, text, drawing, shapes and comments. <Cite refs={["turn466068search13"]}/>
+- Smallpdf's PDF annotator lists highlighting, text, drawing, shapes and comments.
 - Implication: Docvelio's page must distinguish annotations/overlays from replacing original PDF text. Covering text with a white shape is not secure redaction.
 
 ### Sign PDF
-- Adobe's Fill & Sign page describes selecting a PDF, signing/filling fields, account-related completion and download. It explains electronic signatures versus certificate-based digital signatures. <Cite refs={["turn466068search8"]}/>
+- Adobe's Fill & Sign page describes selecting a PDF, signing/filling fields, account-related completion and download. It explains electronic signatures versus certificate-based digital signatures.
 - Implication: Docvelio should state whether it supports typed/drawn/uploaded signatures, whether sign-in is required, what is exported and what legal/identity assurances are not provided. Do not imply certificate-based signing or audit trails without implementation.
 
 ## Keyword database
@@ -91,10 +91,10 @@ Note: Google Ads Keyword Planner's competition metric measures advertiser compet
 
 ## Evidence-linked live search samples
 
-- PDF24 merge page and controls: <https://tools.pdf24.org/en/merge-pdf> <Cite refs={["turn466068search0","turn466068search1"]}/>
-- Smallpdf merge page: <https://smallpdf.com/merge-pdf> <Cite refs={["turn466068search11"]}/>
-- PDF24 compression controls and FAQ: <https://tools.pdf24.org/en/compress-pdf> <Cite refs={["turn466068search2"]}/>
-- Smallpdf compression page and free-plan caveats: <https://smallpdf.com/compress-pdf> <Cite refs={["turn466068search6"]}/>
-- iLoveIMG resize controls: <https://www.iloveimg.com/resize-image> <Cite refs={["turn466068search14"]}/>
-- Smallpdf annotator controls: <https://smallpdf.com/pdf-annotator> <Cite refs={["turn466068search13"]}/>
-- Adobe Fill & Sign workflow: <https://www.adobe.com/acrobat/online/sign-pdf.html> <Cite refs={["turn466068search8"]}/>
+- PDF24 merge page and controls: <https://tools.pdf24.org/en/merge-pdf>
+- Smallpdf merge page: <https://smallpdf.com/merge-pdf>
+- PDF24 compression controls and FAQ: <https://tools.pdf24.org/en/compress-pdf>
+- Smallpdf compression page and free-plan caveats: <https://smallpdf.com/compress-pdf>
+- iLoveIMG resize controls: <https://www.iloveimg.com/resize-image>
+- Smallpdf annotator controls: <https://smallpdf.com/pdf-annotator>
+- Adobe Fill & Sign workflow: <https://www.adobe.com/acrobat/online/sign-pdf.html>
