@@ -172,3 +172,15 @@ html[dir=rtl] .side-nav a.active{box-shadow:inset -3px 0 var(--success-foregroun
  .timeline-main ul,.project-info p,.education-card p,.cert-empty p,
  .contact-card p,.hero-text{font-size:14px}
 }
+
+/* Recruiter-focused portfolio refinements */
+.hero-card .hero-actions{align-items:center;flex-wrap:wrap;gap:11px}
+.hero-card .hero-actions .text-link{padding:9px 3px;font-size:11px}
+.project-info p{min-height:unset;line-height:1.85}
+.project-info p strong{display:inline-block;color:var(--text);font-weight:700;margin-top:5px}
+.project-info p br+strong{margin-top:7px}
+#techTimeline .timeline-item:last-child{border-top:1px solid var(--line);margin-top:5px;padding-top:19px}
+#techTimeline .timeline-item:last-child .timeline-date{color:#72cdb1}
+.contact-links a[href^="tel:"]{display:none}
+.whatsapp-float{left:22px;right:auto}
+@media(max-width:700px){.hero-card .hero-actions{align-items:stretch}.hero-card .hero-actions .btn{justify-content:center}.hero-card .hero-actions .text-link{align-self:center}.whatsapp-float{left:12px;right:auto;bottom:14px}.ai-recruit-launcher{right:12px;bottom:14px}.ai-recruit-panel{right:8px;bottom:74px}}
