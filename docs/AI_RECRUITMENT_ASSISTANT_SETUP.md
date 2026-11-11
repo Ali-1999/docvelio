@@ -88,3 +88,35 @@ After secrets are set and the Worker is redeployed:
 - Availability is displayed in Asia/Riyadh time, not the recruiter's local timezone.
 - The app does not yet have a separate admin dashboard, recruiter CRM, persistent chat history, or email-based custom reminder workflow. Google Calendar is the booking record.
 - The supplied Full Stack CV lists Degenrex as Aug 2024–Present, while the separate warehouse CV/portfolio lists Lx Pantos as Jun 2026–Present. The assistant is instructed to disclose that both appear in the supplied materials and not speculate about the arrangement.
+
+
+## Response performance monitoring
+
+The assistant now sends privacy-minimised performance measurements to the Cloudflare Analytics Engine dataset `recruitment_performance`.
+
+Recorded for each chat request:
+- Status: success or error.
+- Time to first generated token (milliseconds).
+- Total time until the stream finishes (milliseconds).
+- Response character count.
+- Model identifier and feature label.
+
+The monitoring endpoint does **not** collect recruiter questions, generated answer text, names, email addresses, IP addresses or booking details. A metric is sent after each chat request; it does not delay displaying the answer.
+
+### Enable and inspect
+
+The Worker configuration declares the `RECRUITMENT_ANALYTICS` Analytics Engine binding. Deploy the Worker using the updated `wrangler.jsonc`. Then open Cloudflare Dashboard → Workers & Pages → docvelio → Analytics Engine / Metrics (the exact navigation label can vary) and select dataset `recruitment_performance`.
+
+If the binding is not active in the deployed Worker, the chat still works, but metrics are not persisted. The API status response exposes `analyticsConfigured` so this can be checked.
+
+### Metric fields
+
+- `blob1`: feature (`chat`)
+- `blob2`: result (`success` or `error`)
+- `blob3`: model identifier
+- `double1`: time to first token in milliseconds
+- `double2`: total response time in milliseconds
+- `double3`: response character count
+- `index1`: `portfolio`
+
+Use the dataset's SQL/API explorer to calculate request count, error rate, average and P95 for `double1` and `double2`. Treat the three-second first-token objective as achieved only after a meaningful live sample confirms it.
