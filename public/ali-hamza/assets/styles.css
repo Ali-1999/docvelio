@@ -184,3 +184,11 @@ html[dir=rtl] .side-nav a.active{box-shadow:inset -3px 0 var(--success-foregroun
 .contact-links a[href^="tel:"]{display:none}
 .whatsapp-float{left:22px;right:auto}
 @media(max-width:700px){.hero-card .hero-actions{align-items:stretch}.hero-card .hero-actions .btn{justify-content:center}.hero-card .hero-actions .text-link{align-self:center}.whatsapp-float{left:12px;right:auto;bottom:14px}.ai-recruit-launcher{right:12px;bottom:14px}.ai-recruit-panel{right:8px;bottom:74px}}
+
+/* Original profile portrait: transparent full-body cutout */
+.profile-visual:has(.portrait-photo){height:235px;min-height:235px;overflow:hidden;align-items:end}
+.profile-visual .portrait-photo{width:auto;height:225px;max-width:100%;object-fit:contain;object-position:center bottom;border:0;border-radius:0;box-shadow:0 12px 34px rgba(0,0,0,.22)}
+.profile-mini .avatar{overflow:hidden;background:transparent;border:1px solid rgba(116,221,190,.42);border-radius:13px;flex:0 0 42px}
+.profile-mini .avatar-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:center 12%;border-radius:12px}
+.profile-mini .avatar .online{z-index:2}
+@media(max-width:700px){.profile-visual:has(.portrait-photo){height:220px;min-height:220px}.profile-visual .portrait-photo{height:212px}}
