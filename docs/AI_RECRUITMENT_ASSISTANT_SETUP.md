@@ -92,7 +92,7 @@ After secrets are set and the Worker is redeployed:
 
 ## Response performance monitoring
 
-The assistant now sends privacy-minimised performance measurements to the Cloudflare Analytics Engine dataset `recruitment_performance`.
+The assistant includes optional, privacy-minimised performance instrumentation for the Cloudflare Analytics Engine dataset `recruitment_performance`. The deployment does not require this account feature to be enabled: chat and booking continue to work without the optional dataset.
 
 Recorded for each chat request:
 - Status: success or error.
@@ -105,9 +105,7 @@ The monitoring endpoint does **not** collect recruiter questions, generated answ
 
 ### Enable and inspect
 
-The Worker configuration declares the `RECRUITMENT_ANALYTICS` Analytics Engine binding. Deploy the Worker using the updated `wrangler.jsonc`. Then open Cloudflare Dashboard → Workers & Pages → docvelio → Analytics Engine / Metrics (the exact navigation label can vary) and select dataset `recruitment_performance`.
-
-If the binding is not active in the deployed Worker, the chat still works, but metrics are not persisted. The API status response exposes `analyticsConfigured` so this can be checked.
+The `RECRUITMENT_ANALYTICS` binding is intentionally omitted from the current `wrangler.jsonc` because Cloudflare returned API error 10089 when the account feature was disabled. This prevents an optional monitoring service from blocking production deployments. Chat and booking remain available; metrics are not persisted while the binding is absent. To restore monitoring later, enable Analytics Engine for the Cloudflare account, add the binding in `wrangler.jsonc`, and redeploy. The API status response exposes `analyticsConfigured` so this can be checked.
 
 ### Metric fields
 
