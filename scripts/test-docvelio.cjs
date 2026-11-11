@@ -253,6 +253,16 @@ assert(/class="[^"]*site-header[^"]*"/.test(portfolio)&&!/<footer\\b/.test(portf
 assert(!portfolio.includes('dv-global-header')&&!portfolio.includes('data-dv-unified="1"'),'Docvelio global header must not be injected into portfolio');
 assert(portfolio.includes('https://wa.me/966570826521'),'Portfolio WhatsApp contact link missing');
 assert(portfolio.includes('class="whatsapp-float"')&&portfolio.includes('aria-label="Chat with Ali Hamza on WhatsApp"'),'Sticky WhatsApp CTA missing');
+assert(portfolio.includes('id="aiRecruitPanel"')&&portfolio.includes('id="aiRecruitLauncher"'),'AI recruitment assistant widget missing');
+assert(portfolio.includes('assets/ai-assistant.css')&&portfolio.includes('assets/ai-assistant.js'),'AI recruitment assets are not loaded');
+const aiAssistantJs=fs.readFileSync(path.join(root,'ali-hamza','assets','ai-assistant.js'),'utf8');
+const aiAssistantCss=fs.readFileSync(path.join(root,'ali-hamza','assets','ai-assistant.css'),'utf8');
+assert(aiAssistantJs.includes('/api/recruitment/chat')&&aiAssistantJs.includes('/api/recruitment/availability')&&aiAssistantJs.includes('/api/recruitment/book'),'AI recruitment API integration missing');
+assert(aiAssistantJs.includes('aria-live')||portfolio.includes('aria-live="polite"'),'AI recruitment status is not announced accessibly');
+assert(aiAssistantCss.includes('.ai-recruit-panel')&&aiAssistantCss.includes('@media(max-width:560px)'),'AI recruitment responsive styles missing');
+const workerSource=fs.readFileSync(path.join(__dirname,'..','src','excel-formula-worker.js'),'utf8');
+for(const endpoint of ['/api/recruitment/chat','/api/recruitment/availability','/api/recruitment/book'])assert(workerSource.includes(endpoint),'Missing recruitment endpoint '+endpoint);
+assert(workerSource.includes('GOOGLE_REFRESH_TOKEN')&&workerSource.includes('sendUpdates=all'),'Google Calendar invitation integration missing');
 const portfolioCss=fs.readFileSync(path.join(root,'ali-hamza','assets','styles.css'),'utf8');
 assert(portfolioCss.includes('--purple:#66d1b5')&&portfolioCss.includes('--orange:#e8b978'),'Portfolio colour system missing');
 assert(portfolio.includes('class="project-card glass"')&&portfolio.includes('Docvelio')&&portfolio.includes('Applinovo')&&portfolio.includes('Asan Education'),'Portfolio project cards missing');
