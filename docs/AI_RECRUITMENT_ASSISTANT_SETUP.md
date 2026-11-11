@@ -92,7 +92,7 @@ After secrets are set and the Worker is redeployed:
 
 ## Response performance monitoring
 
-The assistant includes optional, privacy-minimised performance instrumentation for the Cloudflare Analytics Engine dataset `recruitment_performance`. The deployment does not require this account feature to be enabled: chat and booking continue to work without the optional dataset.
+Recruitment response-time analytics were removed because the Cloudflare account does not have Analytics Engine enabled. This does not affect CV-grounded chat or Google Calendar interview booking.
 
 Recorded for each chat request:
 - Status: success or error.
@@ -105,7 +105,7 @@ The monitoring endpoint does **not** collect recruiter questions, generated answ
 
 ### Enable and inspect
 
-The `RECRUITMENT_ANALYTICS` binding is intentionally omitted from the current `wrangler.jsonc` because Cloudflare returned API error 10089 when the account feature was disabled. This prevents an optional monitoring service from blocking production deployments. Chat and booking remain available; metrics are not persisted while the binding is absent. To restore monitoring later, enable Analytics Engine for the Cloudflare account, add the binding in `wrangler.jsonc`, and redeploy. The API status response exposes `analyticsConfigured` so this can be checked.
+Recruitment response-time metrics and the Analytics Engine endpoint have been removed. No Analytics Engine account feature or dataset is required. Chat and interview booking use separate endpoints and are unaffected.
 
 ### Metric fields
 
