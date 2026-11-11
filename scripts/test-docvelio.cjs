@@ -263,11 +263,9 @@ assert(aiAssistantCss.includes('.ai-recruit-panel')&&aiAssistantCss.includes('@m
 const workerSource=fs.readFileSync(path.join(__dirname,'..','src','excel-formula-worker.js'),'utf8');
 for(const endpoint of ['/api/recruitment/chat','/api/recruitment/availability','/api/recruitment/book'])assert(workerSource.includes(endpoint),'Missing recruitment endpoint '+endpoint);
 assert(workerSource.includes('GOOGLE_REFRESH_TOKEN')&&workerSource.includes('sendUpdates=all'),'Google Calendar invitation integration missing');
-assert(aiAssistantJs.includes('/api/recruitment/metrics')&&aiAssistantJs.includes('firstTokenAt'),'Recruitment response performance instrumentation missing');
-assert(workerSource.includes('/api/recruitment/metrics')&&workerSource.includes('RECRUITMENT_ANALYTICS.writeDataPoint'),'Recruitment metrics endpoint or Analytics Engine write missing');
 const wranglerConfig=JSON.parse(fs.readFileSync(path.join(__dirname,'..','wrangler.jsonc'),'utf8').replace(/\/\*[\s\S]*?\*\//g,'').replace(/\/\/.*$/gm,''));
-assert(!wranglerConfig.analytics_engine_datasets?.some(x=>x.binding==='RECRUITMENT_ANALYTICS'),'Deployment must not require Analytics Engine when the account feature is disabled');
-assert(workerSource.includes('if(env.RECRUITMENT_ANALYTICS)')&&workerSource.includes('recorded:Boolean(env.RECRUITMENT_ANALYTICS)'),'Recruitment analytics must degrade gracefully without an Analytics Engine binding');
+assert(!wranglerConfig.analytics_engine_datasets?.length,'Deployment must not require an Analytics Engine dataset');
+assert(!workerSource.includes('RECRUITMENT_ANALYTICS')&&!workerSource.includes('/api/recruitment/metrics')&&!aiAssistantJs.includes('/api/recruitment/metrics'),'Unsupported recruitment metrics integration must be removed');
 const portfolioCss=fs.readFileSync(path.join(root,'ali-hamza','assets','styles.css'),'utf8');
 assert(portfolioCss.includes('--purple:#66d1b5')&&portfolioCss.includes('--orange:#e8b978'),'Portfolio colour system missing');
 assert(portfolio.includes('class="project-card glass"')&&portfolio.includes('Docvelio')&&portfolio.includes('Applinovo')&&portfolio.includes('Asan Education'),'Portfolio project cards missing');
