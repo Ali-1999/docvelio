@@ -198,3 +198,9 @@ html[dir=rtl] .side-nav a.active{box-shadow:inset -3px 0 var(--success-foregroun
 .profile-visual .portrait-photo{display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;z-index:5!important;width:auto!important;height:235px!important;max-width:90%!important;max-height:none!important;object-fit:contain!important;object-position:center bottom!important;border:0!important;border-radius:0!important;box-shadow:0 10px 28px rgba(0,0,0,.2)!important}
 .profile-mini .avatar-photo{display:block!important;visibility:visible!important;opacity:1!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 12%!important}
 @media(max-width:700px){.profile-visual{height:230px!important;min-height:230px!important}.profile-visual .portrait-photo{height:220px!important}}
+
+/* Use the same crisp illustrated avatar in the hero and sidebar profile */
+.profile-visual{height:250px!important;min-height:250px!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important}
+.profile-visual .portrait-photo.avatar-hero{display:block!important;width:210px!important;height:210px!important;max-width:80%!important;max-height:210px!important;object-fit:cover!important;object-position:center!important;border:3px solid rgba(116,221,190,.72)!important;border-radius:50%!important;box-shadow:0 12px 34px rgba(0,0,0,.24),0 0 0 8px rgba(116,221,190,.09)!important;z-index:5!important}
+.profile-mini .avatar-photo{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;border-radius:12px!important}
+@media(max-width:700px){.profile-visual{height:225px!important;min-height:225px!important}.profile-visual .portrait-photo.avatar-hero{width:190px!important;height:190px!important;max-height:190px!important}}
