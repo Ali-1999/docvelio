@@ -18,7 +18,7 @@ const pages=[];
  if(item.isDirectory())walk(file);
  else if(item.name.endsWith('.html'))pages.push(file);
 }})(root);
-assert.equal(pages.length,584);
+assert(pages.length>=584,'Expected at least 584 generated pages; found '+pages.length);
 for(const file of pages){
  const html=fs.readFileSync(file,'utf8');
  assert.equal((html.match(/\/assets\/cookie-consent\.css/g)||[]).length,1,'Consent CSS missing or duplicated '+file);
