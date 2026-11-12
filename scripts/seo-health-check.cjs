@@ -65,19 +65,25 @@ if(fs.existsSync(path.join(root,'sitemap.xml'))){
  for(const url of unique)if(!pageUrls.has(url))mark('error','sitemap URL missing from generated pages: '+url);
  for(const url of pageUrls)if(!unique.has(url))mark('warning','generated page not in sitemap: '+url);
 }
-// AdSense publisher verification must be present in every generated HTML head.
+// AdSense ownership verification is retained, but ad delivery stays disabled pending CMP.
 const adsense='ca-pub-1566581424297065';
 for(const file of pages){
  const html=fs.readFileSync(file,'utf8');
  const head=html.split('</head>')[0]||'';
- const found=head.match(/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-1566581424297065/g)||[];
- if(found.length!==1)mark('error',path.relative(root,file)+': expected one correct AdSense script in head; found '+found.length);
-  const ahrefsMatches=head.match(/<script\b[^>]*src=["']https:\/\/analytics\.ahrefs\.com\/analytics\.js["'][^>]*>/gi)||[];
- if(ahrefsMatches.length!==1||!ahrefsMatches[0].includes('data-key="X1yDGYuFwX82LOKZR9z/Yg"'))
-  mark('error',path.relative(root,file)+': missing, duplicate or incorrect Ahrefs Analytics script');
+ const rel=path.relative(root,file).replaceAll('\\','/');
+ const found=head.match(/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js/g)||[];
+ if(found.length!==0)mark('error',rel+': AdSense ad-delivery script must remain disabled until a certified CMP is configured');
+ const ahrefsMatches=head.match(/<script\b[^>]*src=["']https:\/\/analytics\.ahrefs\.com\/analytics\.js["'][^>]*>/gi)||[];
+ if(ahrefsMatches.length!==0)mark('error',rel+': Ahrefs Analytics must be loaded dynamically only after consent');
  const accountTags=head.match(/<meta\b[^>]*name=["']google-adsense-account["'][^>]*>/gi)||[];
- if(accountTags.length!==1||!accountTags[0].includes('content="ca-pub-1566581424297065"'))
-  mark('error',path.relative(root,file)+': incorrect or duplicate AdSense account meta tag');
+ if(accountTags.length!==1||!accountTags[0].includes('content="'+adsense+'"'))
+  mark('error',rel+': incorrect or duplicate AdSense account meta tag');
+ if(rel==='ali-hamza/index.html'){
+  if(html.includes('/assets/docvelio-ga4.js')||html.includes('/assets/optional-analytics.js'))mark('error',rel+': portfolio must remain analytics-free without its own consent UI');
+ }else{
+  for(const asset of ['/assets/docvelio-ga4.js','/assets/optional-analytics.js','/assets/cookie-consent.css','/assets/cookie-consent.js'])
+   if(!html.includes(asset))mark('error',rel+': missing consent-controlled asset '+asset);
+ }
 }
 const adsFile=path.join(root,'ads.txt');
 if(!fs.existsSync(adsFile)||!fs.readFileSync(adsFile,'utf8').includes('google.com, pub-1566581424297065, DIRECT, f08c47fec0942fa0'))

@@ -28,7 +28,7 @@ async function probe(path,kind){
    // The TXT sitemap, robots.txt, DNS and representative HTML URLs are still
    // checked below; genuine errors on those endpoints remain hard failures.
    if(kind==='SITEMAP'&&r.status===403&&r.mitigation.toLowerCase()==='challenge'){
-    warning(path+' returned a Cloudflare challenge to GitHub Actions (ray: '+r.ray+'). Google Search Console reports the sitemap as Success; XML validation is therefore inconclusive from this runner, not a site outage.');
+    warning(path+' returned a Cloudflare challenge to this monitor (ray: '+r.ray+'). XML validation is inconclusive; verify Googlebot access in Search Console and review Cloudflare Security Events.');
     return;
    }
    problem(path+' HTTP '+r.status+' (wanted 200)'+hint);

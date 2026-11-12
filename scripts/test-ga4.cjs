@@ -1,6 +1,6 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
-const root=path.resolve(__dirname,'../public'),source=fs.readFileSync(path.join(root,'assets/docvelio-ga4.js'),'utf8');
+const root=path.resolve(__dirname,'../public'),source=fs.readFileSync(path.join(root,'assets/docvelio-ga4.js'),'utf8'),optionalSource=fs.readFileSync(path.join(root,'assets/optional-analytics.js'),'utf8');
 const events={},storage=new Map(),layer=[];
 const ctx={
  window:{dataLayer:layer,addEventListener(k,fn){events[k]=fn}},
@@ -18,10 +18,27 @@ events['docvelio:privacy-choice']({detail:{choice:'accepted'}});
 assert(layer.some(x=>x[0]==='consent'&&x[1]==='update'&&x[2].analytics_storage==='granted'));
 events['docvelio:privacy-choice']({detail:{choice:'declined'}});
 assert.equal(layer.at(-1)[2].analytics_storage,'denied','Withdrawal must deny analytics');
+const optionalEvents={},inserted=[];let existing=null;
+const optionalContext={window:{addEventListener(k,fn){optionalEvents[k]=fn}},localStorage:{getItem:()=>null},Date,JSON,Number,document:{getElementById:()=>existing,createElement:()=>({dataset:{},setAttribute(k,v){this[k]=v}}),head:{appendChild(node){inserted.push(node);existing=node}},documentElement:{appendChild(node){inserted.push(node);existing=node}}}};
+vm.createContext(optionalContext);vm.runInContext(optionalSource,optionalContext);
+assert.equal(inserted.length,0,'Ahrefs must not load before consent');
+optionalContext.localStorage.getItem=()=>JSON.stringify({version:2,choice:'accepted',time:Date.now()});
+optionalEvents['docvelio:privacy-choice']({detail:{choice:'accepted'}});
+assert.equal(inserted.length,1,'Ahrefs should load after explicit analytics acceptance');
+assert.equal(inserted[0].src,'https://analytics.ahrefs.com/analytics.js');
+assert.equal(inserted[0].dataset.key,'X1yDGYuFwX82LOKZR9z/Yg');
 let count=0;function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())walk(p);else if(e.name.endsWith('.html')){
  const html=fs.readFileSync(p,'utf8');if(!html.includes('</body>'))continue;
+ const relative=path.relative(root,p).replaceAll('\\\\','/');
+ if(relative==='ali-hamza/index.html'){
+  assert(!html.includes('/assets/docvelio-ga4.js')&&!html.includes('/assets/optional-analytics.js')&&!html.includes('googletagmanager.com/gtag/js'),'Standalone portfolio must remain analytics-free without a consent UI');
+  count++;continue;
+ }
  assert.equal((html.match(/src=["']\/assets\/docvelio-ga4\.js["']/g)||[]).length,1,'Consent initializer missing or duplicated: '+p);
  assert.equal((html.match(/www\.googletagmanager\.com\/gtag\/js\?id=G-1RNSZ473TY/g)||[]).length,1,'Google tag missing or duplicated: '+p);
+ assert.equal((html.match(/src=["']\/assets\/optional-analytics\.js["']/g)||[]).length,1,'Optional analytics loader missing or duplicated: '+p);
+ assert(!html.includes('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'),'Ad delivery must remain disabled pending CMP: '+p);
+ assert(!html.includes('analytics.ahrefs.com/analytics.js'),'Ahrefs must not load unconditionally: '+p);
  assert(html.indexOf('src="/assets/docvelio-ga4.js"')<html.indexOf('www.googletagmanager.com/gtag/js?id=G-1RNSZ473TY'),'Consent defaults must precede Google tag');
  const adTag=html.indexOf('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
  if(adTag!==-1)assert(html.indexOf('src="/assets/docvelio-ga4.js"')<adTag,'Consent defaults must precede AdSense script: '+p);

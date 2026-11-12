@@ -41,8 +41,21 @@ const adScope={
  zh:'此选项不会授予广告同意。'
 };
 const advertisingWarning=adScope[locale]||adScope.en;
-t[1]=mode[0]+' '+advertisingWarning;
-t[13]=mode[1]+' '+advertisingWarning;
+const ahrefsNotice={
+ en:'Accept also loads Ahrefs Analytics. Decline prevents it from loading.',
+ es:'Aceptar también carga Ahrefs Analytics. Rechazar impide que se cargue.',
+ fr:'Accepter charge également Ahrefs Analytics. Refuser empêche son chargement.',
+ de:'Mit Zustimmung wird auch Ahrefs Analytics geladen. Bei Ablehnung wird es nicht geladen.',
+ pt:'Aceitar também carrega o Ahrefs Analytics. Recusar impede o carregamento.',
+ ar:'يؤدي القبول أيضاً إلى تحميل Ahrefs Analytics، بينما يمنع الرفض تحميله.',
+ hi:'स्वीकार करने पर Ahrefs Analytics भी लोड होता है। अस्वीकार करने पर यह लोड नहीं होता।',
+ id:'Menerima juga memuat Ahrefs Analytics. Menolak mencegah pemuatannya.',
+ tr:'Kabul etmek Ahrefs Analytics’i de yükler. Reddetmek yüklenmesini engeller.',
+ zh:'接受后还会加载 Ahrefs Analytics；拒绝则不会加载。'
+};
+const analyticsChoiceNotice=ahrefsNotice[locale]||ahrefsNotice.en;
+t[1]=mode[0]+' '+analyticsChoiceNotice+' '+advertisingWarning;
+t[13]=mode[1]+' '+analyticsChoiceNotice+' '+advertisingWarning;
 function read(){
  try{
   const data=JSON.parse(localStorage.getItem(KEY)||'null');

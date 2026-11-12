@@ -36,15 +36,20 @@ for(const file of pages){
  const head=html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i)?.[1]||'';
  const adTags=[...head.matchAll(/<script\b[^>]*src=["'][^"']*pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js[^"']*["'][^>]*><\/script>/gi)];
  const accountTags=[...head.matchAll(/<meta\b[^>]*name=["']google-adsense-account["'][^>]*>/gi)];
- if(adTags.length!==1||!adTags[0][0].includes('client='+client))bad('AdSense script missing, duplicated or incorrect on '+rel);
+ if(adTags.length!==0)bad('AdSense ad-delivery script must remain disabled until a certified CMP is configured: '+rel);
  if(accountTags.length!==1||!accountTags[0][0].includes(client))bad('AdSense ownership meta missing, duplicated or incorrect on '+rel);
  if(/<meta\b[^>]*\bname=["']robots["'][^>]*\bcontent=["'][^"']*noindex/i.test(head))bad('Page has noindex: '+rel);
  const consentAt=head.indexOf('src="/assets/docvelio-ga4.js"');
  const adsenseAt=head.indexOf('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
  const gaAt=head.indexOf('www.googletagmanager.com/gtag/js?id=G-1RNSZ473TY');
- if(consentAt<0||gaAt<0)bad('GA4 consent initializer or tag missing: '+rel);
- if(adsenseAt>=0&&consentAt>adsenseAt)bad('Consent defaults load after AdSense: '+rel);
- if(gaAt>=0&&consentAt>gaAt)bad('Consent defaults load after Google Analytics: '+rel);
+ const optionalAt=head.indexOf('src="/assets/optional-analytics.js"');
+ if(rel==='ali-hamza/index.html'){
+  if(consentAt>=0||optionalAt>=0||gaAt>=0)bad('Standalone portfolio must not load analytics without its own consent UI');
+ }else{
+  if(consentAt<0||optionalAt<0||gaAt<0)bad('GA4 consent initializer, optional analytics loader or Google tag missing: '+rel);
+  if(gaAt>=0&&consentAt>gaAt)bad('Consent defaults load after Google Analytics: '+rel);
+ }
+ if(adsenseAt>=0)bad('AdSense delivery tag unexpectedly present before certified CMP: '+rel);
  if(/{{(?:CONTACT_EMAIL|OPERATOR_NAME|JURISDICTION)}}/.test(html))bad('Unresolved operator template on '+rel);
  if(!/<main\b/i.test(html))caution('No main landmark: '+rel);
  if(!/<footer\b/i.test(html))caution('No footer landmark: '+rel);
@@ -73,6 +78,7 @@ for(const lang of locales){
 const report={
  scope:'GitHub build files only, not a live crawl or Google account verification',
  publicationApproval:'Not established; Google decides',
+ adDelivery:'Disabled pending certified consent management platform configuration',
  checkedAt:new Date().toISOString(),pageCount:pages.length,adsenseChecked,gaChecked,
  publisherId:publisher,sellerRecordMatches:ads.length===1&&ads[0]===seller,
  editorialReviewCandidates:shortEnglish,
@@ -80,7 +86,7 @@ const report={
   'Open AdSense > Sites > docvelio.com > Needs attention and read the exact issue',
   'Check the live /ads.txt, source HTML, HTTP status, robots.txt, and SSL on the Cloudflare deployment',
   'Review original content quality, working tools and broken links with real files on mobile and desktop',
-  'Configure a Google-certified IAB TCF CMP for EEA/UK/Swiss ad traffic where required; the current preference notice is not a certified CMP',
+  'Ad delivery is intentionally disabled. Configure and verify a Google-certified IAB TCF CMP for EEA/UK/Swiss traffic where required before re-enabling the AdSense delivery tag',
   'Verify privacy statements, operator identity and supported language coverage',
   'Request AdSense review only after completing dashboard-specific fixes'
  ],

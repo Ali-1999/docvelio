@@ -1,6 +1,12 @@
 name: Docvelio SEO health audit
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'public/**'
+      - 'wrangler.jsonc'
+      - '.github/workflows/seo-health.yml'
   schedule:
     - cron: '15 3 * * *'
   push:
@@ -34,7 +40,11 @@ jobs:
           node --check scripts/install-adsense.cjs
           node --check scripts/install-ga4.cjs
           node --check scripts/check-adsense-readiness.cjs
+          node --check scripts/seo-audit-improvements.cjs
+          node --check scripts/audit-localized-content.cjs
+          node scripts/test-consent.cjs
           node scripts/test-ga4.cjs
+          node scripts/test-localized-content.cjs
           node scripts/check-adsense-readiness.cjs
       - name: Validate full site-quality and content inventory
         run: |
@@ -42,6 +52,10 @@ jobs:
           node scripts/audit-adsense-site-quality.cjs
           test -s reports/adsense-site-quality.json
           test -s reports/adsense-site-quality.md
+          test -s reports/localized-content-quality.json
+          test -s reports/localized-content-quality.md
+          test -s reports/localized-content-quality.json
+          test -s reports/localized-content-quality.md
       - name: Verify Excel formula generator source and build integration
         shell: bash
         run: |
@@ -101,5 +115,7 @@ jobs:
             reports/adsense-readiness.json
             reports/adsense-site-quality.json
             reports/adsense-site-quality.md
+            reports/localized-content-quality.json
+            reports/localized-content-quality.md
           if-no-files-found: warn
           retention-days: 21
