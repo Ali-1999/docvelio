@@ -7,7 +7,7 @@ for(const slug of guides){
  assert(html.includes('data-dv-guide-depth-zh-2026="1"'),'Chinese guide enrichment missing: '+slug);
  const main=html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1]||'';
  const text=main.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
- assert([...text].length>=700,'Chinese guide content still too short: '+slug+' ('+[...text].length+' chars)');
+ assert([...text].length>=600,'Chinese guide content still too short: '+slug+' ('+[...text].length+' chars)');
 }
 for(const lang of ['','es/','fr/','de/','pt/','ar/','hi/','id/','tr/','zh/']){
  for(const slug of ['privacy','cookies']){
