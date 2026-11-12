@@ -248,6 +248,18 @@ console.log('PASS: 100 localized topic pages, 10 blog indexes, 10 different Engl
 const portfolioPath=path.join(root,'ali-hamza','index.html');
 assert(fs.existsSync(portfolioPath),'Ali Hamza portfolio route missing');
 const portfolio=fs.readFileSync(portfolioPath,'utf8');
+// An avatar may be present in the repo but unreadable due to a truncated binary upload.
+// Verify the actual referenced asset, not just its filename or HTTP status.
+const avatarReferences=[...portfolio.matchAll(/\/ali-hamza\/assets\/([a-z0-9-]+\.webp)\?v=\d+/g)].map(match=>match[1]);
+assert(avatarReferences.length>=3,'Portfolio avatar references missing');
+for(const avatarFilename of new Set(avatarReferences)){
+  const avatarPath=path.join(root,'ali-hamza','assets',avatarFilename);
+  assert(fs.existsSync(avatarPath),'Referenced avatar does not exist: '+avatarFilename);
+  const avatar=fs.readFileSync(avatarPath);
+  assert(avatar.length>=12&&avatar.toString('ascii',0,4)==='RIFF'&&avatar.toString('ascii',8,12)==='WEBP','Invalid WebP avatar: '+avatarFilename);
+  assert(avatar.readUInt32LE(4)+8===avatar.length,'Truncated WebP avatar: '+avatarFilename);
+}
+
 assert(portfolio.includes('data-dv-editorial="1"'),'Portfolio editorial marker missing');
 assert(/class="[^"]*site-header[^"]*"/.test(portfolio)&&!/<footer\\b/.test(portfolio),'Portfolio-owned header present and footer removed');
 assert(!portfolio.includes('dv-global-header')&&!portfolio.includes('data-dv-unified="1"'),'Docvelio global header must not be injected into portfolio');
