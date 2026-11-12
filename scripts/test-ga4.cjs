@@ -31,6 +31,9 @@ let count=0;function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:
  const html=fs.readFileSync(p,'utf8');if(!html.includes('</body>'))continue;
  assert.equal((html.match(/src=["']\/assets\/docvelio-ga4\.js["']/g)||[]).length,1,'Consent initializer missing or duplicated: '+p);
  assert.equal((html.match(/www\.googletagmanager\.com\/gtag\/js\?id=G-1RNSZ473TY/g)||[]).length,1,'Google tag missing or duplicated: '+p);
+ assert.equal((html.match(/src=["']\/assets\/optional-analytics\.js["']/g)||[]).length,1,'Optional analytics loader missing or duplicated: '+p);
+ assert(!html.includes('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'),'Ad delivery must remain disabled pending CMP: '+p);
+ assert(!html.includes('analytics.ahrefs.com/analytics.js'),'Ahrefs must not load unconditionally: '+p);
  assert(html.indexOf('src="/assets/docvelio-ga4.js"')<html.indexOf('www.googletagmanager.com/gtag/js?id=G-1RNSZ473TY'),'Consent defaults must precede Google tag');
  const adTag=html.indexOf('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
  if(adTag!==-1)assert(html.indexOf('src="/assets/docvelio-ga4.js"')<adTag,'Consent defaults must precede AdSense script: '+p);
