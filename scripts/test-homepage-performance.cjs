@@ -11,7 +11,7 @@ for(const lang of languages){
  const html=fs.readFileSync(page,'utf8');
  const head=html.match(/<head\b[^>]*>[\s\S]*?<\/head>/i)?.[0];
  assert.ok(head,'Missing head: '+lang);
- const styles=[...head.matchAll(/<link\b[^>]*rel=["']stylesheet["'][^>]*>/gi)].map(m=>m[0]);
+ const styles=[...head.matchAll(/<link\b[^>]*rel=["']stylesheet["'][^>]*>/gi)].map(m=>m[0]).filter(tag=>!/\bmedia=["']print["']/i.test(tag));
  assert.equal(styles.length,1,lang+' should use one render-blocking stylesheet, has '+styles.length);
  const href=styles[0].match(/href=["']([^"']+)["']/)?.[1];
  assert.match(href,/^\/_immutable\/home-[a-f0-9]{16}\.css$/);
@@ -24,9 +24,13 @@ for(const lang of languages){
  assert.match(html,/data-dv-home-tools="v2"/,lang+' toolkit lost');
  assert.match(html,/<h1\b/i,lang+' page heading lost');
   assert.ok(html.includes('rel="preload" as="image" href="/assets/homepage-workspace.svg"'),lang+' hero illustration is not preloaded');
- assert.ok(html.includes('analytics.ahrefs.com/analytics.js'),lang+' Ahrefs missing');
- assert.ok(html.includes('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'),lang+' AdSense missing');
+ assert.ok(html.includes('src="/assets/docvelio-ga4.js"'),lang+' GA4 consent initializer missing');
+ assert.ok(html.includes('src="/assets/optional-analytics.js"'),lang+' consent-gated optional analytics loader missing');
+ assert.ok(html.includes('href="/assets/cookie-consent.css"'),lang+' privacy banner styling missing');
+ assert.ok(html.includes('src="/assets/cookie-consent.js"'),lang+' privacy choice controls missing');
+ assert.ok(!html.includes('analytics.ahrefs.com/analytics.js'),lang+' Ahrefs must not load before consent');
+ assert.ok(!html.includes('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'),lang+' AdSense delivery must remain disabled pending CMP');
  assert.ok(html.includes('href="https://docvelio.com/')||html.includes('rel="canonical"'),lang+' canonical lost');
  checked++;
 }
-console.log('HOMEPAGE PERF: '+checked+' locales use a single immutable CSS bundle; SEO, hero, menu, ads and analytics preserved.');
+console.log('HOMEPAGE PERF: '+checked+' locales use one blocking immutable CSS bundle; consent UI, SEO, hero and menu preserved; optional analytics and ad delivery are consent-gated.');
