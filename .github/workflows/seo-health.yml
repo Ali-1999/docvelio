@@ -34,7 +34,9 @@ jobs:
           node --check scripts/install-adsense.cjs
           node --check scripts/install-ga4.cjs
           node --check scripts/check-adsense-readiness.cjs
+          node scripts/test-consent.cjs
           node scripts/test-ga4.cjs
+          node scripts/test-localized-content.cjs
           node scripts/check-adsense-readiness.cjs
       - name: Validate full site-quality and content inventory
         run: |
@@ -42,6 +44,10 @@ jobs:
           node scripts/audit-adsense-site-quality.cjs
           test -s reports/adsense-site-quality.json
           test -s reports/adsense-site-quality.md
+            reports/localized-content-quality.json
+            reports/localized-content-quality.md
+          test -s reports/localized-content-quality.json
+          test -s reports/localized-content-quality.md
       - name: Verify Excel formula generator source and build integration
         shell: bash
         run: |
