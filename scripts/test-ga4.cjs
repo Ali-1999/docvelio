@@ -29,6 +29,11 @@ assert.equal(inserted[0].src,'https://analytics.ahrefs.com/analytics.js');
 assert.equal(inserted[0].dataset.key,'X1yDGYuFwX82LOKZR9z/Yg');
 let count=0;function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())walk(p);else if(e.name.endsWith('.html')){
  const html=fs.readFileSync(p,'utf8');if(!html.includes('</body>'))continue;
+ const relative=path.relative(root,p).replaceAll('\\\\','/');
+ if(relative==='ali-hamza/index.html'){
+  assert(!html.includes('/assets/docvelio-ga4.js')&&!html.includes('/assets/optional-analytics.js')&&!html.includes('googletagmanager.com/gtag/js'),'Standalone portfolio must remain analytics-free without a consent UI');
+  count++;continue;
+ }
  assert.equal((html.match(/src=["']\/assets\/docvelio-ga4\.js["']/g)||[]).length,1,'Consent initializer missing or duplicated: '+p);
  assert.equal((html.match(/www\.googletagmanager\.com\/gtag\/js\?id=G-1RNSZ473TY/g)||[]).length,1,'Google tag missing or duplicated: '+p);
  assert.equal((html.match(/src=["']\/assets\/optional-analytics\.js["']/g)||[]).length,1,'Optional analytics loader missing or duplicated: '+p);
