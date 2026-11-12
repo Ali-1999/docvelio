@@ -42,7 +42,8 @@ for(const file of pages){
  const consentAt=head.indexOf('src="/assets/docvelio-ga4.js"');
  const adsenseAt=head.indexOf('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
  const gaAt=head.indexOf('www.googletagmanager.com/gtag/js?id=G-1RNSZ473TY');
- const optionalAt=head.indexOf('src="/assets/optional-analytics.js"');\n if(consentAt<0||optionalAt<0||gaAt<0)bad('GA4 consent initializer, optional analytics loader or Google tag missing: '+rel);
+ const optionalAt=head.indexOf('src="/assets/optional-analytics.js"');
+ if(consentAt<0||optionalAt<0||gaAt<0)bad('GA4 consent initializer, optional analytics loader or Google tag missing: '+rel);
  if(adsenseAt>=0)bad('AdSense delivery tag unexpectedly present before certified CMP: '+rel);
  if(gaAt>=0&&consentAt>gaAt)bad('Consent defaults load after Google Analytics: '+rel);
  if(/{{(?:CONTACT_EMAIL|OPERATOR_NAME|JURISDICTION)}}/.test(html))bad('Unresolved operator template on '+rel);
@@ -72,7 +73,8 @@ for(const lang of locales){
 }
 const report={
  scope:'GitHub build files only, not a live crawl or Google account verification',
- publicationApproval:'Not established; Google decides',\n adDelivery:'Disabled pending certified consent management platform configuration',
+ publicationApproval:'Not established; Google decides',
+ adDelivery:'Disabled pending certified consent management platform configuration',
  checkedAt:new Date().toISOString(),pageCount:pages.length,adsenseChecked,gaChecked,
  publisherId:publisher,sellerRecordMatches:ads.length===1&&ads[0]===seller,
  editorialReviewCandidates:shortEnglish,
