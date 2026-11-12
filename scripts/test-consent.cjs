@@ -21,6 +21,7 @@ const pages=[];
 assert(pages.length>=584,'Expected at least 584 generated pages; found '+pages.length);
 for(const file of pages){
  const html=fs.readFileSync(file,'utf8');
+ if(/^(?:naver[a-z0-9_-]+|yandex_[a-z0-9_-]+|google[a-z0-9_-]+|baidu_verify_[a-z0-9_-]+)\.html$/i.test(path.basename(file)))continue;
  if(file===path.join(root,'ali-hamza','index.html')){
   continue;
  }
