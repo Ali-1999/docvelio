@@ -43,9 +43,13 @@ for(const file of pages){
  const adsenseAt=head.indexOf('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
  const gaAt=head.indexOf('www.googletagmanager.com/gtag/js?id=G-1RNSZ473TY');
  const optionalAt=head.indexOf('src="/assets/optional-analytics.js"');
- if(consentAt<0||optionalAt<0||gaAt<0)bad('GA4 consent initializer, optional analytics loader or Google tag missing: '+rel);
+ if(rel==='ali-hamza/index.html'){
+  if(consentAt>=0||optionalAt>=0||gaAt>=0)bad('Standalone portfolio must not load analytics without its own consent UI');
+ }else{
+  if(consentAt<0||optionalAt<0||gaAt<0)bad('GA4 consent initializer, optional analytics loader or Google tag missing: '+rel);
+  if(gaAt>=0&&consentAt>gaAt)bad('Consent defaults load after Google Analytics: '+rel);
+ }
  if(adsenseAt>=0)bad('AdSense delivery tag unexpectedly present before certified CMP: '+rel);
- if(gaAt>=0&&consentAt>gaAt)bad('Consent defaults load after Google Analytics: '+rel);
  if(/{{(?:CONTACT_EMAIL|OPERATOR_NAME|JURISDICTION)}}/.test(html))bad('Unresolved operator template on '+rel);
  if(!/<main\b/i.test(html))caution('No main landmark: '+rel);
  if(!/<footer\b/i.test(html))caution('No footer landmark: '+rel);
