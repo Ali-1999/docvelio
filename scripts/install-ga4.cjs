@@ -23,6 +23,15 @@ function walk(dir){
   if(!entry.name.endsWith('.html'))continue;
   let html=fs.readFileSync(file,'utf8');
   if(!html.includes('</body>')||!html.includes('</head>'))continue;
+  const relative=path.relative(root,file).replaceAll('\\\\','/');
+  if(relative==='ali-hamza/index.html'){
+   html=html.replace(/<script\\b[^>]*src=[\"']\\/assets\\/(?:docvelio-ga4|optional-analytics)\\.js[\"'][^>]*><\\/script>/gi,'');
+   html=html.replace(/<script\\b[^>]*src=[\"']https:\\/\\/www\\.googletagmanager\\.com\\/gtag\\/js\\?id=G-1RNSZ473TY[\"'][^>]*><\\/script>/gi,'');
+   if(html!==fs.readFileSync(file,'utf8')){fs.writeFileSync(file,html,'utf8');changed++;}
+   count++;continue;
+  }
+  if(!html.includes('href=\"/assets/cookie-consent.css\"'))html=html.replace('</head>','<link rel=\"stylesheet\" href=\"/assets/cookie-consent.css\"></head>');
+  if(!html.includes('src=\"/assets/cookie-consent.js\"'))html=html.replace('</body>','<script defer src=\"/assets/cookie-consent.js\"></script></body>');
   const initCount=(html.match(/src=["']\/assets\/docvelio-ga4\.js["']/g)||[]).length;
   const optCount=(html.match(/src=["']\/assets\/optional-analytics\.js["']/g)||[]).length;
   const gaCount=(html.match(/www\.googletagmanager\.com\/gtag\/js\?id=G-1RNSZ473TY/g)||[]).length;
