@@ -30,7 +30,7 @@ function walk(dir){
    if(html!==fs.readFileSync(file,'utf8')){fs.writeFileSync(file,html,'utf8');changed++;}
    count++;continue;
   }
-  if(!html.includes('href="/assets/cookie-consent.css"'))html=html.replace('</head>','<link rel="stylesheet" href="/assets/cookie-consent.css" media="print" onload="this.media=\'all\'"></head>');
+  if(!html.includes('href="/assets/cookie-consent.css"'))html=html.replace('</head>','<link rel="stylesheet" href="/assets/cookie-consent.css" media="print" onload="this.media=String.fromCharCode(97,108,108)"></head>');
   if(!html.includes('src="/assets/cookie-consent.js"'))html=html.replace('</body>','<script defer src="/assets/cookie-consent.js"></script></body>');
   const initCount=(html.match(/src=["']\/assets\/docvelio-ga4\.js["']/g)||[]).length;
   const optCount=(html.match(/src=["']\/assets\/optional-analytics\.js["']/g)||[]).length;
