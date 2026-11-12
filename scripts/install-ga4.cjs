@@ -23,15 +23,15 @@ function walk(dir){
   if(!entry.name.endsWith('.html'))continue;
   let html=fs.readFileSync(file,'utf8');
   if(!html.includes('</body>')||!html.includes('</head>'))continue;
-  const relative=path.relative(root,file).replaceAll('\\\\','/');
+  const relative=path.relative(root,file).replaceAll('\\','/');
   if(relative==='ali-hamza/index.html'){
-   html=html.replace(/<script\\b[^>]*src=[\"']\\/assets\\/(?:docvelio-ga4|optional-analytics)\\.js[\"'][^>]*><\\/script>/gi,'');
-   html=html.replace(/<script\\b[^>]*src=[\"']https:\\/\\/www\\.googletagmanager\\.com\\/gtag\\/js\\?id=G-1RNSZ473TY[\"'][^>]*><\\/script>/gi,'');
+   html=html.replace(/<script\b[^>]*src=["']\/assets\/(?:docvelio-ga4|optional-analytics)\.js["'][^>]*><\/script>/gi,'');
+   html=html.replace(/<script\b[^>]*src=["']https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-1RNSZ473TY["'][^>]*><\/script>/gi,'');
    if(html!==fs.readFileSync(file,'utf8')){fs.writeFileSync(file,html,'utf8');changed++;}
    count++;continue;
   }
-  if(!html.includes('href=\"/assets/cookie-consent.css\"'))html=html.replace('</head>','<link rel=\"stylesheet\" href=\"/assets/cookie-consent.css\"></head>');
-  if(!html.includes('src=\"/assets/cookie-consent.js\"'))html=html.replace('</body>','<script defer src=\"/assets/cookie-consent.js\"></script></body>');
+  if(!html.includes('href="/assets/cookie-consent.css"'))html=html.replace('</head>','<link rel="stylesheet" href="/assets/cookie-consent.css"></head>');
+  if(!html.includes('src="/assets/cookie-consent.js"'))html=html.replace('</body>','<script defer src="/assets/cookie-consent.js"></script></body>');
   const initCount=(html.match(/src=["']\/assets\/docvelio-ga4\.js["']/g)||[]).length;
   const optCount=(html.match(/src=["']\/assets\/optional-analytics\.js["']/g)||[]).length;
   const gaCount=(html.match(/www\.googletagmanager\.com\/gtag\/js\?id=G-1RNSZ473TY/g)||[]).length;
@@ -44,7 +44,6 @@ function walk(dir){
    if(!optCount)html=html.replace(/(<script\b[^>]*src=["']\/assets\/docvelio-ga4\.js["'][^>]*><\/script>)/i,'$1<script src="/assets/optional-analytics.js"></script>');
    if(!gaCount)html=html.replace('</head>','<script async src="https://www.googletagmanager.com/gtag/js?id=G-1RNSZ473TY"></script></head>');
   }
-  const relative=path.relative(root,file).replaceAll('\\','/');
   if(/(?:^|\/)(?:privacy|cookies)\/index\.html$/.test(relative)){
    const parts=relative.split('/'),first=parts[0],lang=policyNotes[first]?first:'en',note=policyNotes[lang];
    const block='<section id="dv-ga4-policy" class="container" aria-label="Analytics and advertising status"><h2>Analytics and advertising status</h2><p>'+note+'</p></section>';
