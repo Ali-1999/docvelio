@@ -19,7 +19,7 @@ for(const lang of languages){
  for(const original of ['/assets/style.css','/assets/homepage-v3.css','/assets/home-toolkit-v2.css','/assets/global-navigation.css']){
   assert.ok(bundle.includes('/* '+original+' */'),lang+' missing CSS '+original);
  }
- assert.ok(!/<link\b[^>]*href=["']\/assets\/[^"']+\.css["'][^>]*>/i.test(head),lang+' redundant stylesheet');
+ assert.ok(![...head.matchAll(/<link\b[^>]*href=["']\/assets\/[^"']+\.css["'][^>]*>/gi)].some(match=>!/\bmedia=["']print["']/i.test(match[0])),lang+' redundant render-blocking stylesheet');
  assert.match(html,/data-dv-home-full="v3"/,lang+' homepage design lost');
  assert.match(html,/data-dv-home-tools="v2"/,lang+' toolkit lost');
  assert.match(html,/<h1\b/i,lang+' page heading lost');
