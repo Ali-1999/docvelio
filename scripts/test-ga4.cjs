@@ -17,7 +17,16 @@ assert(layer.some(x=>x[0]==='config'&&x[1]==='G-1RNSZ473TY'),'Correct GA4 config
 events['docvelio:privacy-choice']({detail:{choice:'accepted'}});
 assert(layer.some(x=>x[0]==='consent'&&x[1]==='update'&&x[2].analytics_storage==='granted'));
 events['docvelio:privacy-choice']({detail:{choice:'declined'}});
-assert.equal(layer.at(-1)[2].analytics_storage,'denied','Withdrawal must deny analytics');\nconst optionalEvents={},inserted=[];let existing=null;\nconst optionalContext={window:{addEventListener(k,fn){optionalEvents[k]=fn}},localStorage:{getItem:()=>null},Date,JSON,Number,document:{getElementById:()=>existing,createElement:()=>({dataset:{},setAttribute(k,v){this[k]=v}}),head:{appendChild(node){inserted.push(node);existing=node}},documentElement:{appendChild(node){inserted.push(node);existing=node}}}};\nvm.createContext(optionalContext);vm.runInContext(optionalSource,optionalContext);\nassert.equal(inserted.length,0,'Ahrefs must not load before consent');\noptionalContext.localStorage.getItem=()=>JSON.stringify({version:2,choice:'accepted',time:Date.now()});\noptionalEvents['docvelio:privacy-choice']({detail:{choice:'accepted'}});\nassert.equal(inserted.length,1,'Ahrefs should load after explicit analytics acceptance');\nassert.equal(inserted[0].src,'https://analytics.ahrefs.com/analytics.js');\nassert.equal(inserted[0].dataset.key,'X1yDGYuFwX82LOKZR9z/Yg');
+assert.equal(layer.at(-1)[2].analytics_storage,'denied','Withdrawal must deny analytics');
+const optionalEvents={},inserted=[];let existing=null;
+const optionalContext={window:{addEventListener(k,fn){optionalEvents[k]=fn}},localStorage:{getItem:()=>null},Date,JSON,Number,document:{getElementById:()=>existing,createElement:()=>({dataset:{},setAttribute(k,v){this[k]=v}}),head:{appendChild(node){inserted.push(node);existing=node}},documentElement:{appendChild(node){inserted.push(node);existing=node}}}};
+vm.createContext(optionalContext);vm.runInContext(optionalSource,optionalContext);
+assert.equal(inserted.length,0,'Ahrefs must not load before consent');
+optionalContext.localStorage.getItem=()=>JSON.stringify({version:2,choice:'accepted',time:Date.now()});
+optionalEvents['docvelio:privacy-choice']({detail:{choice:'accepted'}});
+assert.equal(inserted.length,1,'Ahrefs should load after explicit analytics acceptance');
+assert.equal(inserted[0].src,'https://analytics.ahrefs.com/analytics.js');
+assert.equal(inserted[0].dataset.key,'X1yDGYuFwX82LOKZR9z/Yg');
 let count=0;function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())walk(p);else if(e.name.endsWith('.html')){
  const html=fs.readFileSync(p,'utf8');if(!html.includes('</body>'))continue;
  assert.equal((html.match(/src=["']\/assets\/docvelio-ga4\.js["']/g)||[]).length,1,'Consent initializer missing or duplicated: '+p);
