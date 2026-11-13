@@ -52,7 +52,27 @@ for(const lang of langs){
   assert(home.includes('href="/'+pre+route+'"'),'No homepage link '+href);
  }
 }
+// High-intent CBM topic cluster: unique targets with distinct page purposes.
+const seoTargets=[
+ ['cbm-calculator/','CBM Calculator','How to calculate CBM: formula for shipping','how-to-calculate-cbm'],
+ ['shipping-tools/multiple-carton-cbm-calculator/','Carton CBM Calculator','Carton CBM formula for one box or a batch',null],
+ ['shipping-tools/container-capacity-calculator/','20ft Container CBM','20ft container CBM: quick answer and calculation',null],
+ ['shipping-tools/volumetric-weight-calculator/','CBM vs Volumetric Weight','CBM vs volumetric weight: key difference',null]
+];
+for(const [route,keyword,heading,anchorId] of seoTargets){
+ const html=fs.readFileSync(path.join(root,route,'index.html'),'utf8');
+ const title=html.match(/<title>([^<]+)<\/title>/)?.[1]||'';
+ assert(title.includes(keyword),'Topic title missing '+keyword);
+ assert(html.includes(heading),'Missing unique informational section on '+route);
+ assert(html.includes('href="https://docvelio.com/'+route+'"'),'Self canonical missing for '+route);
+ assert(html.includes('href="/cbm-calculator/"')||route==='cbm-calculator/','No contextual link to central CBM calculator: '+route);
+ if(anchorId)assert(html.includes('id="'+anchorId+'"'),'Missing stable how-to formula section anchor');
+}
+const sourceTopics=topics.filter(t=>seoTargets.some(x=>x[0]===(t.root?'cbm-calculator/':'shipping-tools/'+t.slug+'/')));
+assert.equal(sourceTopics.length,4);
+assert(sourceTopics.every(t=>t.para.length>=5&&t.faq.length>=3),'Priority cargo content lacks useful sections/FAQs');
 assert.equal(titles.size,6);
+
 const xml=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 assert.equal((xml.match(/<loc>/g)||[]).length,583);
 console.log('PASS: CBM numeric maths, security, 60 localized pages, canonical metadata and 581 URLs.');
