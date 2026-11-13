@@ -1,20 +1,21 @@
-/* Docvelio's original cargo tool guides. */
-module.exports=[
+/* Original English cargo-tool copy with intent-specific CBM SEO improvements. */
+'use strict';
+module.exports = [
   {
     "slug": "cbm-calculator",
     "root": true,
-    "title": "CBM Calculator – Calculate Shipping Volume & Weight Online",
-    "desc": "Free CBM calculator for cartons and shipping. Enter dimensions, quantity and weight to calculate cubic metres, cubic feet, volumetric weight and container usage.",
-    "h1": "CBM Calculator for Shipping and Freight",
+    "title": "CBM Calculator: Cubic Metres, Cartons & Shipping Volume",
+    "desc": "Free CBM calculator for shipping. Calculate cubic metres from box dimensions and quantities, compare volumetric weight and estimate container volume usage.",
+    "h1": "CBM Calculator for Shipping: Boxes, Cartons and Freight",
     "intro": "Calculate total shipment volume in cubic metres (CBM), cubic feet (CFT), actual mass and estimated dimensional weight. Add multiple carton types and compare theoretical 20 ft, 40 ft and 40 ft high-cube container utilisation.",
     "para": [
       [
-        "How to calculate CBM for shipping",
-        "CBM stands for cubic metres. Convert length, width and height to metres, multiply the three values to find one carton's volume, and multiply by the number of identical cartons. For a mixed shipment, repeat for each carton size and add the results. The calculator handles millimetres, centimetres, metres, inches, feet and yards, so you do not need to convert dimensions manually."
+        "How to calculate CBM: formula for shipping",
+        "CBM (cubic metres) is the outside volume of a rectangular package, not its weight. For measurements in metres, CBM = length × width × height × quantity. If all dimensions are in centimetres, CBM = (length × width × height × quantity) ÷ 1,000,000. Measure the packed outer dimensions, including packaging, and calculate each distinct carton size separately. Enter cm, mm, m, inches, feet or yards above; the calculator converts units before adding shipment volumes."
       ],
       [
-        "CBM formula with a worked example",
-        "A carton measuring 60 cm × 40 cm × 40 cm occupies 0.096 m³. For 200 identical cartons, the total is 19.2 m³ (about 678.04 ft³). If each carton weighs 25 kg, the shipment weighs 5,000 kg. These are measurements, not a carrier quote or an actual container loading diagram."
+        "Worked example: calculate CBM for 200 cartons",
+        "Each packed carton measures 60 cm long, 40 cm wide and 40 cm high. One carton occupies (60 × 40 × 40) ÷ 1,000,000 = 0.096 CBM; 200 cartons occupy 19.2 CBM. At 25 kg gross weight per carton, their combined actual weight is 5,000 kg. CBM is the total rectangular-box volume and does not account for pallets or gaps between cartons."
       ],
       [
         "Actual weight versus dimensional weight",
@@ -23,6 +24,10 @@ module.exports=[
       [
         "Estimating container utilisation",
         "The reference volumes used here are approximately 33.2 m³ for a 20 ft dry container, 67.7 m³ for a 40 ft dry container, and 76.3 m³ for a 40 ft high cube. The results show volume utilisation and a separate planning count at your chosen assumed fill percentage. Packing geometry, stacking strength, pallets, door clearance, payload restrictions and individual container dimensions can all change actual suitability."
+      ],
+      [
+        "CBM calculation checklist before requesting a freight quote",
+        "Use packed external dimensions rather than product-only dimensions; check that the quantity is for each carton size, not just the number of product units. Record weights separately and confirm whether the quote is for LCL sea freight, FCL, air freight or courier delivery. Carriers may apply rounding, per-piece calculations, minimum charges, pallet allowances or a weight-or-measurement (W/M) rule. This calculator estimates physical volume and weight, not a binding freight price."
       ]
     ],
     "steps": [
@@ -42,6 +47,14 @@ module.exports=[
       [
         "Can CBM alone tell me how many cartons physically fit?",
         "No. It measures volume, but actual packing depends on carton geometry, loading orientation, clearances and weight restrictions."
+      ],
+      [
+        "How do I calculate CBM from centimetres?",
+        "Multiply the packed length, width, height and number of identical cartons in centimetres, then divide by 1,000,000. For example, 50 × 40 × 30 cm × 100 cartons is 6 CBM."
+      ],
+      [
+        "Is CBM calculated using gross weight?",
+        "No. CBM is cubic volume; gross weight is measured separately. Shipping charges may consider both, depending on the service and contract."
       ]
     ]
   },
@@ -119,11 +132,15 @@ module.exports=[
   },
   {
     "slug": "volumetric-weight-calculator",
-    "title": "Volumetric Weight Calculator – Air Freight & Courier Dim Weight",
-    "desc": "Compare actual weight with dimensional weight in kg or lb. Use a configurable 5000 or 6000 divisor for parcels and multi-carton air shipments.",
-    "h1": "Volumetric Weight and Chargeable Weight Calculator",
+    "title": "CBM vs Volumetric Weight: Freight Calculation & Examples",
+    "desc": "Learn CBM vs volumetric weight and calculate dimensional vs actual weight for shipments. Adjust carrier divisor, compare chargeable weight and understand limits.",
+    "h1": "CBM vs Volumetric Weight: Calculate Chargeable Weight",
     "intro": "Estimate the dimensional weight of cartons and compare it with actual shipment weight using a configurable centimetre-based divisor.",
     "para": [
+      [
+        "CBM vs volumetric weight: key difference",
+        "CBM measures how much space packed cargo occupies, in cubic metres. Volumetric (dimensional) weight expresses that space as an equivalent weight for billing. They are not interchangeable measurements: 1 CBM of lightweight cushions and 1 CBM of steel use the same space but have very different actual masses. A carrier can charge using actual mass or calculated dimensional mass subject to its contract and rounding rules."
+      ],
       [
         "What is dimensional or volumetric weight?",
         "Carriers need to account for the physical space occupied by lightweight packages. Dimensional weight converts volume to an equivalent weight using a divisor, while actual weight is the mass shown on a scale. A carrier may base charges on the higher value, subject to its own minimums and rounding policy."
@@ -139,6 +156,10 @@ module.exports=[
       [
         "Important billing limitations",
         "This calculator compares aggregate actual and aggregate dimensional weight; a specific carrier might round each piece separately, charge per consignment, or apply special volumetric coefficients. It does not calculate a freight price. Confirm the applicable divisor, rounding, documentation and contract terms."
+      ],
+      [
+        "Convert CBM to dimensional weight using your carrier's rule",
+        "For a shipment in cubic metres, aggregate dimensional kilograms may be estimated as CBM × 1,000,000 ÷ divisor (cm³/kg), before carrier-specific rounding. At a divisor of 5,000, 1 CBM corresponds to 200 kg dimensional weight; at 6,000 it corresponds to approximately 166.67 kg. This is a comparison tool, not a universal air-freight tariff or rate quote."
       ]
     ],
     "steps": [
@@ -154,16 +175,24 @@ module.exports=[
       [
         "Does the result include freight charges?",
         "No. It estimates weights only, not shipping prices or carrier-specific per-piece rounding."
+      ],
+      [
+        "Does CBM determine the price of air freight?",
+        "Not by itself. Airlines and freight forwarders often use a chargeable-weight basis and may apply different conversion factors, minimum charges and rounding rules."
       ]
     ]
   },
   {
     "slug": "container-capacity-calculator",
-    "title": "Container Capacity Calculator – 20ft, 40ft & 40ft High Cube",
-    "desc": "Compare cargo CBM against approximate 20ft, 40ft and 40ft high cube container volumes. Estimate volume utilisation and a planning-only container count.",
-    "h1": "20ft and 40ft Shipping Container Capacity Calculator",
+    "title": "20ft Container CBM: Capacity, Utilisation & 40ft Comparison",
+    "desc": "How many CBM fit in a 20ft container? Compare approx. 33.2 m³ for 20ft, 67.7 m³ for 40ft and 76.3 m³ for 40ft high cube with loading limits.",
+    "h1": "20ft Container CBM Capacity and Loading Estimates",
     "intro": "Check how much nominal container volume your shipment occupies and estimate a planning count at an adjustable assumed utilisation percentage.",
     "para": [
+      [
+        "20ft container CBM: quick answer and calculation",
+        "A frequently cited nominal internal volume for a standard 20-foot dry container is about 33.2 cubic metres (CBM). This is not a guaranteed cargo allowance. To estimate percentage utilisation, divide packed cargo CBM by 33.2 and multiply by 100. For example, 15 CBM ÷ 33.2 × 100 ≈ 45.2% of nominal internal volume. Verify the actual equipment's internal dimensions, door opening, payload and loading plan before booking."
+      ],
       [
         "Standard dry-container volume references",
         "Typical internal volumes are around 33.2 m³ for a 20-foot dry container, 67.7 m³ for a 40-foot dry container and 76.3 m³ for a 40-foot high cube. Published figures vary by manufacturer and equipment owner; verify the container dimensions on the actual booking."
@@ -194,16 +223,28 @@ module.exports=[
       [
         "Can 33 CBM of cartons always fit in a 20ft container?",
         "No. This is near the nominal internal volume and does not account for packing geometry, weight limits, pallets or clearances."
+      ],
+      [
+        "Does a 20ft container always accept 33.2 CBM of cargo?",
+        "No. Nominal internal volume assumes all space can be used, which is rarely possible with boxes and pallets. Weight limits, door clearances, stacking and load securing also matter."
+      ],
+      [
+        "Is a 40ft high-cube container always better for heavy cargo?",
+        "Not necessarily. High-cube equipment offers more height, but heavy cargo may reach payload or axle restrictions before the container's volume is filled."
       ]
     ]
   },
   {
     "slug": "multiple-carton-cbm-calculator",
-    "title": "Multiple Carton CBM Calculator – Mixed Shipment Volume",
-    "desc": "Add multiple cargo lines with different dimensions, weights, units and quantities. Calculate total CBM, CFT and shipment mass, then export a CSV.",
-    "h1": "Multiple Carton CBM Calculator for Mixed Shipments",
+    "title": "Carton CBM Calculator: Multiple Boxes & Mixed Cargo",
+    "desc": "Calculate CBM for cartons and boxes of different sizes. Add dimensions, quantities and weights for each cargo line to get total cubic metres and export CSV.",
+    "h1": "Carton CBM Calculator for Single and Multiple Box Sizes",
     "intro": "Combine cartons of different sizes into one shipment calculation, including total cubic metres, cubic feet and actual gross cargo weight.",
     "para": [
+      [
+        "Carton CBM formula for one box or a batch",
+        "For one rectangular packed carton, CBM = length (cm) × width (cm) × height (cm) ÷ 1,000,000. Multiply by the number of identical cartons to find the line total. For 30 cartons of 40 × 30 × 25 cm, each carton is 0.03 CBM and the batch totals 0.9 CBM. Use a separate row whenever a product has different packed dimensions."
+      ],
       [
         "Why mixed cargo needs separate calculations",
         "A shipment may contain small cartons, large crates and differently sized parcels. Taking the volume of just one carton type and multiplying by a total quantity gives the wrong answer when sizes differ. Instead, calculate length × width × height × quantity for each line, then add every line's result."
@@ -234,6 +275,10 @@ module.exports=[
       [
         "How many different product types can I enter?",
         "The calculator supports up to 100 cargo rows per calculation."
+      ],
+      [
+        "Do I measure the product or the outer carton?",
+        "Use the external dimensions of the packed shipping carton, including packaging, when estimating freight space. If the cargo is palletised, the palletised footprint and height may change the shipment's loadability."
       ]
     ]
   }
