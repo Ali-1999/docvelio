@@ -64,7 +64,7 @@ function form(lang,c){
 function content(lang,t,i){
  const c=translated(lang,t,i),ui=c.ui;
  const steps='<ol>'+c.steps.map(s=>'<li>'+esc(s)+'</li>').join('')+'</ol>';
- const prose=c.para.map(([title,p])=>'<h2>'+esc(title)+'</h2><p>'+esc(p)+'</p>').join('');
+ const prose=c.para.map(([title,p])=>'<h2'+(lang==='en'&&t.root&&title.startsWith('How to calculate CBM')?' id="how-to-calculate-cbm"':'')+'>'+esc(title)+'</h2><p>'+esc(p)+'</p>').join('');
  const faqs=c.faq.length?'<h2>Frequently asked questions</h2>'+c.faq.map(([q,a])=>'<h3>'+esc(q)+'</h3><p>'+esc(a)+'</p>').join(''):'';
  const cites=lang==='en'?'<p><strong>Technical reference:</strong> <a href="https://www.dsv.com/en-us/our-solutions/modes-of-transport/sea-freight/shipping-container-dimensions/dry-container" rel="noopener noreferrer">DSV container dimension guide</a> and <a href="https://dct.dhl.com/help" rel="noopener noreferrer">DHL volumetric-weight explanation</a>. Published equipment and pricing factors vary.</p>':'';
  return '<section class="cargo-seo"><div class="container cargo-copy"><h2>'+esc(ui[24])+': '+esc(c.h1)+'</h2>'+
