@@ -288,7 +288,20 @@ assert(portfolio.includes('id="techTimeline"')&&portfolio.includes('Warehouse Ad
 assert(portfolio.indexOf('id="projects"')<portfolio.indexOf('id="experience"'),'Recruiter-focused projects-before-experience order missing');
 assert(portfolio.includes('Book a 30-min interview')&&portfolio.includes('data-open-interview'),'Recruiter interview CTA missing');
 assert(portfolio.includes('Transferable Iqama')&&portfolio.includes('Available immediately'),'Recruiter availability facts missing');
-assert(!portfolio.includes('id="certifications"'),'Empty certifications section should be hidden');
+const additionalProjects=portfolio.match(/<ul class="project-grid portfolio-list"[^>]*>([\s\S]*?)<\/ul>/)?.[1] || '';
+assert.equal((additionalProjects.match(/<li class="portfolio-entry glass">/g)||[]).length,14,'Expected 14 additional portfolio projects');
+assert(portfolio.includes('href="#certifications"'),'Portfolio certificate navigation is missing');
+const certificateSection=portfolio.match(/<section [^>]*id="certifications"[^>]*>([\s\S]*?)<\/section>/)?.[1] || '';
+const certificatePdfs=[...certificateSection.matchAll(/href="assets\/certificates\/([a-z-]+\.pdf)" download/g)].map(match=>match[1]);
+const verificationLinks=[...certificateSection.matchAll(/href="https:\/\/coursera\.org\/verify\/([A-Z0-9]+)"/g)].map(match=>match[1]);
+assert.equal(new Set(certificatePdfs).size,7,'Expected seven distinct downloadable certificates');
+assert.equal(new Set(verificationLinks).size,7,'Expected seven distinct Coursera verification links');
+for(const filename of certificatePdfs){
+ const pdf=fs.readFileSync(path.join(root,'ali-hamza','assets','certificates',filename));
+ assert.equal(pdf.subarray(0,5).toString(),'%PDF-','Invalid certificate PDF: '+filename);
+}
+assert(workerSource.includes('https://docvelio.com/ali-hamza/#certifications')&&
+       workerSource.includes('Introduction to Cybersecurity Tools & Cyberattacks'),'Recruitment assistant certificate facts are missing');
 assert(portfolioCss.includes('.whatsapp-float{position:fixed'),'Sticky WhatsApp styling missing');
 for(const script of ['site-shell.cjs','final-global-shell.cjs']){
  const source=fs.readFileSync(path.join(__dirname,script),'utf8');
