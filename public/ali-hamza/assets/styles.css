@@ -207,7 +207,7 @@ html[dir=rtl] .side-nav a.active{box-shadow:inset -3px 0 var(--success-foregroun
 
 .portfolio-subheading {
   margin: 24px 0 12px;
-  color: var(--foreground);
+  color: inherit;
   font-size: 18px;
 }
 .portfolio-list {
